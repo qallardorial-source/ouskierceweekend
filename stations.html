@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toutes les stations - Trouve Ta Station</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">⛷️ Trouve Ta Station</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Recherche</a>
+                <a href="stations.html" class="nav-link active">Toutes les stations</a>
+                <a href="about.html" class="nav-link">À propos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>📍 Toutes les stations</h1>
+            <p class="subtitle">Découvre notre sélection complète de stations françaises</p>
+        </header>
+
+        <div class="search-section">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="regionFilter">Massif</label>
+                    <select id="regionFilter">
+                        <option value="all">Tous les massifs</option>
+                        <option value="Alpes du Nord">Alpes du Nord</option>
+                        <option value="Alpes du Sud">Alpes du Sud</option>
+                        <option value="Pyrénées">Pyrénées</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="levelFilter">Niveau</label>
+                    <select id="levelFilter">
+                        <option value="all">Tous niveaux</option>
+                        <option value="Débutant">Débutant</option>
+                        <option value="Intermédiaire">Intermédiaire</option>
+                        <option value="Expert">Expert</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sortBy">Trier par</label>
+                    <select id="sortBy">
+                        <option value="name">Nom (A-Z)</option>
+                        <option value="price-asc">Prix croissant</option>
+                        <option value="price-desc">Prix décroissant</option>
+                        <option value="altitude">Altitude</option>
+                        <option value="slopes">Km de pistes</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button id="resetBtn" class="secondary-btn">Réinitialiser</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <p><strong id="stationCount">0</strong> stations affichées</p>
+        </div>
+
+        <div id="stationsList" class="results"></div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Trouve Ta Station - Toutes les informations sont à titre indicatif</p>
+    </footer>
+
+    <script src="stations-data.js"></script>
+    <script>
+        let filteredStations = [...skiResorts];
+
+        function createResortCard(resort) {
+            return `
+                <div class="resort-card">
+                    <img src="${resort.image}" 
+                         alt="${resort.name}" 
+                         class="resort-image"
+                         onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">
+                    <div class="resort-content">
+                        <div class="resort-header">
+                            <div class="resort-name">${resort.name}</div>
+                        </div>
+                        <div class="resort-region">${resort.region}</div>
+                        <div class="level-badge">${resort.level}</div>
+                        <div class="dates-info">
+                            <strong>Saison:</strong> ${resort.opening} → ${resort.closing}
+                        </div>
+                        <div class="resort-info">
+                            <div class="info-item">
+                                <span class="info-icon">⛰️</span>
+                                <span>Altitude: ${resort.altitude}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">🎿</span>
+                                <span>Domaine: ${resort.slopes} de pistes</span>
+                            </div>
+                        </div>
+                        <div class="pricing">
+                            <div class="price-item">
+                                <div class="price-label">Forfait/jour</div>
+                                <div class="price-value">${resort.skiPass}€</div>
+                            </div>
+                            <div class="price-item">
+                                <div class="price-label">Logement/nuit</div>
+                                <div class="price-value">${resort.lodging}€</div>
+                            </div>
+                        </div>
+                        <a href="station-detail.html?id=${resort.id}" class="book-button">
+                            📋 Voir les détails
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function displayStations(stations) {
+            const listDiv = document.getElementById('stationsList');
+            document.getElementById('stationCount').textContent = stations.length;
+            
+            if (stations.length === 0) {
+                listDiv.innerHTML = `
+                    <div class="no-results">
+                        <h2>Aucune station trouvée</h2>
+                        <p>Essaie de changer les filtres</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            listDiv.innerHTML = stations.map(resort => createResortCard(resort)).join('');
+        }
+
+        function applyFilters() {
+            const region = document.getElementById('regionFilter').value;
+            const level = document.getElementById('levelFilter').value;
+            const sortBy = document.getElementById('sortBy').value;
+
+            filteredStations = [...skiResorts];
+
+            // Filtre par région
+            if (region !== 'all') {
+                filteredStations = filteredStations.filter(s => s.region === region);
+            }
+
+            // Filtre par niveau
+            if (level !== 'all') {
+                filteredStations = filteredStations.filter(s => s.level.includes(level));
+            }
+
+            // Tri
+            switch(sortBy) {
+                case 'name':
+                    filteredStations.sort((a, b) => a.name.localeCompare(b.name));
+                    break;
+                case 'price-asc':
+                    filteredStations.sort((a, b) => a.skiPass - b.skiPass);
+                    break;
+                case 'price-desc':
+                    filteredStations.sort((a, b) => b.skiPass - a.skiPass);
+                    break;
+                case 'altitude':
+                    filteredStations.sort((a, b) => parseInt(b.altitude) - parseInt(a.altitude));
+                    break;
+                case 'slopes':
+                    filteredStations.sort((a, b) => parseInt(b.slopes) - parseInt(a.slopes));
+                    break;
+            }
+
+            displayStations(filteredStations);
+        }
+
+        function resetFilters() {
+            document.getElementById('regionFilter').value = 'all';
+            document.getElementById('levelFilter').value = 'all';
+            document.getElementById('sortBy').value = 'name';
+            applyFilters();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            displayStations(skiResorts);
+
+            document.getElementById('regionFilter').addEventListener('change', applyFilters);
+            document.getElementById('levelFilter').addEventListener('change', applyFilters);
+            document.getElementById('sortBy').addEventListener('change', applyFilters);
+            document.getElementById('resetBtn').addEventListener('click', resetFilters);
+        });
+    </script>
+</body>
+</html>
