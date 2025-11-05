@@ -246,6 +246,16 @@
                 grid-template-columns: 1fr;
             }
         }
+        
+        /* Styles pour les liens d'affiliation */
+        .access-card h4 a:hover {
+            opacity: 0.8;
+            text-decoration: underline !important;
+        }
+        
+        .access-card h4 a:active {
+            transform: scale(0.98);
+        }
     </style>
 </head>
 <body>
@@ -450,19 +460,43 @@
                                 <h2>🚗 Comment accéder à ${station.name}</h2>
                                 <div class="access-info">
                                     <div class="access-card">
-                                        <h4>🚗 En voiture</h4>
+                                        <h4>
+                                            <a href="https://www.rentalcars.com/fr?affiliateCode=VOTRE_CODE_ICI&adplat=desktop" 
+                                               target="_blank" 
+                                               rel="noopener" 
+                                               style="color: #c59d5f; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                                🚗 En voiture
+                                                <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
+                                            </a>
+                                        </h4>
                                         <p>Depuis Lyon : environ ${getDistanceFromLyon(station)}km</p>
                                         <p>Depuis Grenoble : environ ${getDistanceFromGrenoble(station)}km</p>
                                         <p>Parking disponible à la station</p>
                                     </div>
                                     <div class="access-card">
-                                        <h4>🚆 En train</h4>
+                                        <h4>
+                                            <a href="https://www.trainline.fr/search?affiliates_click_id=VOTRE_CODE_ICI" 
+                                               target="_blank" 
+                                               rel="noopener" 
+                                               style="color: #c59d5f; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                                🚆 En train
+                                                <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
+                                            </a>
+                                        </h4>
                                         <p>Gares les plus proches :</p>
                                         <p>${getNearestTrainStations(station.region)}</p>
                                         <p>Navettes disponibles depuis les gares</p>
                                     </div>
                                     <div class="access-card">
-                                        <h4>✈️ En avion</h4>
+                                        <h4>
+                                            <a href="https://www.skyscanner.fr/?associateid=VOTRE_CODE_ICI" 
+                                               target="_blank" 
+                                               rel="noopener" 
+                                               style="color: #c59d5f; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                                ✈️ En avion
+                                                <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
+                                            </a>
+                                        </h4>
                                         <p>Aéroports les plus proches :</p>
                                         <p>${getNearestAirports(station.region)}</p>
                                         <p>Location de voiture disponible</p>
