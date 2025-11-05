@@ -32,7 +32,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.chamonix.com",
+        "officialWebsite": "https://www.chamonix.com"
     },
     {
         "id": "meg-ve",
@@ -66,7 +68,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.megeve.com",
+        "officialWebsite": "https://www.megeve.com"
     },
     {
         "id": "avoriaz",
@@ -100,7 +104,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.avoriaz.com",
+        "officialWebsite": "https://www.avoriaz.com"
     },
     {
         "id": "la-clusaz",
@@ -134,7 +140,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.laclusaz.com",
+        "officialWebsite": "https://www.laclusaz.com"
     },
     {
         "id": "le-grand-bornand",
@@ -168,7 +176,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.legrandbornand.com",
+        "officialWebsite": "https://www.legrandbornand.com"
     },
     {
         "id": "flaine",
@@ -202,7 +212,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.flaine.com",
+        "officialWebsite": "https://www.flaine.com"
     },
     {
         "id": "morzine",
@@ -236,7 +248,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.morzine-avoriaz.com",
+        "officialWebsite": "https://www.morzine-avoriaz.com"
     },
     {
         "id": "les-gets",
@@ -270,7 +284,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.lesgets.com",
+        "officialWebsite": "https://www.lesgets.com"
     },
     {
         "id": "saint-gervais",
@@ -304,7 +320,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.saintgervais.com",
+        "officialWebsite": "https://www.saintgervais.com"
     },
     {
         "id": "les-contamines-montjoie",
@@ -338,7 +356,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lescontamines.com",
+        "officialWebsite": "https://www.lescontamines.com"
     },
     {
         "id": "ch-tel",
@@ -372,7 +392,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.chatel.com",
+        "officialWebsite": "https://www.chatel.com"
     },
     {
         "id": "les-houches",
@@ -406,7 +428,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.leshouches.com"
     },
     {
         "id": "combloux",
@@ -440,7 +463,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.combloux.com"
     },
     {
         "id": "samo-ns",
@@ -474,7 +498,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.samoens.com"
     },
     {
         "id": "morillon",
@@ -508,7 +533,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.morillon.com"
     },
     {
         "id": "sixt-fer-cheval",
@@ -542,7 +568,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.sixtferacheval.com"
     },
     {
         "id": "praz-sur-arly",
@@ -576,7 +603,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.prazsurarly.com"
     },
     {
         "id": "notre-dame-de-bellecombe",
@@ -610,7 +638,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.notredamedebellecombe.com"
     },
     {
         "id": "la-giettaz",
@@ -644,7 +673,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lagiettaz.com"
     },
     {
         "id": "bernex",
@@ -678,7 +708,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.bernex.com"
     },
     {
         "id": "val-d-is-re",
@@ -712,7 +743,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.valdisere.com",
+        "officialWebsite": "https://www.valdisere.com"
     },
     {
         "id": "tignes",
@@ -746,7 +779,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.tignes.net",
+        "officialWebsite": "https://www.tignes.net"
     },
     {
         "id": "val-thorens",
@@ -780,7 +815,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.valthorens.com",
+        "officialWebsite": "https://www.valthorens.com"
     },
     {
         "id": "courchevel",
@@ -814,7 +851,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.courchevel.com",
+        "officialWebsite": "https://www.courchevel.com"
     },
     {
         "id": "m-ribel",
@@ -848,7 +887,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.meribel.net",
+        "officialWebsite": "https://www.meribel.net"
     },
     {
         "id": "les-menuires",
@@ -882,7 +923,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lesmenuires.com",
+        "officialWebsite": "https://www.lesmenuires.com"
     },
     {
         "id": "saint-martin-de-belleville",
@@ -916,7 +959,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.st-martin-belleville.com",
+        "officialWebsite": "https://www.st-martin-belleville.com"
     },
     {
         "id": "la-plagne",
@@ -950,7 +995,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.la-plagne.com",
+        "officialWebsite": "https://www.la-plagne.com"
     },
     {
         "id": "les-arcs",
@@ -984,7 +1031,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lesarcs.com",
+        "officialWebsite": "https://www.lesarcs.com"
     },
     {
         "id": "peisey-vallandry",
@@ -1018,7 +1067,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.peiseyvallandry.com"
     },
     {
         "id": "la-rosi-re",
@@ -1052,7 +1102,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.larosiere.net",
+        "officialWebsite": "https://www.larosiere.net"
     },
     {
         "id": "valmorel",
@@ -1086,7 +1138,9 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.valmorel.com",
+        "officialWebsite": "https://www.valmorel.com"
     },
     {
         "id": "saint-fran-ois-longchamp",
@@ -1120,7 +1174,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.saintfrancoislongchamp.com"
     },
     {
         "id": "val-cenis",
@@ -1154,7 +1209,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.valcenis.com"
     },
     {
         "id": "la-norma",
@@ -1188,7 +1244,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lanorma.com"
     },
     {
         "id": "aussois",
@@ -1222,7 +1279,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.aussois.com"
     },
     {
         "id": "pralognan-la-vanoise",
@@ -1256,7 +1314,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.pralognanlavanoise.com"
     },
     {
         "id": "les-saisies",
@@ -1290,7 +1349,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lessaisies.com"
     },
     {
         "id": "la-tania",
@@ -1324,7 +1384,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.latania.com"
     },
     {
         "id": "brides-les-bains",
@@ -1358,7 +1419,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.brideslesbains.com"
     },
     {
         "id": "orelle",
@@ -1392,7 +1454,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.orelle.com"
     },
     {
         "id": "bonneval-sur-arc",
@@ -1426,7 +1489,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.bonnevalsurarc.com"
     },
     {
         "id": "bessans",
@@ -1460,7 +1524,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.bessans.com"
     },
     {
         "id": "termignon",
@@ -1494,7 +1559,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.termignon.com"
     },
     {
         "id": "la-l-ch-re",
@@ -1528,7 +1594,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lalechere.com"
     },
     {
         "id": "montchavin-les-coches",
@@ -1562,7 +1629,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.montchavinlescoches.com"
     },
     {
         "id": "champagny-en-vanoise",
@@ -1596,7 +1664,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.champagnyenvanoise.com"
     },
     {
         "id": "le-corbier",
@@ -1630,7 +1699,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.lecorbier.com"
     },
     {
         "id": "la-toussuire",
@@ -1664,7 +1734,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.latoussuire.com",
+        "officialWebsite": "https://www.latoussuire.com"
     },
     {
         "id": "les-botti-res",
@@ -1698,7 +1770,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.lesbottieres.com"
     },
     {
         "id": "saint-jean-d-arves",
@@ -1732,7 +1805,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.saintjeandarves.com"
     },
     {
         "id": "saint-sorlin-d-arves",
@@ -1766,7 +1840,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.saintsorlindarves.com"
     },
     {
         "id": "la-joue-du-loup",
@@ -1800,7 +1875,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lajoueduloup.com"
     },
     {
         "id": "albiez-montrond",
@@ -1834,7 +1910,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.albiezmontrond.com"
     },
     {
         "id": "valloire",
@@ -1868,7 +1945,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.valloire.net",
+        "officialWebsite": "https://www.valloire.net"
     },
     {
         "id": "valmeinier",
@@ -1902,7 +1981,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.valmeinier.com"
     },
     {
         "id": "l-alpe-d-huez",
@@ -1936,7 +2016,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.lalpedhuez.com"
     },
     {
         "id": "les-deux-alpes",
@@ -1970,7 +2051,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.les2alpes.com",
+        "officialWebsite": "https://www.les2alpes.com"
     },
     {
         "id": "chamrousse",
@@ -2004,7 +2087,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.chamrousse.com"
     },
     {
         "id": "les-7-laux",
@@ -2038,7 +2122,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.les7laux.com"
     },
     {
         "id": "villard-de-lans",
@@ -2072,7 +2157,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.villarddelans.com"
     },
     {
         "id": "vaujany",
@@ -2106,7 +2192,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.vaujany.com"
     },
     {
         "id": "oz-en-oisans",
@@ -2140,7 +2227,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.ozenoisans.com"
     },
     {
         "id": "auris-en-oisans",
@@ -2174,7 +2262,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.aurisenoisans.com"
     },
     {
         "id": "l-alpe-du-grand-serre",
@@ -2208,7 +2297,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lalpedugrandserre.com"
     },
     {
         "id": "corren-on-en-vercors",
@@ -2242,7 +2332,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.correnconenvercors.com"
     },
     {
         "id": "m-audre",
@@ -2276,7 +2367,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.meaudre.com"
     },
     {
         "id": "autrans",
@@ -2310,7 +2402,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.autrans.com"
     },
     {
         "id": "lans-en-vercors",
@@ -2344,7 +2437,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lansenvercors.com"
     },
     {
         "id": "saint-pierre-de-chartreuse",
@@ -2378,7 +2472,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.saintpierredechartreuse.com"
     },
     {
         "id": "le-collet-d-allevard",
@@ -2412,7 +2507,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lecolletdallevard.com"
     },
     {
         "id": "col-de-porte",
@@ -2446,7 +2542,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.coldeporte.com"
     },
     {
         "id": "gresse-en-vercors",
@@ -2480,7 +2577,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.gresseenvercors.com"
     },
     {
         "id": "font-d-urle",
@@ -2514,7 +2612,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.fontdurle.com"
     },
     {
         "id": "herbouilly",
@@ -2548,7 +2647,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.herbouilly.com"
     },
     {
         "id": "col-de-marcieu",
@@ -2582,7 +2682,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.coldemarcieu.com"
     },
     {
         "id": "montagne-de-lans",
@@ -2616,7 +2717,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.montagnedelans.com"
     },
     {
         "id": "signal-de-l-homme",
@@ -2650,7 +2752,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.signaldelhomme.com"
     },
     {
         "id": "cr-t-du-poulet",
@@ -2684,7 +2787,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.cretdupoulet.com"
     },
     {
         "id": "charmant-som",
@@ -2718,7 +2822,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.charmantsom.com"
     },
     {
         "id": "m-audre-nordic",
@@ -2752,7 +2857,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.meaudrenordic.com"
     },
     {
         "id": "serre-chevalier",
@@ -2786,7 +2892,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.serre-chevalier.com",
+        "officialWebsite": "https://www.serre-chevalier.com"
     },
     {
         "id": "vars",
@@ -2820,7 +2928,9 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.vars.com",
+        "officialWebsite": "https://www.vars.com"
     },
     {
         "id": "risoul",
@@ -2854,7 +2964,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.risoul.com",
+        "officialWebsite": "https://www.risoul.com"
     },
     {
         "id": "les-orres",
@@ -2888,7 +3000,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lesorres.com"
     },
     {
         "id": "montgen-vre",
@@ -2922,7 +3035,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.montgenevre.com",
+        "officialWebsite": "https://www.montgenevre.com"
     },
     {
         "id": "puy-saint-vincent",
@@ -2956,7 +3071,9 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.puysaintvincent.com",
+        "officialWebsite": "https://www.puysaintvincent.com"
     },
     {
         "id": "orci-res-merlette",
@@ -2990,7 +3107,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.orcieresmerlette.com"
     },
     {
         "id": "r-allon",
@@ -3024,7 +3142,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.reallon.com"
     },
     {
         "id": "ancelle",
@@ -3058,7 +3177,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.ancelle.com"
     },
     {
         "id": "c-ze",
@@ -3092,7 +3212,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.ceuze.com"
     },
     {
         "id": "chaillol",
@@ -3126,7 +3247,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.chaillol.com"
     },
     {
         "id": "cr-voux",
@@ -3160,7 +3282,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.crevoux.com"
     },
     {
         "id": "superd-voluy",
@@ -3194,7 +3317,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.superdevoluy.com"
     },
     {
         "id": "la-joue-du-loup",
@@ -3228,7 +3352,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.lajoueduloup.com"
     },
     {
         "id": "saint-l-ger-les-m-l-zes",
@@ -3262,7 +3387,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.saintlegerlesmelezes.com"
     },
     {
         "id": "pelvoux",
@@ -3296,7 +3422,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.pelvoux.com"
     },
     {
         "id": "saint-jean-montclar",
@@ -3330,7 +3457,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.saintjeanmontclar.com"
     },
     {
         "id": "grand-puy",
@@ -3364,7 +3492,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.grandpuy.com"
     },
     {
         "id": "ch-teau-ville-vieille",
@@ -3398,7 +3527,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.chateauvillevieille.com"
     },
     {
         "id": "abri-s",
@@ -3432,7 +3562,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.abries.com"
     },
     {
         "id": "molines-en-queyras",
@@ -3466,7 +3597,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.molinesenqueyras.com"
     },
     {
         "id": "arvieux",
@@ -3500,7 +3632,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.arvieux.com"
     },
     {
         "id": "la-grave",
@@ -3534,7 +3667,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lagrave.com"
     },
     {
         "id": "n-vache",
@@ -3568,7 +3702,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.nevache.com"
     },
     {
         "id": "ceillac",
@@ -3602,7 +3737,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.ceillac.com"
     },
     {
         "id": "saint-v-ran",
@@ -3636,7 +3772,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.saintveran.com"
     },
     {
         "id": "ristolas",
@@ -3670,7 +3807,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.ristolas.com"
     },
     {
         "id": "villeneuve-la-salle",
@@ -3704,7 +3842,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.villeneuvelasalle.com"
     },
     {
         "id": "brian-on",
@@ -3738,7 +3877,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.briancon.com"
     },
     {
         "id": "col-du-lautaret",
@@ -3772,7 +3912,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.coldulautaret.com"
     },
     {
         "id": "isola-2000",
@@ -3806,7 +3947,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.isola2000.com"
     },
     {
         "id": "auron",
@@ -3840,7 +3982,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.auron.com"
     },
     {
         "id": "valberg",
@@ -3874,7 +4017,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.valberg.com"
     },
     {
         "id": "la-colmiane",
@@ -3908,7 +4052,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.lacolmiane.com"
     },
     {
         "id": "roubion-les-buisses",
@@ -3942,7 +4087,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.roubionlesbuisses.com"
     },
     {
         "id": "gr-oli-res-les-neiges",
@@ -3976,7 +4122,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.greoliereslesneiges.com"
     },
     {
         "id": "turini-camp-d-argent",
@@ -4010,7 +4157,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.turinicampdargent.com"
     },
     {
         "id": "beuil-les-launes",
@@ -4044,7 +4192,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.beuilleslaunes.com"
     },
     {
         "id": "le-bor-on",
@@ -4078,7 +4227,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.leboreon.com"
     },
     {
         "id": "limone-piemonte",
@@ -4112,7 +4262,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.limonepiemonte.com"
     },
     {
         "id": "grand-tourmalet",
@@ -4146,7 +4297,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.grandtourmalet.com"
     },
     {
         "id": "saint-lary-soulan",
@@ -4180,7 +4332,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.saintlary.com",
+        "officialWebsite": "https://www.saintlary.com"
     },
     {
         "id": "peyragudes",
@@ -4214,7 +4368,9 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.peyragudes.com",
+        "officialWebsite": "https://www.peyragudes.com"
     },
     {
         "id": "cauterets",
@@ -4248,7 +4404,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.cauterets.com",
+        "officialWebsite": "https://www.cauterets.com"
     },
     {
         "id": "luz-ardiden",
@@ -4282,7 +4440,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.luzardiden.com"
     },
     {
         "id": "font-romeu",
@@ -4316,7 +4475,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.font-romeu.fr",
+        "officialWebsite": "https://www.font-romeu.fr"
     },
     {
         "id": "les-angles",
@@ -4350,7 +4511,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lesangles.com",
+        "officialWebsite": "https://www.lesangles.com"
     },
     {
         "id": "piau-engaly",
@@ -4384,7 +4547,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.piau-engaly.com",
+        "officialWebsite": "https://www.piau-engaly.com"
     },
     {
         "id": "gourette",
@@ -4418,7 +4583,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.gourette.com",
+        "officialWebsite": "https://www.gourette.com"
     },
     {
         "id": "la-pierre-saint-martin",
@@ -4452,7 +4619,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lapierresaintmartin.com"
     },
     {
         "id": "ax-3-domaines",
@@ -4486,7 +4654,9 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.ax-ski.com",
+        "officialWebsite": "https://www.ax-ski.com"
     },
     {
         "id": "peyresourde",
@@ -4520,7 +4690,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.peyresourde.com"
     },
     {
         "id": "val-louron",
@@ -4554,7 +4725,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.vallouron.com"
     },
     {
         "id": "gavarnie-g-dre",
@@ -4588,7 +4760,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.gavarniegedre.com"
     },
     {
         "id": "hautacam",
@@ -4622,7 +4795,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.hautacam.com"
     },
     {
         "id": "val-d-azun",
@@ -4656,7 +4830,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.valdazun.com"
     },
     {
         "id": "cauterets-pont-d-espagne",
@@ -4690,7 +4865,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.cauteretspontdespagne.com"
     },
     {
         "id": "artouste",
@@ -4724,7 +4900,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.artouste.com"
     },
     {
         "id": "issarbe",
@@ -4758,7 +4935,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.issarbe.com"
     },
     {
         "id": "la-mongie",
@@ -4792,7 +4970,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lamongie.com",
+        "officialWebsite": "https://www.lamongie.com"
     },
     {
         "id": "bar-ges",
@@ -4826,7 +5006,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.bareges.com"
     },
     {
         "id": "luchon-superbagn-res",
@@ -4860,7 +5041,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.luchonsuperbagneres.com"
     },
     {
         "id": "le-mourtis",
@@ -4894,7 +5076,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lemourtis.com"
     },
     {
         "id": "bourg-d-oueil",
@@ -4928,7 +5111,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.bourgdoueil.com"
     },
     {
         "id": "guzet",
@@ -4962,7 +5146,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.guzet.com"
     },
     {
         "id": "ascou-pailh-res",
@@ -4996,7 +5181,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.ascoupailheres.com"
     },
     {
         "id": "ax-bonascre",
@@ -5030,7 +5216,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.axbonascre.com"
     },
     {
         "id": "mijan-s-donezan",
@@ -5064,7 +5251,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.mijanesdonezan.com"
     },
     {
         "id": "formigu-res",
@@ -5098,7 +5286,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.formigueres.com"
     },
     {
         "id": "port-puymorens",
@@ -5132,7 +5321,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.portepuymorens.com"
     },
     {
         "id": "puigmal",
@@ -5166,7 +5356,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.puigmal.com"
     },
     {
         "id": "espace-cambre-d-aze",
@@ -5200,7 +5391,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.espacecambredaze.com"
     },
     {
         "id": "eyne-saint-pierre-dels-forcats",
@@ -5234,7 +5426,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.eynesaintpierredelsforcats.com"
     },
     {
         "id": "pyr-n-es-2000",
@@ -5268,7 +5461,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.pyrenees2000.com"
     },
     {
         "id": "bolqu-re-pyren-es-2000",
@@ -5302,7 +5496,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.bolquerepyrenees2000.com"
     },
     {
         "id": "err-puigmal",
@@ -5336,7 +5531,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.errpuigmal.com"
     },
     {
         "id": "porte-puymorens",
@@ -5370,7 +5566,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.portepuymorens.com"
     },
     {
         "id": "saint-jean-de-verges",
@@ -5404,7 +5601,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.saintjeandeverges.com"
     },
     {
         "id": "monts-d-olmes",
@@ -5438,7 +5636,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.montsdolmes.com"
     },
     {
         "id": "plateau-de-beille",
@@ -5472,7 +5671,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.plateaudebeille.com"
     },
     {
         "id": "les-rousses",
@@ -5506,7 +5706,9 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lesrousses.com",
+        "officialWebsite": "https://www.lesrousses.com"
     },
     {
         "id": "m-tabief",
@@ -5540,7 +5742,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.metabief.com",
+        "officialWebsite": "https://www.metabief.com"
     },
     {
         "id": "monts-jura",
@@ -5574,7 +5778,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.montsjura.com"
     },
     {
         "id": "les-molunes",
@@ -5608,7 +5813,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lesmolunes.com"
     },
     {
         "id": "bellefontaine",
@@ -5642,7 +5848,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.bellefontaine.com"
     },
     {
         "id": "la-pesse",
@@ -5676,7 +5883,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lapesse.com"
     },
     {
         "id": "foncine-le-haut",
@@ -5710,7 +5918,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.foncinelehaut.com"
     },
     {
         "id": "chamrousse-jura",
@@ -5744,7 +5953,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.chamroussejura.com"
     },
     {
         "id": "la-faucille",
@@ -5778,7 +5988,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.lafaucille.com"
     },
     {
         "id": "l-lex-crozet",
@@ -5812,7 +6023,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.lelexcrozet.com"
     },
     {
         "id": "la-bresse-hohneck",
@@ -5846,7 +6058,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.labressehohneck.com"
     },
     {
         "id": "g-rardmer",
@@ -5880,7 +6093,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.gerardmer.com"
     },
     {
         "id": "le-markstein",
@@ -5914,7 +6128,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.lemarkstein.com"
     },
     {
         "id": "la-schlucht",
@@ -5948,7 +6163,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.laschlucht.com"
     },
     {
         "id": "le-schnepfenried",
@@ -5982,7 +6198,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.leschnepfenried.com"
     },
     {
         "id": "xonrupt",
@@ -6016,7 +6233,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.xonrupt.com"
     },
     {
         "id": "le-valtin",
@@ -6050,7 +6268,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.levaltin.com"
     },
     {
         "id": "le-champ-du-feu",
@@ -6084,7 +6303,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.lechampdufeu.com"
     },
     {
         "id": "le-gaschney",
@@ -6118,7 +6338,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.legaschney.com"
     },
     {
         "id": "rouge-gazon",
@@ -6152,7 +6373,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.rougegazon.com"
     },
     {
         "id": "ventron",
@@ -6186,7 +6408,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.ventron.com"
     },
     {
         "id": "le-tanet",
@@ -6220,7 +6443,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.letanet.com"
     },
     {
         "id": "lac-blanc",
@@ -6254,7 +6478,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lacblanc.com"
     },
     {
         "id": "bussang",
@@ -6288,7 +6513,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.bussang.com"
     },
     {
         "id": "la-bresse-brabant",
@@ -6322,7 +6548,8 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.labressebrabant.com"
     },
     {
         "id": "super-besse",
@@ -6356,7 +6583,9 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.super-besse.com",
+        "officialWebsite": "https://www.super-besse.com"
     },
     {
         "id": "le-mont-dore",
@@ -6390,7 +6619,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.lemontdore.com"
     },
     {
         "id": "le-lioran",
@@ -6424,7 +6654,9 @@ const skiResorts = [
             "Garderie",
             "Piscine",
             "Patinoire"
-        ]
+        ],
+        "officialWebsite": "https://www.lelioran.com",
+        "officialWebsite": "https://www.lelioran.com"
     },
     {
         "id": "chastreix-sancy",
@@ -6458,7 +6690,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.chastreixsancy.com"
     },
     {
         "id": "la-bourboule",
@@ -6492,7 +6725,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.labourboule.com"
     },
     {
         "id": "prabour-",
@@ -6526,7 +6760,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.praboure.com"
     },
     {
         "id": "le-pas-de-peyrol",
@@ -6560,7 +6795,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.lepasdepeyrol.com"
     },
     {
         "id": "pailherols",
@@ -6594,7 +6830,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.pailherols.com"
     },
     {
         "id": "brameloup",
@@ -6628,7 +6865,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.brameloup.com"
     },
     {
         "id": "laguiole",
@@ -6662,7 +6900,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.laguiole.com"
     },
     {
         "id": "les-estables",
@@ -6696,7 +6935,8 @@ const skiResorts = [
             "Location",
             "Refuge",
             "Restaurant altitude"
-        ]
+        ],
+        "officialWebsite": "https://www.lesestables.com"
     },
     {
         "id": "chalmazel",
@@ -6730,7 +6970,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.chalmazel.com"
     },
     {
         "id": "prabour-lioran",
@@ -6764,7 +7005,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.prabourelioran.com"
     },
     {
         "id": "le-bessat",
@@ -6798,7 +7040,8 @@ const skiResorts = [
             "Snowpark",
             "Location",
             "Spa"
-        ]
+        ],
+        "officialWebsite": "https://www.lebessat.com"
     },
     {
         "id": "saint-urcize",
@@ -6832,7 +7075,8 @@ const skiResorts = [
             "Location",
             "Garderie",
             "Restaurants"
-        ]
+        ],
+        "officialWebsite": "https://www.sainturcize.com"
     }
 ];
 
