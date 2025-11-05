@@ -3,13 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - Trouve Ta Station</title>
+    <meta name="description" content="Découvrez comment Où skier ce weekend vous aide à trouver la meilleure station de ski pour votre weekend en fonction de votre localisation et des conditions actuelles.">
+    <title>À propos - Où skier ce weekend</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .about-hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .about-hero h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .about-hero .tagline {
+            font-size: 1.3em;
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .about-section {
+            margin-bottom: 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .about-section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .about-section p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 0.95em;
+            margin: 0;
+        }
+
+        .icon {
+            font-size: 1.3em;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 50px;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #3498db;
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2em;
+            }
+            
+            .about-section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">⛷️ Trouve Ta Station</a>
+            <a href="index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
             <div class="nav-menu">
                 <a href="index.html" class="nav-link">Recherche</a>
                 <a href="stations.html" class="nav-link">Toutes les stations</a>
@@ -18,130 +138,122 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="about-page">
-            <header>
-                <h1>À propos de Trouve Ta Station</h1>
-                <p class="subtitle">Ta plateforme pour trouver la station de ski idéale</p>
-            </header>
+    <div class="about-container">
+        <div class="about-hero">
+            <h1>⛷️ Où skier ce weekend ?</h1>
+            <p class="tagline">Trouve la station parfaite en quelques clics</p>
+        </div>
 
-            <div class="about-content">
-                <section class="about-section">
-                    <h2>🎿 Notre mission</h2>
-                    <p>Trouve Ta Station a été créé pour simplifier la recherche de stations de ski en France. Que tu sois débutant ou expert, en famille ou entre amis, nous t'aidons à trouver la station parfaite en fonction de ta localisation et de tes envies.</p>
-                </section>
+        <div class="about-section">
+            <h2><span class="icon">🎯</span> Notre mission</h2>
+            <p>
+                Chaque vendredi, c'est la même question : <strong>où partir skier ce weekend ?</strong>
+            </p>
+            <p>
+                Entre les stations trop loin, celles qui affichent complet, et celles où il n'y a pas assez de neige, trouver LA bonne destination devient vite un casse-tête. C'est exactement pour ça qu'on a créé ce site.
+            </p>
+            <p>
+                Notre mission est simple : <strong>t'aider à prendre la meilleure décision en 2 minutes</strong>, pour que tu passes plus de temps sur les pistes que sur Google.
+            </p>
+        </div>
 
-                <section class="about-section">
-                    <h2>✨ Comment ça marche ?</h2>
-                    <div class="steps">
-                        <div class="step">
-                            <div class="step-number">1</div>
-                            <h3>Entre ta ville</h3>
-                            <p>Indique simplement ta ville de départ (Lyon, Paris, Grenoble...)</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">2</div>
-                            <h3>Choisis tes critères</h3>
-                            <p>Distance maximale, massif préféré, taille du domaine... Personnalise ta recherche !</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">3</div>
-                            <h3>Découvre les résultats</h3>
-                            <p>Visualise les stations les plus proches avec leurs tarifs et caractéristiques</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">4</div>
-                            <h3>Réserve</h3>
-                            <p>Consulte les détails et réserve ton séjour directement</p>
-                        </div>
-                    </div>
-                </section>
+        <div class="about-section">
+            <h2><span class="icon">💡</span> Comment ça marche ?</h2>
+            <p>
+                <strong>1. Entre ta ville</strong> - On calcule automatiquement les distances jusqu'aux stations de ski en France.
+            </p>
+            <p>
+                <strong>2. Filtre selon tes envies</strong> - Distance maximale, massif préféré, taille du domaine... affine ta recherche en fonction de tes critères.
+            </p>
+            <p>
+                <strong>3. Compare et choisis</strong> - Visualise d'un coup d'œil les meilleures options avec les infos essentielles : distance, temps de trajet, taille du domaine, prix du forfait.
+            </p>
+            <p>
+                Plus besoin de jongler entre 10 onglets différents, tout est là, clair et simple.
+            </p>
+        </div>
 
-                <section class="about-section">
-                    <h2>📊 Nos données</h2>
-                    <p>Nous référençons les principales stations de ski françaises avec :</p>
-                    <ul class="features-list">
-                        <li>✓ Localisation GPS précise pour calculer les distances</li>
-                        <li>✓ Dates d'ouverture et de fermeture saison 2025-2026</li>
-                        <li>✓ Tarifs indicatifs (forfaits et hébergements)</li>
-                        <li>✓ Caractéristiques détaillées de chaque station</li>
-                        <li>✓ Météo en temps réel (température, neige, conditions)</li>
-                        <li>✓ Niveau de difficulté et activités disponibles</li>
-                    </ul>
-                </section>
-
-                <section class="about-section">
-                    <h2>🌤️ Météo en temps réel</h2>
-                    <p>Grâce à l'API gratuite <strong>Open-Meteo</strong>, nous affichons les conditions météorologiques actuelles pour chaque station :</p>
-                    <ul class="features-list">
-                        <li>🌡️ Température en temps réel</li>
-                        <li>❄️ Chutes de neige récentes</li>
-                        <li>💨 Vitesse du vent</li>
-                        <li>☀️ Conditions météo détaillées</li>
-                    </ul>
-                </section>
-
-                <section class="about-section">
-                    <h2>📸 Sources des informations</h2>
-                    <p><strong>Important :</strong> Les tarifs et dates sont donnés à titre indicatif. Nous te recommandons de vérifier directement auprès des stations avant de réserver.</p>
-                    <p>Météo fournie par <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> (API gratuite et open source).</p>
-                    <p>Géolocalisation via <a href="https://nominatim.org" target="_blank">OpenStreetMap Nominatim</a>.</p>
-                </section>
-
-                <section class="about-section">
-                    <h2>🗺️ Massifs couverts</h2>
-                    <div class="massifs-grid">
-                        <div class="massif-card">
-                            <h3>⛰️ Alpes du Nord</h3>
-                            <p>Les stations les plus prestigieuses : Chamonix, Val d'Isère, Les 3 Vallées...</p>
-                        </div>
-                        <div class="massif-card">
-                            <h3>🏔️ Alpes du Sud</h3>
-                            <p>Soleil et neige garantis : Serre Chevalier, Isola 2000...</p>
-                        </div>
-                        <div class="massif-card">
-                            <h3>🗻 Pyrénées</h3>
-                            <p>Authenticité et convivialité : Grand Tourmalet, Font-Romeu...</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="about-section">
-                    <h2>💡 Conseils pratiques</h2>
-                    <div class="tips">
-                        <div class="tip">
-                            <h4>🎿 Pour les débutants</h4>
-                            <p>Privilégie les stations familiales avec de nombreuses pistes vertes et bleues : Megève, La Plagne, Font-Romeu.</p>
-                        </div>
-                        <div class="tip">
-                            <h4>🏂 Pour les experts</h4>
-                            <p>Direction les stations d'altitude avec hors-piste : Chamonix, Val d'Isère, La Grave.</p>
-                        </div>
-                        <div class="tip">
-                            <h4>👨‍👩‍👧‍👦 En famille</h4>
-                            <p>Opte pour des stations avec garderie, animations enfants : Les Arcs, Avoriaz, Méribel.</p>
-                        </div>
-                        <div class="tip">
-                            <h4>💰 Petit budget</h4>
-                            <p>Les Pyrénées et le Massif Central offrent d'excellents rapports qualité/prix.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="about-section cta-section">
-                    <h2>Prêt à partir en montagne ? ⛷️</h2>
-                    <p>Trouve dès maintenant la station de ski parfaite pour ton prochain séjour !</p>
-                    <div class="cta-buttons">
-                        <a href="index.html" class="book-button-large">🔍 Rechercher une station</a>
-                        <a href="stations.html" class="secondary-btn">📋 Voir toutes les stations</a>
-                    </div>
-                </section>
+        <div class="about-section">
+            <h2><span class="icon">⭐</span> Pourquoi nous ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>📍 Géolocalisation</h3>
+                    <p>Calcul précis des distances et temps de trajet depuis ta ville</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎿 Toutes les stations</h3>
+                    <p>Base complète des principales stations de ski en France</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Ultra rapide</h3>
+                    <p>Trouve ta station en moins de 2 minutes chrono</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Mobile-friendly</h3>
+                    <p>Fonctionne parfaitement sur smartphone et tablette</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🆓 100% gratuit</h3>
+                    <p>Aucun compte, aucune pub, juste un service utile</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔄 Mis à jour</h3>
+                    <p>Informations régulièrement actualisées sur les stations</p>
+                </div>
             </div>
+        </div>
+
+        <div class="about-section">
+            <h2><span class="icon">🏔️</span> Pour qui ?</h2>
+            <p>
+                <strong>Pour les skieurs spontanés</strong> qui décident le vendredi soir où partir le lendemain matin.
+            </p>
+            <p>
+                <strong>Pour les familles</strong> qui veulent optimiser le temps de trajet et le budget.
+            </p>
+            <p>
+                <strong>Pour les débutants</strong> qui ne connaissent pas encore toutes les stations et veulent découvrir ce qui existe près de chez eux.
+            </p>
+            <p>
+                <strong>Pour les passionnés</strong> qui veulent explorer de nouvelles stations sans perdre de temps en recherches.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2><span class="icon">🚀</span> L'histoire</h2>
+            <p>
+                Ce projet est né d'une frustration personnelle. Après avoir passé trop de vendredis soirs à comparer manuellement les stations, les distances, et les prix, on s'est dit qu'il devait y avoir un moyen plus simple.
+            </p>
+            <p>
+                L'idée : <strong>un outil unique qui centralise tout</strong>. Pas de fioritures, pas de contenu sponsorisé, juste l'info dont tu as besoin pour prendre ta décision.
+            </p>
+            <p>
+                Et voilà, "Où skier ce weekend" était né ! 🎉
+            </p>
+        </div>
+
+        <div class="cta-section">
+            <h2>Prêt à trouver ta prochaine destination ?</h2>
+            <p style="margin-bottom: 25px; font-size: 1.1em;">Découvre les meilleures stations près de chez toi</p>
+            <a href="index.html" class="cta-button">Commencer la recherche 🔍</a>
+        </div>
+
+        <div class="about-section" style="margin-top: 50px; text-align: center; background: #f8f9fa;">
+            <h2><span class="icon">📧</span> Contact</h2>
+            <p>
+                Une question ? Une suggestion ? Une station manquante ?
+            </p>
+            <p>
+                N'hésite pas à nous contacter, on adore les retours de la communauté !
+            </p>
+            <p style="margin-top: 20px;">
+                <strong>Email :</strong> contact@ouskierceweeekend.fr
+            </p>
         </div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2025 Trouve Ta Station - Toutes les informations sont à titre indicatif</p>
+        <p>&copy; 2025 Où skier ce weekend - Toutes les informations sont à titre indicatif</p>
     </footer>
 </body>
 </html>
