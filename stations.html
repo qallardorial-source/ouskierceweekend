@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toutes les stations - Trouve Ta Station</title>
+    <title>Toutes les stations - Où skier ce weekend</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">⛷️ Trouve Ta Station</a>
+            <a href="index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
             <div class="nav-menu">
                 <a href="index.html" class="nav-link">Recherche</a>
                 <a href="stations.html" class="nav-link active">Toutes les stations</a>
@@ -68,7 +68,7 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2025 Trouve Ta Station - Toutes les informations sont à titre indicatif</p>
+        <p>&copy; 2025 Où skier ce weekend - Toutes les informations sont à titre indicatif</p>
     </footer>
 
     <script src="stations-data.js"></script>
@@ -78,10 +78,12 @@
         function createResortCard(resort) {
             return `
                 <div class="resort-card">
-                    <img src="${resort.image}" 
-                         alt="${resort.name}" 
-                         class="resort-image"
-                         onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">
+                    <a href="station-detail.html?id=${resort.id}" class="image-link">
+                        <img src="${resort.image}" 
+                             alt="${resort.name}" 
+                             class="resort-image"
+                             onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">
+                    </a>
                     <div class="resort-content">
                         <div class="resort-header">
                             <div class="resort-name">${resort.name}</div>
