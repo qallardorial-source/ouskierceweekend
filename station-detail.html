@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="pageTitle">Station de ski - Trouve Ta Station</title>
+    <title id="pageTitle">Station de ski - Où skier ce weekend</title>
     
     <!-- SEO Meta Tags -->
     <meta name="description" id="metaDescription" content="Découvrez la station de ski avec tarifs, météo en temps réel, dates d'ouverture et toutes les informations pratiques.">
     <meta name="keywords" id="metaKeywords" content="station ski, forfait ski, tarifs ski, météo ski, alpes">
-    <meta name="author" content="Trouve Ta Station">
+    <meta name="author" content="Où skier ce weekend">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -251,7 +251,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">⛷️ Trouve Ta Station</a>
+            <a href="index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
             <div class="nav-menu">
                 <a href="index.html" class="nav-link">Recherche</a>
                 <a href="stations.html" class="nav-link">Toutes les stations</a>
@@ -265,7 +265,7 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2025 Trouve Ta Station - Toutes les informations sont à titre indicatif</p>
+        <p>&copy; 2025 Où skier ce weekend - Toutes les informations sont à titre indicatif - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
     </footer>
 
     <script src="stations-data.js"></script>
@@ -546,9 +546,24 @@
 
                             <!-- CTA -->
                             <div class="cta-box">
-                                <button class="book-button-large" onclick="bookStation('${station.name}')">
-                                    📅 Réserver maintenant
-                                </button>
+                                <a href="${station.officialWebsite || 'https://www.google.com/search?q=' + encodeURIComponent(station.name + ' forfait ski réservation')}" 
+                                   target="_blank" 
+                                   class="book-button-large" 
+                                   style="text-decoration: none; display: inline-block; margin-bottom: 15px;">
+                                    🎿 Réserver mon forfait
+                                </a>
+                                <a href="https://www.booking.com/searchresults.fr.html?ss=${encodeURIComponent(station.name)}" 
+                                   target="_blank" 
+                                   class="book-button-large" 
+                                   style="text-decoration: none; display: inline-block; margin-bottom: 15px; background: linear-gradient(135deg, #003580 0%, #0057b8 100%);">
+                                    🏨 Réserver un hébergement
+                                </a>
+                                <a href="https://www.google.com/search?q=${encodeURIComponent(station.name + ' location ski matériel')}" 
+                                   target="_blank" 
+                                   class="book-button-large" 
+                                   style="text-decoration: none; display: inline-block; margin-bottom: 15px; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+                                    ⛷️ Louer du matériel
+                                </a>
                                 <a href="stations.html?region=${encodeURIComponent(station.region)}" class="secondary-btn">
                                     🗺️ Autres stations ${station.region}
                                 </a>
@@ -565,7 +580,7 @@
         // Fonctions utilitaires SEO
         function updateSEO(station) {
             // Title
-            const title = `${station.name} - Station de ski ${station.region} | Tarifs ${station.skiPass}€ | Trouve Ta Station`;
+            const title = `${station.name} - Station de ski ${station.region} | Tarifs ${station.skiPass}€ | Où skier ce weekend`;
             document.title = title;
             document.getElementById('pageTitle').textContent = title;
             
@@ -696,10 +711,6 @@
                 return "Janvier à fin mars. Conditions souvent excellentes en février.";
             }
             return "Décembre à mars selon l'enneigement";
-        }
-
-        function bookStation(name) {
-            alert(`🎉 Réservation pour ${name}!\n\nDans une version complète, tu serais redirigé vers la page de réservation avec:\n- Choix des dates\n- Forfait de ski\n- Options d'hébergement\n- Cours de ski\n- Matériel de location`);
         }
 
         document.addEventListener('DOMContentLoaded', loadStationDetail);
