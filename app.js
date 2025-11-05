@@ -46,10 +46,12 @@ function createResortCard(resort, distance = null) {
     
     return `
         <div class="resort-card">
-            <img src="${resort.image}" 
-                 alt="${resort.name}" 
-                 class="resort-image"
-                 onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">
+            <a href="station-detail.html?id=${resort.id}" class="image-link">
+                <img src="${resort.image}" 
+                     alt="${resort.name}" 
+                     class="resort-image"
+                     onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">
+            </a>
             <div class="resort-content">
                 <div class="resort-header">
                     <div class="resort-name">${resort.name}</div>
