@@ -1019,3 +1019,23 @@ select option {
         padding: 30px 25px;
     }
 }
+/* Style pour les images cliquables */
+.image-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-link:hover {
+    transform: scale(1.05);
+}
+
+.image-link:hover .resort-image {
+    filter: brightness(1.1);
+}
+
+.resort-image {
+    transition: filter 0.3s ease;
+}
