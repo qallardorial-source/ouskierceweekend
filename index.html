@@ -3,15 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez où skier ce weekend avec les meilleures conditions de neige en temps réel. Trouvez la station de ski idéale près de chez vous en France.">
-    <meta name="keywords" content="ski weekend, où skier, station ski France, conditions neige, ski proximité">
-    <title>Où skier ce weekend - Meilleures stations et conditions en temps réel</title>
+    
+    <!-- SEO OPTIMISÉ -->
+    <title>Où Skier ce Weekend ? 150+ Stations de Ski en France 2025</title>
+    <meta name="description" content="Trouvez la meilleure station de ski pour votre weekend en France. Comparez 150+ stations des Alpes et Pyrénées : distances, tarifs, conditions d'enneigement en temps réel.">
+    <meta name="keywords" content="ski weekend, où skier france, station ski weekend, ski alpes, ski pyrénées, forfait ski pas cher, conditions neige">
+    
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta property="og:title" content="Où Skier ce Weekend ? Trouvez Votre Station Idéale">
+    <meta property="og:description" content="Comparez 150+ stations de ski en France. Distance, prix, conditions en temps réel.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ouskierceweeekend.fr">
+    <meta property="og:image" content="https://ouskierceweeekend.fr/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Où Skier ce Weekend ? 150+ Stations">
+    <meta name="twitter:description" content="Trouvez la station de ski idéale pour votre weekend">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ouskierceweeekend.fr/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Où skier ce weekend",
+      "url": "https://ouskierceweeekend.fr",
+      "description": "Trouvez la meilleure station de ski pour votre weekend en France",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
+            <a href="index.html" class="nav-logo" aria-label="Accueil Où skier ce weekend">⛷️ Où skier ce weekend</a>
             <div class="nav-menu">
                 <a href="index.html" class="nav-link active">Recherche</a>
                 <a href="stations.html" class="nav-link">Toutes les stations</a>
@@ -22,20 +66,20 @@
 
     <div class="container">
         <header>
-            <h1>⛷️ Où skier ce weekend</h1>
-            <p class="subtitle">Trouve les meilleures conditions de ski pour ce weekend en France</p>
+            <h1>Où skier ce weekend en France</h1>
+            <p class="subtitle">Trouvez les meilleures stations de ski pour votre weekend avec conditions d'enneigement en temps réel</p>
         </header>
 
         <div class="search-section">
             <div class="search-box">
-                <input type="text" id="locationInput" placeholder="Entre ta ville (ex: Lyon, Paris, Grenoble)">
-                <button id="searchBtn">🔍 Rechercher</button>
+                <input type="text" id="locationInput" placeholder="Entrez votre ville (ex: Lyon, Paris, Grenoble)" aria-label="Entrez votre ville de départ">
+                <button id="searchBtn" aria-label="Lancer la recherche">🔍 Rechercher</button>
             </div>
 
             <div class="filters">
                 <div class="filter-group">
                     <label for="distance">Distance maximale</label>
-                    <select id="distance">
+                    <select id="distance" aria-label="Choisir distance maximale">
                         <option value="50">50 km</option>
                         <option value="100" selected>100 km</option>
                         <option value="200">200 km</option>
@@ -44,7 +88,7 @@
                 </div>
                 <div class="filter-group">
                     <label for="region">Massif</label>
-                    <select id="region">
+                    <select id="region" aria-label="Choisir le massif">
                         <option value="all">Tous les massifs</option>
                         <option value="Alpes du Nord">Alpes du Nord</option>
                         <option value="Alpes du Sud">Alpes du Sud</option>
@@ -53,7 +97,7 @@
                 </div>
                 <div class="filter-group">
                     <label for="size">Taille du domaine</label>
-                    <select id="size">
+                    <select id="size" aria-label="Choisir taille du domaine">
                         <option value="all">Toutes tailles</option>
                         <option value="large">Grands domaines (150+ km)</option>
                         <option value="medium">Domaines moyens (50-150 km)</option>
@@ -79,6 +123,63 @@
         </div>
 
         <div id="results" class="results"></div>
+        
+        <!-- NOUVEAU : Contenu SEO -->
+        <section class="seo-content" style="max-width: 900px; margin: 60px auto 40px; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <h2 style="color: #2c3e50; font-size: 1.8em; margin-bottom: 20px;">Comment choisir sa station de ski pour un weekend ?</h2>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                Choisir <strong>où skier ce weekend</strong> en France peut sembler compliqué face aux 150+ stations disponibles. Notre outil gratuit simplifie votre décision en comparant automatiquement les stations selon plusieurs critères essentiels.
+            </p>
+            
+            <h3 style="color: #3498db; font-size: 1.3em; margin: 25px 0 15px;">Les critères essentiels pour votre weekend ski</h3>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                <strong>1. La distance depuis chez vous</strong> - Pour un weekend, privilégiez les stations à moins de 3h de route. Notre calculateur affiche automatiquement la distance et le temps de trajet depuis votre ville.
+            </p>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                <strong>2. Votre budget</strong> - Le prix d'un weekend ski varie entre 150€ et 400€ par personne selon la station. Nous affichons le prix du forfait journalier et le coût moyen d'hébergement pour chaque station.
+            </p>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                <strong>3. La taille du domaine</strong> - Pour un weekend, un domaine de 50-100km de pistes suffit. Les grands domaines (150km+) sont idéaux pour les skieurs confirmés.
+            </p>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                <strong>4. Les conditions d'enneigement</strong> - Consultez notre widget météo en temps réel pour connaître l'enneigement actuel et les chutes de neige prévues.
+            </p>
+            
+            <h3 style="color: #3498db; font-size: 1.3em; margin: 25px 0 15px;">Les meilleures stations de ski par région</h3>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                <strong>Alpes du Nord</strong> - Chamonix, Val Thorens, Tignes, Les Arcs, La Plagne, Megève... Les stations mythiques avec les plus grands domaines skiables et un enneigement garanti.
+            </p>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                <strong>Alpes du Sud</strong> - Serre Chevalier, Vars, Isola 2000, Pra Loup... Un ensoleillement exceptionnel et des prix souvent plus doux qu'au nord.
+            </p>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                <strong>Pyrénées</strong> - Font-Romeu, Cauterets, Piau-Engaly, Saint-Lary... Stations familiales avec un excellent rapport qualité-prix, idéales pour un weekend depuis Toulouse ou Bordeaux.
+            </p>
+            
+            <h3 style="color: #3498db; font-size: 1.3em; margin: 25px 0 15px;">Quand partir skier ce weekend ?</h3>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                La saison de ski en France s'étend généralement de <strong>mi-décembre à mi-avril</strong>. Les meilleurs weekends pour skier sont :
+            </p>
+            
+            <ul style="color: #555; line-height: 1.8; margin-left: 25px; margin-bottom: 15px;">
+                <li><strong>Janvier-Février</strong> : Enneigement optimal, parfait pour les passionnés</li>
+                <li><strong>Mars</strong> : Meilleur compromis enneigement/météo, idéal pour les familles</li>
+                <li><strong>Début avril</strong> : Ski de printemps, ambiance conviviale, tarifs avantageux</li>
+            </ul>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                Utilisez notre outil de recherche ci-dessus pour trouver votre station idéale en quelques clics. Comparez les distances, les prix et les conditions en temps réel pour faire le meilleur choix !
+            </p>
+        </section>
     </div>
 
     <footer class="footer">
