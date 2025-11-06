@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toutes les stations - Où skier ce weekend</title>
+    
+    <!-- SEO OPTIMISÉ -->
+    <title>150+ Stations de Ski en France | Comparateur Gratuit 2025</title>
+    <meta name="description" content="Découvrez toutes les stations de ski en France. Comparez 150+ domaines skiables : Chamonix, Val Thorens, Tignes... Filtres par région, prix et niveau. Trouvez votre station idéale.">
+    <meta name="keywords" content="stations ski france, liste stations ski, domaines skiables france, ski alpes nord, ski alpes sud, ski pyrénées, comparateur stations ski">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="150+ Stations de Ski en France - Comparateur">
+    <meta property="og:description" content="Toutes les stations de ski françaises. Comparez, filtrez et trouvez votre station idéale.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ouskierceweeekend.fr/stations.html">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ouskierceweeekend.fr/stations.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,8 +35,8 @@
 
     <div class="container">
         <header>
-            <h1>📍 Toutes les stations</h1>
-            <p class="subtitle">Découvre notre sélection complète de stations françaises</p>
+            <h1>Toutes les stations de ski en France</h1>
+            <p class="subtitle">Découvrez notre sélection complète de 150+ stations françaises - Alpes, Pyrénées, Jura</p>
         </header>
 
         <div class="search-section">
@@ -65,10 +80,37 @@
         </div>
 
         <div id="stationsList" class="results"></div>
+
+        <!-- CONTENU SEO -->
+        <section class="seo-content" style="max-width: 900px; margin: 60px auto 40px; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <h2 style="color: #2c3e50; font-size: 1.8em; margin-bottom: 20px;">Guide complet des stations de ski en France</h2>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                La France compte plus de <strong>150 stations de ski</strong> réparties dans les Alpes, les Pyrénées et le Jura. Des petites stations familiales aux immenses domaines skiables internationaux, il existe une station adaptée à chaque profil de skieur et chaque budget.
+            </p>
+            
+            <h3 style="color: #3498db; font-size: 1.3em; margin: 25px 0 15px;">Stations des Alpes du Nord</h3>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                Les Alpes du Nord abritent les plus grands domaines skiables au monde. <strong>Les 3 Vallées</strong> (Courchevel, Méribel, Val Thorens) offrent 600 km de pistes. <strong>Paradiski</strong> (Les Arcs, La Plagne) propose 425 km. <strong>L'Espace Killy</strong> (Tignes, Val d'Isère) compte 300 km de pistes de renommée internationale.
+            </p>
+            
+            <h3 style="color: #3498db; font-size: 1.3em; margin: 25px 0 15px;">Stations des Alpes du Sud</h3>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                Les Alpes du Sud bénéficient d'un <strong>ensoleillement exceptionnel</strong> (300 jours par an) et de tarifs souvent plus abordables. Serre Chevalier, Vars, Risoul et Pra Loup offrent d'excellentes conditions de ski dans un cadre authentique.
+            </p>
+            
+            <h3 style="color: #3498db; font-size: 1.3em; margin: 25px 0 15px;">Stations des Pyrénées</h3>
+            
+            <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
+                Les Pyrénées proposent des stations à <strong>taille humaine</strong> avec un excellent rapport qualité-prix. Font-Romeu, Cauterets, Piau-Engaly et Saint-Lary-Soulan sont parfaites pour les familles et les skieurs recherchant l'authenticité.
+            </p>
+        </section>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2025 Où skier ce weekend - Toutes les informations sont à titre indicatif - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
+        <p>&copy; 2025 Où skier ce weekend - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
     </footer>
 
     <script src="stations-data.js"></script>
@@ -80,8 +122,11 @@
                 <div class="resort-card">
                     <a href="station-detail.html?id=${resort.id}" class="image-link">
                         <img src="${resort.image}" 
-                             alt="${resort.name}" 
+                             alt="Station de ski ${resort.name} - ${resort.region}" 
                              class="resort-image"
+                             loading="lazy"
+                             width="400"
+                             height="300"
                              onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">
                     </a>
                     <div class="resort-content">
@@ -145,17 +190,14 @@
 
             filteredStations = [...skiResorts];
 
-            // Filtre par région
             if (region !== 'all') {
                 filteredStations = filteredStations.filter(s => s.region === region);
             }
 
-            // Filtre par niveau
             if (level !== 'all') {
                 filteredStations = filteredStations.filter(s => s.level.includes(level));
             }
 
-            // Tri
             switch(sortBy) {
                 case 'name':
                     filteredStations.sort((a, b) => a.name.localeCompare(b.name));
