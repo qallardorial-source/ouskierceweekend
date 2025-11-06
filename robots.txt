@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ouskierceweeekend.fr/sitemap.xml
+
+# Bloque les fichiers inutiles pour le SEO
+Disallow: /monetization.js
+Disallow: /monetization.css
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Permet l'indexation des pages HTML
+Allow: /*.html$
+
+# Crawl delay (optionnel)
+Crawl-delay: 1

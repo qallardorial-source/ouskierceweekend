@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Page stations -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/stations.html</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Page à propos -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/about.html</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Page légale -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/legal.html</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Pages de détail des stations (exemples - à compléter avec toutes vos stations) -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=chamonix</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-thorens</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=tignes</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=megeve</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Ajoutez toutes vos autres stations ici -->
+  
+</urlset>
