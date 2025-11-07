@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mentions légales et politique de confidentialité de Où skier ce weekend">
-    <title>Mentions légales - Où skier ce weekend</title>
+    <meta name="description" content="Mentions légales, politique de confidentialité et informations RGPD de Où Skier ce Weekend">
+    <meta name="robots" content="noindex, follow">
+    <title>Mentions Légales & RGPD - Où Skier ce Weekend</title>
+    <link rel="canonical" href="https://votre-domaine.com/legal.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <style>
         .legal-container {
@@ -16,75 +19,173 @@
         .legal-hero {
             text-align: center;
             margin-bottom: 50px;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
         }
 
         .legal-hero h1 {
             font-size: 2.5em;
-            color: #2c3e50;
             margin-bottom: 10px;
+        }
+
+        .legal-hero p {
+            opacity: 0.95;
+            font-size: 1.1em;
+        }
+
+        .legal-nav {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+        }
+
+        .legal-nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .legal-nav a {
+            color: #3498db;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .legal-nav a:hover {
+            background: #3498db;
+            color: white;
         }
 
         .legal-section {
             margin-bottom: 40px;
             background: white;
-            padding: 30px;
+            padding: 35px;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .legal-section h2 {
             color: #2c3e50;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #3498db;
+            font-size: 1.9em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .legal-section h3 {
             color: #3498db;
-            font-size: 1.3em;
-            margin-top: 25px;
+            font-size: 1.4em;
+            margin-top: 30px;
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .legal-section p {
             color: #555;
-            line-height: 1.8;
-            margin-bottom: 15px;
+            line-height: 1.9;
+            margin-bottom: 18px;
+            font-size: 1.05em;
         }
 
-        .legal-section ul {
-            margin-left: 25px;
-            margin-bottom: 15px;
+        .legal-section ul, .legal-section ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
         }
 
         .legal-section li {
             color: #555;
-            line-height: 1.8;
-            margin-bottom: 8px;
+            line-height: 1.9;
+            margin-bottom: 12px;
+            font-size: 1.05em;
         }
 
         .legal-section strong {
             color: #2c3e50;
+            font-weight: 600;
         }
 
         .info-box {
             background: #f8f9fa;
-            padding: 20px;
+            padding: 25px;
             border-left: 4px solid #3498db;
-            margin: 20px 0;
-            border-radius: 5px;
+            margin: 25px 0;
+            border-radius: 8px;
         }
 
         .info-box p {
-            margin: 5px 0;
+            margin: 8px 0;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .data-table th {
+            background: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+
+        .data-table tr:nth-child(even) {
+            background: #f8f9fa;
         }
 
         .last-update {
             text-align: center;
             color: #7f8c8d;
             font-style: italic;
-            margin-top: 40px;
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .icon {
+            font-size: 1.2em;
         }
 
         @media (max-width: 768px) {
@@ -93,7 +194,30 @@
             }
             
             .legal-section {
-                padding: 20px;
+                padding: 25px 20px;
+            }
+
+            .legal-nav {
+                position: static;
+            }
+
+            .legal-nav ul {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .legal-nav a {
+                display: block;
+                text-align: center;
+            }
+
+            .data-table {
+                font-size: 0.9em;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 10px;
             }
         }
     </style>
@@ -112,135 +236,429 @@
 
     <div class="legal-container">
         <div class="legal-hero">
-            <h1>⚖️ Mentions légales</h1>
+            <h1>⚖️ Mentions Légales & RGPD</h1>
+            <p>Informations légales et protection de vos données personnelles</p>
         </div>
 
-        <!-- MENTIONS LÉGALES -->
-        <div class="legal-section">
-            <h2>1. Informations légales</h2>
+        <!-- Navigation rapide -->
+        <nav class="legal-nav">
+            <ul>
+                <li><a href="#mentions">📝 Mentions légales</a></li>
+                <li><a href="#rgpd">🔒 Protection des données</a></li>
+                <li><a href="#cookies">🍪 Cookies</a></li>
+                <li><a href="#responsabilite">⚠️ Responsabilité</a></li>
+                <li><a href="#propriete">©️ Propriété intellectuelle</a></li>
+                <li><a href="#contact">📧 Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- 1. MENTIONS LÉGALES -->
+        <div id="mentions" class="legal-section">
+            <h2><span class="icon">📝</span> 1. Mentions Légales</h2>
             
-            <h3>Éditeur du site</h3>
+            <h3>🏢 Éditeur du site</h3>
             <div class="info-box">
-                <p><strong>Nom du site :</strong> Où skier ce weekend</p>
-                <p><strong>URL :</strong> https://ouskierceweeekend.fr</p>
-                <p><strong>Propriétaire :</strong> [Votre nom/raison sociale]</p>
-                <p><strong>Email :</strong> contact@ouskierceweeekend.fr</p>
-                <p><strong>Siège social :</strong> [Votre adresse]</p>
+                <p><strong>Nom du site :</strong> Où Skier ce Weekend</p>
+                <p><strong>URL :</strong> https://votre-domaine.com</p>
+                <p><strong>Propriétaire / Éditeur :</strong> [VOTRE NOM COMPLET ou RAISON SOCIALE]</p>
+                <p><strong>Statut juridique :</strong> [Micro-entreprise / Auto-entrepreneur / Association / Société]</p>
+                <p><strong>SIRET :</strong> [Votre numéro SIRET si applicable]</p>
+                <p><strong>Siège social :</strong> [Votre adresse complète]</p>
+                <p><strong>Téléphone :</strong> [Votre numéro] <em>(optionnel)</em></p>
+                <p><strong>Email :</strong> contact@votre-domaine.com</p>
             </div>
 
-            <h3>Hébergement</h3>
+            <div class="warning-box">
+                <p><strong>⚠️ Important :</strong> Conformément à la loi française, vous devez obligatoirement fournir une adresse postale. Si vous ne souhaitez pas afficher votre adresse personnelle, vous pouvez :</p>
+                <ul>
+                    <li>Utiliser une boîte postale (La Poste : ~40€/an)</li>
+                    <li>Utiliser un service de domiciliation (ex: Kandbaz, SeDomicilier : ~15€/mois)</li>
+                    <li>Utiliser l'adresse de votre comptable ou avocat avec accord</li>
+                </ul>
+            </div>
+
+            <h3>📢 Directeur de la publication</h3>
+            <p><strong>[VOTRE NOM]</strong>, en qualité de propriétaire du site.</p>
+
+            <h3>🌐 Hébergement du site</h3>
             <div class="info-box">
-                <p><strong>Hébergeur :</strong> GitHub Pages</p>
+                <p><strong>Hébergeur 1 (Site web) :</strong> GitHub Pages</p>
                 <p><strong>Société :</strong> GitHub, Inc.</p>
                 <p><strong>Adresse :</strong> 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA</p>
+                <p><strong>Site web :</strong> <a href="https://pages.github.com" target="_blank">https://pages.github.com</a></p>
             </div>
 
-            <h3>Directeur de publication</h3>
-            <p>[Votre nom]</p>
+            <div class="info-box">
+                <p><strong>Hébergeur 2 (Emails) :</strong> OVH SAS</p>
+                <p><strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France</p>
+                <p><strong>SIRET :</strong> 424 761 419 00045</p>
+                <p><strong>Téléphone :</strong> 1007 (depuis la France)</p>
+                <p><strong>Site web :</strong> <a href="https://www.ovh.com" target="_blank">https://www.ovh.com</a></p>
+            </div>
         </div>
 
-        <!-- PROPRIÉTÉ INTELLECTUELLE -->
-        <div class="legal-section">
-            <h2>2. Propriété intellectuelle</h2>
+        <!-- 2. PROTECTION DES DONNÉES (RGPD) -->
+        <div id="rgpd" class="legal-section">
+            <h2><span class="icon">🔒</span> 2. Protection des Données Personnelles (RGPD)</h2>
             
-            <p>L'ensemble du contenu de ce site (textes, images, vidéos, logos, graphismes, etc.) est protégé par le droit d'auteur et appartient à Où skier ce weekend ou à ses partenaires.</p>
+            <div class="success-box">
+                <p><strong>✅ Engagement :</strong> Nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés.</p>
+            </div>
+
+            <h3>👤 Responsable du traitement des données</h3>
+            <div class="info-box">
+                <p><strong>Responsable :</strong> [VOTRE NOM]</p>
+                <p><strong>Contact :</strong> contact@votre-domaine.com</p>
+                <p><strong>Adresse :</strong> [Votre adresse]</p>
+            </div>
+
+            <h3>📊 Données collectées et finalités</h3>
             
-            <p>Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces différents éléments est strictement interdite sans l'accord écrit préalable de Où skier ce weekend.</p>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Type de données</th>
+                        <th>Finalité</th>
+                        <th>Base légale</th>
+                        <th>Durée de conservation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Aucune donnée personnelle</strong></td>
+                        <td>Navigation sur le site</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Données de navigation</strong><br>(adresse IP, navigateur, pages vues)</td>
+                        <td>Statistiques anonymes via Google Analytics</td>
+                        <td>Consentement (cookies)</td>
+                        <td>26 mois maximum</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ville de recherche</strong><br>(temporaire)</td>
+                        <td>Calcul de distance vers stations</td>
+                        <td>Intérêt légitime</td>
+                        <td>Pas de conservation (session uniquement)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email</strong><br>(si newsletter à venir)</td>
+                        <td>Envoi de newsletters</td>
+                        <td>Consentement explicite</td>
+                        <td>Jusqu'à désinscription</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <p>Les images des stations de ski sont utilisées à des fins d'illustration et appartiennent à leurs propriétaires respectifs.</p>
-        </div>
+            <h3>🎯 Détail des traitements</h3>
 
-        <!-- RESPONSABILITÉ -->
-        <div class="legal-section">
-            <h2>3. Limitation de responsabilité</h2>
-            
-            <h3>Informations fournies</h3>
-            <p>Les informations présentes sur ce site sont fournies à titre indicatif. Nous nous efforçons de maintenir ces informations à jour, mais ne pouvons garantir leur exactitude, exhaustivité ou actualité.</p>
-
-            <h3>Disponibilité du site</h3>
-            <p>Nous ne garantissons pas que le site sera accessible de manière ininterrompue. Le site peut être temporairement indisponible en raison de maintenance, de mises à jour ou de problèmes techniques.</p>
-
-            <h3>Liens externes</h3>
-            <p>Notre site peut contenir des liens vers des sites externes. Nous n'avons aucun contrôle sur le contenu de ces sites et déclinons toute responsabilité quant à leur contenu.</p>
-
-            <h3>Décisions de voyage</h3>
-            <p>Les utilisateurs sont seuls responsables de leurs décisions de voyage. Nous recommandons vivement de vérifier les informations directement auprès des stations de ski avant tout déplacement (conditions météo, ouverture des pistes, tarifs, etc.).</p>
-        </div>
-
-        <!-- POLITIQUE DE CONFIDENTIALITÉ -->
-        <div class="legal-section">
-            <h2>4. Politique de confidentialité & données personnelles</h2>
-            
-            <h3>Données collectées</h3>
-            <p>Notre site ne collecte <strong>aucune donnée personnelle</strong> de manière active. Nous ne demandons ni nom, ni email, ni aucune information personnelle pour utiliser le site.</p>
-
-            <h3>Géolocalisation</h3>
-            <p>La fonctionnalité de recherche par ville utilise l'API OpenStreetMap (Nominatim) pour obtenir les coordonnées géographiques. Cette recherche est effectuée directement depuis votre navigateur et aucune donnée n'est stockée sur nos serveurs.</p>
-
-            <h3>Cookies</h3>
-            <p>Notre site n'utilise <strong>aucun cookie</strong> de tracking, de publicité ou d'analyse.</p>
-
-            <h3>Données de navigation</h3>
-            <p>Comme tout site web, les serveurs d'hébergement peuvent collecter automatiquement certaines informations techniques (adresse IP, navigateur, pages consultées) dans leurs fichiers logs. Ces données sont conservées par l'hébergeur selon sa propre politique de confidentialité.</p>
-
-            <h3>Services tiers</h3>
-            <p>Notre site utilise les services externes suivants :</p>
+            <p><strong>1. Navigation sur le site :</strong></p>
             <ul>
-                <li><strong>OpenStreetMap Nominatim</strong> : Pour la recherche de localisation. Consultez leur <a href="https://operations.osmfoundation.org/policies/nominatim/" target="_blank">politique d'utilisation</a>.</li>
+                <li><strong>Données collectées :</strong> AUCUNE donnée personnelle identifiable n'est collectée directement par notre site</li>
+                <li><strong>Stockage :</strong> Les recherches de stations sont effectuées localement dans votre navigateur</li>
+                <li><strong>Aucun compte utilisateur requis</strong></li>
             </ul>
 
-            <h3>Vos droits (RGPD)</h3>
-            <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+            <p><strong>2. Google Analytics (statistiques) :</strong></p>
             <ul>
-                <li>Droit d'accès à vos données personnelles</li>
-                <li>Droit de rectification de vos données</li>
-                <li>Droit à l'effacement de vos données</li>
-                <li>Droit à la limitation du traitement</li>
-                <li>Droit d'opposition</li>
-                <li>Droit à la portabilité de vos données</li>
-            </ul>
-            <p>Pour exercer ces droits, contactez-nous à : contact@ouskierceweeekend.fr</p>
-
-            <p>Étant donné que nous ne collectons aucune donnée personnelle, ces droits sont principalement informatifs.</p>
-        </div>
-
-        <!-- CONDITIONS D'UTILISATION -->
-        <div class="legal-section">
-            <h2>5. Conditions d'utilisation</h2>
-            
-            <h3>Utilisation du site</h3>
-            <p>L'accès et l'utilisation de ce site sont soumis aux conditions suivantes :</p>
-            <ul>
-                <li>Le site est destiné à un usage personnel et non commercial</li>
-                <li>Vous vous engagez à ne pas utiliser le site de manière abusive ou illégale</li>
-                <li>Vous ne devez pas tenter de contourner les mesures de sécurité du site</li>
-                <li>Vous ne devez pas utiliser de robots ou scripts automatisés sans autorisation</li>
+                <li><strong>Données collectées :</strong> Données de navigation anonymisées (pages vues, durée de session, appareil, géolocalisation approximative par ville)</li>
+                <li><strong>Finalité :</strong> Mesurer l'audience et améliorer le site</li>
+                <li><strong>Destinataire :</strong> Google LLC (USA) - Mécanismes de transfert conformes RGPD</li>
+                <li><strong>Durée :</strong> 26 mois maximum</li>
+                <li><strong>Désactivation :</strong> Possible via paramètres cookies ou extension navigateur</li>
             </ul>
 
-            <h3>Modification des conditions</h3>
-            <p>Nous nous réservons le droit de modifier ces mentions légales à tout moment. Les modifications prendront effet dès leur publication sur cette page.</p>
+            <p><strong>3. API OpenStreetMap Nominatim (recherche de ville) :</strong></p>
+            <ul>
+                <li><strong>Données transmises :</strong> Nom de la ville recherchée uniquement</li>
+                <li><strong>Finalité :</strong> Obtenir les coordonnées géographiques pour calculer les distances</li>
+                <li><strong>Destinataire :</strong> OpenStreetMap Foundation</li>
+                <li><strong>Stockage :</strong> Aucun - traitement en temps réel uniquement</li>
+            </ul>
 
-            <h3>Loi applicable</h3>
-            <p>Les présentes mentions légales sont régies par le droit français. En cas de litige, et à défaut d'accord amiable, les tribunaux français seront seuls compétents.</p>
+            <p><strong>4. API Open-Meteo (météo) :</strong></p>
+            <ul>
+                <li><strong>Données transmises :</strong> Coordonnées géographiques des stations (publiques)</li>
+                <li><strong>Finalité :</strong> Afficher les conditions météorologiques</li>
+                <li><strong>Destinataire :</strong> Open-Meteo (Suisse)</li>
+                <li><strong>Aucune donnée personnelle transmise</strong></li>
+            </ul>
+
+            <h3>🛡️ Vos droits (Articles RGPD)</h3>
+
+            <p>Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :</p>
+
+            <ul>
+                <li><strong>Droit d'accès (Art. 15)</strong> - Obtenir une copie de vos données</li>
+                <li><strong>Droit de rectification (Art. 16)</strong> - Corriger vos données inexactes</li>
+                <li><strong>Droit à l'effacement / "Droit à l'oubli" (Art. 17)</strong> - Demander la suppression de vos données</li>
+                <li><strong>Droit à la limitation du traitement (Art. 18)</strong> - Limiter l'utilisation de vos données</li>
+                <li><strong>Droit d'opposition (Art. 21)</strong> - S'opposer au traitement de vos données</li>
+                <li><strong>Droit à la portabilité (Art. 20)</strong> - Recevoir vos données dans un format structuré</li>
+                <li><strong>Droit de retirer votre consentement</strong> - À tout moment, sans justification</li>
+                <li><strong>Droit de définir des directives post-mortem</strong> - Concernant le sort de vos données après votre décès</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>📧 Pour exercer vos droits :</strong></p>
+                <p>Envoyez un email à : <strong>contact@votre-domaine.com</strong></p>
+                <p>Ou par courrier postal à : [Votre adresse]</p>
+                <p><strong>Délai de réponse :</strong> 1 mois maximum (extensible à 3 mois si complexité)</p>
+            </div>
+
+            <h3>📢 Droit de réclamation</h3>
+            <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) :</p>
+            <div class="info-box">
+                <p><strong>CNIL</strong></p>
+                <p>3 Place de Fontenoy, TSA 80715</p>
+                <p>75334 PARIS CEDEX 07</p>
+                <p>Téléphone : 01 53 73 22 22</p>
+                <p>Site web : <a href="https://www.cnil.fr" target="_blank">https://www.cnil.fr</a></p>
+            </div>
+
+            <h3>🔐 Sécurité des données</h3>
+            <p>Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées pour protéger vos données :</p>
+            <ul>
+                <li>✅ <strong>Chiffrement HTTPS</strong> - Toutes les communications sont chiffrées</li>
+                <li>✅ <strong>Hébergement sécurisé</strong> - GitHub et OVH sont certifiés ISO 27001</li>
+                <li>✅ <strong>Minimisation des données</strong> - Nous collectons le strict minimum</li>
+                <li>✅ <strong>Pas de revente de données</strong> - Jamais, sous aucune condition</li>
+                <li>✅ <strong>Accès restreint</strong> - Seul le propriétaire du site a accès aux statistiques anonymes</li>
+            </ul>
         </div>
 
-        <!-- CONTACT -->
-        <div class="legal-section">
-            <h2>6. Contact</h2>
-            
-            <p>Pour toute question concernant ces mentions légales ou la politique de confidentialité, vous pouvez nous contacter :</p>
+        <!-- 3. COOKIES -->
+        <div id="cookies" class="legal-section">
+            <h2><span class="icon">🍪</span> 3. Politique de Cookies</h2>
+
+            <h3>📱 Qu'est-ce qu'un cookie ?</h3>
+            <p>Un cookie est un petit fichier texte stocké sur votre appareil lors de la visite d'un site web. Les cookies permettent de mémoriser vos préférences et d'améliorer votre expérience de navigation.</p>
+
+            <h3>🎯 Cookies utilisés sur ce site</h3>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Type de cookie</th>
+                        <th>Nom</th>
+                        <th>Finalité</th>
+                        <th>Durée</th>
+                        <th>Consentement requis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Strictement nécessaire</strong></td>
+                        <td>Aucun</td>
+                        <td>Le site fonctionne sans cookies obligatoires</td>
+                        <td>-</td>
+                        <td>❌ Non</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Statistiques (Analytics)</strong></td>
+                        <td>_ga, _gid, _gat</td>
+                        <td>Google Analytics - Mesure d'audience anonyme</td>
+                        <td>2 ans / 24h / 1 min</td>
+                        <td>✅ Oui</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Publicité</strong></td>
+                        <td>Aucun</td>
+                        <td>Pas de cookies publicitaires</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Réseaux sociaux</strong></td>
+                        <td>Aucun</td>
+                        <td>Pas de boutons de partage trackant</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>⚙️ Gestion de vos cookies</h3>
+            <p>Vous pouvez à tout moment choisir de désactiver les cookies. Voici comment faire selon votre navigateur :</p>
+
+            <p><strong>Google Chrome :</strong></p>
+            <ol>
+                <li>Menu (⋮) → Paramètres → Confidentialité et sécurité → Cookies</li>
+                <li>Choisissez "Bloquer tous les cookies" ou gérez site par site</li>
+            </ol>
+
+            <p><strong>Mozilla Firefox :</strong></p>
+            <ol>
+                <li>Menu (☰) → Paramètres → Vie privée et sécurité</li>
+                <li>Section "Cookies et données de sites" → Personnaliser</li>
+            </ol>
+
+            <p><strong>Safari (Mac/iOS) :</strong></p>
+            <ol>
+                <li>Préférences → Confidentialité</li>
+                <li>Cochez "Bloquer tous les cookies"</li>
+            </ol>
+
+            <p><strong>Microsoft Edge :</strong></p>
+            <ol>
+                <li>Menu (⋯) → Paramètres → Cookies et autorisations de site</li>
+                <li>Gérer les cookies et données de sites</li>
+            </ol>
+
+            <div class="warning-box">
+                <p><strong>⚠️ Attention :</strong> La désactivation des cookies peut affecter votre expérience de navigation sur certains sites web.</p>
+            </div>
+
+            <h3>🔌 Extensions navigateur anti-tracking</h3>
+            <p>Pour bloquer automatiquement les cookies et trackers :</p>
+            <ul>
+                <li><strong>uBlock Origin</strong> (gratuit, open source)</li>
+                <li><strong>Privacy Badger</strong> (EFF)</li>
+                <li><strong>Google Analytics Opt-out</strong> (extension officielle Google)</li>
+            </ul>
+        </div>
+
+        <!-- 4. RESPONSABILITÉ -->
+        <div id="responsabilite" class="legal-section">
+            <h2><span class="icon">⚠️</span> 4. Limitation de Responsabilité</h2>
+
+            <h3>📊 Informations fournies</h3>
+            <p>Les informations présentes sur ce site sont fournies à titre indicatif et peuvent contenir des inexactitudes ou être incomplètes. Nous nous efforçons de maintenir ces informations à jour, mais ne pouvons garantir :</p>
+            <ul>
+                <li>L'exactitude des tarifs affichés (forfaits, hébergements)</li>
+                <li>La disponibilité réelle des stations</li>
+                <li>Les conditions d'enneigement en temps réel</li>
+                <li>Les dates exactes d'ouverture et de fermeture</li>
+            </ul>
+
+            <div class="warning-box">
+                <p><strong>⚠️ Important :</strong> Nous vous recommandons vivement de vérifier toutes les informations directement auprès des stations de ski concernées avant tout déplacement ou réservation.</p>
+            </div>
+
+            <h3>🌐 Disponibilité du site</h3>
+            <p>Nous ne garantissons pas que le site sera accessible de manière ininterrompue. Le site peut être temporairement indisponible en raison de :</p>
+            <ul>
+                <li>Maintenance technique</li>
+                <li>Mises à jour du contenu</li>
+                <li>Problèmes techniques indépendants de notre volonté</li>
+                <li>Actions de tiers (attaques, hébergeur)</li>
+            </ul>
+
+            <h3>🔗 Liens externes</h3>
+            <p>Notre site peut contenir des liens vers des sites web externes (stations de ski, partenaires, etc.). Nous n'avons aucun contrôle sur le contenu, les politiques de confidentialité ou les pratiques de ces sites tiers et déclinons toute responsabilité quant à :</p>
+            <ul>
+                <li>Leur contenu et leur disponibilité</li>
+                <li>Leurs conditions d'utilisation</li>
+                <li>Les transactions effectuées sur ces sites</li>
+                <li>La protection de vos données personnelles</li>
+            </ul>
+
+            <h3>🎿 Décisions de voyage</h3>
+            <p>Les utilisateurs sont seuls responsables de leurs décisions de voyage et de leurs réservations. Ce site est un outil d'aide à la décision, mais ne remplace pas :</p>
+            <ul>
+                <li>La consultation des bulletins météo officiels</li>
+                <li>La vérification des conditions de circulation</li>
+                <li>L'évaluation de votre niveau de ski et de votre condition physique</li>
+                <li>La souscription d'assurances adaptées</li>
+            </ul>
+
+            <h3>⚖️ Limitation de responsabilité</h3>
+            <p>En aucun cas, le site "Où Skier ce Weekend" ne pourra être tenu responsable de :</p>
+            <ul>
+                <li>Tout dommage direct ou indirect résultant de l'utilisation du site</li>
+                <li>Toute perte financière liée à une réservation basée sur nos informations</li>
+                <li>Tout accident ou incident survenant lors de vos déplacements</li>
+                <li>Toute fermeture imprévue de stations ou changement de conditions</li>
+            </ul>
+        </div>
+
+        <!-- 5. PROPRIÉTÉ INTELLECTUELLE -->
+        <div id="propriete" class="legal-section">
+            <h2><span class="icon">©️</span> 5. Propriété Intellectuelle</h2>
+
+            <h3>📝 Droits d'auteur</h3>
+            <p>L'ensemble du contenu de ce site web (textes, images, vidéos, logos, mise en page, code source, etc.) est protégé par le droit d'auteur et appartient à "Où Skier ce Weekend" ou à ses partenaires, sauf mention contraire.</p>
+
+            <p>Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces différents éléments est strictement interdite sans l'accord écrit préalable du propriétaire du site.</p>
+
+            <h3>🖼️ Images et photographies</h3>
+            <p>Les photographies des stations de ski présentes sur ce site sont utilisées à des fins d'illustration. Nous nous efforçons de :</p>
+            <ul>
+                <li>Utiliser des images libres de droits (Unsplash, Pexels, Pixabay)</li>
+                <li>Créditer les photographes lorsque requis</li>
+                <li>Obtenir l'autorisation des stations pour leurs photos officielles</li>
+            </ul>
+
+            <p>Si vous êtes photographe ou station et souhaitez que nous retirions une image, contactez-nous à : <strong>contact@votre-domaine.com</strong></p>
+
+            <h3>🏷️ Marques</h3>
+            <p>Les noms et logos des stations de ski mentionnés sur ce site sont des marques déposées appartenant à leurs propriétaires respectifs. Leur utilisation à titre informatif ne constitue pas une appropriation de ces marques.</p>
+
+            <h3>💻 Code source</h3>
+            <p>Le code source de ce site est protégé par le droit d'auteur. Il est interdit de :</p>
+            <ul>
+                <li>Copier le code source sans autorisation</li>
+                <li>Créer un site similaire basé sur notre code</li>
+                <li>Extraire notre base de données de stations</li>
+            </ul>
+
+            <h3>✅ Utilisation autorisée</h3>
+            <p>Vous êtes autorisé à :</p>
+            <ul>
+                <li>Naviguer sur le site pour votre usage personnel</li>
+                <li>Partager des liens vers nos pages sur les réseaux sociaux</li>
+                <li>Citer de courts extraits en mentionnant la source</li>
+            </ul>
+        </div>
+
+        <!-- 6. CONTACT -->
+        <div id="contact" class="legal-section">
+            <h2><span class="icon">📧</span> 6. Contact</h2>
+
+            <p>Pour toute question concernant ces mentions légales, la protection de vos données, ou le site en général, vous pouvez nous contacter :</p>
             
             <div class="info-box">
-                <p><strong>Email :</strong> contact@ouskierceweeekend.fr</p>
-                <p><strong>Délai de réponse :</strong> Nous nous efforçons de répondre sous 48 heures</p>
+                <p><strong>📧 Par email :</strong> contact@votre-domaine.com</p>
+                <p><strong>📮 Par courrier postal :</strong></p>
+                <p>[Votre nom / raison sociale]<br>
+                [Votre adresse complète]<br>
+                [Code postal] [Ville]<br>
+                France</p>
+                <p><strong>⏱️ Délai de réponse :</strong> Nous nous efforçons de répondre sous 48 heures ouvrées</p>
             </div>
+
+            <h3>🐛 Signaler un problème</h3>
+            <p>Vous avez détecté :</p>
+            <ul>
+                <li>Une erreur dans les informations d'une station ?</li>
+                <li>Un bug technique sur le site ?</li>
+                <li>Un problème de données personnelles ?</li>
+                <li>Une image qui vous appartient ?</li>
+            </ul>
+            <p>N'hésitez pas à nous le signaler, nous corrigerons dans les plus brefs délais !</p>
         </div>
 
-        <p class="last-update">Dernière mise à jour : 5 novembre 2025</p>
+        <!-- Dernière mise à jour -->
+        <div class="last-update">
+            <p><strong>📅 Dernière mise à jour :</strong> [DATE DU JOUR]</p>
+            <p>Ces mentions légales peuvent être modifiées à tout moment. Nous vous invitons à les consulter régulièrement.</p>
+            <p><strong>Version :</strong> 1.0</p>
+        </div>
+
+        <!-- Liens utiles -->
+        <div class="legal-section" style="text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+            <h3 style="color: white;">📚 Ressources complémentaires</h3>
+            <p style="color: rgba(255,255,255,0.95);">
+                <a href="cgu.html" style="color: white; text-decoration: underline; margin: 0 15px;">Conditions Générales d'Utilisation</a> •
+                <a href="about.html" style="color: white; text-decoration: underline; margin: 0 15px;">À propos</a> •
+                <a href="index.html" style="color: white; text-decoration: underline; margin: 0 15px;">Retour à l'accueil</a>
+            </p>
+        </div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2025 Où skier ce weekend - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
+        <p>&copy; 2025 Où skier ce weekend - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a> - <a href="cgu.html" style="color: white; text-decoration: underline;">CGU</a></p>
     </footer>
 </body>
 </html>
