@@ -29,6 +29,15 @@
     <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="stations-data.js" as="script">
     
+    <!-- Google Analytics 4 - REMPLACER G-XXXXXXXXXX par votre ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
     <!-- Schema.org -->
     <script type="application/ld+json">
     {
@@ -211,5 +220,8 @@
     <script src="stations-data.js"></script>
     <script src="weather.js"></script>
     <script src="app.js"></script>
+    
+    <!-- Analytics Tracking avancé -->
+    <script src="analytics-tracking.js"></script>
 </body>
 </html>
