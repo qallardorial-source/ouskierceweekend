@@ -1,0 +1,77 @@
+# ========================================
+# FICHIER .htaccess - SÉCURITÉ
+# Copiez ce fichier à la racine de votre site
+# ========================================
+
+# ========================================
+# 1. FORCER HTTPS (si vous avez un certificat SSL)
+# ========================================
+# Décommentez les 3 lignes suivantes si vous avez HTTPS activé :
+
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# ========================================
+# 2. HEADERS DE SÉCURITÉ
+# ========================================
+
+<IfModule mod_headers.c>
+    # Protection XSS
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Empêche l'intégration dans des iframes (clickjacking)
+    Header set X-Frame-Options "DENY"
+    
+    # Empêche le MIME sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Contrôle du Referrer
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+
+# ========================================
+# 3. BLOQUER L'ACCÈS AUX FICHIERS SENSIBLES
+# ========================================
+
+# Bloquer .htaccess, .git, etc.
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+
+# ========================================
+# 4. DÉSACTIVER LA LISTE DES RÉPERTOIRES
+# ========================================
+Options -Indexes
+
+
+# ========================================
+# 5. CACHE (optionnel mais recommandé)
+# ========================================
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    
+    # CSS et JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # HTML
+    ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+
+# ========================================
+# INSTALLATION
+# ========================================
+# 1. Enregistrez ce fichier comme ".htaccess" (avec le point au début)
+# 2. Uploadez-le à la racine de votre site (là où se trouve index.html)
+# 3. C'est tout ! ✅
