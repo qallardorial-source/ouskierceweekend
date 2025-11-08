@@ -10,7 +10,7 @@ const skiResorts = [
         "slopes": "115km",
         "skiPass": 62,
         "lodging": 110,
-        "image": "./images/chamonix.png",
+        "image": "./images/avoriaz.png",
         "opening": "Déc 2025",
         "closing": "Avr 2026",
         "description": "Station Alpes du Nord située à 3842m d'altitude avec 115km de pistes.",
