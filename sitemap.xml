@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <!-- Page d'accueil -->
   <url>
     <loc>https://ouskierceweeekend.fr/</loc>
-    <lastmod>2025-11-06</lastmod>
+    <lastmod>2025-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +13,7 @@
   <!-- Page stations -->
   <url>
     <loc>https://ouskierceweeekend.fr/stations.html</loc>
-    <lastmod>2025-11-06</lastmod>
+    <lastmod>2025-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -20,7 +21,7 @@
   <!-- Page à propos -->
   <url>
     <loc>https://ouskierceweeekend.fr/about.html</loc>
-    <lastmod>2025-11-06</lastmod>
+    <lastmod>2025-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -28,40 +29,2630 @@
   <!-- Page légale -->
   <url>
     <loc>https://ouskierceweeekend.fr/legal.html</loc>
-    <lastmod>2025-11-06</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  
-  <!-- Pages de détail des stations (exemples - à compléter avec toutes vos stations) -->
+
+  <!-- CGU -->
   <url>
-    <loc>https://ouskierceweeekend.fr/station-detail.html?id=chamonix</loc>
-    <lastmod>2025-11-06</lastmod>
+    <loc>https://ouskierceweeekend.fr/cgu.html</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Chamonix Mont-Blanc -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=chamonix-mont-blanc</loc>
+    <lastmod>2025-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/chamonix.png</image:loc>
+      <image:title>Station de ski Chamonix Mont-Blanc</image:title>
+      <image:caption>Station Alpes du Nord située à 3842m d&apos;altitude avec 115km de pistes.</image:caption>
+    </image:image>
   </url>
-  
+
+  <!-- Megève -->
   <url>
-    <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-thorens</loc>
-    <lastmod>2025-11-06</lastmod>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=meg-ve</loc>
+    <lastmod>2025-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/megeve.png</image:loc>
+      <image:title>Station de ski Megève</image:title>
+      <image:caption>Station Alpes du Nord située à 2350m d&apos;altitude avec 445km de pistes.</image:caption>
+    </image:image>
   </url>
-  
+
+  <!-- Avoriaz -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=avoriaz</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/avoriaz.png</image:loc>
+      <image:title>Station de ski Avoriaz</image:title>
+      <image:caption>Station Alpes du Nord située à 2466m d&apos;altitude avec 650km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Clusaz -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-clusaz</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:title>Station de ski La Clusaz</image:title>
+      <image:caption>Station Alpes du Nord située à 2600m d&apos;altitude avec 132km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Grand Bornand -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-grand-bornand</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:title>Station de ski Le Grand Bornand</image:title>
+      <image:caption>Station Alpes du Nord située à 2100m d&apos;altitude avec 90km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Flaine -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=flaine</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/bonneval-sur-arc.png</image:loc>
+      <image:title>Station de ski Flaine</image:title>
+      <image:caption>Station Alpes du Nord située à 2500m d&apos;altitude avec 265km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Morzine -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=morzine</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/morzine.png</image:loc>
+      <image:title>Station de ski Morzine</image:title>
+      <image:caption>Station Alpes du Nord située à 2466m d&apos;altitude avec 650km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Gets -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-gets</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-gets.png</image:loc>
+      <image:title>Station de ski Les Gets</image:title>
+      <image:caption>Station Alpes du Nord située à 2002m d&apos;altitude avec 650km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Gervais -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-gervais</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/saint-gervais.png</image:loc>
+      <image:title>Station de ski Saint-Gervais</image:title>
+      <image:caption>Station Alpes du Nord située à 2350m d&apos;altitude avec 445km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Contamines-Montjoie -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-contamines-montjoie</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-contamines-montjoie.png</image:loc>
+      <image:title>Station de ski Les Contamines-Montjoie</image:title>
+      <image:caption>Station Alpes du Nord située à 2487m d&apos;altitude avec 120km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Châtel -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=ch-tel</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/combloux.png</image:loc>
+      <image:title>Station de ski Châtel</image:title>
+      <image:caption>Station Alpes du Nord située à 2200m d&apos;altitude avec 650km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Houches -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-houches</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/crest-voland-cohennoz.png</image:loc>
+      <image:title>Station de ski Les Houches</image:title>
+      <image:caption>Station Alpes du Nord située à 1900m d&apos;altitude avec 55km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Combloux -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=combloux</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/combloux.png</image:loc>
+      <image:title>Station de ski Combloux</image:title>
+      <image:caption>Station Alpes du Nord située à 1850m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Samoëns -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=samo-ns</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/samoens.png</image:loc>
+      <image:title>Station de ski Samoëns</image:title>
+      <image:caption>Station Alpes du Nord située à 2500m d&apos;altitude avec 265km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Morillon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=morillon</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/karellis.png</image:loc>
+      <image:title>Station de ski Morillon</image:title>
+      <image:caption>Station Alpes du Nord située à 2500m d&apos;altitude avec 265km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Sixt-Fer-à-Cheval -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=sixt-fer-cheval</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:title>Station de ski Sixt-Fer-à-Cheval</image:title>
+      <image:caption>Station Alpes du Nord située à 2500m d&apos;altitude avec 265km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Praz-sur-Arly -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=praz-sur-arly</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/praz-sur-arly.png</image:loc>
+      <image:title>Station de ski Praz-sur-Arly</image:title>
+      <image:caption>Station Alpes du Nord située à 1850m d&apos;altitude avec 445km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Notre-Dame-de-Bellecombe -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=notre-dame-de-bellecombe</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/notre-dame-de-bellecombe.png</image:loc>
+      <image:title>Station de ski Notre-Dame-de-Bellecombe</image:title>
+      <image:caption>Station Alpes du Nord située à 1850m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Giettaz -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-giettaz</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-plagne.png</image:loc>
+      <image:title>Station de ski La Giettaz</image:title>
+      <image:caption>Station Alpes du Nord située à 1850m d&apos;altitude avec 50km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Bernex -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=bernex</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:title>Station de ski Bernex</image:title>
+      <image:caption>Station Alpes du Nord située à 2000m d&apos;altitude avec 50km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Val d&apos;Isère -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-d-is-re</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-arcs.png</image:loc>
+      <image:title>Station de ski Val d&apos;Isère</image:title>
+      <image:caption>Station Alpes du Nord située à 3456m d&apos;altitude avec 300km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Tignes -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=tignes</loc>
-    <lastmod>2025-11-06</lastmod>
+    <lastmod>2025-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-carroz.png</image:loc>
+      <image:title>Station de ski Tignes</image:title>
+      <image:caption>Station Alpes du Nord située à 3456m d&apos;altitude avec 300km de pistes.</image:caption>
+    </image:image>
   </url>
-  
+
+  <!-- Val Thorens -->
   <url>
-    <loc>https://ouskierceweeekend.fr/station-detail.html?id=megeve</loc>
-    <lastmod>2025-11-06</lastmod>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-thorens</loc>
+    <lastmod>2025-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-contamines-montjoie.png</image:loc>
+      <image:title>Station de ski Val Thorens</image:title>
+      <image:caption>Station Alpes du Nord située à 3230m d&apos;altitude avec 600km de pistes.</image:caption>
+    </image:image>
   </url>
-  
-  <!-- Ajoutez toutes vos autres stations ici -->
-  
+
+  <!-- Courchevel -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=courchevel</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-gets.png</image:loc>
+      <image:title>Station de ski Courchevel</image:title>
+      <image:caption>Station Alpes du Nord située à 2738m d&apos;altitude avec 600km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Méribel -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=m-ribel</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-saisies.png</image:loc>
+      <image:title>Station de ski Méribel</image:title>
+      <image:caption>Station Alpes du Nord située à 2952m d&apos;altitude avec 600km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Menuires -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-menuires</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/megeve.png</image:loc>
+      <image:title>Station de ski Les Menuires</image:title>
+      <image:caption>Station Alpes du Nord située à 2850m d&apos;altitude avec 600km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Martin-de-Belleville -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-martin-de-belleville</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/morzine.png</image:loc>
+      <image:title>Station de ski Saint-Martin-de-Belleville</image:title>
+      <image:caption>Station Alpes du Nord située à 2850m d&apos;altitude avec 600km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Plagne -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-plagne</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-plagne.png</image:loc>
+      <image:title>Station de ski La Plagne</image:title>
+      <image:caption>Station Alpes du Nord située à 3250m d&apos;altitude avec 425km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Arcs -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-arcs</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-arcs.png</image:loc>
+      <image:title>Station de ski Les Arcs</image:title>
+      <image:caption>Station Alpes du Nord située à 3226m d&apos;altitude avec 425km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Peisey-Vallandry -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=peisey-vallandry</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/peisey-vallandry.png</image:loc>
+      <image:title>Station de ski Peisey-Vallandry</image:title>
+      <image:caption>Station Alpes du Nord située à 3226m d&apos;altitude avec 425km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Rosière -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-rosi-re</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/notre-dame-de-bellecombe.png</image:loc>
+      <image:title>Station de ski La Rosière</image:title>
+      <image:caption>Station Alpes du Nord située à 2800m d&apos;altitude avec 160km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Valmorel -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=valmorel</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/peisey-vallandry.png</image:loc>
+      <image:title>Station de ski Valmorel</image:title>
+      <image:caption>Station Alpes du Nord située à 2550m d&apos;altitude avec 165km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-François-Longchamp -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-fran-ois-longchamp</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/praz-sur-arly.png</image:loc>
+      <image:title>Station de ski Saint-François-Longchamp</image:title>
+      <image:caption>Station Alpes du Nord située à 2550m d&apos;altitude avec 165km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Val Cenis -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-cenis</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/val-cenis.png</image:loc>
+      <image:title>Station de ski Val Cenis</image:title>
+      <image:caption>Station Alpes du Nord située à 2800m d&apos;altitude avec 125km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Norma -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-norma</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/saint-gervais.png</image:loc>
+      <image:title>Station de ski La Norma</image:title>
+      <image:caption>Station Alpes du Nord située à 2750m d&apos;altitude avec 65km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Aussois -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=aussois</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/samoens.png</image:loc>
+      <image:title>Station de ski Aussois</image:title>
+      <image:caption>Station Alpes du Nord située à 2750m d&apos;altitude avec 55km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Pralognan-la-Vanoise -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=pralognan-la-vanoise</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/toussuire.png</image:loc>
+      <image:title>Station de ski Pralognan-la-Vanoise</image:title>
+      <image:caption>Station Alpes du Nord située à 2360m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Saisies -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-saisies</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-saisies.png</image:loc>
+      <image:title>Station de ski Les Saisies</image:title>
+      <image:caption>Station Alpes du Nord située à 1950m d&apos;altitude avec 192km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Tania -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-tania</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/val-cenis.png</image:loc>
+      <image:title>Station de ski La Tania</image:title>
+      <image:caption>Station Alpes du Nord située à 2738m d&apos;altitude avec 600km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Brides-les-Bains -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=brides-les-bains</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valloire.png</image:loc>
+      <image:title>Station de ski Brides-les-Bains</image:title>
+      <image:caption>Station Alpes du Nord située à 2850m d&apos;altitude avec 600km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Orelle -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=orelle</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valmeinier.png</image:loc>
+      <image:title>Station de ski Orelle</image:title>
+      <image:caption>Station Alpes du Nord située à 3230m d&apos;altitude avec 600km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Bonneval-sur-Arc -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=bonneval-sur-arc</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/bonneval-sur-arc.png</image:loc>
+      <image:title>Station de ski Bonneval-sur-Arc</image:title>
+      <image:caption>Station Alpes du Nord située à 3000m d&apos;altitude avec 30km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Bessans -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=bessans</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/avoriaz.png</image:loc>
+      <image:title>Station de ski Bessans</image:title>
+      <image:caption>Station Alpes du Nord située à 2500m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Termignon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=termignon</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/bonneval-sur-arc.png</image:loc>
+      <image:title>Station de ski Termignon</image:title>
+      <image:caption>Station Alpes du Nord située à 2500m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Léchère -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-l-ch-re</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/combloux.png</image:loc>
+      <image:title>Station de ski La Léchère</image:title>
+      <image:caption>Station Alpes du Nord située à 2000m d&apos;altitude avec 50km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Montchavin-Les Coches -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=montchavin-les-coches</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/crest-voland-cohennoz.png</image:loc>
+      <image:title>Station de ski Montchavin-Les Coches</image:title>
+      <image:caption>Station Alpes du Nord située à 3250m d&apos;altitude avec 425km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Champagny-en-Vanoise -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=champagny-en-vanoise</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/karellis.png</image:loc>
+      <image:title>Station de ski Champagny-en-Vanoise</image:title>
+      <image:caption>Station Alpes du Nord située à 3250m d&apos;altitude avec 425km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Corbier -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-corbier</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:title>Station de ski Le Corbier</image:title>
+      <image:caption>Station Alpes du Nord située à 2620m d&apos;altitude avec 310km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Toussuire -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-toussuire</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/toussuire.png</image:loc>
+      <image:title>Station de ski La Toussuire</image:title>
+      <image:caption>Station Alpes du Nord située à 2620m d&apos;altitude avec 310km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Bottières -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-botti-res</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-plagne.png</image:loc>
+      <image:title>Station de ski Les Bottières</image:title>
+      <image:caption>Station Alpes du Nord située à 2620m d&apos;altitude avec 310km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Jean-d&apos;Arves -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-jean-d-arves</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:title>Station de ski Saint-Jean-d&apos;Arves</image:title>
+      <image:caption>Station Alpes du Nord située à 2620m d&apos;altitude avec 310km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Sorlin-d&apos;Arves -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-sorlin-d-arves</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-arcs.png</image:loc>
+      <image:title>Station de ski Saint-Sorlin-d&apos;Arves</image:title>
+      <image:caption>Station Alpes du Nord située à 2620m d&apos;altitude avec 310km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Joue du Loup -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-joue-du-loup</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-carroz.png</image:loc>
+      <image:title>Station de ski La Joue du Loup</image:title>
+      <image:caption>Station Alpes du Nord située à 2000m d&apos;altitude avec 50km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Albiez-Montrond -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=albiez-montrond</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-contamines-montjoie.png</image:loc>
+      <image:title>Station de ski Albiez-Montrond</image:title>
+      <image:caption>Station Alpes du Nord située à 2100m d&apos;altitude avec 80km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Valloire -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=valloire</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valloire.png</image:loc>
+      <image:title>Station de ski Valloire</image:title>
+      <image:caption>Station Alpes du Nord située à 2600m d&apos;altitude avec 150km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Valmeinier -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=valmeinier</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valmeinier.png</image:loc>
+      <image:title>Station de ski Valmeinier</image:title>
+      <image:caption>Station Alpes du Nord située à 2600m d&apos;altitude avec 150km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- L&apos;Alpe d&apos;Huez -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=l-alpe-d-huez</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-gets.png</image:loc>
+      <image:title>Station de ski L&apos;Alpe d&apos;Huez</image:title>
+      <image:caption>Station Alpes du Nord située à 3330m d&apos;altitude avec 250km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Deux Alpes -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-deux-alpes</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-saisies.png</image:loc>
+      <image:title>Station de ski Les Deux Alpes</image:title>
+      <image:caption>Station Alpes du Nord située à 3600m d&apos;altitude avec 200km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Chamrousse -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=chamrousse</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/megeve.png</image:loc>
+      <image:title>Station de ski Chamrousse</image:title>
+      <image:caption>Station Alpes du Nord située à 2250m d&apos;altitude avec 90km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les 7 Laux -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-7-laux</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/morzine.png</image:loc>
+      <image:title>Station de ski Les 7 Laux</image:title>
+      <image:caption>Station Alpes du Nord située à 2400m d&apos;altitude avec 120km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Villard-de-Lans -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=villard-de-lans</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/notre-dame-de-bellecombe.png</image:loc>
+      <image:title>Station de ski Villard-de-Lans</image:title>
+      <image:caption>Station Alpes du Nord située à 2170m d&apos;altitude avec 125km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Vaujany -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=vaujany</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/peisey-vallandry.png</image:loc>
+      <image:title>Station de ski Vaujany</image:title>
+      <image:caption>Station Alpes du Nord située à 3330m d&apos;altitude avec 250km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Oz-en-Oisans -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=oz-en-oisans</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/praz-sur-arly.png</image:loc>
+      <image:title>Station de ski Oz-en-Oisans</image:title>
+      <image:caption>Station Alpes du Nord située à 3330m d&apos;altitude avec 250km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Auris-en-Oisans -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=auris-en-oisans</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/saint-gervais.png</image:loc>
+      <image:title>Station de ski Auris-en-Oisans</image:title>
+      <image:caption>Station Alpes du Nord située à 3330m d&apos;altitude avec 250km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- L&apos;Alpe du Grand Serre -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=l-alpe-du-grand-serre</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/samoens.png</image:loc>
+      <image:title>Station de ski L&apos;Alpe du Grand Serre</image:title>
+      <image:caption>Station Alpes du Nord située à 2115m d&apos;altitude avec 50km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Corrençon-en-Vercors -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=corren-on-en-vercors</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/toussuire.png</image:loc>
+      <image:title>Station de ski Corrençon-en-Vercors</image:title>
+      <image:caption>Station Alpes du Nord située à 2050m d&apos;altitude avec 30km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Méaudre -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=m-audre</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/val-cenis.png</image:loc>
+      <image:title>Station de ski Méaudre</image:title>
+      <image:caption>Station Alpes du Nord située à 1600m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Autrans -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=autrans</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valloire.png</image:loc>
+      <image:title>Station de ski Autrans</image:title>
+      <image:caption>Station Alpes du Nord située à 1650m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Lans-en-Vercors -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=lans-en-vercors</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valmeinier.png</image:loc>
+      <image:title>Station de ski Lans-en-Vercors</image:title>
+      <image:caption>Station Alpes du Nord située à 1700m d&apos;altitude avec 22km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Pierre-de-Chartreuse -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-pierre-de-chartreuse</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/avoriaz.png</image:loc>
+      <image:title>Station de ski Saint-Pierre-de-Chartreuse</image:title>
+      <image:caption>Station Alpes du Nord située à 1800m d&apos;altitude avec 35km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Collet d&apos;Allevard -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-collet-d-allevard</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/bonneval-sur-arc.png</image:loc>
+      <image:title>Station de ski Le Collet d&apos;Allevard</image:title>
+      <image:caption>Station Alpes du Nord située à 2100m d&apos;altitude avec 40km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Col de Porte -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=col-de-porte</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/combloux.png</image:loc>
+      <image:title>Station de ski Col de Porte</image:title>
+      <image:caption>Station Alpes du Nord située à 1700m d&apos;altitude avec 18km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Gresse-en-Vercors -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=gresse-en-vercors</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/crest-voland-cohennoz.png</image:loc>
+      <image:title>Station de ski Gresse-en-Vercors</image:title>
+      <image:caption>Station Alpes du Nord située à 1800m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Font d&apos;Urle -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=font-d-urle</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/karellis.png</image:loc>
+      <image:title>Station de ski Font d&apos;Urle</image:title>
+      <image:caption>Station Alpes du Nord située à 1650m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Herbouilly -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=herbouilly</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:title>Station de ski Herbouilly</image:title>
+      <image:caption>Station Alpes du Nord située à 1650m d&apos;altitude avec 12km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Col de Marcieu -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=col-de-marcieu</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-plagne.png</image:loc>
+      <image:title>Station de ski Col de Marcieu</image:title>
+      <image:caption>Station Alpes du Nord située à 1500m d&apos;altitude avec 10km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Montagne de Lans -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=montagne-de-lans</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:title>Station de ski Montagne de Lans</image:title>
+      <image:caption>Station Alpes du Nord située à 1700m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Signal de l&apos;Homme -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=signal-de-l-homme</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-arcs.png</image:loc>
+      <image:title>Station de ski Signal de l&apos;Homme</image:title>
+      <image:caption>Station Alpes du Nord située à 2050m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Crêt du Poulet -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=cr-t-du-poulet</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-carroz.png</image:loc>
+      <image:title>Station de ski Crêt du Poulet</image:title>
+      <image:caption>Station Alpes du Nord située à 1600m d&apos;altitude avec 18km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Charmant Som -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=charmant-som</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-contamines-montjoie.png</image:loc>
+      <image:title>Station de ski Charmant Som</image:title>
+      <image:caption>Station Alpes du Nord située à 1700m d&apos;altitude avec 16km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Méaudre Nordic -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=m-audre-nordic</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-gets.png</image:loc>
+      <image:title>Station de ski Méaudre Nordic</image:title>
+      <image:caption>Station Alpes du Nord située à 1600m d&apos;altitude avec 12km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Serre Chevalier -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=serre-chevalier</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-saisies.png</image:loc>
+      <image:title>Station de ski Serre Chevalier</image:title>
+      <image:caption>Station Alpes du Sud située à 2830m d&apos;altitude avec 250km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Vars -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=vars</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/megeve.png</image:loc>
+      <image:title>Station de ski Vars</image:title>
+      <image:caption>Station Alpes du Sud située à 2750m d&apos;altitude avec 185km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Risoul -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=risoul</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/morzine.png</image:loc>
+      <image:title>Station de ski Risoul</image:title>
+      <image:caption>Station Alpes du Sud située à 2750m d&apos;altitude avec 185km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Orres -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-orres</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/notre-dame-de-bellecombe.png</image:loc>
+      <image:title>Station de ski Les Orres</image:title>
+      <image:caption>Station Alpes du Sud située à 2720m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Montgenèvre -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=montgen-vre</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/peisey-vallandry.png</image:loc>
+      <image:title>Station de ski Montgenèvre</image:title>
+      <image:caption>Station Alpes du Sud située à 2700m d&apos;altitude avec 400km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Puy-Saint-Vincent -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=puy-saint-vincent</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/praz-sur-arly.png</image:loc>
+      <image:title>Station de ski Puy-Saint-Vincent</image:title>
+      <image:caption>Station Alpes du Sud située à 2700m d&apos;altitude avec 75km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Orcières Merlette -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=orci-res-merlette</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/saint-gervais.png</image:loc>
+      <image:title>Station de ski Orcières Merlette</image:title>
+      <image:caption>Station Alpes du Sud située à 2725m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Réallon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=r-allon</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/samoens.png</image:loc>
+      <image:title>Station de ski Réallon</image:title>
+      <image:caption>Station Alpes du Sud située à 2450m d&apos;altitude avec 30km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Ancelle -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=ancelle</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/toussuire.png</image:loc>
+      <image:title>Station de ski Ancelle</image:title>
+      <image:caption>Station Alpes du Sud située à 1800m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Céüze -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=c-ze</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/val-cenis.png</image:loc>
+      <image:title>Station de ski Céüze</image:title>
+      <image:caption>Station Alpes du Sud située à 1850m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Chaillol -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=chaillol</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valloire.png</image:loc>
+      <image:title>Station de ski Chaillol</image:title>
+      <image:caption>Station Alpes du Sud située à 2000m d&apos;altitude avec 30km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Crévoux -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=cr-voux</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valmeinier.png</image:loc>
+      <image:title>Station de ski Crévoux</image:title>
+      <image:caption>Station Alpes du Sud située à 2250m d&apos;altitude avec 35km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Superdévoluy -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=superd-voluy</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/avoriaz.png</image:loc>
+      <image:title>Station de ski Superdévoluy</image:title>
+      <image:caption>Station Alpes du Sud située à 2500m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Joue du Loup -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-joue-du-loup</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/bonneval-sur-arc.png</image:loc>
+      <image:title>Station de ski La Joue du Loup</image:title>
+      <image:caption>Station Alpes du Sud située à 2007m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Léger-les-Mélèzes -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-l-ger-les-m-l-zes</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/combloux.png</image:loc>
+      <image:title>Station de ski Saint-Léger-les-Mélèzes</image:title>
+      <image:caption>Station Alpes du Sud située à 1800m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Pelvoux -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=pelvoux</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/crest-voland-cohennoz.png</image:loc>
+      <image:title>Station de ski Pelvoux</image:title>
+      <image:caption>Station Alpes du Sud située à 2000m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Jean-Montclar -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-jean-montclar</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/karellis.png</image:loc>
+      <image:title>Station de ski Saint-Jean-Montclar</image:title>
+      <image:caption>Station Alpes du Sud située à 2200m d&apos;altitude avec 40km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Grand Puy -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=grand-puy</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:title>Station de ski Grand Puy</image:title>
+      <image:caption>Station Alpes du Sud située à 1850m d&apos;altitude avec 22km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Château-Ville-Vieille -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=ch-teau-ville-vieille</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-plagne.png</image:loc>
+      <image:title>Station de ski Château-Ville-Vieille</image:title>
+      <image:caption>Station Alpes du Sud située à 2100m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Abriès -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=abri-s</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:title>Station de ski Abriès</image:title>
+      <image:caption>Station Alpes du Sud située à 2000m d&apos;altitude avec 18km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Molines-en-Queyras -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=molines-en-queyras</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-arcs.png</image:loc>
+      <image:title>Station de ski Molines-en-Queyras</image:title>
+      <image:caption>Station Alpes du Sud située à 2100m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Arvieux -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=arvieux</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-carroz.png</image:loc>
+      <image:title>Station de ski Arvieux</image:title>
+      <image:caption>Station Alpes du Sud située à 1900m d&apos;altitude avec 12km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Grave -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-grave</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-contamines-montjoie.png</image:loc>
+      <image:title>Station de ski La Grave</image:title>
+      <image:caption>Station Alpes du Sud située à 3550m d&apos;altitude avec 60km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Névache -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=n-vache</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-gets.png</image:loc>
+      <image:title>Station de ski Névache</image:title>
+      <image:caption>Station Alpes du Sud située à 2100m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Ceillac -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=ceillac</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-saisies.png</image:loc>
+      <image:title>Station de ski Ceillac</image:title>
+      <image:caption>Station Alpes du Sud située à 2100m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Véran -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-v-ran</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/megeve.png</image:loc>
+      <image:title>Station de ski Saint-Véran</image:title>
+      <image:caption>Station Alpes du Sud située à 2100m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Ristolas -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=ristolas</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/morzine.png</image:loc>
+      <image:title>Station de ski Ristolas</image:title>
+      <image:caption>Station Alpes du Sud située à 1950m d&apos;altitude avec 10km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Villeneuve-la-Salle -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=villeneuve-la-salle</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/notre-dame-de-bellecombe.png</image:loc>
+      <image:title>Station de ski Villeneuve-la-Salle</image:title>
+      <image:caption>Station Alpes du Sud située à 2700m d&apos;altitude avec 250km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Briançon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=brian-on</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/peisey-vallandry.png</image:loc>
+      <image:title>Station de ski Briançon</image:title>
+      <image:caption>Station Alpes du Sud située à 2800m d&apos;altitude avec 250km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Col du Lautaret -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=col-du-lautaret</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/praz-sur-arly.png</image:loc>
+      <image:title>Station de ski Col du Lautaret</image:title>
+      <image:caption>Station Alpes du Sud située à 2500m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Isola 2000 -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=isola-2000</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/saint-gervais.png</image:loc>
+      <image:title>Station de ski Isola 2000</image:title>
+      <image:caption>Station Alpes du Sud située à 2610m d&apos;altitude avec 120km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Auron -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=auron</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/samoens.png</image:loc>
+      <image:title>Station de ski Auron</image:title>
+      <image:caption>Station Alpes du Sud située à 2450m d&apos;altitude avec 135km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Valberg -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=valberg</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/toussuire.png</image:loc>
+      <image:title>Station de ski Valberg</image:title>
+      <image:caption>Station Alpes du Sud située à 2066m d&apos;altitude avec 90km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Colmiane -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-colmiane</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/val-cenis.png</image:loc>
+      <image:title>Station de ski La Colmiane</image:title>
+      <image:caption>Station Alpes du Sud située à 1800m d&apos;altitude avec 30km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Roubion-Les Buisses -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=roubion-les-buisses</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valloire.png</image:loc>
+      <image:title>Station de ski Roubion-Les Buisses</image:title>
+      <image:caption>Station Alpes du Sud située à 1800m d&apos;altitude avec 35km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Gréolières-les-Neiges -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=gr-oli-res-les-neiges</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valmeinier.png</image:loc>
+      <image:title>Station de ski Gréolières-les-Neiges</image:title>
+      <image:caption>Station Alpes du Sud située à 1800m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Turini Camp d&apos;Argent -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=turini-camp-d-argent</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/avoriaz.png</image:loc>
+      <image:title>Station de ski Turini Camp d&apos;Argent</image:title>
+      <image:caption>Station Alpes du Sud située à 1700m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Beuil-Les Launes -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=beuil-les-launes</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/bonneval-sur-arc.png</image:loc>
+      <image:title>Station de ski Beuil-Les Launes</image:title>
+      <image:caption>Station Alpes du Sud située à 2000m d&apos;altitude avec 90km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Boréon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-bor-on</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/combloux.png</image:loc>
+      <image:title>Station de ski Le Boréon</image:title>
+      <image:caption>Station Alpes du Sud située à 1700m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Limone Piemonte -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=limone-piemonte</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/crest-voland-cohennoz.png</image:loc>
+      <image:title>Station de ski Limone Piemonte</image:title>
+      <image:caption>Station Alpes du Sud située à 2100m d&apos;altitude avec 80km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Grand Tourmalet -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=grand-tourmalet</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/karellis.png</image:loc>
+      <image:title>Station de ski Grand Tourmalet</image:title>
+      <image:caption>Station Pyrénées située à 2500m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Lary-Soulan -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-lary-soulan</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:title>Station de ski Saint-Lary-Soulan</image:title>
+      <image:caption>Station Pyrénées située à 2515m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Peyragudes -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=peyragudes</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-plagne.png</image:loc>
+      <image:title>Station de ski Peyragudes</image:title>
+      <image:caption>Station Pyrénées située à 2400m d&apos;altitude avec 60km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Cauterets -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=cauterets</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:title>Station de ski Cauterets</image:title>
+      <image:caption>Station Pyrénées située à 2415m d&apos;altitude avec 36km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Luz Ardiden -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=luz-ardiden</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-arcs.png</image:loc>
+      <image:title>Station de ski Luz Ardiden</image:title>
+      <image:caption>Station Pyrénées située à 2500m d&apos;altitude avec 60km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Font-Romeu -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=font-romeu</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-carroz.png</image:loc>
+      <image:title>Station de ski Font-Romeu</image:title>
+      <image:caption>Station Pyrénées située à 2213m d&apos;altitude avec 58km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Angles -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-angles</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-contamines-montjoie.png</image:loc>
+      <image:title>Station de ski Les Angles</image:title>
+      <image:caption>Station Pyrénées située à 2400m d&apos;altitude avec 55km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Piau-Engaly -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=piau-engaly</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-gets.png</image:loc>
+      <image:title>Station de ski Piau-Engaly</image:title>
+      <image:caption>Station Pyrénées située à 2528m d&apos;altitude avec 65km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Gourette -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=gourette</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-saisies.png</image:loc>
+      <image:title>Station de ski Gourette</image:title>
+      <image:caption>Station Pyrénées située à 2400m d&apos;altitude avec 40km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Pierre Saint-Martin -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-pierre-saint-martin</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/megeve.png</image:loc>
+      <image:title>Station de ski La Pierre Saint-Martin</image:title>
+      <image:caption>Station Pyrénées située à 2153m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Ax 3 Domaines -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=ax-3-domaines</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/morzine.png</image:loc>
+      <image:title>Station de ski Ax 3 Domaines</image:title>
+      <image:caption>Station Pyrénées située à 2400m d&apos;altitude avec 80km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Peyresourde -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=peyresourde</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/notre-dame-de-bellecombe.png</image:loc>
+      <image:title>Station de ski Peyresourde</image:title>
+      <image:caption>Station Pyrénées située à 2002m d&apos;altitude avec 50km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Val Louron -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-louron</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/peisey-vallandry.png</image:loc>
+      <image:title>Station de ski Val Louron</image:title>
+      <image:caption>Station Pyrénées située à 2100m d&apos;altitude avec 45km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Gavarnie-Gèdre -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=gavarnie-g-dre</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/praz-sur-arly.png</image:loc>
+      <image:title>Station de ski Gavarnie-Gèdre</image:title>
+      <image:caption>Station Pyrénées située à 2400m d&apos;altitude avec 35km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Hautacam -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=hautacam</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/saint-gervais.png</image:loc>
+      <image:title>Station de ski Hautacam</image:title>
+      <image:caption>Station Pyrénées située à 1850m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Val d&apos;Azun -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-d-azun</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/samoens.png</image:loc>
+      <image:title>Station de ski Val d&apos;Azun</image:title>
+      <image:caption>Station Pyrénées située à 1800m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Cauterets-Pont d&apos;Espagne -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=cauterets-pont-d-espagne</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/toussuire.png</image:loc>
+      <image:title>Station de ski Cauterets-Pont d&apos;Espagne</image:title>
+      <image:caption>Station Pyrénées située à 2400m d&apos;altitude avec 30km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Artouste -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=artouste</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/val-cenis.png</image:loc>
+      <image:title>Station de ski Artouste</image:title>
+      <image:caption>Station Pyrénées située à 2100m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Issarbe -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=issarbe</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valloire.png</image:loc>
+      <image:title>Station de ski Issarbe</image:title>
+      <image:caption>Station Pyrénées située à 1600m d&apos;altitude avec 12km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Mongie -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-mongie</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valmeinier.png</image:loc>
+      <image:title>Station de ski La Mongie</image:title>
+      <image:caption>Station Pyrénées située à 2500m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Barèges -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=bar-ges</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/avoriaz.png</image:loc>
+      <image:title>Station de ski Barèges</image:title>
+      <image:caption>Station Pyrénées située à 2350m d&apos;altitude avec 100km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Luchon-Superbagnères -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=luchon-superbagn-res</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/bonneval-sur-arc.png</image:loc>
+      <image:title>Station de ski Luchon-Superbagnères</image:title>
+      <image:caption>Station Pyrénées située à 2260m d&apos;altitude avec 32km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Mourtis -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-mourtis</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/combloux.png</image:loc>
+      <image:title>Station de ski Le Mourtis</image:title>
+      <image:caption>Station Pyrénées située à 1850m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Bourg d&apos;Oueil -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=bourg-d-oueil</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/crest-voland-cohennoz.png</image:loc>
+      <image:title>Station de ski Bourg d&apos;Oueil</image:title>
+      <image:caption>Station Pyrénées située à 1800m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Guzet -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=guzet</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/karellis.png</image:loc>
+      <image:title>Station de ski Guzet</image:title>
+      <image:caption>Station Pyrénées située à 2100m d&apos;altitude avec 40km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Ascou-Pailhères -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=ascou-pailh-res</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:title>Station de ski Ascou-Pailhères</image:title>
+      <image:caption>Station Pyrénées située à 2000m d&apos;altitude avec 30km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Ax-Bonascre -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=ax-bonascre</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-plagne.png</image:loc>
+      <image:title>Station de ski Ax-Bonascre</image:title>
+      <image:caption>Station Pyrénées située à 2400m d&apos;altitude avec 80km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Mijanès-Donezan -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=mijan-s-donezan</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:title>Station de ski Mijanès-Donezan</image:title>
+      <image:caption>Station Pyrénées située à 1800m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Formiguères -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=formigu-res</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-arcs.png</image:loc>
+      <image:title>Station de ski Formiguères</image:title>
+      <image:caption>Station Pyrénées située à 2000m d&apos;altitude avec 18km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Porté-Puymorens -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=port-puymorens</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-carroz.png</image:loc>
+      <image:title>Station de ski Porté-Puymorens</image:title>
+      <image:caption>Station Pyrénées située à 2500m d&apos;altitude avec 45km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Puigmal -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=puigmal</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-contamines-montjoie.png</image:loc>
+      <image:title>Station de ski Puigmal</image:title>
+      <image:caption>Station Pyrénées située à 2700m d&apos;altitude avec 50km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Espace Cambre d&apos;Aze -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=espace-cambre-d-aze</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-gets.png</image:loc>
+      <image:title>Station de ski Espace Cambre d&apos;Aze</image:title>
+      <image:caption>Station Pyrénées située à 2400m d&apos;altitude avec 40km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Eyne-Saint-Pierre-dels-Forcats -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=eyne-saint-pierre-dels-forcats</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-saisies.png</image:loc>
+      <image:title>Station de ski Eyne-Saint-Pierre-dels-Forcats</image:title>
+      <image:caption>Station Pyrénées située à 2200m d&apos;altitude avec 35km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Pyrénées 2000 -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=pyr-n-es-2000</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/megeve.png</image:loc>
+      <image:title>Station de ski Pyrénées 2000</image:title>
+      <image:caption>Station Pyrénées située à 2200m d&apos;altitude avec 45km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Bolquère-Pyrenées 2000 -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=bolqu-re-pyren-es-2000</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/morzine.png</image:loc>
+      <image:title>Station de ski Bolquère-Pyrenées 2000</image:title>
+      <image:caption>Station Pyrénées située à 2213m d&apos;altitude avec 58km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Err-Puigmal -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=err-puigmal</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/notre-dame-de-bellecombe.png</image:loc>
+      <image:title>Station de ski Err-Puigmal</image:title>
+      <image:caption>Station Pyrénées située à 2400m d&apos;altitude avec 40km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Porte-Puymorens -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=porte-puymorens</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/peisey-vallandry.png</image:loc>
+      <image:title>Station de ski Porte-Puymorens</image:title>
+      <image:caption>Station Pyrénées située à 2500m d&apos;altitude avec 40km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Jean-de-Verges -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-jean-de-verges</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/praz-sur-arly.png</image:loc>
+      <image:title>Station de ski Saint-Jean-de-Verges</image:title>
+      <image:caption>Station Pyrénées située à 1400m d&apos;altitude avec 8km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Monts d&apos;Olmes -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=monts-d-olmes</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/saint-gervais.png</image:loc>
+      <image:title>Station de ski Monts d&apos;Olmes</image:title>
+      <image:caption>Station Pyrénées située à 1800m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Plateau de Beille -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=plateau-de-beille</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/samoens.png</image:loc>
+      <image:title>Station de ski Plateau de Beille</image:title>
+      <image:caption>Station Pyrénées située à 1800m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Rousses -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-rousses</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/toussuire.png</image:loc>
+      <image:title>Station de ski Les Rousses</image:title>
+      <image:caption>Station Jura située à 1680m d&apos;altitude avec 50km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Métabief -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=m-tabief</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/val-cenis.png</image:loc>
+      <image:title>Station de ski Métabief</image:title>
+      <image:caption>Station Jura située à 1463m d&apos;altitude avec 40km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Monts Jura -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=monts-jura</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valloire.png</image:loc>
+      <image:title>Station de ski Monts Jura</image:title>
+      <image:caption>Station Jura située à 1720m d&apos;altitude avec 60km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Molunes -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-molunes</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valmeinier.png</image:loc>
+      <image:title>Station de ski Les Molunes</image:title>
+      <image:caption>Station Jura située à 1280m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Bellefontaine -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=bellefontaine</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/avoriaz.png</image:loc>
+      <image:title>Station de ski Bellefontaine</image:title>
+      <image:caption>Station Jura située à 1150m d&apos;altitude avec 12km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Pesse -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-pesse</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/bonneval-sur-arc.png</image:loc>
+      <image:title>Station de ski La Pesse</image:title>
+      <image:caption>Station Jura située à 1200m d&apos;altitude avec 10km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Foncine-le-Haut -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=foncine-le-haut</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/combloux.png</image:loc>
+      <image:title>Station de ski Foncine-le-Haut</image:title>
+      <image:caption>Station Jura située à 1100m d&apos;altitude avec 8km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Chamrousse-Jura -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=chamrousse-jura</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/crest-voland-cohennoz.png</image:loc>
+      <image:title>Station de ski Chamrousse-Jura</image:title>
+      <image:caption>Station Jura située à 1400m d&apos;altitude avec 18km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Faucille -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-faucille</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/karellis.png</image:loc>
+      <image:title>Station de ski La Faucille</image:title>
+      <image:caption>Station Jura située à 1720m d&apos;altitude avec 30km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Lélex-Crozet -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=l-lex-crozet</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:title>Station de ski Lélex-Crozet</image:title>
+      <image:caption>Station Jura située à 1680m d&apos;altitude avec 50km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Bresse Hohneck -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-bresse-hohneck</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-plagne.png</image:loc>
+      <image:title>Station de ski La Bresse Hohneck</image:title>
+      <image:caption>Station Vosges située à 1350m d&apos;altitude avec 35km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Gérardmer -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=g-rardmer</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:title>Station de ski Gérardmer</image:title>
+      <image:caption>Station Vosges située à 1350m d&apos;altitude avec 40km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Markstein -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-markstein</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-arcs.png</image:loc>
+      <image:title>Station de ski Le Markstein</image:title>
+      <image:caption>Station Vosges située à 1265m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Schlucht -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-schlucht</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-carroz.png</image:loc>
+      <image:title>Station de ski La Schlucht</image:title>
+      <image:caption>Station Vosges située à 1250m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Schnepfenried -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-schnepfenried</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-contamines-montjoie.png</image:loc>
+      <image:title>Station de ski Le Schnepfenried</image:title>
+      <image:caption>Station Vosges située à 1258m d&apos;altitude avec 18km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Xonrupt -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=xonrupt</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-gets.png</image:loc>
+      <image:title>Station de ski Xonrupt</image:title>
+      <image:caption>Station Vosges située à 1200m d&apos;altitude avec 12km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Valtin -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-valtin</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-saisies.png</image:loc>
+      <image:title>Station de ski Le Valtin</image:title>
+      <image:caption>Station Vosges située à 1150m d&apos;altitude avec 10km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Champ du Feu -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-champ-du-feu</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/megeve.png</image:loc>
+      <image:title>Station de ski Le Champ du Feu</image:title>
+      <image:caption>Station Vosges située à 1100m d&apos;altitude avec 14km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Gaschney -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-gaschney</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/morzine.png</image:loc>
+      <image:title>Station de ski Le Gaschney</image:title>
+      <image:caption>Station Vosges située à 1200m d&apos;altitude avec 16km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Rouge Gazon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=rouge-gazon</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/notre-dame-de-bellecombe.png</image:loc>
+      <image:title>Station de ski Rouge Gazon</image:title>
+      <image:caption>Station Vosges située à 1150m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Ventron -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=ventron</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/peisey-vallandry.png</image:loc>
+      <image:title>Station de ski Ventron</image:title>
+      <image:caption>Station Vosges située à 1200m d&apos;altitude avec 16km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Tanet -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-tanet</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/praz-sur-arly.png</image:loc>
+      <image:title>Station de ski Le Tanet</image:title>
+      <image:caption>Station Vosges située à 1292m d&apos;altitude avec 18km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Lac Blanc -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=lac-blanc</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/saint-gervais.png</image:loc>
+      <image:title>Station de ski Lac Blanc</image:title>
+      <image:caption>Station Vosges située à 1200m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Bussang -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=bussang</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/samoens.png</image:loc>
+      <image:title>Station de ski Bussang</image:title>
+      <image:caption>Station Vosges située à 1100m d&apos;altitude avec 12km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Bresse-Brabant -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-bresse-brabant</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/toussuire.png</image:loc>
+      <image:title>Station de ski La Bresse-Brabant</image:title>
+      <image:caption>Station Vosges située à 1300m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Super Besse -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=super-besse</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/val-cenis.png</image:loc>
+      <image:title>Station de ski Super Besse</image:title>
+      <image:caption>Station Massif Central située à 1850m d&apos;altitude avec 45km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Mont-Dore -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-mont-dore</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valloire.png</image:loc>
+      <image:title>Station de ski Le Mont-Dore</image:title>
+      <image:caption>Station Massif Central située à 1850m d&apos;altitude avec 42km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Lioran -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-lioran</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/valmeinier.png</image:loc>
+      <image:title>Station de ski Le Lioran</image:title>
+      <image:caption>Station Massif Central située à 1850m d&apos;altitude avec 60km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Chastreix-Sancy -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=chastreix-sancy</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/avoriaz.png</image:loc>
+      <image:title>Station de ski Chastreix-Sancy</image:title>
+      <image:caption>Station Massif Central située à 1750m d&apos;altitude avec 35km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- La Bourboule -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-bourboule</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/bonneval-sur-arc.png</image:loc>
+      <image:title>Station de ski La Bourboule</image:title>
+      <image:caption>Station Massif Central située à 1500m d&apos;altitude avec 12km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Prabouré -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=prabour-</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/combloux.png</image:loc>
+      <image:title>Station de ski Prabouré</image:title>
+      <image:caption>Station Massif Central située à 1680m d&apos;altitude avec 25km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Pas de Peyrol -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-pas-de-peyrol</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/crest-voland-cohennoz.png</image:loc>
+      <image:title>Station de ski Le Pas de Peyrol</image:title>
+      <image:caption>Station Massif Central située à 1700m d&apos;altitude avec 18km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Pailherols -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=pailherols</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/karellis.png</image:loc>
+      <image:title>Station de ski Pailherols</image:title>
+      <image:caption>Station Massif Central située à 1600m d&apos;altitude avec 15km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Brameloup -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=brameloup</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:title>Station de ski Brameloup</image:title>
+      <image:caption>Station Massif Central située à 1400m d&apos;altitude avec 10km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Laguiole -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=laguiole</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/la-plagne.png</image:loc>
+      <image:title>Station de ski Laguiole</image:title>
+      <image:caption>Station Massif Central située à 1450m d&apos;altitude avec 12km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Les Estables -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-estables</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:title>Station de ski Les Estables</image:title>
+      <image:caption>Station Massif Central située à 1600m d&apos;altitude avec 18km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Chalmazel -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=chalmazel</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-arcs.png</image:loc>
+      <image:title>Station de ski Chalmazel</image:title>
+      <image:caption>Station Massif Central située à 1600m d&apos;altitude avec 20km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Prabouré-Lioran -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=prabour-lioran</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-carroz.png</image:loc>
+      <image:title>Station de ski Prabouré-Lioran</image:title>
+      <image:caption>Station Massif Central située à 1680m d&apos;altitude avec 30km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Le Bessat -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-bessat</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-contamines-montjoie.png</image:loc>
+      <image:title>Station de ski Le Bessat</image:title>
+      <image:caption>Station Massif Central située à 1200m d&apos;altitude avec 8km de pistes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Saint-Urcize -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-urcize</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ouskierceweeekend.fr/images/les-gets.png</image:loc>
+      <image:title>Station de ski Saint-Urcize</image:title>
+      <image:caption>Station Massif Central située à 1400m d&apos;altitude avec 10km de pistes.</image:caption>
+    </image:image>
+  </url>
+
 </urlset>

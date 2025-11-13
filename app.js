@@ -74,44 +74,64 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 }
 
 // ========================================
-// GÉOLOCALISATION SÉCURISÉE
+// GÉOLOCALISATION SÉCURISÉE AVEC RETRY
 // ========================================
 
+/**
+ * Obtient les coordonnées géographiques d'un lieu
+ * @param {string} location - Nom du lieu
+ * @returns {Promise<Object|null>} Coordonnées {lat, lon} ou null
+ */
 async function getCoordinates(location) {
     // Sanitise l'entrée utilisateur
     const sanitizedLocation = sanitizeInput(location, 50);
     if (!sanitizedLocation) return null;
-    
+
     const locationLower = sanitizedLocation.toLowerCase().trim();
-    
-    // Recherche dans la base locale (sécurisée)
+
+    // Recherche dans la base locale (sécurisée et rapide)
     for (const [cityName, coords] of Object.entries(cities)) {
         if (locationLower.includes(cityName) || cityName.includes(locationLower)) {
             return coords;
         }
     }
-    
-    // Appel API avec timeout et validation
+
+    // Appel API Nominatim avec retry et validation
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(sanitizedLocation)},France&limit=1&countrycodes=fr`;
+
     try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 5000); // Timeout 5s
-        
-        const response = await fetch(
-            `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(sanitizedLocation)},France&limit=1&countrycodes=fr`,
-            { 
+        let data;
+
+        // Utiliser robustFetch si disponible
+        if (typeof window !== 'undefined' && window.apiUtils && window.apiUtils.robustFetch) {
+            data = await window.apiUtils.robustFetch(url, {
+                maxRetries: 2,
+                retryDelay: 1500,
+                timeout: 6000,
+                cacheTTL: 3600000, // 1 heure pour les géolocalisations
+                useCache: true
+            }, {
+                headers: { 'User-Agent': 'SkiFinder/1.0' }
+            });
+        } else {
+            // Fallback sans retry
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 6000);
+
+            const response = await fetch(url, {
                 headers: { 'User-Agent': 'SkiFinder/1.0' },
                 signal: controller.signal
+            });
+
+            clearTimeout(timeoutId);
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
             }
-        );
-        
-        clearTimeout(timeoutId);
-        
-        if (!response.ok) {
-            throw new Error('Erreur réseau');
+
+            data = await response.json();
         }
-        
-        const data = await response.json();
-        
+
         // Validation des données reçues
         if (Array.isArray(data) && data.length > 0 && data[0].lat && data[0].lon) {
             return {
@@ -119,15 +139,18 @@ async function getCoordinates(location) {
                 lon: validateNumber(data[0].lon, -180, 180)
             };
         }
+
+        console.warn('⚠️ Aucun résultat trouvé pour:', sanitizedLocation);
+        return null;
+
     } catch (error) {
-        if (error.name === 'AbortError') {
-            console.error('Timeout API géolocalisation');
+        if (error.message.includes('timeout')) {
+            console.error('❌ Timeout API géolocalisation');
         } else {
-            console.error('Erreur API:', error);
+            console.error('❌ Erreur géolocalisation:', error.message);
         }
+        return null;
     }
-    
-    return null;
 }
 
 // ========================================
@@ -162,9 +185,11 @@ function createResortCard(resort, distance = null) {
     return `
         <div class="resort-card">
             <a href="station-detail.html?id=${safeId}" class="image-link">
-                <img src="${safeImage}" 
-                     alt="${safeName}" 
+                <img src="${safeImage}"
+                     alt="${safeName}"
                      class="resort-image"
+                     loading="lazy"
+                     decoding="async"
                      onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">
             </a>
             <div class="resort-content">
@@ -366,5 +391,3 @@ document.addEventListener('DOMContentLoaded', () => {
 Object.freeze(escapeHtml);
 Object.freeze(sanitizeInput);
 Object.freeze(validateNumber);
-
-console.log('✅ app-secure.js chargé - Protections XSS actives');

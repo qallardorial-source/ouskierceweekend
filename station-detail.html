@@ -278,20 +278,63 @@
         <p>&copy; 2025 Où skier ce weekend - Toutes les informations sont à titre indicatif - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
     </footer>
 
+    <script src="config.js"></script>
+    <script src="api-utils.js"></script>
+    <script src="accessibility.js"></script>
     <script src="stations-data.js"></script>
     <script src="weather.js"></script>
     <script>
+        /**
+         * Valide et nettoie un ID de station
+         * @param {string} id - ID à valider
+         * @returns {string|null} ID validé ou null
+         */
+        function validateStationId(id) {
+            if (!id || typeof id !== 'string') {
+                return null;
+            }
+
+            // Nettoyer l'ID (autoriser uniquement alphanumériques et tirets)
+            const cleanId = id.trim().toLowerCase().replace(/[^a-z0-9-]/g, '');
+
+            // Vérifier la longueur (IDs de stations entre 3 et 50 caractères)
+            if (cleanId.length < 3 || cleanId.length > 50) {
+                return null;
+            }
+
+            return cleanId;
+        }
+
+        /**
+         * Charge et affiche les détails d'une station
+         */
         async function loadStationDetail() {
             const urlParams = new URLSearchParams(window.location.search);
-            const stationId = urlParams.get('id');
-            
+            const rawStationId = urlParams.get('id');
+
+            // Validation du paramètre ID
+            const stationId = validateStationId(rawStationId);
+
+            if (!stationId) {
+                document.getElementById('stationDetail').innerHTML = `
+                    <div class="no-results">
+                        <h2>⚠️ Paramètre invalide</h2>
+                        <p>L'identifiant de la station n'est pas valide.</p>
+                        <p><a href="stations.html" class="cta-button">Retour à la liste des stations</a></p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Rechercher la station
             const station = skiResorts.find(s => s.id === stationId);
-            
+
             if (!station) {
                 document.getElementById('stationDetail').innerHTML = `
                     <div class="no-results">
-                        <h2>Station introuvable</h2>
-                        <p><a href="stations.html">Retour à la liste</a></p>
+                        <h2>🔍 Station introuvable</h2>
+                        <p>Aucune station ne correspond à cet identifiant.</p>
+                        <p><a href="stations.html" class="cta-button">Voir toutes les stations</a></p>
                     </div>
                 `;
                 return;
@@ -320,8 +363,10 @@
 
                     <!-- Hero Section -->
                     <div class="station-hero">
-                        <img src="${station.image}" 
+                        <img src="${station.image}"
                              alt="Station de ski ${station.name} - ${station.region}"
+                             fetchpriority="high"
+                             decoding="async"
                              onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">
                         <div class="station-hero-overlay">
                             <h1>${station.name}</h1>
