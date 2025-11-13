@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparateur de Stations | Où Skier ce Weekend</title>
+    <meta name="description" content="Comparez jusqu'à 3 stations de ski côte à côte : prix, domaine skiable, altitude, équipements.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .compare-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .compare-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .action-btn {
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(79, 172, 254, 0.3);
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-btn:hover {
+            background: rgba(79, 172, 254, 0.2);
+            border-color: #4facfe;
+            transform: translateY(-2px);
+        }
+
+        .action-btn.primary {
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            color: white;
+            border: none;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .comparison-card {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid rgba(79, 172, 254, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+            border-color: #4facfe;
+        }
+
+        .compare-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .compare-content {
+            padding: 25px;
+        }
+
+        .compare-title {
+            font-size: 1.5em;
+            color: #4facfe;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .compare-region {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .compare-metrics {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid rgba(79, 172, 254, 0.5);
+        }
+
+        .metric-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9em;
+        }
+
+        .metric-value {
+            color: white;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        .metric-value.best {
+            color: #2ecc71;
+        }
+
+        .metric-value.worst {
+            color: #e74c3c;
+        }
+
+        .price-highlight {
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.3em;
+            font-weight: 800;
+        }
+
+        .compare-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .compare-buttons a,
+        .compare-buttons button {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .view-details {
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            color: white;
+        }
+
+        .add-favorite {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(79, 172, 254, 0.3);
+        }
+
+        .empty-compare {
+            text-align: center;
+            padding: 80px 40px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+
+        .empty-compare h2 {
+            color: #4facfe;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .tips-section {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border-left: 4px solid #4facfe;
+        }
+
+        .tips-section h3 {
+            color: #4facfe;
+            margin-bottom: 15px;
+        }
+
+        .tips-section ul {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .compare-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Recherche</a>
+                <a href="stations.html" class="nav-link">Toutes les stations</a>
+                <a href="blog/index.html" class="nav-link">Blog</a>
+                <a href="favorites.html" class="nav-link">
+                    Favoris <span class="favorites-counter">0</span>
+                </a>
+                <a href="about.html" class="nav-link">À propos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="compare-header">
+            <h1>⚖️ Comparateur de Stations</h1>
+            <p class="subtitle">Comparez jusqu'à 3 stations côte à côte pour faire le meilleur choix</p>
+        </div>
+
+        <div class="compare-actions">
+            <a href="index.html" class="action-btn">
+                🔍 Rechercher d'autres stations
+            </a>
+            <a href="favorites.html" class="action-btn">
+                ❤️ Voir mes favoris
+            </a>
+            <button onclick="shareComparison()" class="action-btn primary">
+                🔗 Partager cette comparaison
+            </button>
+        </div>
+
+        <div id="compareContent">
+            <!-- Contenu dynamique chargé par JS -->
+        </div>
+
+        <div class="tips-section">
+            <h3>💡 Comment bien comparer ?</h3>
+            <ul>
+                <li><strong>Prix total</strong> - Additionnez forfait + logement pour le coût réel du weekend</li>
+                <li><strong>Distance</strong> - Privilégiez les stations à moins de 3h pour un weekend</li>
+                <li><strong>Domaine skiable</strong> - 50-100km suffisent pour 2 jours, 100+ pour les confirmés</li>
+                <li><strong>Altitude</strong> - Plus c'est haut, meilleur est l'enneigement (surtout en mars-avril)</li>
+                <li><strong>Niveau</strong> - Vérifiez que les pistes correspondent à votre niveau</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Où skier ce weekend - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="stations-data.js"></script>
+    <script src="favorites.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        // Afficher la comparaison
+        function displayComparison() {
+            const container = document.getElementById('compareContent');
+            const urlParams = new URLSearchParams(window.location.search);
+            const stationIds = urlParams.get('stations')?.split(',').filter(Boolean) || [];
+
+            if (stationIds.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-compare">
+                        <div style="font-size: 5em; margin-bottom: 20px;">⚖️</div>
+                        <h2>Aucune station à comparer</h2>
+                        <p style="color: rgba(255,255,255,0.8); margin: 20px 0;">
+                            Sélectionnez 2 ou 3 stations depuis la page de recherche ou vos favoris pour les comparer.
+                        </p>
+                        <a href="index.html" class="action-btn primary" style="margin-top: 20px;">
+                            🔍 Rechercher des stations
+                        </a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Récupérer les stations
+            const stations = stationIds.map(id => {
+                return skiResorts.find(s => s.id === id);
+            }).filter(Boolean);
+
+            if (stations.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-compare">
+                        <h2>Stations non trouvées</h2>
+                        <p>Les stations sélectionnées n'ont pas pu être chargées.</p>
+                        <a href="index.html" class="action-btn primary">Retour à la recherche</a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Calculer les meilleurs/pires valeurs pour chaque métrique
+            const metrics = {
+                totalPrice: stations.map(s => (s.skiPass || 0) + (s.lodging || 0)),
+                domainSize: stations.map(s => s.skiableArea || 0),
+                altitude: stations.map(s => s.altitude?.max || 0),
+                distance: stations.map(s => s.distance || 0)
+            };
+
+            const best = {
+                totalPrice: Math.min(...metrics.totalPrice.filter(p => p > 0)),
+                domainSize: Math.max(...metrics.domainSize),
+                altitude: Math.max(...metrics.altitude),
+                distance: Math.min(...metrics.distance.filter(d => d > 0))
+            };
+
+            const worst = {
+                totalPrice: Math.max(...metrics.totalPrice),
+                domainSize: Math.min(...metrics.domainSize),
+                altitude: Math.min(...metrics.altitude),
+                distance: Math.max(...metrics.distance)
+            };
+
+            // Créer les cartes de comparaison
+            const cardsHTML = stations.map((station, index) => {
+                const totalPrice = (station.skiPass || 0) + (station.lodging || 0);
+                const domainSize = station.skiableArea || 0;
+                const altitude = station.altitude?.max || 0;
+                const distance = station.distance || 0;
+
+                return `
+                    <div class="comparison-card">
+                        <img src="${station.image || 'images/default-station.jpg'}" alt="${station.name}" class="compare-image" onerror="this.src='images/default-station.jpg'">
+                        <div class="compare-content">
+                            <h2 class="compare-title">${station.name}</h2>
+                            <p class="compare-region">📍 ${station.region || 'France'}</p>
+
+                            <div class="compare-metrics">
+                                <div class="metric-row">
+                                    <span class="metric-label">💰 Prix total weekend</span>
+                                    <span class="metric-value ${totalPrice === best.totalPrice ? 'best' : totalPrice === worst.totalPrice ? 'worst' : ''}">
+                                        ${totalPrice}€
+                                    </span>
+                                </div>
+
+                                <div class="metric-row">
+                                    <span class="metric-label">🎿 Forfait journée</span>
+                                    <span class="metric-value">${station.skiPass || 'N/A'}€</span>
+                                </div>
+
+                                <div class="metric-row">
+                                    <span class="metric-label">🏠 Logement/nuit</span>
+                                    <span class="metric-value">${station.lodging || 'N/A'}€</span>
+                                </div>
+
+                                <div class="metric-row">
+                                    <span class="metric-label">⛷️ Domaine skiable</span>
+                                    <span class="metric-value ${domainSize === best.domainSize ? 'best' : domainSize === worst.domainSize ? 'worst' : ''}">
+                                        ${domainSize} km
+                                    </span>
+                                </div>
+
+                                <div class="metric-row">
+                                    <span class="metric-label">🏔️ Altitude max</span>
+                                    <span class="metric-value ${altitude === best.altitude ? 'best' : altitude === worst.altitude ? 'worst' : ''}">
+                                        ${altitude} m
+                                    </span>
+                                </div>
+
+                                ${distance > 0 ? `
+                                <div class="metric-row">
+                                    <span class="metric-label">🚗 Distance</span>
+                                    <span class="metric-value ${distance === best.distance ? 'best' : distance === worst.distance ? 'worst' : ''}">
+                                        ${distance} km
+                                    </span>
+                                </div>
+                                ` : ''}
+
+                                <div class="metric-row">
+                                    <span class="metric-label">🎯 Pistes</span>
+                                    <span class="metric-value" style="font-size: 0.9em;">
+                                        ${station.slopes?.green || 0}🟢 ${station.slopes?.blue || 0}🔵 ${station.slopes?.red || 0}🔴 ${station.slopes?.black || 0}⚫
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="compare-buttons">
+                                <a href="station-detail.html?id=${station.id}" class="view-details">
+                                    👁️ Voir détails
+                                </a>
+                                <button onclick="toggleFavoriteInCompare('${station.id}')" class="add-favorite" data-station-id="${station.id}">
+                                    ${favoritesManager.isFavorite(station.id) ? '❤️' : '🤍'}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = `
+                <div class="comparison-grid">
+                    ${cardsHTML}
+                </div>
+            `;
+        }
+
+        // Toggle favori depuis le comparateur
+        function toggleFavoriteInCompare(stationId) {
+            const isFav = favoritesManager.toggleFavorite(stationId);
+            const btn = document.querySelector(`button[data-station-id="${stationId}"]`);
+            if (btn) {
+                btn.textContent = isFav ? '❤️' : '🤍';
+            }
+        }
+
+        // Partager la comparaison
+        function shareComparison() {
+            const url = window.location.href;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Comparaison de stations de ski',
+                    text: 'Découvrez ma comparaison de stations de ski',
+                    url: url
+                }).catch(() => {
+                    // Fallback: copier l'URL
+                    copyToClipboard(url);
+                });
+            } else {
+                copyToClipboard(url);
+            }
+        }
+
+        function copyToClipboard(text) {
+            const input = document.createElement('input');
+            input.value = text;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+
+            alert('✓ Lien copié ! Partagez-le avec vos amis.');
+        }
+
+        // Charger la comparaison au chargement
+        document.addEventListener('DOMContentLoaded', () => {
+            displayComparison();
+
+            // Écouter les changements de favoris
+            window.addEventListener('favoritesUpdated', () => {
+                displayComparison();
+            });
+        });
+    </script>
+</body>
+</html>

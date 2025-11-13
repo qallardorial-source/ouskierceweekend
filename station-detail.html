@@ -35,19 +35,19 @@
         }
         
         .summary-card {
-            background: rgba(15, 32, 39, 0.7);
+            background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(20px);
             padding: 25px;
             border-radius: 15px;
             text-align: center;
-            border: 1px solid rgba(197, 157, 95, 0.3);
+            border: 1px solid rgba(79, 172, 254, 0.3);
             transition: all 0.3s;
         }
         
         .summary-card:hover {
             transform: translateY(-5px);
-            border-color: #c59d5f;
-            box-shadow: 0 10px 30px rgba(197, 157, 95, 0.3);
+            border-color: #4facfe;
+            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
         }
         
         .summary-icon {
@@ -59,7 +59,7 @@
         .summary-content strong {
             display: block;
             font-size: 2em;
-            color: #c59d5f;
+            color: #4facfe;
             margin-bottom: 5px;
         }
         
@@ -69,15 +69,15 @@
         }
         
         .highlight-box {
-            background: rgba(197, 157, 95, 0.15);
+            background: rgba(79, 172, 254, 0.15);
             padding: 25px;
             border-radius: 12px;
             margin: 25px 0;
-            border-left: 4px solid #c59d5f;
+            border-left: 4px solid #4facfe;
         }
         
         .highlight-box h3 {
-            color: #c59d5f;
+            color: #4facfe;
             margin-bottom: 15px;
         }
         
@@ -97,11 +97,11 @@
             background: rgba(255, 255, 255, 0.05);
             padding: 25px;
             border-radius: 12px;
-            border: 1px solid rgba(197, 157, 95, 0.2);
+            border: 1px solid rgba(79, 172, 254, 0.2);
         }
         
         .domain-card h4 {
-            color: #c59d5f;
+            color: #4facfe;
             margin-bottom: 15px;
             font-size: 1.2em;
         }
@@ -115,11 +115,11 @@
             background: rgba(255, 255, 255, 0.05);
             padding: 30px;
             border-radius: 15px;
-            border: 1px solid rgba(197, 157, 95, 0.2);
+            border: 1px solid rgba(79, 172, 254, 0.2);
         }
         
         .pricing-detail h3 {
-            color: #c59d5f;
+            color: #4facfe;
             margin: 25px 0 15px 0;
             font-size: 1.3em;
         }
@@ -148,11 +148,11 @@
         }
         
         .budget-card {
-            background: rgba(197, 157, 95, 0.15);
+            background: rgba(79, 172, 254, 0.15);
             padding: 25px;
             border-radius: 12px;
             text-align: center;
-            border: 2px solid rgba(197, 157, 95, 0.3);
+            border: 2px solid rgba(79, 172, 254, 0.3);
         }
         
         .budget-card h4 {
@@ -163,7 +163,7 @@
         .budget-amount {
             font-size: 3em;
             font-weight: 700;
-            background: linear-gradient(135deg, #c59d5f 0%, #f4d03f 100%);
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -195,11 +195,11 @@
             background: rgba(255, 255, 255, 0.05);
             padding: 25px;
             border-radius: 12px;
-            border-left: 4px solid #c59d5f;
+            border-left: 4px solid #4facfe;
         }
         
         .access-card h4 {
-            color: #c59d5f;
+            color: #4facfe;
             margin-bottom: 15px;
             font-size: 1.2em;
         }
@@ -217,14 +217,14 @@
         }
         
         .tip-card {
-            background: rgba(197, 157, 95, 0.1);
+            background: rgba(79, 172, 254, 0.1);
             padding: 25px;
             border-radius: 12px;
-            border: 1px solid rgba(197, 157, 95, 0.3);
+            border: 1px solid rgba(79, 172, 254, 0.3);
         }
         
         .tip-card h4 {
-            color: #f4d03f;
+            color: #f093fb;
             margin-bottom: 12px;
         }
         
@@ -266,6 +266,9 @@
                 <a href="index.html" class="nav-link">Recherche</a>
                 <a href="stations.html" class="nav-link">Toutes les stations</a>
                 <a href="blog/index.html" class="nav-link">Blog</a>
+                <a href="favorites.html" class="nav-link">
+                    Favoris <span class="favorites-counter">0</span>
+                </a>
                 <a href="about.html" class="nav-link">À propos</a>
             </div>
         </div>
@@ -284,6 +287,8 @@
     <script src="accessibility.js"></script>
     <script src="stations-data.js"></script>
     <script src="weather.js"></script>
+    <script src="share-buttons.js"></script>
+    <script src="blog-stations-links.js"></script>
     <script>
         /**
          * Valide et nettoie un ID de station
@@ -407,6 +412,12 @@
                         </div>
                     </div>
 
+                    <!-- Partage social -->
+                    <div style="text-align: center; margin: 30px 0; padding: 25px; background: rgba(255, 255, 255, 0.12); border-radius: 12px; border: 1px solid rgba(79, 172, 254, 0.3);">
+                        <h3 style="color: #4facfe; margin-bottom: 15px; font-size: 1.2em;">📢 Partager cette station</h3>
+                        <div id="shareButtonsContainer"></div>
+                    </div>
+
                     <div class="station-grid">
                         <div class="station-main">
                             <!-- Présentation -->
@@ -508,7 +519,7 @@
                                             <a href="https://www.rentalcars.com/fr?affiliateCode=VOTRE_CODE_ICI&adplat=desktop" 
                                                target="_blank" 
                                                rel="noopener" 
-                                               style="color: #c59d5f; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                               style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
                                                 🚗 En voiture
                                                 <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
                                             </a>
@@ -522,7 +533,7 @@
                                             <a href="https://www.trainline.fr/search?affiliates_click_id=VOTRE_CODE_ICI" 
                                                target="_blank" 
                                                rel="noopener" 
-                                               style="color: #c59d5f; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                               style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
                                                 🚆 En train
                                                 <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
                                             </a>
@@ -536,7 +547,7 @@
                                             <a href="https://www.skyscanner.fr/?associateid=VOTRE_CODE_ICI" 
                                                target="_blank" 
                                                rel="noopener" 
-                                               style="color: #c59d5f; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                               style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
                                                 ✈️ En avion
                                                 <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
                                             </a>
@@ -570,6 +581,9 @@
                                     </div>
                                 </div>
                             </section>
+
+                            <!-- Articles de blog liés -->
+                            <div id="relatedBlogArticles"></div>
                         </div>
 
                         <!-- Sidebar -->
@@ -653,6 +667,24 @@
             `;
 
             document.getElementById('stationDetail').innerHTML = detailHTML;
+
+            // Ajouter les boutons de partage
+            const shareContainer = document.getElementById('shareButtonsContainer');
+            if (shareContainer && socialShare) {
+                const currentUrl = window.location.href;
+                const shareTitle = `${station.name} - Station de ski ${station.region}`;
+                shareContainer.innerHTML = socialShare.createShareButtons(currentUrl, shareTitle, {
+                    showLabels: true,
+                    includeNative: true,
+                    includeCopy: true
+                });
+            }
+
+            // Ajouter les articles de blog liés
+            const blogArticlesContainer = document.getElementById('relatedBlogArticles');
+            if (blogArticlesContainer && blogStationsLinks) {
+                blogArticlesContainer.innerHTML = blogStationsLinks.createRelatedArticlesHTML(station);
+            }
         }
 
         // Fonctions utilitaires SEO

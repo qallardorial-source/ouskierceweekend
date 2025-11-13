@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Stations Favorites | Où Skier ce Weekend</title>
+    <meta name="description" content="Vos stations de ski favorites sauvegardées. Comparez et retrouvez facilement vos meilleures sélections.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .favorites-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .favorites-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .action-btn {
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(79, 172, 254, 0.3);
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-btn:hover {
+            background: rgba(79, 172, 254, 0.2);
+            border-color: #4facfe;
+            transform: translateY(-2px);
+        }
+
+        .action-btn.primary {
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            color: white;
+            border: none;
+        }
+
+        .action-btn.danger {
+            border-color: #e74c3c;
+            color: #e74c3c;
+        }
+
+        .action-btn.danger:hover {
+            background: rgba(231, 76, 60, 0.2);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 80px 40px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+
+        .empty-state-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+        }
+
+        .empty-state h2 {
+            color: #4facfe;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .empty-state p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .share-section {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border: 1px solid rgba(79, 172, 254, 0.2);
+        }
+
+        .share-url {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .share-url input {
+            flex: 1;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(79, 172, 254, 0.3);
+            border-radius: 8px;
+            color: white;
+            font-size: 0.95em;
+        }
+
+        .copy-btn {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+        }
+
+        .copy-btn.copied {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Recherche</a>
+                <a href="stations.html" class="nav-link">Toutes les stations</a>
+                <a href="blog/index.html" class="nav-link">Blog</a>
+                <a href="favorites.html" class="nav-link active">
+                    Favoris <span class="favorites-counter">0</span>
+                </a>
+                <a href="about.html" class="nav-link">À propos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="favorites-header">
+            <h1>❤️ Mes Stations Favorites</h1>
+            <p class="subtitle">Retrouvez et comparez vos stations préférées</p>
+        </div>
+
+        <div id="favoritesContent">
+            <!-- Contenu dynamique chargé par JS -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Où skier ce weekend - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="stations-data.js"></script>
+    <script src="favorites.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        // Afficher les favoris
+        function displayFavorites() {
+            const container = document.getElementById('favoritesContent');
+            const favoriteStations = favoritesManager.getFavoriteStations();
+
+            if (favoriteStations.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">🤍</div>
+                        <h2>Aucun favori pour le moment</h2>
+                        <p>Ajoutez des stations à vos favoris pour les retrouver facilement et les comparer.</p>
+                        <p>Parcourez nos <strong>${typeof skiResorts !== 'undefined' ? skiResorts.length : 150}+ stations</strong> et cliquez sur le bouton ❤️ pour ajouter vos préférées !</p>
+                        <a href="index.html" class="action-btn primary" style="margin-top: 20px;">
+                            🔍 Découvrir les stations
+                        </a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Actions si des favoris existent
+            const actionsHTML = `
+                <div class="favorites-actions">
+                    <button onclick="compareSelected()" class="action-btn primary">
+                        ⚖️ Comparer les favoris
+                    </button>
+                    <button onclick="showShareURL()" class="action-btn">
+                        🔗 Partager ma sélection
+                    </button>
+                    <button onclick="clearAllFavorites()" class="action-btn danger">
+                        🗑️ Tout supprimer
+                    </button>
+                </div>
+
+                <div class="share-section" id="shareSection" style="display: none;">
+                    <h3 style="color: #4facfe; margin-bottom: 10px;">🔗 Partager vos favoris</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 15px;">
+                        Copiez ce lien pour partager votre sélection de stations :
+                    </p>
+                    <div class="share-url">
+                        <input type="text" id="shareURLInput" readonly>
+                        <button onclick="copyShareURL()" class="copy-btn" id="copyBtn">
+                            📋 Copier
+                        </button>
+                    </div>
+                </div>
+
+                <div class="stats" style="display: flex;">
+                    <div class="stat-item">
+                        <span class="stat-number">${favoriteStations.length}</span>
+                        <span class="stat-label">stations favorites</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">${Math.round(favoriteStations.reduce((sum, s) => sum + (s.skiPass || 0), 0) / favoriteStations.length)}</span>
+                        <span class="stat-label">€ forfait moyen</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">${Math.round(favoriteStations.reduce((sum, s) => sum + (s.lodging || 0), 0) / favoriteStations.length)}</span>
+                        <span class="stat-label">€ logement moyen</span>
+                    </div>
+                </div>
+            `;
+
+            // Cards des stations
+            const cardsHTML = `
+                <div class="results">
+                    ${favoriteStations.map(station => createResortCard(station, null)).join('')}
+                </div>
+            `;
+
+            container.innerHTML = actionsHTML + cardsHTML;
+        }
+
+        // Fonctions utilitaires
+        function clearAllFavorites() {
+            favoritesManager.clearAll();
+            displayFavorites();
+        }
+
+        function showShareURL() {
+            const shareSection = document.getElementById('shareSection');
+            const shareInput = document.getElementById('shareURLInput');
+
+            shareSection.style.display = 'block';
+            shareInput.value = favoritesManager.exportToURL();
+            shareInput.select();
+        }
+
+        function copyShareURL() {
+            const input = document.getElementById('shareURLInput');
+            const btn = document.getElementById('copyBtn');
+
+            input.select();
+            document.execCommand('copy');
+
+            btn.textContent = '✓ Copié !';
+            btn.classList.add('copied');
+
+            setTimeout(() => {
+                btn.textContent = '📋 Copier';
+                btn.classList.remove('copied');
+            }, 2000);
+        }
+
+        function compareSelected() {
+            const favoriteIds = favoritesManager.favorites;
+            if (favoriteIds.length < 2) {
+                alert('Ajoutez au moins 2 stations pour comparer');
+                return;
+            }
+
+            // Redirection vers comparateur avec les favoris
+            const compareUrl = `compare.html?stations=${favoriteIds.slice(0, 3).join(',')}`;
+            window.location.href = compareUrl;
+        }
+
+        // Importer depuis URL si paramètre présent
+        if (window.location.search) {
+            favoritesManager.importFromURL(window.location.search);
+        }
+
+        // Charger les favoris au chargement de la page
+        document.addEventListener('DOMContentLoaded', () => {
+            displayFavorites();
+
+            // Écouter les changements
+            window.addEventListener('favoritesUpdated', () => {
+                displayFavorites();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -62,6 +62,150 @@
     </script>
     
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles pour boutons favoris et comparaison sur les cartes */
+        .card-top-actions {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .favorite-btn-card {
+            background: rgba(255, 255, 255, 0.95);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .favorite-btn-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .compare-checkbox {
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .resort-card {
+            position: relative;
+        }
+
+        /* Barre de comparaison flottante - Glacier Theme */
+        .compare-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            padding: 20px;
+            box-shadow: 0 -5px 30px rgba(79, 172, 254, 0.5);
+            z-index: 1000;
+            animation: slideUpBar 0.3s ease;
+        }
+
+        @keyframes slideUpBar {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .compare-bar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        .compare-bar-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .compare-btn-clear,
+        .compare-btn-go {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1em;
+        }
+
+        .compare-btn-clear {
+            background: rgba(255, 255, 255, 0.25);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .compare-btn-clear:hover {
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+        .compare-btn-go {
+            background: white;
+            color: #667eea;
+        }
+
+        .compare-btn-go:hover {
+            background: rgba(255, 255, 255, 0.95);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Compteur favoris */
+        .favorites-counter {
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            color: white;
+            font-size: 0.75em;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin-left: 5px;
+            box-shadow: 0 2px 8px rgba(79, 172, 254, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .compare-bar-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .compare-bar-actions {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .compare-btn-clear,
+            .compare-btn-go {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -71,6 +215,9 @@
                 <a href="index.html" class="nav-link active">Recherche</a>
                 <a href="stations.html" class="nav-link">Toutes les stations</a>
                 <a href="blog/index.html" class="nav-link">Blog</a>
+                <a href="favorites.html" class="nav-link">
+                    Favoris <span class="favorites-counter">0</span>
+                </a>
                 <a href="about.html" class="nav-link">À propos</a>
             </div>
         </div>
@@ -133,6 +280,9 @@
                 <span class="stat-label">€ forfait moyen</span>
             </div>
         </div>
+
+        <!-- Station du Jour Widget -->
+        <div id="stationDuJourContainer"></div>
 
         <div id="results" class="results"></div>
         
@@ -222,9 +372,21 @@
     <script src="api-utils.js"></script>
     <script src="accessibility.js"></script>
     <script src="stations-data.js"></script>
+    <script src="favorites.js"></script>
     <script src="weather.js"></script>
+    <script src="station-du-jour.js"></script>
     <script src="app.js"></script>
-    
+
+    <!-- Initialiser le widget Station du Jour -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Rendre le widget quand les données sont chargées
+            if (typeof stationDuJour !== 'undefined') {
+                stationDuJour.render('stationDuJourContainer');
+            }
+        });
+    </script>
+
     <!-- Analytics Tracking avancé -->
     <script src="analytics-tracking.js"></script>
 </body>

@@ -178,12 +178,22 @@ function createResortCard(resort, distance = null) {
     const safeLodging = validateNumber(resort.lodging, 0, 9999);
     const safeDistance = distance !== null ? Math.round(validateNumber(distance, 0, 10000)) : null;
     
-    const distanceBadge = safeDistance !== null 
-        ? `<div class="distance">${safeDistance} km</div>` 
+    const distanceBadge = safeDistance !== null
+        ? `<div class="distance">${safeDistance} km</div>`
         : '';
-    
+
+    // Bouton favori et checkbox comparaison
+    const isFavorite = typeof favoritesManager !== 'undefined' && favoritesManager.isFavorite(safeId);
+    const favoriteIcon = isFavorite ? '❤️' : '🤍';
+
     return `
-        <div class="resort-card">
+        <div class="resort-card" data-station-id="${safeId}">
+            <div class="card-top-actions">
+                <input type="checkbox" class="compare-checkbox" data-station-id="${safeId}" title="Sélectionner pour comparer">
+                <button class="favorite-btn-card" onclick="toggleFavoriteFromCard('${safeId}')" title="Ajouter aux favoris">
+                    ${favoriteIcon}
+                </button>
+            </div>
             <a href="station-detail.html?id=${safeId}" class="image-link">
                 <img src="${safeImage}"
                      alt="${safeName}"
@@ -236,15 +246,18 @@ function createResortCard(resort, distance = null) {
 function displayFeaturedResorts() {
     const resultsDiv = document.getElementById('results');
     if (!resultsDiv) return;
-    
+
     // Validation : skiResorts doit être un tableau
     if (!Array.isArray(skiResorts) || skiResorts.length === 0) {
         resultsDiv.innerHTML = '<div class="error">Erreur de chargement des stations</div>';
         return;
     }
-    
+
     const featured = skiResorts.slice(0, 12);
     resultsDiv.innerHTML = featured.map(resort => createResortCard(resort)).join('');
+
+    // Attacher les event listeners pour comparaison
+    attachCompareListeners();
 }
 
 // ========================================
@@ -355,6 +368,121 @@ async function searchResorts() {
 
     // Affichage des résultats
     resultsDiv.innerHTML = filtered.map(resort => createResortCard(resort, resort.distance)).join('');
+
+    // Réattacher les event listeners après le rendu
+    attachCompareListeners();
+}
+
+// ========================================
+// GESTION DES FAVORIS ET COMPARAISON
+// ========================================
+
+/**
+ * Toggle favori depuis une carte
+ */
+function toggleFavoriteFromCard(stationId) {
+    if (typeof favoritesManager === 'undefined') {
+        console.warn('FavoritesManager not loaded');
+        return;
+    }
+
+    const isFav = favoritesManager.toggleFavorite(stationId);
+
+    // Mettre à jour l'icône sur toutes les cartes de cette station
+    const cards = document.querySelectorAll(`[data-station-id="${stationId}"] .favorite-btn-card`);
+    cards.forEach(btn => {
+        btn.textContent = isFav ? '❤️' : '🤍';
+    });
+}
+
+/**
+ * Gère la sélection pour comparaison
+ */
+function attachCompareListeners() {
+    const checkboxes = document.querySelectorAll('.compare-checkbox');
+    const compareBar = document.getElementById('compareBar');
+
+    if (!compareBar) {
+        // Créer la barre de comparaison si elle n'existe pas
+        createCompareBar();
+    }
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateCompareSelection);
+    });
+}
+
+/**
+ * Crée la barre de comparaison flottante
+ */
+function createCompareBar() {
+    const bar = document.createElement('div');
+    bar.id = 'compareBar';
+    bar.className = 'compare-bar';
+    bar.style.display = 'none';
+    bar.innerHTML = `
+        <div class="compare-bar-content">
+            <span id="compareCount">0 station(s) sélectionnée(s)</span>
+            <div class="compare-bar-actions">
+                <button onclick="clearCompareSelection()" class="compare-btn-clear">
+                    ✕ Tout effacer
+                </button>
+                <button onclick="compareSelectedStations()" class="compare-btn-go">
+                    ⚖️ Comparer
+                </button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(bar);
+}
+
+/**
+ * Met à jour la sélection de comparaison
+ */
+function updateCompareSelection() {
+    const selected = document.querySelectorAll('.compare-checkbox:checked');
+    const compareBar = document.getElementById('compareBar');
+    const compareCount = document.getElementById('compareCount');
+
+    if (!compareBar || !compareCount) return;
+
+    if (selected.length > 0) {
+        compareBar.style.display = 'block';
+        compareCount.textContent = `${selected.length} station(s) sélectionnée(s)`;
+
+        // Limiter à 3 stations max
+        if (selected.length > 3) {
+            this.checked = false;
+            alert('⚠️ Vous pouvez comparer maximum 3 stations à la fois');
+        }
+    } else {
+        compareBar.style.display = 'none';
+    }
+}
+
+/**
+ * Efface toutes les sélections
+ */
+function clearCompareSelection() {
+    document.querySelectorAll('.compare-checkbox:checked').forEach(cb => {
+        cb.checked = false;
+    });
+    updateCompareSelection();
+}
+
+/**
+ * Compare les stations sélectionnées
+ */
+function compareSelectedStations() {
+    const selected = Array.from(document.querySelectorAll('.compare-checkbox:checked'));
+
+    if (selected.length < 2) {
+        alert('⚠️ Veuillez sélectionner au moins 2 stations pour comparer');
+        return;
+    }
+
+    const stationIds = selected.map(cb => cb.dataset.stationId).join(',');
+    window.location.href = `compare.html?stations=${stationIds}`;
 }
 
 // ========================================
