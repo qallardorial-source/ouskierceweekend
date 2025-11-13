@@ -175,7 +175,7 @@ if (!document.getElementById('blog-links-styles')) {
         .related-article-card:hover {
             background: #f5f5f5;
             transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(79, 172, 254, 0.3);
+            box-shadow: 0 5px 20px rgba(183, 110, 121, 0.3);
         }
 
         .related-article-card h4 {

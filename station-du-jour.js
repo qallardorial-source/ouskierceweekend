@@ -240,7 +240,7 @@ if (!document.getElementById('station-du-jour-styles')) {
             ;
             border-radius: 20px;
             overflow: hidden;
-            border: 2px solid rgba(79, 172, 254, 0.3);
+            border: 2px solid rgba(183, 110, 121, 0.3);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
             margin: 40px 0;
         }
@@ -250,8 +250,8 @@ if (!document.getElementById('station-du-jour-styles')) {
             justify-content: space-between;
             align-items: center;
             padding: 20px 25px;
-            background: rgba(79, 172, 254, 0.1);
-            border-bottom: 1px solid rgba(79, 172, 254, 0.2);
+            background: rgba(183, 110, 121, 0.1);
+            border-bottom: 1px solid rgba(183, 110, 121, 0.2);
         }
 
         .sdj-badge {
@@ -285,7 +285,7 @@ if (!document.getElementById('station-du-jour-styles')) {
 
         .sdj-refresh {
             background: #f5f5f5;
-            border: 2px solid rgba(79, 172, 254, 0.3);
+            border: 2px solid rgba(183, 110, 121, 0.3);
             color: white;
             padding: 10px 15px;
             border-radius: 50%;
@@ -295,7 +295,7 @@ if (!document.getElementById('station-du-jour-styles')) {
         }
 
         .sdj-refresh:hover {
-            background: rgba(79, 172, 254, 0.2);
+            background: rgba(183, 110, 121, 0.2);
             transform: rotate(180deg);
         }
 
@@ -371,7 +371,7 @@ if (!document.getElementById('station-du-jour-styles')) {
             padding: 15px;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 10px;
-            border: 1px solid rgba(79, 172, 254, 0.2);
+            border: 1px solid rgba(183, 110, 121, 0.2);
         }
 
         .sdj-highlight-icon {
@@ -396,13 +396,13 @@ if (!document.getElementById('station-du-jour-styles')) {
         }
 
         .sdj-feature-tag {
-            background: rgba(79, 172, 254, 0.2);
+            background: rgba(183, 110, 121, 0.2);
             color: #b87333;
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 0.9em;
             font-weight: 600;
-            border: 1px solid rgba(79, 172, 254, 0.3);
+            border: 1px solid rgba(183, 110, 121, 0.3);
         }
 
         .sdj-actions {
@@ -429,14 +429,14 @@ if (!document.getElementById('station-du-jour-styles')) {
 
         .sdj-btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.5);
+            box-shadow: 0 10px 30px rgba(183, 110, 121, 0.5);
         }
 
         .sdj-btn-secondary {
             padding: 15px 30px;
             background: #f5f5f5;
             color: white;
-            border: 2px solid rgba(79, 172, 254, 0.3);
+            border: 2px solid rgba(183, 110, 121, 0.3);
             border-radius: 10px;
             font-weight: 700;
             cursor: pointer;
@@ -444,7 +444,7 @@ if (!document.getElementById('station-du-jour-styles')) {
         }
 
         .sdj-btn-secondary:hover {
-            background: rgba(79, 172, 254, 0.2);
+            background: rgba(183, 110, 121, 0.2);
             border-color: #b76e79;
         }
 

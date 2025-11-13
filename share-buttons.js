@@ -271,7 +271,7 @@ if (!document.getElementById('share-animations')) {
             align-items: center;
             gap: 8px;
             padding: 10px 20px;
-            border: 2px solid rgba(79, 172, 254, 0.3);
+            border: 2px solid rgba(183, 110, 121, 0.3);
             border-radius: 8px;
             background: #f5f5f5;
             color: white;
@@ -282,7 +282,7 @@ if (!document.getElementById('share-animations')) {
         }
 
         .share-btn:hover {
-            background: rgba(79, 172, 254, 0.2);
+            background: rgba(183, 110, 121, 0.2);
             border-color: #b76e79;
             transform: translateY(-2px);
         }
