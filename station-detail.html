@@ -284,6 +284,8 @@
     <script src="accessibility.js"></script>
     <script src="stations-data.js"></script>
     <script src="weather.js"></script>
+    <script src="share-buttons.js"></script>
+    <script src="blog-stations-links.js"></script>
     <script>
         /**
          * Valide et nettoie un ID de station
@@ -405,6 +407,12 @@
                                 <span>logement/nuit</span>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Partage social -->
+                    <div style="text-align: center; margin: 30px 0; padding: 25px; background: rgba(15, 32, 39, 0.6); border-radius: 12px; border: 1px solid rgba(197, 157, 95, 0.3);">
+                        <h3 style="color: #c59d5f; margin-bottom: 15px; font-size: 1.2em;">📢 Partager cette station</h3>
+                        <div id="shareButtonsContainer"></div>
                     </div>
 
                     <div class="station-grid">
@@ -570,6 +578,9 @@
                                     </div>
                                 </div>
                             </section>
+
+                            <!-- Articles de blog liés -->
+                            <div id="relatedBlogArticles"></div>
                         </div>
 
                         <!-- Sidebar -->
@@ -653,6 +664,24 @@
             `;
 
             document.getElementById('stationDetail').innerHTML = detailHTML;
+
+            // Ajouter les boutons de partage
+            const shareContainer = document.getElementById('shareButtonsContainer');
+            if (shareContainer && socialShare) {
+                const currentUrl = window.location.href;
+                const shareTitle = `${station.name} - Station de ski ${station.region}`;
+                shareContainer.innerHTML = socialShare.createShareButtons(currentUrl, shareTitle, {
+                    showLabels: true,
+                    includeNative: true,
+                    includeCopy: true
+                });
+            }
+
+            // Ajouter les articles de blog liés
+            const blogArticlesContainer = document.getElementById('relatedBlogArticles');
+            if (blogArticlesContainer && blogStationsLinks) {
+                blogArticlesContainer.innerHTML = blogStationsLinks.createRelatedArticlesHTML(station);
+            }
         }
 
         // Fonctions utilitaires SEO

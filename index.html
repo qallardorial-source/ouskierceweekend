@@ -134,6 +134,9 @@
             </div>
         </div>
 
+        <!-- Station du Jour Widget -->
+        <div id="stationDuJourContainer"></div>
+
         <div id="results" class="results"></div>
         
         <!-- CONTENU SEO -->
@@ -222,9 +225,21 @@
     <script src="api-utils.js"></script>
     <script src="accessibility.js"></script>
     <script src="stations-data.js"></script>
+    <script src="favorites.js"></script>
     <script src="weather.js"></script>
+    <script src="station-du-jour.js"></script>
     <script src="app.js"></script>
-    
+
+    <!-- Initialiser le widget Station du Jour -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Rendre le widget quand les données sont chargées
+            if (typeof stationDuJour !== 'undefined') {
+                stationDuJour.render('stationDuJourContainer');
+            }
+        });
+    </script>
+
     <!-- Analytics Tracking avancé -->
     <script src="analytics-tracking.js"></script>
 </body>

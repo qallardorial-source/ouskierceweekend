@@ -1,0 +1,327 @@
+/**
+ * Gestionnaire de partage social
+ * Supporte Facebook, Twitter, WhatsApp et partage natif
+ */
+
+class SocialShare {
+    constructor() {
+        this.siteUrl = window.location.origin;
+        this.siteName = "Où skier ce weekend";
+    }
+
+    /**
+     * Partager sur Facebook
+     */
+    shareOnFacebook(url, title) {
+        const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+        this.openPopup(shareUrl, 'Facebook');
+    }
+
+    /**
+     * Partager sur Twitter/X
+     */
+    shareOnTwitter(url, title, hashtags = ['ski', 'weekend']) {
+        const text = encodeURIComponent(title);
+        const hashtagsStr = hashtags.join(',');
+        const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${text}&hashtags=${hashtagsStr}`;
+        this.openPopup(shareUrl, 'Twitter');
+    }
+
+    /**
+     * Partager sur WhatsApp
+     */
+    shareOnWhatsApp(url, title) {
+        const text = encodeURIComponent(`${title}\n\n${url}`);
+        const shareUrl = `https://wa.me/?text=${text}`;
+
+        // Sur mobile, ouvrir l'app WhatsApp directement
+        if (this.isMobile()) {
+            window.location.href = shareUrl;
+        } else {
+            this.openPopup(shareUrl, 'WhatsApp');
+        }
+    }
+
+    /**
+     * Partage natif (Web Share API)
+     */
+    async shareNative(url, title, text) {
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: title,
+                    text: text,
+                    url: url
+                });
+                return true;
+            } catch (err) {
+                console.log('Partage annulé ou échoué:', err);
+                return false;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Copier le lien dans le presse-papier
+     */
+    async copyToClipboard(url) {
+        try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(url);
+                this.showCopyFeedback('✓ Lien copié !');
+                return true;
+            } else {
+                // Fallback pour navigateurs plus anciens
+                const input = document.createElement('input');
+                input.value = url;
+                input.style.position = 'fixed';
+                input.style.opacity = '0';
+                document.body.appendChild(input);
+                input.select();
+                const success = document.execCommand('copy');
+                document.body.removeChild(input);
+
+                if (success) {
+                    this.showCopyFeedback('✓ Lien copié !');
+                }
+                return success;
+            }
+        } catch (err) {
+            console.error('Erreur lors de la copie:', err);
+            this.showCopyFeedback('❌ Erreur lors de la copie');
+            return false;
+        }
+    }
+
+    /**
+     * Créer les boutons de partage HTML
+     */
+    createShareButtons(url, title, options = {}) {
+        const {
+            showLabels = true,
+            className = 'share-buttons',
+            buttonClass = 'share-btn',
+            includeNative = true,
+            includeCopy = true
+        } = options;
+
+        const buttons = [];
+
+        // Bouton Facebook
+        buttons.push(`
+            <button class="${buttonClass} share-facebook"
+                    onclick="socialShare.shareOnFacebook('${url}', '${this.escapeHtml(title)}')"
+                    aria-label="Partager sur Facebook">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                ${showLabels ? '<span>Facebook</span>' : ''}
+            </button>
+        `);
+
+        // Bouton Twitter
+        buttons.push(`
+            <button class="${buttonClass} share-twitter"
+                    onclick="socialShare.shareOnTwitter('${url}', '${this.escapeHtml(title)}')"
+                    aria-label="Partager sur Twitter">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+                ${showLabels ? '<span>Twitter</span>' : ''}
+            </button>
+        `);
+
+        // Bouton WhatsApp
+        buttons.push(`
+            <button class="${buttonClass} share-whatsapp"
+                    onclick="socialShare.shareOnWhatsApp('${url}', '${this.escapeHtml(title)}')"
+                    aria-label="Partager sur WhatsApp">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                ${showLabels ? '<span>WhatsApp</span>' : ''}
+            </button>
+        `);
+
+        // Bouton de partage natif (mobile)
+        if (includeNative && navigator.share) {
+            buttons.push(`
+                <button class="${buttonClass} share-native"
+                        onclick="socialShare.shareNative('${url}', '${this.escapeHtml(title)}', '${this.escapeHtml(title)}')"
+                        aria-label="Partager">
+                    📱
+                    ${showLabels ? '<span>Partager</span>' : ''}
+                </button>
+            `);
+        }
+
+        // Bouton copier le lien
+        if (includeCopy) {
+            buttons.push(`
+                <button class="${buttonClass} share-copy"
+                        onclick="socialShare.copyToClipboard('${url}')"
+                        aria-label="Copier le lien">
+                    📋
+                    ${showLabels ? '<span>Copier le lien</span>' : ''}
+                </button>
+            `);
+        }
+
+        return `
+            <div class="${className}">
+                ${buttons.join('')}
+            </div>
+        `;
+    }
+
+    /**
+     * Utilitaires
+     */
+    openPopup(url, title) {
+        const width = 600;
+        const height = 400;
+        const left = (screen.width - width) / 2;
+        const top = (screen.height - height) / 2;
+        const features = `width=${width},height=${height},left=${left},top=${top},toolbar=no,menubar=no,scrollbars=yes`;
+
+        window.open(url, title, features);
+    }
+
+    isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML.replace(/'/g, '&#39;').replace(/"/g, '&quot;');
+    }
+
+    showCopyFeedback(message) {
+        // Créer une notification temporaire
+        const notification = document.createElement('div');
+        notification.textContent = message;
+        notification.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(46, 204, 113, 0.4);
+            z-index: 10000;
+            animation: slideUp 0.3s ease;
+        `;
+
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+            notification.style.animation = 'slideDown 0.3s ease';
+            setTimeout(() => {
+                document.body.removeChild(notification);
+            }, 300);
+        }, 2000);
+    }
+}
+
+// Créer une instance globale
+const socialShare = new SocialShare();
+
+// Ajouter les animations CSS si elles n'existent pas
+if (!document.getElementById('share-animations')) {
+    const style = document.createElement('style');
+    style.id = 'share-animations';
+    style.textContent = `
+        @keyframes slideUp {
+            from {
+                transform: translate(-50%, 100px);
+                opacity: 0;
+            }
+            to {
+                transform: translate(-50%, 0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translate(-50%, 0);
+                opacity: 1;
+            }
+            to {
+                transform: translate(-50%, 100px);
+                opacity: 0;
+            }
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border: 2px solid rgba(197, 157, 95, 0.3);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        .share-btn:hover {
+            background: rgba(197, 157, 95, 0.2);
+            border-color: #c59d5f;
+            transform: translateY(-2px);
+        }
+
+        .share-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .share-facebook:hover {
+            background: rgba(24, 119, 242, 0.2);
+            border-color: #1877f2;
+        }
+
+        .share-twitter:hover {
+            background: rgba(29, 161, 242, 0.2);
+            border-color: #1da1f2;
+        }
+
+        .share-whatsapp:hover {
+            background: rgba(37, 211, 102, 0.2);
+            border-color: #25d366;
+        }
+
+        .share-copy:hover {
+            background: rgba(46, 204, 113, 0.2);
+            border-color: #2ecc71;
+        }
+
+        @media (max-width: 768px) {
+            .share-buttons {
+                flex-direction: column;
+            }
+
+            .share-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+}
