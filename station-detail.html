@@ -623,9 +623,9 @@
 
                             <!-- CTA -->
                             <div class="cta-box">
-                                <a href="${station.officialWebsite || 'https://www.google.com/search?q=' + encodeURIComponent(station.name + ' forfait ski réservation')}" 
-                                   target="_blank" 
-                                   class="book-button-large" 
+                                <a href="${station.officialWebsite ? 'https://www.google.com/search?q=site:' + encodeURIComponent(new URL(station.officialWebsite).hostname) + '+' + encodeURIComponent('acheter forfait billetterie réserver') : 'https://www.google.com/search?q=' + encodeURIComponent('acheter forfait ski ' + station.name + ' billetterie officiel réservation en ligne')}"
+                                   target="_blank"
+                                   class="book-button-large"
                                    style="text-decoration: none; display: inline-block; margin-bottom: 15px;">
                                     🎿 Réserver mon forfait
                                 </a>
