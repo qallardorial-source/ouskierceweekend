@@ -1,6 +1,12 @@
 // analytics-tracking.js - Tracking avancé des événements
 
-// Fonction helper pour envoyer des événements
+/**
+ * Envoie un événement vers Google Analytics
+ * @param {string} category - Catégorie de l'événement
+ * @param {string} action - Action effectuée
+ * @param {string} label - Label descriptif
+ * @param {number} value - Valeur numérique optionnelle
+ */
 function trackEvent(category, action, label, value) {
   if (typeof gtag !== 'undefined') {
     gtag('event', action, {
@@ -8,7 +14,6 @@ function trackEvent(category, action, label, value) {
       'event_label': label,
       'value': value
     });
-    console.log('📊 Event tracked:', category, action, label);
   }
 }
 
@@ -252,5 +257,3 @@ document.addEventListener('DOMContentLoaded', function() {
 // EXPORT POUR UTILISATION EXTERNE
 // ============================================
 window.trackCustomEvent = trackEvent;
-
-console.log('📊 Analytics tracking initialized successfully');

@@ -122,6 +122,9 @@
         <p>&copy; 2025 Où skier ce weekend - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
     </footer>
 
+    <script src="config.js"></script>
+    <script src="api-utils.js"></script>
+    <script src="accessibility.js"></script>
     <script src="stations-data.js"></script>
     <script>
         let filteredStations = [...skiResorts];
@@ -130,10 +133,11 @@
             return `
                 <div class="resort-card">
                     <a href="station-detail.html?id=${resort.id}" class="image-link">
-                        <img src="${resort.image}" 
-                             alt="Station de ski ${resort.name} - ${resort.region}" 
+                        <img src="${resort.image}"
+                             alt="Station de ski ${resort.name} - ${resort.region}"
                              class="resort-image"
                              loading="lazy"
+                             decoding="async"
                              width="400"
                              height="300"
                              onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">

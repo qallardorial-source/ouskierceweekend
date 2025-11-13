@@ -1,15 +1,61 @@
-// weather.js - API météo gratuite Open-Meteo - VERSION CORRIGÉE
+/**
+ * weather.js - API météo gratuite Open-Meteo avec gestion d'erreurs robuste
+ * @description Récupération et affichage des données météo avec retry logic et cache
+ * @requires api-utils.js
+ * @version 2.0
+ */
 
 // ============================================
-// RÉCUPÉRATION MÉTÉO
+// RÉCUPÉRATION MÉTÉO AVEC RETRY ET CACHE
 // ============================================
-async function getWeather(lat, lon) {
+
+/**
+ * Récupère les données météo pour une station
+ * @param {number} lat - Latitude
+ * @param {number} lon - Longitude
+ * @param {Object} options - Options de configuration
+ * @returns {Promise<Object|null>} Données météo ou null en cas d'échec
+ */
+async function getWeather(lat, lon, options = {}) {
+    // Validation des coordonnées
+    if (!lat || !lon || isNaN(lat) || isNaN(lon)) {
+        console.error('❌ Coordonnées invalides:', { lat, lon });
+        return null;
+    }
+
+    if (lat < -90 || lat > 90 || lon < -180 || lon > 180) {
+        console.error('❌ Coordonnées hors limites:', { lat, lon });
+        return null;
+    }
+
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&daily=snowfall_sum,temperature_2m_max,temperature_2m_min&timezone=Europe/Paris`;
+
     try {
-        const response = await fetch(
-            `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&daily=snowfall_sum,temperature_2m_max,temperature_2m_min&timezone=Europe/Paris`
-        );
-        const data = await response.json();
-        
+        // Utiliser robustFetch si disponible (avec retry et cache)
+        let data;
+        if (typeof window !== 'undefined' && window.apiUtils && window.apiUtils.robustFetch) {
+            data = await window.apiUtils.robustFetch(url, {
+                maxRetries: 2,
+                retryDelay: 1000,
+                timeout: 7000,
+                cacheTTL: 600000, // 10 minutes pour la météo
+                useCache: true
+            });
+        } else {
+            // Fallback simple sans retry
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            data = await response.json();
+        }
+
+        // Validation des données reçues
+        if (!data || !data.current_weather || !data.daily) {
+            console.error('❌ Données météo incomplètes');
+            return null;
+        }
+
         return {
             temperature: Math.round(data.current_weather.temperature),
             windSpeed: Math.round(data.current_weather.windspeed),
@@ -19,7 +65,7 @@ async function getWeather(lat, lon) {
             tempMin: Math.round(data.daily.temperature_2m_min[0])
         };
     } catch (error) {
-        console.error('❌ Erreur météo:', error);
+        console.error('❌ Erreur météo:', error.message);
         return null;
     }
 }
@@ -386,13 +432,16 @@ const weatherStyles = `
 // ============================================
 // INJECTION AUTOMATIQUE DES STYLES
 // ============================================
+/**
+ * Injecte les styles CSS de la météo dans le document
+ * @returns {void}
+ */
 function injectWeatherStyles() {
     if (!document.getElementById('weather-styles')) {
         const styleElement = document.createElement('style');
         styleElement.id = 'weather-styles';
         styleElement.textContent = weatherStyles;
         document.head.appendChild(styleElement);
-        console.log('✅ Styles météo injectés');
     }
 }
 
@@ -402,5 +451,3 @@ if (document.readyState === 'loading') {
 } else {
     injectWeatherStyles();
 }
-
-console.log('✅ Module météo chargé');

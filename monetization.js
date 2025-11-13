@@ -308,9 +308,14 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Tracking des clics (pour analytics)
+/**
+ * Tracking des clics sur liens d'affiliation
+ * @param {string} partner - Nom du partenaire affilié
+ * @param {string} category - Catégorie (skipass, equipment, lodging)
+ * @param {string} station - Nom de la station
+ */
 function trackAffiliateClick(partner, category, station) {
-    // Envoyer à Google Analytics ou autre
+    // Envoyer à Google Analytics
     if (typeof gtag !== 'undefined') {
         gtag('event', 'affiliate_click', {
             'partner': partner,
@@ -319,5 +324,4 @@ function trackAffiliateClick(partner, category, station) {
             'event_label': `${partner}_${station}`
         });
     }
-    console.log(`Clic affiliation: ${partner} - ${station}`);
 }
