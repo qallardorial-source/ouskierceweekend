@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Ski - Guides & Conseils | Où Skier ce Weekend</title>
+    <meta name="description" content="Guides complets, comparatifs et conseils pour choisir votre station de ski en France. Astuces budget, meilleures périodes, stations pour débutants et experts.">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .blog-container { max-width: 1200px; margin: 0 auto; padding: 60px 40px; }
+        .blog-header { text-align: center; margin-bottom: 60px; }
+        .blog-header h1 { font-size: 3.5em; margin-bottom: 20px; background: linear-gradient(135deg, #ffffff 0%, #c59d5f 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .blog-header p { font-size: 1.3em; color: rgba(255, 255, 255, 0.8); }
+        .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px; }
+        .article-card { background: rgba(15, 32, 39, 0.8); backdrop-filter: blur(30px); border-radius: 16px; overflow: hidden; transition: all 0.3s; border: 1px solid rgba(197, 157, 95, 0.2); }
+        .article-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(197, 157, 95, 0.3); border-color: #c59d5f; }
+        .article-image { width: 100%; height: 200px; background: linear-gradient(135deg, #c59d5f 0%, #f4d03f 100%); display: flex; align-items: center; justify-content: center; font-size: 4em; }
+        .article-content { padding: 30px; }
+        .article-category { display: inline-block; background: rgba(197, 157, 95, 0.3); color: #c59d5f; padding: 6px 15px; border-radius: 20px; font-size: 0.85em; margin-bottom: 15px; }
+        .article-title { color: #fff; font-size: 1.6em; margin-bottom: 15px; line-height: 1.3; }
+        .article-excerpt { color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 20px; }
+        .article-meta { color: rgba(255, 255, 255, 0.6); font-size: 0.9em; margin-bottom: 20px; }
+        .read-more { display: inline-block; background: linear-gradient(135deg, #c59d5f 0%, #f4d03f 100%); color: #0f2027; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.3s; }
+        .read-more:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(197, 157, 95, 0.4); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Recherche</a>
+                <a href="../stations.html" class="nav-link">Toutes les stations</a>
+                <a href="index.html" class="nav-link active">Blog</a>
+                <a href="../about.html" class="nav-link">À propos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-container">
+        <div class="blog-header">
+            <h1>📚 Blog Ski - Guides & Conseils</h1>
+            <p>Tous nos guides pour choisir la meilleure station selon vos besoins</p>
+        </div>
+
+        <div class="articles-grid">
+            <!-- Article 1 -->
+            <article class="article-card">
+                <div class="article-image">🎿</div>
+                <div class="article-content">
+                    <span class="article-category">Guide Débutants</span>
+                    <h2 class="article-title">Top 10 Meilleures Stations pour Débutants</h2>
+                    <p class="article-excerpt">Découvrez les stations les plus adaptées pour apprendre à skier : pistes vertes, ESF, tarifs abordables et conseils pratiques.</p>
+                    <div class="article-meta">📅 15 janvier 2025 • ⏱️ 10 min</div>
+                    <a href="top-10-stations-debutants.html" class="read-more">Lire l'article →</a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-card">
+                <div class="article-image">💰</div>
+                <div class="article-content">
+                    <span class="article-category">Bon Plans</span>
+                    <h2 class="article-title">Où Skier Pas Cher ? Top 15 Stations à -50€</h2>
+                    <p class="article-excerpt">Skiez pour moins de 250€ le weekend ! Notre sélection des meilleures stations économiques + 15 astuces pour économiser.</p>
+                    <div class="article-meta">📅 15 janvier 2025 • ⏱️ 12 min</div>
+                    <a href="ski-pas-cher-france.html" class="read-more">Lire l'article →</a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-card">
+                <div class="article-image">☀️</div>
+                <div class="article-content">
+                    <span class="article-category">Saisons</span>
+                    <h2 class="article-title">Ski de Printemps : Stations Ouvertes Mars-Avril</h2>
+                    <p class="article-excerpt">Les 10 meilleures stations garantissant enneigement et soleil au printemps. Skiez jusqu'en mai avec nos glaciers !</p>
+                    <div class="article-meta">📅 15 janvier 2025 • ⏱️ 9 min</div>
+                    <a href="ski-printemps-mars-avril.html" class="read-more">Lire l'article →</a>
+                </div>
+            </article>
+
+            <!-- Placeholder futurs articles -->
+            <article class="article-card" style="opacity: 0.6;">
+                <div class="article-image">⚖️</div>
+                <div class="article-content">
+                    <span class="article-category">Comparatif</span>
+                    <h2 class="article-title">Alpes du Nord vs Alpes du Sud</h2>
+                    <p class="article-excerpt">Comparatif complet pour choisir entre les deux massifs selon vos critères : prix, enneigement, ambiance...</p>
+                    <div class="article-meta">📅 Bientôt disponible</div>
+                    <a href="#" class="read-more" style="opacity: 0.5; cursor: not-allowed;">À venir →</a>
+                </div>
+            </article>
+
+            <article class="article-card" style="opacity: 0.6;">
+                <div class="article-image">📊</div>
+                <div class="article-content">
+                    <span class="article-category">Budget</span>
+                    <h2 class="article-title">Budget Ski Weekend : Guide Complet</h2>
+                    <p class="article-excerpt">Calculez précisément votre budget avec tous les postes de dépense. Simulateur et astuces inclus.</p>
+                    <div class="article-meta">📅 Bientôt disponible</div>
+                    <a href="#" class="read-more" style="opacity: 0.5; cursor: not-allowed;">À venir →</a>
+                </div>
+            </article>
+
+            <article class="article-card" style="opacity: 0.6;">
+                <div class="article-image">🏔️</div>
+                <div class="article-content">
+                    <span class="article-category">Domaines</span>
+                    <h2 class="article-title">Plus Grands Domaines Skiables de France</h2>
+                    <p class="article-excerpt">Top 15 des plus vastes domaines : 3 Vallées, Paradiski, Portes du Soleil... Pour ne jamais skier deux fois la même piste !</p>
+                    <div class="article-meta">📅 Bientôt disponible</div>
+                    <a href="#" class="read-more" style="opacity: 0.5; cursor: not-allowed;">À venir →</a>
+                </div>
+            </article>
+
+            <article class="article-card" style="opacity: 0.6;">
+                <div class="article-image">👨‍👩‍👧‍👦</div>
+                <div class="article-content">
+                    <span class="article-category">Famille</span>
+                    <h2 class="article-title">Top 10 Stations Ski Familiales</h2>
+                    <p class="article-excerpt">Les meilleures stations avec label Famille Plus : garderies, clubs enfants, pistes adaptées et activités hors-ski.</p>
+                    <div class="article-meta">📅 Bientôt disponible</div>
+                    <a href="#" class="read-more" style="opacity: 0.5; cursor: not-allowed;">À venir →</a>
+                </div>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding: 40px; background: rgba(15, 32, 39, 0.6); border-radius: 16px;">
+            <h3 style="color: #c59d5f; font-size: 2em; margin-bottom: 20px;">Prêt à trouver votre station idéale ?</h3>
+            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.2em; margin-bottom: 25px;">Utilisez notre outil gratuit pour comparer toutes les stations en 2 minutes</p>
+            <a href="../index.html" class="read-more" style="font-size: 1.1em; padding: 15px 40px;">Lancer la recherche →</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Où skier ce weekend - <a href="../legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
+    </footer>
+</body>
+</html>
