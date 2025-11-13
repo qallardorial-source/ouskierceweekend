@@ -106,15 +106,15 @@
             position: relative;
         }
 
-        /* Barre de comparaison flottante */
+        /* Barre de comparaison flottante - Glacier Theme */
         .compare-bar {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(135deg, #c59d5f 0%, #f4d03f 100%);
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
             padding: 20px;
-            box-shadow: 0 -5px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 -5px 30px rgba(79, 172, 254, 0.5);
             z-index: 1000;
             animation: slideUpBar 0.3s ease;
         }
@@ -134,7 +134,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: #0f2027;
+            color: white;
             font-weight: 700;
             font-size: 1.1em;
         }
@@ -148,7 +148,7 @@
         .compare-btn-go {
             padding: 12px 25px;
             border: none;
-            border-radius: 8px;
+            border-radius: 15px;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s;
@@ -156,34 +156,36 @@
         }
 
         .compare-btn-clear {
-            background: rgba(255, 255, 255, 0.3);
-            color: #0f2027;
+            background: rgba(255, 255, 255, 0.25);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .compare-btn-clear:hover {
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.35);
         }
 
         .compare-btn-go {
-            background: #0f2027;
-            color: white;
+            background: white;
+            color: #667eea;
         }
 
         .compare-btn-go:hover {
-            background: #1a3a4a;
+            background: rgba(255, 255, 255, 0.95);
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
         /* Compteur favoris */
         .favorites-counter {
-            background: #c59d5f;
-            color: #0f2027;
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            color: white;
             font-size: 0.75em;
             font-weight: 700;
-            padding: 2px 6px;
-            border-radius: 10px;
+            padding: 3px 8px;
+            border-radius: 12px;
             margin-left: 5px;
+            box-shadow: 0 2px 8px rgba(79, 172, 254, 0.3);
         }
 
         @media (max-width: 768px) {
