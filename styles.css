@@ -5,38 +5,34 @@
     box-sizing: border-box;
 }
 
-/* THÈME GLACIER MODERNE */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap');
+
+/* THÈME MONTAGNE PRESTIGE */
 body {
-    font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    font-family: 'Lato', 'Segoe UI', sans-serif;
+    background: #2c3e50;
+    background-image:
+        linear-gradient(135deg, rgba(0,0,0,0.05) 25%, transparent 25%),
+        linear-gradient(225deg, rgba(0,0,0,0.05) 25%, transparent 25%),
+        linear-gradient(45deg, rgba(0,0,0,0.05) 25%, transparent 25%),
+        linear-gradient(315deg, rgba(0,0,0,0.05) 25%, #2c3e50 25%);
+    background-size: 80px 80px;
+    background-position: 0 0, 0 40px, 40px -40px, -40px 0px;
     background-attachment: fixed;
     min-height: 100vh;
-    color: #fff;
-    position: relative;
+    color: #2c3e50;
 }
 
-/* Effet montagne en arrière-plan */
-body::before {
-    content: '';
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50vh;
-    background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* Navigation Glacier */
+/* Navigation sobre et luxueuse */
 .navbar {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(30px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(183, 110, 121, 0.15);
     position: sticky;
     top: 0;
     z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
 .nav-container {
@@ -49,14 +45,12 @@ body::before {
 }
 
 .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.8em;
-    font-weight: 800;
-    background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-weight: 700;
+    color: #2c3e50;
     text-decoration: none;
-    letter-spacing: -0.5px;
+    letter-spacing: 1px;
 }
 
 .nav-menu {
@@ -65,22 +59,22 @@ body::before {
 }
 
 .nav-link {
-    color: rgba(255, 255, 255, 0.95);
+    color: #2c3e50;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95em;
-    letter-spacing: 0.5px;
-    transition: all 0.3s;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
     position: relative;
 }
 
 .nav-link:hover {
-    color: #4facfe;
-    transform: translateY(-2px);
+    color: #b76e79;
 }
 
 .nav-link.active {
-    color: #4facfe;
+    color: #b76e79;
 }
 
 .nav-link.active::after {
@@ -90,8 +84,7 @@ body::before {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, #4facfe, #f093fb);
-    border-radius: 2px;
+    background: linear-gradient(90deg, #b76e79, #b87333);
 }
 
 /* Container */
@@ -99,60 +92,54 @@ body::before {
     max-width: 1400px;
     margin: 0 auto;
     padding: 60px 40px;
-    position: relative;
-    z-index: 1;
 }
 
-/* Header Glacier */
+/* Header élégant */
 header {
     text-align: center;
     color: white;
     margin-bottom: 70px;
-    padding: 80px 20px;
+    padding: 100px 20px;
     position: relative;
 }
 
 header::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120px;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, #4facfe, #f093fb, transparent);
-    border-radius: 2px;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #b76e79, transparent);
 }
 
 h1 {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 4.5em;
     margin-bottom: 20px;
-    font-weight: 800;
-    text-shadow: 0 4px 30px rgba(79, 172, 254, 0.3);
-    letter-spacing: -1px;
-    background: linear-gradient(135deg, #ffffff 0%, #4facfe 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
-    font-size: 1.2em;
-    opacity: 0.95;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-/* Search section Glassmorphism */
+/* Search section épurée */
 .search-section {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(40px);
+    background: #f5f5f5;
     padding: 50px;
-    border-radius: 30px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
     margin-bottom: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 3px solid #b76e79;
 }
 
 .search-box {
@@ -163,72 +150,73 @@ h1 {
 
 input[type="text"] {
     flex: 1;
-    padding: 20px 30px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    font-size: 17px;
+    padding: 18px 25px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 16px;
     transition: all 0.3s;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    color: white;
-    font-weight: 500;
+    background: white;
+    color: #2c3e50;
+    font-weight: 400;
 }
 
 input[type="text"]::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: #95a5a6;
 }
 
 input[type="text"]:focus {
     outline: none;
-    border-color: #4facfe;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 0 4px rgba(79, 172, 254, 0.2);
+    border-color: #b76e79;
+    box-shadow: 0 0 0 3px rgba(183, 110, 121, 0.1);
 }
 
 button {
-    padding: 20px 50px;
-    background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+    padding: 18px 45px;
+    background: linear-gradient(135deg, #b76e79 0%, #b87333 100%);
     color: white;
     border: none;
-    border-radius: 15px;
-    font-size: 17px;
+    border-radius: 4px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
-    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
 }
 
 button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(79, 172, 254, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(183, 110, 121, 0.4);
 }
 
 button:active {
-    transform: translateY(-1px);
+    transform: translateY(0);
 }
 
 .secondary-btn {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    background: white;
+    color: #2c3e50;
     padding: 16px 32px;
-    color: white;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 4px;
     display: inline-block;
     text-align: center;
     font-weight: 600;
     transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid #e0e0e0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
 }
 
 .secondary-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: #4facfe;
+    background: #f5f5f5;
+    border-color: #b76e79;
     transform: translateY(-2px);
 }
 
-/* Filters Glacier */
+/* Filters */
 .filters {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -243,50 +231,48 @@ button:active {
 label {
     margin-bottom: 10px;
     font-weight: 700;
-    color: #4facfe;
-    font-size: 12px;
+    color: #b76e79;
+    font-size: 11px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
 }
 
 select {
     padding: 16px 20px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
     font-size: 15px;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    color: white;
+    background: white;
+    color: #2c3e50;
     transition: all 0.3s;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 select:focus {
     outline: none;
-    border-color: #4facfe;
-    background: rgba(255, 255, 255, 0.2);
+    border-color: #b76e79;
+    box-shadow: 0 0 0 3px rgba(183, 110, 121, 0.1);
 }
 
 select option {
-    background: #667eea;
-    color: white;
+    background: white;
+    color: #2c3e50;
 }
 
-/* Stats Glacier */
+/* Stats élégantes */
 .stats {
     display: flex;
     justify-content: space-around;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(40px);
-    padding: 40px;
-    border-radius: 25px;
+    background: #f5f5f5;
+    padding: 50px;
+    border-radius: 8px;
     margin-bottom: 50px;
-    color: white;
+    color: #2c3e50;
     flex-wrap: wrap;
     gap: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border-top: 3px solid #b87333;
 }
 
 .stat-item {
@@ -294,39 +280,37 @@ select option {
 }
 
 .stat-number {
-    font-size: 4em;
-    font-weight: 800;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5em;
+    font-weight: 700;
     display: block;
     line-height: 1;
     margin-bottom: 12px;
-    background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #b76e79;
 }
 
 .stat-label {
-    font-size: 0.9em;
-    opacity: 0.9;
+    font-size: 0.85em;
+    color: #5a6c7d;
     font-weight: 600;
-    letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .stats-bar {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(30px);
+    background: #f5f5f5;
     padding: 25px 40px;
-    border-radius: 20px;
+    border-radius: 8px;
     margin-bottom: 40px;
     text-align: center;
-    color: white;
+    color: #2c3e50;
     font-weight: 600;
     font-size: 1.1em;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #b76e79;
 }
 
-/* Results grid Glacier */
+/* Results grid minimaliste */
 .results {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -334,20 +318,19 @@ select option {
 }
 
 .resort-card {
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(40px);
-    border-radius: 25px;
+    background: #f5f5f5;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 3px solid transparent;
 }
 
 .resort-card:hover {
-    transform: translateY(-15px) scale(1.03);
-    box-shadow: 0 25px 60px rgba(79, 172, 254, 0.3), 0 0 40px rgba(240, 147, 251, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    border-top-color: #b76e79;
 }
 
 .resort-image {
@@ -355,13 +338,12 @@ select option {
     height: 240px;
     object-fit: cover;
     display: block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    filter: brightness(0.95);
-    transition: all 0.5s;
+    filter: grayscale(20%) contrast(1.05);
+    transition: all 0.4s;
 }
 
 .resort-card:hover .resort-image {
-    filter: brightness(1.1) saturate(1.2);
+    filter: grayscale(0%) contrast(1.1);
     transform: scale(1.05);
 }
 
@@ -378,54 +360,57 @@ select option {
 }
 
 .resort-name {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.8em;
-    font-weight: 800;
-    color: #ffffff;
+    font-weight: 700;
+    color: #2c3e50;
     line-height: 1.2;
 }
 
 .distance {
-    background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+    background: linear-gradient(135deg, #b76e79 0%, #b87333 100%);
     color: white;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 20px;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: 700;
     white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
 }
 
 .resort-region {
-    color: #4facfe;
-    font-size: 0.95em;
+    color: #b76e79;
+    font-size: 0.9em;
     margin-bottom: 18px;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .level-badge {
     display: inline-block;
-    background: rgba(79, 172, 254, 0.2);
-    color: #4facfe;
-    padding: 8px 18px;
+    background: rgba(183, 110, 121, 0.1);
+    color: #b76e79;
+    padding: 6px 16px;
     border-radius: 20px;
-    font-size: 0.85em;
-    font-weight: 600;
+    font-size: 0.8em;
+    font-weight: 700;
     margin-bottom: 15px;
-    border: 1px solid rgba(79, 172, 254, 0.3);
+    border: 1px solid rgba(183, 110, 121, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .dates-info {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(183, 110, 121, 0.05);
     padding: 16px;
-    border-radius: 12px;
+    border-radius: 4px;
     margin-bottom: 20px;
     font-size: 0.9em;
-    border-left: 3px solid #4facfe;
+    border-left: 3px solid #b76e79;
 }
 
 .dates-info strong {
-    color: #4facfe;
+    color: #b76e79;
     font-weight: 700;
 }
 
@@ -440,13 +425,12 @@ select option {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: rgba(255, 255, 255, 0.9);
+    color: #5a6c7d;
     font-size: 0.95em;
 }
 
 .info-icon {
-    font-size: 1.4em;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    font-size: 1.3em;
 }
 
 .pricing {
@@ -454,7 +438,7 @@ select option {
     justify-content: space-between;
     margin-top: 22px;
     padding-top: 22px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #e0e0e0;
     gap: 20px;
 }
 
@@ -464,66 +448,64 @@ select option {
 }
 
 .price-label {
-    font-size: 0.75em;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7em;
+    color: #5a6c7d;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .price-value {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 2em;
-    font-weight: 800;
-    background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-weight: 700;
+    color: #b76e79;
 }
 
 .book-button {
     width: 100%;
     margin-top: 22px;
-    padding: 18px;
-    background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+    padding: 16px;
+    background: linear-gradient(135deg, #b76e79 0%, #b87333 100%);
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 4px;
     font-weight: 700;
-    font-size: 1.05em;
+    font-size: 1em;
     cursor: pointer;
     transition: all 0.3s;
     text-decoration: none;
     display: block;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
-    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .book-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(79, 172, 254, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(183, 110, 121, 0.3);
 }
 
 .book-button-large {
-    padding: 22px 55px;
-    font-size: 1.2em;
-    background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+    padding: 20px 50px;
+    font-size: 1.1em;
+    background: linear-gradient(135deg, #b76e79 0%, #b87333 100%);
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 4px;
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s;
-    box-shadow: 0 15px 40px rgba(79, 172, 254, 0.4);
-    letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .book-button-large:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 50px rgba(79, 172, 254, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(183, 110, 121, 0.4);
 }
 
 /* Loading and no results */
@@ -531,7 +513,7 @@ select option {
     text-align: center;
     padding: 80px;
     color: white;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 600;
     grid-column: 1 / -1;
 }
@@ -539,40 +521,38 @@ select option {
 .no-results {
     text-align: center;
     padding: 100px 50px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(40px);
-    border-radius: 30px;
-    color: white;
+    background: #f5f5f5;
+    border-radius: 8px;
+    color: #2c3e50;
     grid-column: 1 / -1;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .no-results h2 {
+    font-family: 'Cormorant Garamond', serif;
     margin-bottom: 20px;
-    color: #4facfe;
+    color: #b76e79;
     font-size: 2.5em;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 /* Station Detail Page */
 .station-detail-page {
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(50px);
-    border-radius: 30px;
+    background: #f5f5f5;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
 }
 
 .breadcrumb {
     padding: 25px 40px;
-    background: rgba(0, 0, 0, 0.15);
-    font-size: 0.95em;
+    background: rgba(0, 0, 0, 0.03);
+    font-size: 0.9em;
+    color: #5a6c7d;
 }
 
 .breadcrumb a {
-    color: #4facfe;
+    color: #b76e79;
     text-decoration: none;
     font-weight: 600;
 }
@@ -591,7 +571,7 @@ select option {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.8) saturate(1.2);
+    filter: brightness(0.7) contrast(1.1);
 }
 
 .station-hero-overlay {
@@ -599,23 +579,25 @@ select option {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(102, 126, 234, 0.9), transparent);
+    background: linear-gradient(to top, rgba(44, 62, 80, 0.95), transparent);
     padding: 60px 50px;
     color: white;
 }
 
 .station-hero-overlay h1 {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 4em;
     margin-bottom: 15px;
-    font-weight: 800;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero-region {
-    font-size: 1.5em;
-    opacity: 0.95;
-    font-weight: 600;
+    font-size: 1.3em;
     color: rgba(255, 255, 255, 0.95);
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .station-grid {
@@ -632,18 +614,19 @@ select option {
 }
 
 .detail-section h2 {
-    color: #4facfe;
+    font-family: 'Cormorant Garamond', serif;
+    color: #2c3e50;
     margin-bottom: 22px;
-    font-size: 2em;
-    font-weight: 800;
-    border-bottom: 2px solid rgba(79, 172, 254, 0.3);
+    font-size: 2.2em;
+    font-weight: 700;
+    border-bottom: 2px solid #b76e79;
     padding-bottom: 12px;
 }
 
 .description {
-    line-height: 2;
-    color: rgba(255, 255, 255, 0.95);
-    font-size: 1.1em;
+    line-height: 1.9;
+    color: #5a6c7d;
+    font-size: 1.05em;
 }
 
 .advantages-list {
@@ -655,37 +638,38 @@ select option {
 
 .advantages-list li {
     padding: 18px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    color: rgba(255, 255, 255, 0.95);
+    background: white;
+    border-radius: 4px;
+    color: #5a6c7d;
     font-weight: 500;
-    border-left: 4px solid #4facfe;
+    border-left: 4px solid #b76e79;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .activities-tags, .equipment-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
 }
 
 .tag {
-    background: rgba(79, 172, 254, 0.2);
-    color: #4facfe;
-    padding: 12px 24px;
+    background: rgba(183, 110, 121, 0.1);
+    color: #b76e79;
+    padding: 10px 20px;
     border-radius: 20px;
-    font-size: 0.95em;
+    font-size: 0.9em;
     font-weight: 600;
-    border: 1px solid rgba(79, 172, 254, 0.3);
+    border: 1px solid rgba(183, 110, 121, 0.2);
 }
 
 .tag-blue {
-    background: rgba(240, 147, 251, 0.2);
-    color: #f093fb;
-    padding: 12px 24px;
+    background: rgba(184, 115, 51, 0.1);
+    color: #b87333;
+    padding: 10px 20px;
     border-radius: 20px;
-    font-size: 0.95em;
+    font-size: 0.9em;
     font-weight: 600;
-    border: 1px solid rgba(240, 147, 251, 0.3);
+    border: 1px solid rgba(184, 115, 51, 0.2);
 }
 
 .station-sidebar {
@@ -695,26 +679,26 @@ select option {
 }
 
 .info-box {
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(20px);
+    background: white;
     padding: 28px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-top: 3px solid #b76e79;
 }
 
 .info-box h3 {
+    font-family: 'Cormorant Garamond', serif;
     margin-bottom: 22px;
-    color: #4facfe;
-    font-weight: 800;
-    font-size: 1.3em;
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1.4em;
 }
 
 .info-row {
     display: flex;
     justify-content: space-between;
     padding: 14px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .info-row:last-child {
@@ -722,14 +706,14 @@ select option {
 }
 
 .info-label {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.95em;
+    color: #5a6c7d;
+    font-size: 0.9em;
     font-weight: 600;
 }
 
 .info-value {
     font-weight: 700;
-    color: white;
+    color: #2c3e50;
 }
 
 .price-big {
@@ -739,21 +723,19 @@ select option {
 }
 
 .price-big-label {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9em;
+    color: #5a6c7d;
+    font-size: 0.85em;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .price-big-value {
-    font-size: 3em;
-    font-weight: 800;
-    background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #b76e79;
 }
 
 .cta-box {
@@ -764,10 +746,11 @@ select option {
 
 /* Weather */
 .weather-card {
-    background: rgba(255, 255, 255, 0.12);
+    background: white;
     padding: 24px;
-    border-radius: 15px;
-    border-left: 4px solid #4facfe;
+    border-radius: 8px;
+    border-left: 4px solid #b76e79;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .weather-main {
@@ -782,20 +765,21 @@ select option {
 }
 
 .weather-temp {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 3em;
-    font-weight: 800;
-    color: white;
+    font-weight: 700;
+    color: #2c3e50;
 }
 
 .weather-details {
-    color: rgba(255, 255, 255, 0.9);
+    color: #5a6c7d;
     font-size: 0.95em;
 }
 
 .weather-description {
     font-size: 1.1em;
     margin-bottom: 12px;
-    color: white;
+    color: #2c3e50;
     font-weight: 600;
 }
 
@@ -806,23 +790,21 @@ select option {
 .snow-alert {
     margin-top: 20px;
     padding: 18px;
-    background: linear-gradient(135deg, rgba(79, 172, 254, 0.2) 0%, rgba(240, 147, 251, 0.2) 100%);
-    border-radius: 15px;
+    background: rgba(183, 110, 121, 0.1);
+    border-radius: 4px;
     font-weight: 700;
-    color: #f093fb;
+    color: #b76e79;
     text-align: center;
-    font-size: 1.1em;
-    border: 1px solid rgba(240, 147, 251, 0.3);
+    font-size: 1em;
+    border: 2px solid rgba(183, 110, 121, 0.2);
 }
 
 /* About Page */
 .about-page {
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(50px);
-    border-radius: 30px;
+    background: #f5f5f5;
+    border-radius: 8px;
     padding: 60px;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
 }
 
 .about-content {
@@ -835,19 +817,20 @@ select option {
 }
 
 .about-section h2 {
-    color: #4facfe;
+    font-family: 'Cormorant Garamond', serif;
+    color: #2c3e50;
     margin-bottom: 28px;
     font-size: 2.5em;
-    font-weight: 800;
-    border-bottom: 2px solid rgba(79, 172, 254, 0.3);
+    font-weight: 700;
+    border-bottom: 2px solid #b76e79;
     padding-bottom: 15px;
 }
 
 .about-section p {
-    line-height: 2;
-    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.9;
+    color: #5a6c7d;
     margin-bottom: 20px;
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 
 .features-list {
@@ -860,11 +843,12 @@ select option {
 
 .features-list li {
     padding: 16px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    color: rgba(255, 255, 255, 0.95);
+    background: white;
+    border-radius: 4px;
+    color: #5a6c7d;
     font-weight: 500;
-    border-left: 4px solid #4facfe;
+    border-left: 4px solid #b76e79;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .steps {
@@ -877,15 +861,15 @@ select option {
 .step {
     text-align: center;
     padding: 35px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .step-number {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+    background: linear-gradient(135deg, #b76e79 0%, #b87333 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -894,18 +878,18 @@ select option {
     font-size: 2em;
     font-weight: 800;
     margin: 0 auto 20px;
-    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
 }
 
 .step h3 {
+    font-family: 'Cormorant Garamond', serif;
     margin-bottom: 15px;
-    color: #4facfe;
-    font-weight: 800;
+    color: #2c3e50;
+    font-weight: 700;
 }
 
 .step p {
     font-size: 0.95em;
-    color: rgba(255, 255, 255, 0.9);
+    color: #5a6c7d;
 }
 
 .massifs-grid {
@@ -917,16 +901,17 @@ select option {
 
 .massif-card {
     padding: 35px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    border-left: 4px solid #4facfe;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #b76e79;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .massif-card h3 {
+    font-family: 'Cormorant Garamond', serif;
     margin-bottom: 15px;
-    color: #4facfe;
-    font-weight: 800;
+    color: #2c3e50;
+    font-weight: 700;
 }
 
 .tips {
@@ -938,29 +923,31 @@ select option {
 
 .tip {
     padding: 28px;
-    background: rgba(240, 147, 251, 0.15);
-    border-radius: 20px;
-    border-left: 4px solid #f093fb;
-    border: 1px solid rgba(240, 147, 251, 0.3);
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #b87333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .tip h4 {
+    font-family: 'Cormorant Garamond', serif;
     margin-bottom: 15px;
-    color: #f093fb;
-    font-weight: 800;
+    color: #b87333;
+    font-weight: 700;
 }
 
 .tip p {
-    font-size: 0.98em;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95em;
+    color: #5a6c7d;
 }
 
 .cta-section {
     text-align: center;
     padding: 60px;
-    background: linear-gradient(135deg, rgba(79, 172, 254, 0.15) 0%, rgba(240, 147, 251, 0.15) 100%);
-    border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: white;
+    border-radius: 8px;
+    border-top: 3px solid #b76e79;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .cta-buttons {
@@ -971,15 +958,16 @@ select option {
     flex-wrap: wrap;
 }
 
-/* Footer Glacier */
+/* Footer sobre */
 .footer {
     text-align: center;
     padding: 50px 20px;
     color: rgba(255, 255, 255, 0.8);
     margin-top: 80px;
     font-weight: 400;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    letter-spacing: 0.5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+    font-size: 0.9em;
 }
 
 /* Responsive */
@@ -1044,7 +1032,7 @@ select option {
 }
 
 .image-link:hover .resort-image {
-    filter: brightness(1.1) saturate(1.3);
+    filter: grayscale(0%) contrast(1.1);
 }
 
 .resort-image {

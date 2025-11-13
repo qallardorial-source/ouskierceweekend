@@ -273,7 +273,7 @@ if (!document.getElementById('share-animations')) {
             padding: 10px 20px;
             border: 2px solid rgba(79, 172, 254, 0.3);
             border-radius: 8px;
-            background: rgba(255, 255, 255, 0.1);
+            background: #f5f5f5;
             color: white;
             cursor: pointer;
             transition: all 0.3s;
@@ -283,7 +283,7 @@ if (!document.getElementById('share-animations')) {
 
         .share-btn:hover {
             background: rgba(79, 172, 254, 0.2);
-            border-color: #4facfe;
+            border-color: #b76e79;
             transform: translateY(-2px);
         }
 

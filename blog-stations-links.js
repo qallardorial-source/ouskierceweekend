@@ -112,14 +112,14 @@ const blogStationsLinks = {
         const articlesHTML = relatedArticles.map(article => `
             <div class="related-article-card">
                 <h4>
-                    <a href="${article.url}" style="color: #4facfe; text-decoration: none;">
+                    <a href="${article.url}" style="color: #b76e79; text-decoration: none;">
                         📖 ${article.title}
                     </a>
                 </h4>
                 <p style="font-size: 0.9em; opacity: 0.8; margin-top: 8px;">
                     ${this.getArticleDescription(article.id)}
                 </p>
-                <a href="${article.url}" style="color: #f093fb; font-size: 0.9em; text-decoration: none;">
+                <a href="${article.url}" style="color: #b87333; font-size: 0.9em; text-decoration: none;">
                     Lire l'article →
                 </a>
             </div>
@@ -165,15 +165,15 @@ if (!document.getElementById('blog-links-styles')) {
         }
 
         .related-article-card {
-            background: rgba(255, 255, 255, 0.12);
+            background: #f5f5f5;
             padding: 25px;
             border-radius: 12px;
-            border-left: 4px solid #4facfe;
+            border-left: 4px solid #b76e79;
             transition: all 0.3s;
         }
 
         .related-article-card:hover {
-            background: rgba(255, 255, 255, 0.12);
+            background: #f5f5f5;
             transform: translateY(-3px);
             box-shadow: 0 5px 20px rgba(79, 172, 254, 0.3);
         }

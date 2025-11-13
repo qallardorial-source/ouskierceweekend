@@ -201,7 +201,7 @@ function createWeatherHTML(weather, stationName = '') {
 const weatherStyles = `
 .weather-card {
     background: rgba(15, 32, 39, 0.7);
-    backdrop-filter: blur(20px);
+    ;
     padding: 30px;
     border-radius: 20px;
     border: 1px solid rgba(197, 157, 95, 0.3);
