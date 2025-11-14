@@ -1,35 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
+
+  <!-- ========================================== -->
+  <!-- PAGES PRINCIPALES -->
+  <!-- ========================================== -->
+
   <!-- Page d'accueil -->
   <url>
     <loc>https://ouskierceweeekend.fr/</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Page stations -->
+
+  <url>
+    <loc>https://ouskierceweeekend.fr/index.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Page stations (liste complète) -->
   <url>
     <loc>https://ouskierceweeekend.fr/stations.html</loc>
-    <lastmod>2025-11-13</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  
+
+  <!-- Page comparateur -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/compare.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Page favoris -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/favorites.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Page à propos -->
   <url>
     <loc>https://ouskierceweeekend.fr/about.html</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  
-  <!-- Page légale -->
+
+  <!-- Page mentions légales -->
   <url>
     <loc>https://ouskierceweeekend.fr/legal.html</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -37,268 +64,311 @@
   <!-- CGU -->
   <url>
     <loc>https://ouskierceweeekend.fr/cgu.html</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
-  <!-- Pages Villes (SEO) -->
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- ========================================== -->
+  <!-- PAGES VILLES (SEO Local) -->
+  <!-- ========================================== -->
 
+  <!-- Index des villes -->
   <url>
-    <loc>https://ouskierceweeekend.fr/villes/paris.html</loc>
+    <loc>https://ouskierceweeekend.fr/villes/index.html</loc>
     <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/lyon.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/marseille.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/toulouse.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/grenoble.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/bordeaux.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/lille.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/nantes.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/strasbourg.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/nice.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/montpellier.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/annecy.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/chambery.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/clermont-ferrand.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/dijon.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/reims.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/saint-etienne.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/toulon.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/rennes.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/perpignan.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
+  <!-- Ville: Aix-en-provence -->
   <url>
     <loc>https://ouskierceweeekend.fr/villes/aix-en-provence.html</loc>
     <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/valence.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/metz.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/nancy.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/pau.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/besancon.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/mulhouse.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/avignon.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/brest.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/le-havre.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ouskierceweeekend.fr/villes/geneve.html</loc>
-    <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
+  <!-- Ville: Albertville -->
   <url>
     <loc>https://ouskierceweeekend.fr/villes/albertville.html</loc>
     <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
+  <!-- Ville: Annecy -->
   <url>
-    <loc>https://ouskierceweeekend.fr/villes/gap.html</loc>
+    <loc>https://ouskierceweeekend.fr/villes/annecy.html</loc>
     <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
+  <!-- Ville: Avignon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/avignon.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Besancon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/besancon.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Bordeaux -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/bordeaux.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Brest -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/brest.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Briancon -->
   <url>
     <loc>https://ouskierceweeekend.fr/villes/briancon.html</loc>
     <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
+  <!-- Ville: Chambery -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/chambery.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Clermont-ferrand -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/clermont-ferrand.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Dijon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/dijon.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Gap -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/gap.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Geneve -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/geneve.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Grenoble-2 -->
   <url>
     <loc>https://ouskierceweeekend.fr/villes/grenoble-2.html</loc>
     <lastmod>2025-11-14</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Ville: Grenoble -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/grenoble.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Le-havre -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/le-havre.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Lille -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/lille.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Lyon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/lyon.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Marseille -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/marseille.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Metz -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/metz.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Montpellier -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/montpellier.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Mulhouse -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/mulhouse.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Nancy -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/nancy.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Nantes -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/nantes.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Nice -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/nice.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Paris -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/paris.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Pau -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/pau.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Perpignan -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/perpignan.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Reims -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/reims.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Rennes -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/rennes.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Saint-etienne -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/saint-etienne.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Strasbourg -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/strasbourg.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Toulon -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/toulon.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Toulouse -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/toulouse.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ville: Valence -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/valence.html</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ========================================== -->
+  <!-- PAGES STATIONS (201 stations) -->
+  <!-- ========================================== -->
 
   <!-- Chamonix Mont-Blanc -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=chamonix-mont-blanc</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -311,7 +381,7 @@
   <!-- Megève -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=meg-ve</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -324,7 +394,7 @@
   <!-- Avoriaz -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=avoriaz</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -337,7 +407,7 @@
   <!-- La Clusaz -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-clusaz</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -350,7 +420,7 @@
   <!-- Le Grand Bornand -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-grand-bornand</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -363,7 +433,7 @@
   <!-- Flaine -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=flaine</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -376,7 +446,7 @@
   <!-- Morzine -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=morzine</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -389,7 +459,7 @@
   <!-- Les Gets -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-gets</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -402,7 +472,7 @@
   <!-- Saint-Gervais -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-gervais</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -415,7 +485,7 @@
   <!-- Les Contamines-Montjoie -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-contamines-montjoie</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -428,7 +498,7 @@
   <!-- Châtel -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=ch-tel</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -441,7 +511,7 @@
   <!-- Les Houches -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-houches</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -454,7 +524,7 @@
   <!-- Combloux -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=combloux</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -467,7 +537,7 @@
   <!-- Samoëns -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=samo-ns</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -480,11 +550,11 @@
   <!-- Morillon -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=morillon</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://ouskierceweeekend.fr/images/karellis.png</image:loc>
+      <image:loc>https://ouskierceweeekend.fr/images/morillon.png</image:loc>
       <image:title>Station de ski Morillon</image:title>
       <image:caption>Station Alpes du Nord située à 2500m d&apos;altitude avec 265km de pistes.</image:caption>
     </image:image>
@@ -493,7 +563,7 @@
   <!-- Sixt-Fer-à-Cheval -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=sixt-fer-cheval</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -506,7 +576,7 @@
   <!-- Praz-sur-Arly -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=praz-sur-arly</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -519,7 +589,7 @@
   <!-- Notre-Dame-de-Bellecombe -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=notre-dame-de-bellecombe</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -532,7 +602,7 @@
   <!-- La Giettaz -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-giettaz</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -545,11 +615,11 @@
   <!-- Bernex -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=bernex</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://ouskierceweeekend.fr/images/le-grand-bornand.png</image:loc>
+      <image:loc>https://ouskierceweeekend.fr/images/bernex.png</image:loc>
       <image:title>Station de ski Bernex</image:title>
       <image:caption>Station Alpes du Nord située à 2000m d&apos;altitude avec 50km de pistes.</image:caption>
     </image:image>
@@ -558,7 +628,7 @@
   <!-- Val d&apos;Isère -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-d-is-re</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -571,7 +641,7 @@
   <!-- Tignes -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=tignes</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -584,7 +654,7 @@
   <!-- Val Thorens -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-thorens</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -597,7 +667,7 @@
   <!-- Courchevel -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=courchevel</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -610,7 +680,7 @@
   <!-- Méribel -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=m-ribel</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -623,7 +693,7 @@
   <!-- Les Menuires -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-menuires</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -636,7 +706,7 @@
   <!-- Saint-Martin-de-Belleville -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-martin-de-belleville</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -649,7 +719,7 @@
   <!-- La Plagne -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-plagne</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -662,7 +732,7 @@
   <!-- Les Arcs -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-arcs</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -675,7 +745,7 @@
   <!-- Peisey-Vallandry -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=peisey-vallandry</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -688,7 +758,7 @@
   <!-- La Rosière -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-rosi-re</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -701,7 +771,7 @@
   <!-- Valmorel -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=valmorel</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -714,7 +784,7 @@
   <!-- Saint-François-Longchamp -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-fran-ois-longchamp</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -727,7 +797,7 @@
   <!-- Val Cenis -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-cenis</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -740,7 +810,7 @@
   <!-- La Norma -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-norma</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -753,7 +823,7 @@
   <!-- Aussois -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=aussois</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -766,7 +836,7 @@
   <!-- Pralognan-la-Vanoise -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=pralognan-la-vanoise</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -779,7 +849,7 @@
   <!-- Les Saisies -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-saisies</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -792,7 +862,7 @@
   <!-- La Tania -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-tania</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -805,7 +875,7 @@
   <!-- Brides-les-Bains -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=brides-les-bains</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -818,7 +888,7 @@
   <!-- Orelle -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=orelle</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -831,7 +901,7 @@
   <!-- Bonneval-sur-Arc -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=bonneval-sur-arc</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -844,7 +914,7 @@
   <!-- Bessans -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=bessans</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -857,7 +927,7 @@
   <!-- Termignon -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=termignon</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -870,7 +940,7 @@
   <!-- La Léchère -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-l-ch-re</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -883,7 +953,7 @@
   <!-- Montchavin-Les Coches -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=montchavin-les-coches</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -896,7 +966,7 @@
   <!-- Champagny-en-Vanoise -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=champagny-en-vanoise</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -909,11 +979,11 @@
   <!-- Le Corbier -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-corbier</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://ouskierceweeekend.fr/images/la-clusaz.png</image:loc>
+      <image:loc>https://ouskierceweeekend.fr/images/corbier.png</image:loc>
       <image:title>Station de ski Le Corbier</image:title>
       <image:caption>Station Alpes du Nord située à 2620m d&apos;altitude avec 310km de pistes.</image:caption>
     </image:image>
@@ -922,7 +992,7 @@
   <!-- La Toussuire -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-toussuire</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -935,7 +1005,7 @@
   <!-- Les Bottières -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-botti-res</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -948,7 +1018,7 @@
   <!-- Saint-Jean-d&apos;Arves -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-jean-d-arves</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -961,7 +1031,7 @@
   <!-- Saint-Sorlin-d&apos;Arves -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-sorlin-d-arves</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -974,7 +1044,7 @@
   <!-- La Joue du Loup -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-joue-du-loup</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -987,7 +1057,7 @@
   <!-- Albiez-Montrond -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=albiez-montrond</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1000,7 +1070,7 @@
   <!-- Valloire -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=valloire</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1013,7 +1083,7 @@
   <!-- Valmeinier -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=valmeinier</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1026,7 +1096,7 @@
   <!-- L&apos;Alpe d&apos;Huez -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=l-alpe-d-huez</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1039,7 +1109,7 @@
   <!-- Les Deux Alpes -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-deux-alpes</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1052,7 +1122,7 @@
   <!-- Chamrousse -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=chamrousse</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1065,7 +1135,7 @@
   <!-- Les 7 Laux -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-7-laux</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1078,7 +1148,7 @@
   <!-- Villard-de-Lans -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=villard-de-lans</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1091,7 +1161,7 @@
   <!-- Vaujany -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=vaujany</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1104,7 +1174,7 @@
   <!-- Oz-en-Oisans -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=oz-en-oisans</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1117,7 +1187,7 @@
   <!-- Auris-en-Oisans -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=auris-en-oisans</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1130,7 +1200,7 @@
   <!-- L&apos;Alpe du Grand Serre -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=l-alpe-du-grand-serre</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1143,7 +1213,7 @@
   <!-- Corrençon-en-Vercors -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=corren-on-en-vercors</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1156,7 +1226,7 @@
   <!-- Méaudre -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=m-audre</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1169,7 +1239,7 @@
   <!-- Autrans -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=autrans</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1182,7 +1252,7 @@
   <!-- Lans-en-Vercors -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=lans-en-vercors</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1195,7 +1265,7 @@
   <!-- Saint-Pierre-de-Chartreuse -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-pierre-de-chartreuse</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1208,7 +1278,7 @@
   <!-- Le Collet d&apos;Allevard -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-collet-d-allevard</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1221,7 +1291,7 @@
   <!-- Col de Porte -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=col-de-porte</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1234,7 +1304,7 @@
   <!-- Gresse-en-Vercors -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=gresse-en-vercors</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1247,7 +1317,7 @@
   <!-- Font d&apos;Urle -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=font-d-urle</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1260,7 +1330,7 @@
   <!-- Herbouilly -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=herbouilly</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1273,7 +1343,7 @@
   <!-- Col de Marcieu -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=col-de-marcieu</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1286,7 +1356,7 @@
   <!-- Montagne de Lans -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=montagne-de-lans</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1299,7 +1369,7 @@
   <!-- Signal de l&apos;Homme -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=signal-de-l-homme</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1312,7 +1382,7 @@
   <!-- Crêt du Poulet -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=cr-t-du-poulet</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1325,7 +1395,7 @@
   <!-- Charmant Som -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=charmant-som</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1338,7 +1408,7 @@
   <!-- Méaudre Nordic -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=m-audre-nordic</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1351,7 +1421,7 @@
   <!-- Serre Chevalier -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=serre-chevalier</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1364,7 +1434,7 @@
   <!-- Vars -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=vars</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1377,7 +1447,7 @@
   <!-- Risoul -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=risoul</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1390,7 +1460,7 @@
   <!-- Les Orres -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-orres</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1403,7 +1473,7 @@
   <!-- Montgenèvre -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=montgen-vre</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1416,7 +1486,7 @@
   <!-- Puy-Saint-Vincent -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=puy-saint-vincent</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1429,7 +1499,7 @@
   <!-- Orcières Merlette -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=orci-res-merlette</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1442,7 +1512,7 @@
   <!-- Réallon -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=r-allon</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1455,7 +1525,7 @@
   <!-- Ancelle -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=ancelle</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1468,7 +1538,7 @@
   <!-- Céüze -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=c-ze</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1481,7 +1551,7 @@
   <!-- Chaillol -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=chaillol</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1494,7 +1564,7 @@
   <!-- Crévoux -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=cr-voux</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1507,7 +1577,7 @@
   <!-- Superdévoluy -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=superd-voluy</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1520,7 +1590,7 @@
   <!-- La Joue du Loup -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-joue-du-loup</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1533,7 +1603,7 @@
   <!-- Saint-Léger-les-Mélèzes -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-l-ger-les-m-l-zes</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1546,7 +1616,7 @@
   <!-- Pelvoux -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=pelvoux</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1559,7 +1629,7 @@
   <!-- Saint-Jean-Montclar -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-jean-montclar</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1572,7 +1642,7 @@
   <!-- Grand Puy -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=grand-puy</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1585,7 +1655,7 @@
   <!-- Château-Ville-Vieille -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=ch-teau-ville-vieille</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1598,7 +1668,7 @@
   <!-- Abriès -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=abri-s</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1611,7 +1681,7 @@
   <!-- Molines-en-Queyras -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=molines-en-queyras</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1624,7 +1694,7 @@
   <!-- Arvieux -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=arvieux</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1637,7 +1707,7 @@
   <!-- La Grave -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-grave</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1650,7 +1720,7 @@
   <!-- Névache -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=n-vache</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1663,7 +1733,7 @@
   <!-- Ceillac -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=ceillac</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1676,7 +1746,7 @@
   <!-- Saint-Véran -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-v-ran</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1689,7 +1759,7 @@
   <!-- Ristolas -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=ristolas</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1702,7 +1772,7 @@
   <!-- Villeneuve-la-Salle -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=villeneuve-la-salle</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1715,7 +1785,7 @@
   <!-- Briançon -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=brian-on</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1728,7 +1798,7 @@
   <!-- Col du Lautaret -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=col-du-lautaret</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1741,7 +1811,7 @@
   <!-- Isola 2000 -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=isola-2000</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1754,7 +1824,7 @@
   <!-- Auron -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=auron</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1767,7 +1837,7 @@
   <!-- Valberg -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=valberg</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1780,7 +1850,7 @@
   <!-- La Colmiane -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-colmiane</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1793,7 +1863,7 @@
   <!-- Roubion-Les Buisses -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=roubion-les-buisses</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1806,7 +1876,7 @@
   <!-- Gréolières-les-Neiges -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=gr-oli-res-les-neiges</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1819,7 +1889,7 @@
   <!-- Turini Camp d&apos;Argent -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=turini-camp-d-argent</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1832,7 +1902,7 @@
   <!-- Beuil-Les Launes -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=beuil-les-launes</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1845,7 +1915,7 @@
   <!-- Le Boréon -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-bor-on</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1858,7 +1928,7 @@
   <!-- Limone Piemonte -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=limone-piemonte</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1871,7 +1941,7 @@
   <!-- Grand Tourmalet -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=grand-tourmalet</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1884,7 +1954,7 @@
   <!-- Saint-Lary-Soulan -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-lary-soulan</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1897,7 +1967,7 @@
   <!-- Peyragudes -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=peyragudes</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1910,7 +1980,7 @@
   <!-- Cauterets -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=cauterets</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1923,7 +1993,7 @@
   <!-- Luz Ardiden -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=luz-ardiden</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1936,7 +2006,7 @@
   <!-- Font-Romeu -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=font-romeu</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1949,7 +2019,7 @@
   <!-- Les Angles -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-angles</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1962,7 +2032,7 @@
   <!-- Piau-Engaly -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=piau-engaly</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1975,7 +2045,7 @@
   <!-- Gourette -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=gourette</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -1988,7 +2058,7 @@
   <!-- La Pierre Saint-Martin -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-pierre-saint-martin</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2001,7 +2071,7 @@
   <!-- Ax 3 Domaines -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=ax-3-domaines</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2014,7 +2084,7 @@
   <!-- Peyresourde -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=peyresourde</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2027,7 +2097,7 @@
   <!-- Val Louron -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-louron</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2040,7 +2110,7 @@
   <!-- Gavarnie-Gèdre -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=gavarnie-g-dre</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2053,7 +2123,7 @@
   <!-- Hautacam -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=hautacam</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2066,7 +2136,7 @@
   <!-- Val d&apos;Azun -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=val-d-azun</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2079,7 +2149,7 @@
   <!-- Cauterets-Pont d&apos;Espagne -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=cauterets-pont-d-espagne</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2092,11 +2162,11 @@
   <!-- Artouste -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=artouste</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://ouskierceweeekend.fr/images/val-cenis.png</image:loc>
+      <image:loc>https://ouskierceweeekend.fr/images/artouste.png</image:loc>
       <image:title>Station de ski Artouste</image:title>
       <image:caption>Station Pyrénées située à 2100m d&apos;altitude avec 15km de pistes.</image:caption>
     </image:image>
@@ -2105,7 +2175,7 @@
   <!-- Issarbe -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=issarbe</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2118,7 +2188,7 @@
   <!-- La Mongie -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-mongie</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2131,11 +2201,11 @@
   <!-- Barèges -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=bar-ges</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://ouskierceweeekend.fr/images/avoriaz.png</image:loc>
+      <image:loc>https://ouskierceweeekend.fr/images/bareges.png</image:loc>
       <image:title>Station de ski Barèges</image:title>
       <image:caption>Station Pyrénées située à 2350m d&apos;altitude avec 100km de pistes.</image:caption>
     </image:image>
@@ -2144,7 +2214,7 @@
   <!-- Luchon-Superbagnères -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=luchon-superbagn-res</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2157,7 +2227,7 @@
   <!-- Le Mourtis -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-mourtis</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2170,7 +2240,7 @@
   <!-- Bourg d&apos;Oueil -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=bourg-d-oueil</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2183,7 +2253,7 @@
   <!-- Guzet -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=guzet</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2196,7 +2266,7 @@
   <!-- Ascou-Pailhères -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=ascou-pailh-res</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2209,7 +2279,7 @@
   <!-- Ax-Bonascre -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=ax-bonascre</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2222,7 +2292,7 @@
   <!-- Mijanès-Donezan -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=mijan-s-donezan</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2235,7 +2305,7 @@
   <!-- Formiguères -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=formigu-res</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2248,7 +2318,7 @@
   <!-- Porté-Puymorens -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=port-puymorens</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2261,7 +2331,7 @@
   <!-- Puigmal -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=puigmal</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2274,7 +2344,7 @@
   <!-- Espace Cambre d&apos;Aze -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=espace-cambre-d-aze</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2287,7 +2357,7 @@
   <!-- Eyne-Saint-Pierre-dels-Forcats -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=eyne-saint-pierre-dels-forcats</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2300,7 +2370,7 @@
   <!-- Pyrénées 2000 -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=pyr-n-es-2000</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2313,7 +2383,7 @@
   <!-- Bolquère-Pyrenées 2000 -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=bolqu-re-pyren-es-2000</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2326,7 +2396,7 @@
   <!-- Err-Puigmal -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=err-puigmal</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2339,7 +2409,7 @@
   <!-- Porte-Puymorens -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=porte-puymorens</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2352,7 +2422,7 @@
   <!-- Saint-Jean-de-Verges -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-jean-de-verges</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2365,7 +2435,7 @@
   <!-- Monts d&apos;Olmes -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=monts-d-olmes</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2378,7 +2448,7 @@
   <!-- Plateau de Beille -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=plateau-de-beille</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2391,7 +2461,7 @@
   <!-- Les Rousses -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-rousses</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2404,7 +2474,7 @@
   <!-- Métabief -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=m-tabief</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2417,7 +2487,7 @@
   <!-- Monts Jura -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=monts-jura</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2430,7 +2500,7 @@
   <!-- Les Molunes -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-molunes</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2443,7 +2513,7 @@
   <!-- Bellefontaine -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=bellefontaine</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2456,7 +2526,7 @@
   <!-- La Pesse -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-pesse</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2469,7 +2539,7 @@
   <!-- Foncine-le-Haut -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=foncine-le-haut</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2482,7 +2552,7 @@
   <!-- Chamrousse-Jura -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=chamrousse-jura</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2495,7 +2565,7 @@
   <!-- La Faucille -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-faucille</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2508,7 +2578,7 @@
   <!-- Lélex-Crozet -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=l-lex-crozet</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2521,7 +2591,7 @@
   <!-- La Bresse Hohneck -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-bresse-hohneck</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2534,7 +2604,7 @@
   <!-- Gérardmer -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=g-rardmer</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2547,7 +2617,7 @@
   <!-- Le Markstein -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-markstein</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2560,7 +2630,7 @@
   <!-- La Schlucht -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-schlucht</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2573,7 +2643,7 @@
   <!-- Le Schnepfenried -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-schnepfenried</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2586,7 +2656,7 @@
   <!-- Xonrupt -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=xonrupt</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2599,7 +2669,7 @@
   <!-- Le Valtin -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-valtin</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2612,7 +2682,7 @@
   <!-- Le Champ du Feu -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-champ-du-feu</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2625,7 +2695,7 @@
   <!-- Le Gaschney -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-gaschney</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2638,7 +2708,7 @@
   <!-- Rouge Gazon -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=rouge-gazon</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2651,7 +2721,7 @@
   <!-- Ventron -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=ventron</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2664,7 +2734,7 @@
   <!-- Le Tanet -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-tanet</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2677,7 +2747,7 @@
   <!-- Lac Blanc -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=lac-blanc</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2690,7 +2760,7 @@
   <!-- Bussang -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=bussang</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2703,7 +2773,7 @@
   <!-- La Bresse-Brabant -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-bresse-brabant</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2716,7 +2786,7 @@
   <!-- Super Besse -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=super-besse</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2729,7 +2799,7 @@
   <!-- Le Mont-Dore -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-mont-dore</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2742,7 +2812,7 @@
   <!-- Le Lioran -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-lioran</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2755,7 +2825,7 @@
   <!-- Chastreix-Sancy -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=chastreix-sancy</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2768,7 +2838,7 @@
   <!-- La Bourboule -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=la-bourboule</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2781,7 +2851,7 @@
   <!-- Prabouré -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=prabour-</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2794,7 +2864,7 @@
   <!-- Le Pas de Peyrol -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-pas-de-peyrol</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2807,7 +2877,7 @@
   <!-- Pailherols -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=pailherols</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2820,7 +2890,7 @@
   <!-- Brameloup -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=brameloup</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2833,7 +2903,7 @@
   <!-- Laguiole -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=laguiole</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2846,7 +2916,7 @@
   <!-- Les Estables -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=les-estables</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2859,7 +2929,7 @@
   <!-- Chalmazel -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=chalmazel</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2872,7 +2942,7 @@
   <!-- Prabouré-Lioran -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=prabour-lioran</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2885,7 +2955,7 @@
   <!-- Le Bessat -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=le-bessat</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -2898,7 +2968,7 @@
   <!-- Saint-Urcize -->
   <url>
     <loc>https://ouskierceweeekend.fr/station-detail.html?id=saint-urcize</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
