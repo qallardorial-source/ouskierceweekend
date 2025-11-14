@@ -214,6 +214,7 @@
             <div class="nav-menu">
                 <a href="index.html" class="nav-link active">Recherche</a>
                 <a href="stations.html" class="nav-link">Toutes les stations</a>
+                <a href="villes/" class="nav-link">Villes</a>
                 <a href="blog/index.html" class="nav-link">Blog</a>
                 <a href="favorites.html" class="nav-link">
                     Favoris <span class="favorites-counter">0</span>
@@ -282,7 +283,44 @@
         </div>
 
         <div id="results" class="results"></div>
-        
+
+        <!-- Section Villes -->
+        <section style="max-width: 1000px; margin: 60px auto; padding: 40px; background: linear-gradient(135deg, rgba(79, 172, 254, 0.15) 0%, rgba(240, 147, 251, 0.15) 100%); backdrop-filter: blur(20px); border-radius: 20px; border: 2px solid rgba(79, 172, 254, 0.3);">
+            <h2 style="text-align: center; font-size: 2em; margin-bottom: 15px; background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                🗺️ Où Skier depuis Votre Ville ?
+            </h2>
+            <p style="text-align: center; color: rgba(255, 255, 255, 0.8); margin-bottom: 30px; font-size: 1.1em;">
+                Guides personnalisés par ville avec distances, prix, conseils de trajet
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 25px;">
+                <a href="villes/paris.html" style="padding: 15px 20px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(79, 172, 254, 0.3); border-radius: 12px; color: white; text-decoration: none; text-align: center; transition: all 0.3s; font-weight: 600;">
+                    🗼 Paris
+                </a>
+                <a href="villes/lyon.html" style="padding: 15px 20px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(79, 172, 254, 0.3); border-radius: 12px; color: white; text-decoration: none; text-align: center; transition: all 0.3s; font-weight: 600;">
+                    🦁 Lyon
+                </a>
+                <a href="villes/marseille.html" style="padding: 15px 20px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(79, 172, 254, 0.3); border-radius: 12px; color: white; text-decoration: none; text-align: center; transition: all 0.3s; font-weight: 600;">
+                    ⛵ Marseille
+                </a>
+                <a href="villes/toulouse.html" style="padding: 15px 20px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(79, 172, 254, 0.3); border-radius: 12px; color: white; text-decoration: none; text-align: center; transition: all 0.3s; font-weight: 600;">
+                    🏉 Toulouse
+                </a>
+                <a href="villes/grenoble.html" style="padding: 15px 20px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(79, 172, 254, 0.3); border-radius: 12px; color: white; text-decoration: none; text-align: center; transition: all 0.3s; font-weight: 600;">
+                    🏔️ Grenoble
+                </a>
+                <a href="villes/nice.html" style="padding: 15px 20px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(79, 172, 254, 0.3); border-radius: 12px; color: white; text-decoration: none; text-align: center; transition: all 0.3s; font-weight: 600;">
+                    🌴 Nice
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="villes/" style="display: inline-block; padding: 15px 30px; background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; transition: all 0.3s;">
+                    Voir toutes les villes →
+                </a>
+            </div>
+        </section>
+
         <!-- CONTENU SEO -->
         <section class="seo-content" style="max-width: 900px; margin: 60px auto 40px; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
             <h2 style="color: #2c3e50; font-size: 1.8em; margin-bottom: 20px;">Comment choisir sa station de ski pour un weekend ?</h2>

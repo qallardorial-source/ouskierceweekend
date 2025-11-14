@@ -217,6 +217,7 @@
             <div class="nav-menu">
                 <a href="index.html" class="nav-link">Recherche</a>
                 <a href="stations.html" class="nav-link">Toutes les stations</a>
+                <a href="villes/" class="nav-link">Villes</a>
                 <a href="blog/index.html" class="nav-link">Blog</a>
                 <a href="favorites.html" class="nav-link">
                     Favoris <span class="favorites-counter">0</span>
@@ -308,11 +309,18 @@
                 return;
             }
 
+            // Fonctions d'extraction des valeurs numériques
+            const extractNumber = (str) => {
+                if (!str) return 0;
+                const match = String(str).match(/(\d+)/);
+                return match ? parseInt(match[1]) : 0;
+            };
+
             // Calculer les meilleurs/pires valeurs pour chaque métrique
             const metrics = {
                 totalPrice: stations.map(s => (s.skiPass || 0) + (s.lodging || 0)),
-                domainSize: stations.map(s => s.skiableArea || 0),
-                altitude: stations.map(s => s.altitude?.max || 0),
+                domainSize: stations.map(s => extractNumber(s.slopes)),
+                altitude: stations.map(s => extractNumber(s.altitude)),
                 distance: stations.map(s => s.distance || 0)
             };
 
@@ -333,8 +341,8 @@
             // Créer les cartes de comparaison
             const cardsHTML = stations.map((station, index) => {
                 const totalPrice = (station.skiPass || 0) + (station.lodging || 0);
-                const domainSize = station.skiableArea || 0;
-                const altitude = station.altitude?.max || 0;
+                const domainSize = extractNumber(station.slopes);
+                const altitude = extractNumber(station.altitude);
                 const distance = station.distance || 0;
 
                 return `
@@ -376,6 +384,13 @@
                                     </span>
                                 </div>
 
+                                <div class="metric-row">
+                                    <span class="metric-label">🎯 Total pistes</span>
+                                    <span class="metric-value">
+                                        ${station.slopes || 'N/A'}
+                                    </span>
+                                </div>
+
                                 ${distance > 0 ? `
                                 <div class="metric-row">
                                     <span class="metric-label">🚗 Distance</span>
@@ -386,9 +401,9 @@
                                 ` : ''}
 
                                 <div class="metric-row">
-                                    <span class="metric-label">🎯 Pistes</span>
-                                    <span class="metric-value" style="font-size: 0.9em;">
-                                        ${station.slopes?.green || 0}🟢 ${station.slopes?.blue || 0}🔵 ${station.slopes?.red || 0}🔴 ${station.slopes?.black || 0}⚫
+                                    <span class="metric-label">🎿 Niveau</span>
+                                    <span class="metric-value" style="font-size: 0.85em;">
+                                        ${station.level || 'N/A'}
                                     </span>
                                 </div>
                             </div>

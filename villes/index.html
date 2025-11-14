@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO OPTIMISÉ -->
+    <title>Stations de Ski par Ville | Où Skier depuis Votre Ville ?</title>
+    <meta name="description" content="Trouvez les meilleures stations de ski accessibles depuis votre ville. Guides détaillés pour Paris, Lyon, Marseille, Toulouse, Bordeaux et 6 autres villes.">
+    <meta name="keywords" content="ski par ville, station ski ville, où skier depuis, ski weekend ville">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ouskierceweeekend.fr/villes/">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .city-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(32, 58, 67, 0.95) 100%);
+            backdrop-filter: blur(30px);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid rgba(79, 172, 254, 0.3);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .city-card:hover {
+            transform: translateY(-5px);
+            border-color: #4facfe;
+            box-shadow: 0 15px 40px rgba(79, 172, 254, 0.4);
+        }
+
+        .city-card-header {
+            background: linear-gradient(135deg, rgba(79, 172, 254, 0.2) 0%, rgba(240, 147, 251, 0.2) 100%);
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid rgba(79, 172, 254, 0.2);
+        }
+
+        .city-emoji {
+            font-size: 4em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .city-name {
+            font-size: 2em;
+            font-weight: 800;
+            color: #4facfe;
+            margin: 0;
+        }
+
+        .city-card-content {
+            padding: 25px;
+        }
+
+        .city-description {
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .city-highlights {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .city-highlight {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .highlight-icon {
+            font-size: 1.3em;
+        }
+
+        .city-stations-preview {
+            font-size: 0.85em;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+        }
+
+        .city-link-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .city-link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(79, 172, 254, 0.5);
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, rgba(79, 172, 254, 0.15) 0%, rgba(240, 147, 251, 0.15) 100%);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin-bottom: 50px;
+            border: 2px solid rgba(79, 172, 254, 0.3);
+        }
+
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .seo-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 50px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .seo-section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .seo-section p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Recherche</a>
+                <a href="../stations.html" class="nav-link">Toutes les stations</a>
+                <a href="../blog/index.html" class="nav-link">Blog</a>
+                <a href="../favorites.html" class="nav-link">
+                    Favoris <span class="favorites-counter">0</span>
+                </a>
+                <a href="../about.html" class="nav-link">À propos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero-section">
+            <h1>🗺️ Où Skier depuis Votre Ville ?</h1>
+            <p>
+                Découvrez les meilleures stations de ski accessibles depuis votre ville de départ.
+                Distances calculées automatiquement, conseils personnalisés et sélection des stations
+                les plus proches pour optimiser votre weekend ski.
+            </p>
+        </div>
+
+        <div class="cities-grid">
+            <!-- Paris -->
+            <div class="city-card" onclick="window.location.href='paris.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">🗼</span>
+                    <h2 class="city-name">Paris</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        Capitale française, accès aux Alpes en 5-7h. Idéal pour weekends prolongés.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 550-650 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 5-7h</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Alpes du Nord</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Chamonix, Megève, Val Thorens, Les Arcs
+                    </p>
+                    <a href="paris.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Lyon -->
+            <div class="city-card" onclick="window.location.href='lyon.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">🦁</span>
+                    <h2 class="city-name">Lyon</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        Porte des Alpes ! Stations à seulement 1-2h, parfait pour le weekend.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 100-200 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 2-3h</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Alpes du Nord</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Les 2 Alpes, Alpe d'Huez, Chamrousse
+                    </p>
+                    <a href="lyon.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Marseille -->
+            <div class="city-card" onclick="window.location.href='marseille.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">⛵</span>
+                    <h2 class="city-name">Marseille</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        De la mer aux sommets ! Accès privilégié aux Alpes du Sud ensoleillées.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 200-300 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 3-4h</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Alpes du Sud</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Serre Chevalier, Pra-Loup, Vars
+                    </p>
+                    <a href="marseille.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Toulouse -->
+            <div class="city-card" onclick="window.location.href='toulouse.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">🏉</span>
+                    <h2 class="city-name">Toulouse</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        Ville rose, montagnes blanches ! Accès rapide aux Pyrénées authentiques.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 150-200 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 2-3h</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Pyrénées</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Piau-Engaly, Saint-Lary, Cauterets
+                    </p>
+                    <a href="toulouse.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Grenoble -->
+            <div class="city-card" onclick="window.location.href='grenoble.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">🏔️</span>
+                    <h2 class="city-name">Grenoble</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        Capitale des Alpes ! 20+ stations en moins de 1h30. Le paradis du skieur.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 30-80 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 1-1h30</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Alpes du Nord</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Chamrousse, Les 2 Alpes, Alpe d'Huez
+                    </p>
+                    <a href="grenoble.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Bordeaux -->
+            <div class="city-card" onclick="window.location.href='bordeaux.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">🍷</span>
+                    <h2 class="city-name">Bordeaux</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        Du vin aux sommets ! Accès aux stations familiales des Pyrénées.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 200-300 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 3h30</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Pyrénées</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Saint-Lary, Piau-Engaly, Cauterets
+                    </p>
+                    <a href="bordeaux.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Lille -->
+            <div class="city-card" onclick="window.location.href='lille.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">🍺</span>
+                    <h2 class="city-name">Lille</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        Les Flandres à l'assaut des Alpes ! Distance importante mais stations magnifiques.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 650-750 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 7-8h</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Alpes du Nord</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Chamonix, Megève, Avoriaz
+                    </p>
+                    <a href="lille.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Nantes -->
+            <div class="city-card" onclick="window.location.href='nantes.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">🏰</span>
+                    <h2 class="city-name">Nantes</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        De la Loire aux sommets ! Choix entre Pyrénées ou Alpes.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 400-500 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 5-6h</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Pyrénées / Alpes</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Font-Romeu, Saint-Lary, Megève
+                    </p>
+                    <a href="nantes.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Strasbourg -->
+            <div class="city-card" onclick="window.location.href='strasbourg.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">🥨</span>
+                    <h2 class="city-name">Strasbourg</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        Capitale européenne, porte de l'Est ! Vosges proches + accès Suisse/Alpes.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 80-450 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 4-5h</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Vosges / Suisse</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> La Bresse, Gérardmer, Chamonix
+                    </p>
+                    <a href="strasbourg.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Nice -->
+            <div class="city-card" onclick="window.location.href='nice.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">🌴</span>
+                    <h2 class="city-name">Nice</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        Ski le matin, plage l'après-midi ! Stations à 1h30 de la Méditerranée.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 60-100 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 1-2h</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Alpes du Sud</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Isola 2000, Auron, Valberg
+                    </p>
+                    <a href="nice.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+
+            <!-- Montpellier -->
+            <div class="city-card" onclick="window.location.href='montpellier.html'">
+                <div class="city-card-header">
+                    <span class="city-emoji">☀️</span>
+                    <h2 class="city-name">Montpellier</h2>
+                </div>
+                <div class="city-card-content">
+                    <p class="city-description">
+                        Entre mer et montagne ! Accès rapide aux Pyrénées catalanes.
+                    </p>
+                    <div class="city-highlights">
+                        <div class="city-highlight">
+                            <span class="highlight-icon">📍</span>
+                            <span>Distance moyenne : 150-250 km</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">⏱️</span>
+                            <span>Temps moyen : 2-3h</span>
+                        </div>
+                        <div class="city-highlight">
+                            <span class="highlight-icon">🏔️</span>
+                            <span>Top région : Pyrénées</span>
+                        </div>
+                    </div>
+                    <p class="city-stations-preview">
+                        <strong>Stations populaires :</strong> Font-Romeu, Les Angles, Ax-les-Thermes
+                    </p>
+                    <a href="montpellier.html" class="city-link-btn">Voir le guide complet →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Content -->
+        <section class="seo-section">
+            <h2>Pourquoi choisir une station selon sa ville de départ ?</h2>
+
+            <p>
+                Le choix d'une <strong>station de ski</strong> dépend énormément de votre <strong>ville de départ</strong>.
+                La distance, le temps de trajet et les coûts de transport (essence, péages, train) représentent une part
+                importante du budget total de votre weekend ou vos vacances au ski.
+            </p>
+
+            <p>
+                Nos guides par ville vous permettent de :
+            </p>
+
+            <ul style="color: #555; line-height: 1.8; margin-left: 25px;">
+                <li>Visualiser les <strong>distances réelles</strong> calculées automatiquement</li>
+                <li>Obtenir des <strong>conseils de trajet</strong> adaptés (départ idéal, éviter bouchons)</li>
+                <li>Découvrir les <strong>stations optimales</strong> pour un weekend court vs vacances</li>
+                <li>Comparer <strong>voiture vs train</strong> selon votre situation</li>
+                <li>Estimer le <strong>budget complet</strong> (transport + séjour)</li>
+            </ul>
+
+            <p>
+                Par exemple, depuis <strong>Lyon</strong>, vous pouvez accéder à plus de 30 stations en moins de 2h30,
+                rendant possible le ski à la journée ! Depuis <strong>Paris</strong>, privilégiez les weekends de 3 jours
+                ou le train pour optimiser le temps de trajet. Depuis <strong>Toulouse</strong>, les Pyrénées offrent
+                un excellent rapport qualité-prix avec des stations à 2-3h de route.
+            </p>
+
+            <p>
+                Chaque guide inclut le <strong>top 5 des stations</strong> les plus adaptées, des <strong>astuces locales</strong>
+                et des <strong>calculs de budget</strong> personnalisés. Trouvez votre station idéale en quelques clics !
+            </p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Où skier ce weekend - <a href="../legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
+    </footer>
+
+    <script src="../config.js"></script>
+    <script src="../favorites.js"></script>
+</body>
+</html>
