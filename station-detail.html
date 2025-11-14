@@ -24,6 +24,7 @@
     <!-- Schema.org structured data -->
     <script type="application/ld+json" id="schemaData"></script>
     
+    <link rel="stylesheet" href="design-tokens.css">
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Styles additionnels pour la page détail SEO */
@@ -259,7 +260,7 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
             <div class="nav-menu">
@@ -275,11 +276,11 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" role="main">
         <div id="stationDetail"></div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <p>&copy; 2025 Où skier ce weekend - Toutes les informations sont à titre indicatif - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
     </footer>
 
