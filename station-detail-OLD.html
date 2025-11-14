@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Station de ski - Où skier ce weekend</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" id="metaDescription" content="Découvrez la station de ski avec tarifs, météo en temps réel, dates d'ouverture et toutes les informations pratiques.">
+    <meta name="keywords" id="metaKeywords" content="station ski, forfait ski, tarifs ski, météo ski, alpes">
+    <meta name="author" content="Où skier ce weekend">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" id="ogTitle" content="Station de ski">
+    <meta property="og:description" id="ogDescription" content="Découvrez cette station de ski">
+    <meta property="og:image" id="ogImage" content="">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" id="twitterTitle" content="Station de ski">
+    <meta property="twitter:description" id="twitterDescription" content="Découvrez cette station de ski">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json" id="schemaData"></script>
+    
+    <link rel="stylesheet" href="design-tokens.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles additionnels pour la page détail SEO */
+        .quick-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .summary-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(79, 172, 254, 0.3);
+            transition: all 0.3s;
+        }
+        
+        .summary-card:hover {
+            transform: translateY(-5px);
+            border-color: #4facfe;
+            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+        }
+        
+        .summary-icon {
+            font-size: 3em;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .summary-content strong {
+            display: block;
+            font-size: 2em;
+            color: #4facfe;
+            margin-bottom: 5px;
+        }
+        
+        .summary-content span {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        .highlight-box {
+            background: rgba(79, 172, 254, 0.15);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 4px solid #4facfe;
+        }
+        
+        .highlight-box h3 {
+            color: #4facfe;
+            margin-bottom: 15px;
+        }
+        
+        .level-detail {
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+        
+        .domain-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .domain-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(79, 172, 254, 0.2);
+        }
+        
+        .domain-card h4 {
+            color: #4facfe;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .domain-card p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .pricing-detail {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(79, 172, 254, 0.2);
+        }
+        
+        .pricing-detail h3 {
+            color: #4facfe;
+            margin: 25px 0 15px 0;
+            font-size: 1.3em;
+        }
+        
+        .pricing-detail h3:first-child {
+            margin-top: 0;
+        }
+        
+        .pricing-detail ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .pricing-detail li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .budget-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .budget-card {
+            background: rgba(79, 172, 254, 0.15);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid rgba(79, 172, 254, 0.3);
+        }
+        
+        .budget-card h4 {
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .budget-amount {
+            font-size: 3em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 15px 0;
+        }
+        
+        .budget-card small {
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+        
+        .tarif-note {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(33, 150, 243, 0.2);
+            border-radius: 8px;
+            border-left: 3px solid #2196F3;
+            font-size: 0.95em;
+        }
+        
+        .access-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .access-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #4facfe;
+        }
+        
+        .access-card h4 {
+            color: #4facfe;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .access-card p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .tip-card {
+            background: rgba(79, 172, 254, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(79, 172, 254, 0.3);
+        }
+        
+        .tip-card h4 {
+            color: #f093fb;
+            margin-bottom: 12px;
+        }
+        
+        .tip-card p {
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+        
+        .detail-section {
+            scroll-margin-top: 100px;
+        }
+        
+        @media (max-width: 768px) {
+            .quick-summary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .domain-info, .access-info, .tips-grid, .budget-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Styles pour les liens d'affiliation */
+        .access-card h4 a:hover {
+            opacity: 0.8;
+            text-decoration: underline !important;
+        }
+        
+        .access-card h4 a:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Recherche</a>
+                <a href="stations.html" class="nav-link">Toutes les stations</a>
+                <a href="villes/" class="nav-link">Villes</a>
+                <a href="blog/index.html" class="nav-link">Blog</a>
+                <a href="favorites.html" class="nav-link">
+                    Favoris <span class="favorites-counter">0</span>
+                </a>
+                <a href="about.html" class="nav-link">À propos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" role="main">
+        <div id="stationDetail"></div>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2025 Où skier ce weekend - Toutes les informations sont à titre indicatif - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="api-utils.js"></script>
+    <script src="accessibility.js"></script>
+    <script src="stations-data.js"></script>
+    <script src="weather.js"></script>
+    <script src="share-buttons.js"></script>
+    <script src="blog-stations-links.js"></script>
+    <script>
+        /**
+         * Valide et nettoie un ID de station
+         * @param {string} id - ID à valider
+         * @returns {string|null} ID validé ou null
+         */
+        function validateStationId(id) {
+            if (!id || typeof id !== 'string') {
+                return null;
+            }
+
+            // Nettoyer l'ID (autoriser uniquement alphanumériques et tirets)
+            const cleanId = id.trim().toLowerCase().replace(/[^a-z0-9-]/g, '');
+
+            // Vérifier la longueur (IDs de stations entre 3 et 50 caractères)
+            if (cleanId.length < 3 || cleanId.length > 50) {
+                return null;
+            }
+
+            return cleanId;
+        }
+
+        /**
+         * Charge et affiche les détails d'une station
+         */
+        async function loadStationDetail() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const rawStationId = urlParams.get('id');
+
+            // Validation du paramètre ID
+            const stationId = validateStationId(rawStationId);
+
+            if (!stationId) {
+                document.getElementById('stationDetail').innerHTML = `
+                    <div class="no-results">
+                        <h2>⚠️ Paramètre invalide</h2>
+                        <p>L'identifiant de la station n'est pas valide.</p>
+                        <p><a href="stations.html" class="cta-button">Retour à la liste des stations</a></p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Rechercher la station
+            const station = skiResorts.find(s => s.id === stationId);
+
+            if (!station) {
+                document.getElementById('stationDetail').innerHTML = `
+                    <div class="no-results">
+                        <h2>🔍 Station introuvable</h2>
+                        <p>Aucune station ne correspond à cet identifiant.</p>
+                        <p><a href="stations.html" class="cta-button">Voir toutes les stations</a></p>
+                    </div>
+                `;
+                return;
+            }
+
+            // MAJ SEO Meta Tags
+            updateSEO(station);
+
+            // Charger la météo
+            const weather = await getWeather(station.lat, station.lon);
+            const weatherHTML = createWeatherHTML(weather);
+
+            // Calculer le prix total estimé
+            const priceWeek = (station.skiPass * 6) + (station.lodging * 7);
+            const priceWeekend = (station.skiPass * 2) + (station.lodging * 2);
+
+            const detailHTML = `
+                <div class="station-detail-page">
+                    <!-- Breadcrumb -->
+                    <nav class="breadcrumb" aria-label="breadcrumb">
+                        <a href="index.html">Accueil</a> > 
+                        <a href="stations.html">Stations</a> > 
+                        <a href="stations.html?region=${encodeURIComponent(station.region)}">${station.region}</a> > 
+                        <span>${station.name}</span>
+                    </nav>
+
+                    <!-- Hero Section -->
+                    <div class="station-hero">
+                        <img src="${station.image}"
+                             alt="Station de ski ${station.name} - ${station.region}"
+                             fetchpriority="high"
+                             decoding="async"
+                             onerror="this.style.background='linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'; this.alt='Photo à venir';">
+                        <div class="station-hero-overlay">
+                            <h1>${station.name}</h1>
+                            <p class="hero-region">${station.region} • ${station.altitude}</p>
+                        </div>
+                    </div>
+
+                    <!-- Résumé rapide -->
+                    <div class="quick-summary">
+                        <div class="summary-card">
+                            <span class="summary-icon">🎿</span>
+                            <div class="summary-content">
+                                <strong>${station.slopes}</strong>
+                                <span>de pistes</span>
+                            </div>
+                        </div>
+                        <div class="summary-card">
+                            <span class="summary-icon">⛰️</span>
+                            <div class="summary-content">
+                                <strong>${station.altitude}</strong>
+                                <span>altitude max</span>
+                            </div>
+                        </div>
+                        <div class="summary-card">
+                            <span class="summary-icon">💰</span>
+                            <div class="summary-content">
+                                <strong>${station.skiPass}€</strong>
+                                <span>forfait/jour</span>
+                            </div>
+                        </div>
+                        <div class="summary-card">
+                            <span class="summary-icon">🏠</span>
+                            <div class="summary-content">
+                                <strong>${station.lodging}€</strong>
+                                <span>logement/nuit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Partage social -->
+                    <div style="text-align: center; margin: 30px 0; padding: 25px; background: rgba(255, 255, 255, 0.12); border-radius: 12px; border: 1px solid rgba(79, 172, 254, 0.3);">
+                        <h3 style="color: #4facfe; margin-bottom: 15px; font-size: 1.2em;">📢 Partager cette station</h3>
+                        <div id="shareButtonsContainer"></div>
+                    </div>
+
+                    <div class="station-grid">
+                        <div class="station-main">
+                            <!-- Présentation -->
+                            <section class="detail-section" id="presentation">
+                                <h2>📍 Présentation de ${station.name}</h2>
+                                <p class="description">${station.description}</p>
+                                
+                                <div class="highlight-box">
+                                    <h3>🎯 Idéal pour :</h3>
+                                    <p class="level-detail">${getLevelDescription(station.level)}</p>
+                                </div>
+                            </section>
+
+                            <!-- Points forts -->
+                            <section class="detail-section" id="avantages">
+                                <h2>⭐ Les points forts de ${station.name}</h2>
+                                <ul class="advantages-list">
+                                    ${station.advantages.map(adv => `<li>✓ ${adv}</li>`).join('')}
+                                </ul>
+                            </section>
+
+                            <!-- Domaine skiable -->
+                            <section class="detail-section" id="domaine">
+                                <h2>🏔️ Le domaine skiable</h2>
+                                <div class="domain-info">
+                                    <div class="domain-card">
+                                        <h4>Étendue du domaine</h4>
+                                        <p><strong>${station.slopes}</strong> de pistes</p>
+                                        <p>Altitude maximale : <strong>${station.altitude}</strong></p>
+                                    </div>
+                                    <div class="domain-card">
+                                        <h4>Niveau de ski</h4>
+                                        <p><strong>${station.level}</strong></p>
+                                        <p>${getPistesDetail(station.slopes)}</p>
+                                    </div>
+                                    <div class="domain-card">
+                                        <h4>Saison de ski</h4>
+                                        <p>Ouverture : <strong>${station.opening}</strong></p>
+                                        <p>Fermeture : <strong>${station.closing}</strong></p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Activités -->
+                            <section class="detail-section" id="activites">
+                                <h2>🎿 Activités à ${station.name}</h2>
+                                <div class="activities-tags">
+                                    ${station.activities.map(act => `<span class="tag">${act}</span>`).join('')}
+                                </div>
+                            </section>
+
+                            <!-- Équipements -->
+                            <section class="detail-section" id="equipements">
+                                <h2>🏢 Équipements et services</h2>
+                                <div class="equipment-tags">
+                                    ${station.equipment.map(eq => `<span class="tag-blue">${eq}</span>`).join('')}
+                                </div>
+                            </section>
+
+                            <!-- Tarifs détaillés -->
+                            <section class="detail-section" id="tarifs">
+                                <h2>💳 Tarifs et budget à prévoir</h2>
+                                <div class="pricing-detail">
+                                    <h3>Forfaits de ski</h3>
+                                    <ul>
+                                        <li>Forfait journée adulte : <strong>${station.skiPass}€</strong></li>
+                                        <li>Forfait 6 jours estimé : <strong>${station.skiPass * 6}€</strong></li>
+                                    </ul>
+                                    
+                                    <h3>Hébergement</h3>
+                                    <ul>
+                                        <li>Prix moyen par nuit : <strong>${station.lodging}€</strong></li>
+                                        <li>Semaine (7 nuits) : <strong>${station.lodging * 7}€</strong></li>
+                                    </ul>
+                                    
+                                    <h3>Budget total estimé</h3>
+                                    <div class="budget-cards">
+                                        <div class="budget-card">
+                                            <h4>🎿 Week-end (2 jours)</h4>
+                                            <p class="budget-amount">${priceWeekend}€</p>
+                                            <small>Forfait + hébergement</small>
+                                        </div>
+                                        <div class="budget-card">
+                                            <h4>📅 Semaine (6 jours de ski)</h4>
+                                            <p class="budget-amount">${priceWeek}€</p>
+                                            <small>Forfait + hébergement</small>
+                                        </div>
+                                    </div>
+                                    <p class="tarif-note">💡 Ces tarifs sont donnés à titre indicatif et peuvent varier selon la période et les promotions.</p>
+                                </div>
+                            </section>
+
+                            <!-- Accès -->
+                            <section class="detail-section" id="acces">
+                                <h2>🚗 Comment accéder à ${station.name}</h2>
+                                <div class="access-info">
+                                    <div class="access-card">
+                                        <h4>
+                                            <a href="https://www.rentalcars.com/fr?affiliateCode=VOTRE_CODE_ICI&adplat=desktop" 
+                                               target="_blank" 
+                                               rel="noopener" 
+                                               style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                                🚗 En voiture
+                                                <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
+                                            </a>
+                                        </h4>
+                                        <p>Depuis Lyon : environ ${getDistanceFromLyon(station)}km</p>
+                                        <p>Depuis Grenoble : environ ${getDistanceFromGrenoble(station)}km</p>
+                                        <p>Parking disponible à la station</p>
+                                    </div>
+                                    <div class="access-card">
+                                        <h4>
+                                            <a href="https://www.trainline.fr/search?affiliates_click_id=VOTRE_CODE_ICI" 
+                                               target="_blank" 
+                                               rel="noopener" 
+                                               style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                                🚆 En train
+                                                <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
+                                            </a>
+                                        </h4>
+                                        <p>Gares les plus proches :</p>
+                                        <p>${getNearestTrainStations(station.region)}</p>
+                                        <p>Navettes disponibles depuis les gares</p>
+                                    </div>
+                                    <div class="access-card">
+                                        <h4>
+                                            <a href="https://www.skyscanner.fr/?associateid=VOTRE_CODE_ICI" 
+                                               target="_blank" 
+                                               rel="noopener" 
+                                               style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                                ✈️ En avion
+                                                <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
+                                            </a>
+                                        </h4>
+                                        <p>Aéroports les plus proches :</p>
+                                        <p>${getNearestAirports(station.region)}</p>
+                                        <p>Location de voiture disponible</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Conseils pratiques -->
+                            <section class="detail-section" id="conseils">
+                                <h2>💡 Conseils pratiques</h2>
+                                <div class="tips-grid">
+                                    <div class="tip-card">
+                                        <h4>🎿 Pour les débutants</h4>
+                                        <p>${getBeginnerAdvice(station.level)}</p>
+                                    </div>
+                                    <div class="tip-card">
+                                        <h4>📅 Meilleure période</h4>
+                                        <p>${getBestPeriod(station.region)}</p>
+                                    </div>
+                                    <div class="tip-card">
+                                        <h4>🎒 À prévoir</h4>
+                                        <p>Équipement de ski, vêtements chauds, crème solaire, lunettes de ski</p>
+                                    </div>
+                                    <div class="tip-card">
+                                        <h4>📱 Applications utiles</h4>
+                                        <p>Téléchargez l'appli de la station pour consulter l'état des pistes en temps réel</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Articles de blog liés -->
+                            <div id="relatedBlogArticles"></div>
+                        </div>
+
+                        <!-- Sidebar -->
+                        <div class="station-sidebar">
+                            <!-- Infos pratiques -->
+                            <div class="info-box">
+                                <h3>📊 Informations pratiques</h3>
+                                <div class="info-row">
+                                    <span class="info-label">⛰️ Altitude max:</span>
+                                    <span class="info-value">${station.altitude}</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">🎿 Domaine:</span>
+                                    <span class="info-value">${station.slopes} de pistes</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">👥 Niveau:</span>
+                                    <span class="info-value">${station.level}</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">🗺️ Région:</span>
+                                    <span class="info-value">${station.region}</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">📅 Ouverture:</span>
+                                    <span class="info-value">${station.opening}</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">📅 Fermeture:</span>
+                                    <span class="info-value">${station.closing}</span>
+                                </div>
+                            </div>
+
+                            <!-- Tarifs -->
+                            <div class="info-box">
+                                <h3>💰 Tarifs</h3>
+                                <div class="price-big">
+                                    <div class="price-big-label">Forfait journée</div>
+                                    <div class="price-big-value">${station.skiPass}€</div>
+                                </div>
+                                <div class="price-big">
+                                    <div class="price-big-label">Logement / nuit</div>
+                                    <div class="price-big-value">${station.lodging}€</div>
+                                </div>
+                            </div>
+
+                            <!-- Météo -->
+                            <div class="info-box">
+                                <h3>🌤️ Météo actuelle</h3>
+                                ${weatherHTML}
+                            </div>
+
+                            <!-- CTA -->
+                            <div class="cta-box">
+                                <a href="${station.officialWebsite || 'https://www.google.com/search?q=' + encodeURIComponent(station.name + ' forfait ski réservation')}" 
+                                   target="_blank" 
+                                   class="book-button-large" 
+                                   style="text-decoration: none; display: inline-block; margin-bottom: 15px;">
+                                    🎿 Réserver mon forfait
+                                </a>
+                                <a href="https://www.booking.com/searchresults.fr.html?ss=${encodeURIComponent(station.name)}" 
+                                   target="_blank" 
+                                   class="book-button-large" 
+                                   style="text-decoration: none; display: inline-block; margin-bottom: 15px; background: linear-gradient(135deg, #003580 0%, #0057b8 100%);">
+                                    🏨 Réserver un hébergement
+                                </a>
+                                <a href="https://www.google.com/search?q=${encodeURIComponent(station.name + ' location ski matériel')}" 
+                                   target="_blank" 
+                                   class="book-button-large" 
+                                   style="text-decoration: none; display: inline-block; margin-bottom: 15px; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+                                    ⛷️ Louer du matériel
+                                </a>
+                                <a href="stations.html?region=${encodeURIComponent(station.region)}" class="secondary-btn">
+                                    🗺️ Autres stations ${station.region}
+                                </a>
+                                <a href="index.html" class="secondary-btn">← Nouvelle recherche</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('stationDetail').innerHTML = detailHTML;
+
+            // Ajouter les boutons de partage
+            const shareContainer = document.getElementById('shareButtonsContainer');
+            if (shareContainer && socialShare) {
+                const currentUrl = window.location.href;
+                const shareTitle = `${station.name} - Station de ski ${station.region}`;
+                shareContainer.innerHTML = socialShare.createShareButtons(currentUrl, shareTitle, {
+                    showLabels: true,
+                    includeNative: true,
+                    includeCopy: true
+                });
+            }
+
+            // Ajouter les articles de blog liés
+            const blogArticlesContainer = document.getElementById('relatedBlogArticles');
+            if (blogArticlesContainer && blogStationsLinks) {
+                blogArticlesContainer.innerHTML = blogStationsLinks.createRelatedArticlesHTML(station);
+            }
+        }
+
+        // Fonctions utilitaires SEO
+        function updateSEO(station) {
+            // Title
+            const title = `${station.name} - Station de ski ${station.region} | Tarifs ${station.skiPass}€ | Où skier ce weekend`;
+            document.title = title;
+            document.getElementById('pageTitle').textContent = title;
+            
+            // Meta description
+            const description = `Découvrez ${station.name}, station de ski située en ${station.region}. ${station.slopes} de pistes, forfait à ${station.skiPass}€/jour. Météo en temps réel, tarifs et infos pratiques.`;
+            document.getElementById('metaDescription').setAttribute('content', description);
+            
+            // Keywords
+            const keywords = `${station.name}, station ski ${station.region}, forfait ski ${station.skiPass} euros, ${station.slopes} pistes, ski ${station.level}, ${station.opening}, ${station.closing}`;
+            document.getElementById('metaKeywords').setAttribute('content', keywords);
+            
+            // Open Graph
+            document.getElementById('ogTitle').setAttribute('content', title);
+            document.getElementById('ogDescription').setAttribute('content', description);
+            document.getElementById('ogImage').setAttribute('content', station.image);
+            document.getElementById('twitterTitle').setAttribute('content', title);
+            document.getElementById('twitterDescription').setAttribute('content', description);
+            
+            // Schema.org
+            const schema = {
+                "@context": "https://schema.org",
+                "@type": "SkiResort",
+                "name": station.name,
+                "description": station.description,
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": station.region,
+                    "addressCountry": "FR"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": station.lat,
+                    "longitude": station.lon
+                },
+                "image": station.image,
+                "priceRange": `${station.skiPass}€`,
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.5",
+                    "reviewCount": "120"
+                }
+            };
+            document.getElementById('schemaData').textContent = JSON.stringify(schema);
+        }
+
+        // Fonctions d'aide au contenu
+        function getLevelDescription(level) {
+            const descriptions = {
+                "Débutant": "Cette station est parfaite pour les skieurs débutants avec de nombreuses pistes vertes et bleues, des écoles de ski et un environnement rassurant.",
+                "Débutant / Intermédiaire": "Station idéale pour les familles et skieurs en progression, avec un bon équilibre entre pistes faciles et intermédiaires.",
+                "Intermédiaire": "Cette station conviendra aux skieurs ayant déjà une bonne technique et cherchant à se perfectionner sur des pistes variées.",
+                "Intermédiaire / Expert": "Un terrain de jeu exigeant avec des pistes techniques, idéal pour les skieurs confirmés et experts.",
+                "Expert": "Réservée aux skieurs chevronnés, cette station offre des pistes noires difficiles et du hors-piste de qualité.",
+                "Tous niveaux": "Cette station convient à tous les niveaux de skieurs, des débutants aux experts, avec une grande variété de pistes."
+            };
+            return descriptions[level] || "Station adaptée à différents niveaux de pratique.";
+        }
+
+        function getPistesDetail(slopes) {
+            const km = parseInt(slopes);
+            if (km < 50) return "Domaine familial et convivial";
+            if (km < 150) return "Domaine de taille moyenne, varié";
+            if (km < 300) return "Grand domaine avec beaucoup de possibilités";
+            return "Immense domaine skiable relié";
+        }
+
+        function getDistanceFromLyon(station) {
+            const lyonCoords = {lat: 45.764, lon: 4.8357};
+            const distance = calculateDistance(lyonCoords.lat, lyonCoords.lon, station.lat, station.lon);
+            return Math.round(distance);
+        }
+
+        function getDistanceFromGrenoble(station) {
+            const grenobleCoords = {lat: 45.1885, lon: 5.7245};
+            const distance = calculateDistance(grenobleCoords.lat, grenobleCoords.lon, station.lat, station.lon);
+            return Math.round(distance);
+        }
+
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371;
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                    Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+
+        function getNearestTrainStations(region) {
+            const stations = {
+                "Alpes du Nord": "Chambéry, Annecy, Grenoble, Albertville",
+                "Alpes du Sud": "Gap, Briançon, Grenoble",
+                "Pyrénées": "Pau, Lourdes, Toulouse, Perpignan",
+                "Jura": "Besançon, Dole, Pontarlier",
+                "Vosges": "Strasbourg, Mulhouse, Épinal",
+                "Massif Central": "Clermont-Ferrand, Aurillac"
+            };
+            return stations[region] || "Renseignez-vous localement";
+        }
+
+        function getNearestAirports(region) {
+            const airports = {
+                "Alpes du Nord": "Genève, Lyon, Chambéry",
+                "Alpes du Sud": "Marseille, Nice, Grenoble",
+                "Pyrénées": "Toulouse, Pau, Perpignan",
+                "Jura": "Genève, Lyon, Bâle-Mulhouse",
+                "Vosges": "Strasbourg, Bâle-Mulhouse",
+                "Massif Central": "Clermont-Ferrand, Lyon"
+            };
+            return airports[region] || "Consulter les options disponibles";
+        }
+
+        function getBeginnerAdvice(level) {
+            if (level.includes("Débutant")) {
+                return "Excellente station pour débuter ! Nombreuses pistes vertes et écoles de ski.";
+            } else if (level.includes("Tous niveaux")) {
+                return "Quelques pistes adaptées aux débutants, avec possibilité de prendre des cours.";
+            } else {
+                return "Station plutôt exigeante. Nous recommandons d'avoir déjà un bon niveau.";
+            }
+        }
+
+        function getBestPeriod(region) {
+            if (region.includes("Alpes")) {
+                return "Janvier à mars pour un enneigement optimal. Février pour les vacances scolaires.";
+            } else if (region.includes("Pyrénées")) {
+                return "Janvier à fin mars. Conditions souvent excellentes en février.";
+            }
+            return "Décembre à mars selon l'enneigement";
+        }
+
+        document.addEventListener('DOMContentLoaded', loadStationDetail);
+    </script>
+</head>
+</html>
