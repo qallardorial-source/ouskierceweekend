@@ -635,6 +635,10 @@
                        target="_blank" class="cta-btn cta-btn-secondary">
                         🏨 Trouver un Hébergement
                     </a>
+                    <a href="${getSkisetUrl(station.name)}"
+                       target="_blank" class="cta-btn cta-btn-secondary">
+                        🎿 Louer du Matériel
+                    </a>
                 </div>
 
                 <!-- Tabs -->
@@ -748,19 +752,43 @@
 
                         <div class="content-grid">
                             <div class="info-card">
-                                <h3>🚗 En Voiture</h3>
+                                <h3>
+                                    <a href="https://www.rentalcars.com/fr/city/fr/${encodeURIComponent(station.name.toLowerCase().replace(/\s+/g, '-'))}"
+                                       target="_blank"
+                                       rel="noopener"
+                                       style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                        🚗 En Voiture
+                                        <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
+                                    </a>
+                                </h3>
                                 <p>Depuis Lyon : ~${getDistanceFromLyon(station)}km</p>
                                 <p>Depuis Grenoble : ~${getDistanceFromGrenoble(station)}km</p>
                                 <p>Parking disponible en station</p>
                             </div>
                             <div class="info-card">
-                                <h3>🚆 En Train</h3>
+                                <h3>
+                                    <a href="https://www.trainline.fr/search?origin=${encodeURIComponent(getNearestTrainStations(station.region).split(',')[0].trim())}"
+                                       target="_blank"
+                                       rel="noopener"
+                                       style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                        🚆 En Train
+                                        <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
+                                    </a>
+                                </h3>
                                 <p>Gares proches :</p>
                                 <p><strong>${getNearestTrainStations(station.region)}</strong></p>
                                 <p>Navettes disponibles</p>
                             </div>
                             <div class="info-card">
-                                <h3>✈️ En Avion</h3>
+                                <h3>
+                                    <a href="https://www.skyscanner.fr/transport/vols-vers/${encodeURIComponent(getNearestAirports(station.region).split(',')[0].trim().toLowerCase().replace(/\s+/g, '-'))}/"
+                                       target="_blank"
+                                       rel="noopener"
+                                       style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                                        ✈️ En Avion
+                                        <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
+                                    </a>
+                                </h3>
                                 <p>Aéroports proches :</p>
                                 <p><strong>${getNearestAirports(station.region)}</strong></p>
                                 <p>Location de voiture possible</p>
@@ -870,6 +898,44 @@
         function extractAltitude(altStr) {
             const match = altStr.match(/(\d+)/);
             return match ? match[1] : altStr;
+        }
+
+        /**
+         * Génère l'URL Skiset avec affiliation si configurée
+         * @param {string} stationName - Nom de la station
+         * @returns {string} URL complète avec ou sans affiliation
+         */
+        function getSkisetUrl(stationName) {
+            const baseUrl = 'https://www.skiset.com/fr-FR/recherche';
+            const location = encodeURIComponent(stationName.toUpperCase());
+
+            // Vérifier si l'affiliation est configurée
+            if (typeof APP_CONFIG !== 'undefined' &&
+                APP_CONFIG.affiliation.enabled &&
+                APP_CONFIG.affiliation.equipment.skiset) {
+
+                const skiset = APP_CONFIG.affiliation.equipment.skiset;
+                const platform = skiset.platform;
+
+                // TradeTracker
+                if (platform === 'tradetracker' &&
+                    skiset.tradetracker.affiliateId !== 'XXXX') {
+                    const affiliateId = skiset.tradetracker.affiliateId;
+                    const campaignId = skiset.tradetracker.campaignId;
+                    return `${baseUrl}?location=${location}&tt=${affiliateId}&r=${campaignId}`;
+                }
+
+                // Awin
+                if (platform === 'awin' &&
+                    skiset.awin.id !== 'XXXX') {
+                    const awinId = skiset.awin.id;
+                    const clickRef = skiset.awin.clickRef;
+                    return `${baseUrl}?location=${location}&awc=${awinId}&clickref=${clickRef}`;
+                }
+            }
+
+            // URL sans affiliation (par défaut)
+            return `${baseUrl}?location=${location}`;
         }
 
         function getLevelDescription(level) {

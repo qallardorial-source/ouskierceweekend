@@ -73,6 +73,21 @@ const APP_CONFIG = {
 
         // Location de matériel
         equipment: {
+            // Skiset - Leader européen location ski
+            // S'inscrire sur TradeTracker ou Awin puis remplacer XXXX par votre ID
+            skiset: {
+                platform: 'tradetracker', // 'tradetracker' ou 'awin' selon votre plateforme
+                tradetracker: {
+                    affiliateId: 'XXXX', // Votre ID TradeTracker
+                    campaignId: 'XXXX'   // ID de la campagne Skiset
+                },
+                awin: {
+                    id: 'XXXX',          // Votre ID Awin
+                    clickRef: 'ouskier_skiset'
+                }
+            },
+
+            // Autres plateformes (optionnel)
             awin: {
                 id: 'XXXX',
                 clickRef: 'ouskier_materiel'
