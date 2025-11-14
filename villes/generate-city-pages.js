@@ -1,0 +1,578 @@
+/**
+ * Générateur de pages villes pour le SEO
+ * Génère automatiquement des pages optimisées pour chaque ville majeure
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+// Liste des villes avec leurs coordonnées et informations spécifiques
+const cities = [
+    {
+        id: 'lyon',
+        name: 'Lyon',
+        lat: 45.7640,
+        lon: 4.8357,
+        description: 'Capitale des Gaules, Lyon est idéalement située à la porte des Alpes. À seulement 2h des premières stations, c\'est le point de départ idéal pour un weekend ski.',
+        emoji: '🦁',
+        avgDistance: '150',
+        avgTime: '2-3h',
+        topRegion: 'Alpes du Nord',
+        nearbyStations: ['Les 2 Alpes', 'Alpe d\'Huez', 'Chamrousse', 'Les 7 Laux', 'La Plagne'],
+        tips: [
+            'Partez tôt le samedi matin (6h) pour éviter les bouchons sur l\'A43',
+            'La station la plus proche est Chamrousse à seulement 80 km (1h15)',
+            'En TGV : Lyon Part-Dieu vers Grenoble puis navette'
+        ],
+        budgetNote: 'Avec la proximité des Alpes, économisez 100-150€ d\'essence par rapport à Paris !'
+    },
+    {
+        id: 'marseille',
+        name: 'Marseille',
+        lat: 43.2965,
+        lon: 5.3698,
+        description: 'De la Méditerranée aux sommets enneigés ! Marseille offre un accès privilégié aux Alpes du Sud, réputées pour leur ensoleillement exceptionnel.',
+        emoji: '⛵',
+        avgDistance: '250',
+        avgTime: '3-4h',
+        topRegion: 'Alpes du Sud',
+        nearbyStations: ['Serre Chevalier', 'Pra-Loup', 'Vars', 'Risoul', 'Isola 2000'],
+        tips: [
+            'Les Alpes du Sud : 300 jours de soleil par an !',
+            'Isola 2000 est à seulement 2h30 via l\'A8 et la vallée de la Tinée',
+            'Alternative : Pyrénées (Font-Romeu à 4h)'
+        ],
+        budgetNote: 'Les stations des Alpes du Sud sont 20-30% moins chères que les Alpes du Nord'
+    },
+    {
+        id: 'toulouse',
+        name: 'Toulouse',
+        lat: 43.6047,
+        lon: 1.4442,
+        description: 'La ville rose, porte des Pyrénées ! Toulouse bénéficie d\'un accès rapide aux stations pyrénéennes, authentiques et abordables.',
+        emoji: '🏉',
+        avgDistance: '180',
+        avgTime: '2-3h',
+        topRegion: 'Pyrénées',
+        nearbyStations: ['Piau-Engaly', 'Saint-Lary', 'Cauterets', 'Peyragudes', 'Ax-les-Thermes'],
+        tips: [
+            'Piau-Engaly à 2h15, station familiale et ensoleillée',
+            'Saint-Lary-Soulan : le plus grand domaine des Pyrénées (100 km)',
+            'Budget : 30% moins cher que les Alpes'
+        ],
+        budgetNote: 'Les Pyrénées offrent le meilleur rapport qualité-prix de France !'
+    },
+    {
+        id: 'grenoble',
+        name: 'Grenoble',
+        lat: 45.1885,
+        lon: 5.7245,
+        description: 'Capitale des Alpes ! Grenoble est entourée de montagnes et permet d\'accéder à 20+ stations en moins d\'1h30.',
+        emoji: '🏔️',
+        avgDistance: '50',
+        avgTime: '1-1h30',
+        topRegion: 'Alpes du Nord',
+        nearbyStations: ['Chamrousse', 'Les 2 Alpes', 'Alpe d\'Huez', 'Les 7 Laux', 'Villard-de-Lans'],
+        tips: [
+            'Chamrousse : 30 min, accessible en bus depuis Grenoble',
+            'Les 2 Alpes et Alpe d\'Huez : 1h15, parfait pour un weekend',
+            'Station de ski urbaine : prenez le téléphérique !'
+        ],
+        budgetNote: 'Économisez sur l\'essence, profitez-en pour skier plus souvent !'
+    },
+    {
+        id: 'bordeaux',
+        name: 'Bordeaux',
+        lat: 44.8378,
+        lon: -0.5792,
+        description: 'De la capitale mondiale du vin aux sommets pyrénéens. Bordeaux offre un accès aux stations familiales des Pyrénées.',
+        emoji: '🍷',
+        avgDistance: '250',
+        avgTime: '3h30',
+        topRegion: 'Pyrénées',
+        nearbyStations: ['Saint-Lary', 'Piau-Engaly', 'Cauterets', 'Luz-Ardiden', 'Gourette'],
+        tips: [
+            'Saint-Lary à 3h15, le plus grand domaine des Pyrénées',
+            'Gourette à 3h via l\'A64 et Pau',
+            'Alternative proche : station de ski landaise de... non, il faut aller en montagne 😄'
+        ],
+        budgetNote: 'Combinez vin et ski : achetez votre équipement d\'occasion à bon prix !'
+    },
+    {
+        id: 'lille',
+        name: 'Lille',
+        lat: 50.6292,
+        lon: 3.0573,
+        description: 'La capitale des Flandres part à l\'assaut des Alpes ! Même si la distance est conséquente, les stations valent le détour.',
+        emoji: '🍺',
+        avgDistance: '700',
+        avgTime: '7-8h',
+        topRegion: 'Alpes du Nord',
+        nearbyStations: ['Chamonix', 'Megève', 'Les Arcs', 'Avoriaz', 'Val Thorens'],
+        tips: [
+            'Privilégiez le train : TGV Lille-Europe → Bourg-Saint-Maurice (5h30)',
+            'En voiture, partez vendredi soir pour un weekend de 3 jours',
+            'Alternative : Vosges à 4h (petit domaine mais proche)'
+        ],
+        budgetNote: 'Le TGV peut être plus économique et moins fatigant que la voiture'
+    },
+    {
+        id: 'nantes',
+        name: 'Nantes',
+        lat: 47.2184,
+        lon: -1.5536,
+        description: 'De la Loire aux sommets ! Nantes est un point de départ pour les Pyrénées ou les Alpes selon vos préférences.',
+        emoji: '🏰',
+        avgDistance: '450',
+        avgTime: '5-6h',
+        topRegion: 'Pyrénées / Alpes',
+        nearbyStations: ['Font-Romeu', 'Saint-Lary', 'Megève', 'La Plagne', 'Les Arcs'],
+        tips: [
+            'Pyrénées (Font-Romeu) à 5h via l\'A10 et A62',
+            'Alpes (Megève) à 6h30 via l\'A71 et A43',
+            'Le train est recommandé : TGV vers Lyon puis Alpes'
+        ],
+        budgetNote: 'Anticipez votre réservation TGV : billets à 35€ possibles'
+    },
+    {
+        id: 'strasbourg',
+        name: 'Strasbourg',
+        lat: 48.5734,
+        lon: 7.7521,
+        description: 'Capitale européenne et porte de l\'Est ! Strasbourg accède facilement aux Vosges et aux stations suisses/autrichiennes.',
+        emoji: '🥨',
+        avgDistance: '400',
+        avgTime: '4-5h',
+        topRegion: 'Vosges / Suisse',
+        nearbyStations: ['Le Markstein', 'La Bresse', 'Gérardmer', 'Chamonix', 'Megève'],
+        tips: [
+            'Les Vosges (La Bresse) à 1h30 : parfait pour débuter',
+            'Suisse : stations de Verbier, Zermatt accessibles en 3-4h',
+            'Alpes du Nord à 5h via la Suisse (beaux paysages)'
+        ],
+        budgetNote: 'Les Vosges sont économiques : forfait ~30€/jour au lieu de 60€'
+    },
+    {
+        id: 'nice',
+        name: 'Nice',
+        lat: 43.7102,
+        lon: 7.2620,
+        description: 'Skier le matin, se baigner l\'après-midi ! Nice offre l\'accès unique aux stations de ski à 1h30 de la Méditerranée.',
+        emoji: '🌴',
+        avgDistance: '80',
+        avgTime: '1-2h',
+        topRegion: 'Alpes du Sud',
+        nearbyStations: ['Isola 2000', 'Auron', 'Valberg', 'Pra-Loup', 'Vars'],
+        tips: [
+            'Isola 2000 à 1h30 : la plus proche station de la mer !',
+            'Expérience unique : ski le matin, plage l\'après-midi',
+            'Stations ensoleillées 300 jours par an'
+        ],
+        budgetNote: 'Profitez du soleil ET de la neige, sans l\'hébergement montagnard obligatoire'
+    },
+    {
+        id: 'montpellier',
+        name: 'Montpellier',
+        lat: 43.6108,
+        lon: 3.8767,
+        description: 'Entre mer et montagne ! Montpellier accède aux Pyrénées orientales et aux stations familiales du Languedoc.',
+        emoji: '☀️',
+        avgDistance: '200',
+        avgTime: '2-3h',
+        topRegion: 'Pyrénées',
+        nearbyStations: ['Font-Romeu', 'Les Angles', 'Ax-les-Thermes', 'Puyvalador', 'Formiguères'],
+        tips: [
+            'Font-Romeu à 2h30 : station olympique ensoleillée',
+            'Les Angles à 2h15 : domaine varié, vue sur la Méditerranée',
+            'Pyrénées catalanes : authenticité garantie'
+        ],
+        budgetNote: 'Stations familiales et abordables, idéales pour débuter'
+    }
+];
+
+// Template de page
+function generateCityPage(city) {
+    return `<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO OPTIMISÉ -->
+    <title>Où Skier depuis ${city.name} ? Meilleures Stations de Ski (2025)</title>
+    <meta name="description" content="Découvrez les stations de ski accessibles depuis ${city.name}. Distances, prix, conseils pratiques. ${city.nearbyStations.slice(0, 3).join(', ')} et plus !">
+    <meta name="keywords" content="ski depuis ${city.name.toLowerCase()}, station ski ${city.name.toLowerCase()}, weekend ski ${city.name.toLowerCase()}, ski proche ${city.name.toLowerCase()}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Stations de Ski depuis ${city.name} - Weekend & Vacances">
+    <meta property="og:description" content="Top stations de ski accessibles depuis ${city.name}. ${city.description}">
+    <meta property="og:type" content="website">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ouskierceweeekend.fr/villes/${city.id}.html">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Stations de ski depuis ${city.name}",
+      "description": "${city.description}",
+      "url": "https://ouskierceweeekend.fr/villes/${city.id}.html"
+    }
+    </script>
+
+    <style>
+        .city-hero {
+            background: linear-gradient(135deg, rgba(79, 172, 254, 0.2) 0%, rgba(240, 147, 251, 0.2) 100%);
+            backdrop-filter: blur(20px);
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            border: 2px solid rgba(79, 172, 254, 0.3);
+        }
+
+        .city-hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .city-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .city-stat {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid rgba(79, 172, 254, 0.2);
+        }
+
+        .city-stat-number {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: #4facfe;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .city-stat-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95em;
+        }
+
+        .seo-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .seo-content h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .seo-content h3 {
+            color: #4facfe;
+            font-size: 1.3em;
+            margin: 30px 0 15px;
+        }
+
+        .seo-content p, .seo-content li {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .quick-filters {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .quick-filter-btn {
+            padding: 12px 20px;
+            background: rgba(79, 172, 254, 0.1);
+            border: 2px solid rgba(79, 172, 254, 0.3);
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .quick-filter-btn:hover,
+        .quick-filter-btn.active {
+            background: linear-gradient(135deg, #4facfe 0%, #f093fb 100%);
+            border-color: #4facfe;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Recherche</a>
+                <a href="../stations.html" class="nav-link">Toutes les stations</a>
+                <a href="../blog/index.html" class="nav-link">Blog</a>
+                <a href="../favorites.html" class="nav-link">
+                    Favoris <span class="favorites-counter">0</span>
+                </a>
+                <a href="../about.html" class="nav-link">À propos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="city-hero">
+            <h1>${city.emoji} Où Skier depuis ${city.name} ?</h1>
+            <p class="subtitle" style="font-size: 1.2em; max-width: 700px; margin: 0 auto;">
+                ${city.description}
+            </p>
+        </div>
+
+        <div class="city-stats" id="cityStats">
+            <div class="city-stat">
+                <span class="city-stat-number" id="stationsCount">0</span>
+                <span class="city-stat-label">stations accessibles</span>
+            </div>
+            <div class="city-stat">
+                <span class="city-stat-number" id="closestDistance">0 km</span>
+                <span class="city-stat-label">station la plus proche</span>
+            </div>
+            <div class="city-stat">
+                <span class="city-stat-number" id="avgPrice">0€</span>
+                <span class="city-stat-label">prix moyen weekend</span>
+            </div>
+            <div class="city-stat">
+                <span class="city-stat-number">${city.avgTime}</span>
+                <span class="city-stat-label">temps de trajet moyen</span>
+            </div>
+        </div>
+
+        <div class="quick-filters">
+            <button class="quick-filter-btn active" onclick="filterDistance('all')">🎿 Toutes les stations</button>
+            <button class="quick-filter-btn" onclick="filterDistance('200')">🚗 Moins de 200 km</button>
+            <button class="quick-filter-btn" onclick="filterDistance('300')">⛰️ Moins de 300 km</button>
+            <button class="quick-filter-btn" onclick="filterBudget()">💰 Petit budget</button>
+            <button class="quick-filter-btn" onclick="filterLarge()">🎯 Grands domaines</button>
+        </div>
+
+        <div id="results" class="results"></div>
+
+        <!-- CONTENU SEO -->
+        <section class="seo-content">
+            <h2>Skier depuis ${city.name} : le guide complet 2025</h2>
+
+            <p>${city.description}</p>
+
+            <h3>🏔️ Top stations depuis ${city.name}</h3>
+            <ul>
+                ${city.nearbyStations.map(station => `<li><strong>${station}</strong></li>`).join('')}
+            </ul>
+
+            <h3>💡 Conseils pratiques</h3>
+            <ul>
+                ${city.tips.map(tip => `<li>${tip}</li>`).join('')}
+            </ul>
+
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 25px 0;">
+                <strong style="color: #4facfe;">💰 Bon à savoir</strong><br>
+                ${city.budgetNote}
+            </div>
+
+            <h3>📍 Distance moyenne : ~${city.avgDistance} km</h3>
+            <p>Depuis ${city.name}, vous accédez principalement aux stations ${city.topRegion}. Le temps de trajet moyen est de ${city.avgTime}.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Où skier ce weekend - <a href="../legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
+    </footer>
+
+    <script src="../config.js"></script>
+    <script src="../stations-data.js"></script>
+    <script src="../favorites.js"></script>
+
+    <script>
+        const cityLocation = {
+            name: '${city.name}',
+            lat: ${city.lat},
+            lon: ${city.lon}
+        };
+
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371;
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                     Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                     Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return Math.round(R * c);
+        }
+
+        let allStationsWithDistance = [];
+
+        function loadStations() {
+            allStationsWithDistance = skiResorts.map(station => ({
+                ...station,
+                distance: calculateDistance(
+                    cityLocation.lat,
+                    cityLocation.lon,
+                    station.lat,
+                    station.lon
+                )
+            })).sort((a, b) => a.distance - b.distance);
+
+            updateCityStats();
+            displayStations(allStationsWithDistance);
+        }
+
+        function updateCityStats() {
+            const accessible = allStationsWithDistance.filter(s => s.distance <= 500);
+            document.getElementById('stationsCount').textContent = accessible.length;
+            document.getElementById('closestDistance').textContent = allStationsWithDistance[0].distance + ' km';
+
+            const avgPrice = Math.round(
+                accessible.reduce((sum, s) => sum + (s.skiPass || 0) + (s.lodging || 0), 0) / accessible.length
+            );
+            document.getElementById('avgPrice').textContent = avgPrice + '€';
+        }
+
+        function displayStations(stations) {
+            const resultsContainer = document.getElementById('results');
+
+            if (stations.length === 0) {
+                resultsContainer.innerHTML = '<p style="text-align: center; color: white; padding: 40px;">Aucune station ne correspond à vos critères.</p>';
+                return;
+            }
+
+            const html = stations.map(station => {
+                const totalPrice = (station.skiPass || 0) + (station.lodging || 0);
+                const travelTime = Math.round(station.distance / 90);
+
+                return \`
+                    <div class="resort-card">
+                        <div class="card-top-actions">
+                            <button class="favorite-btn-card" onclick="toggleFavorite('\${station.id}')" aria-label="Ajouter aux favoris">
+                                \${typeof favoritesManager !== 'undefined' && favoritesManager.isFavorite(station.id) ? '❤️' : '🤍'}
+                            </button>
+                        </div>
+                        <img src="../\${station.image}" alt="\${station.name}" onerror="this.src='../images/default-station.jpg'">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>\${station.name}</h3>
+                                <span class="region-badge">\${station.region}</span>
+                            </div>
+                            <p class="description">\${station.description || ''}</p>
+                            <div class="metrics">
+                                <div class="metric">
+                                    <span class="metric-icon">🚗</span>
+                                    <span class="metric-value">\${station.distance} km</span>
+                                    <span class="metric-label">~\${travelTime}h de route</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-icon">⛷️</span>
+                                    <span class="metric-value">\${station.slopes}</span>
+                                    <span class="metric-label">de pistes</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-icon">🏔️</span>
+                                    <span class="metric-value">\${station.altitude}</span>
+                                    <span class="metric-label">altitude</span>
+                                </div>
+                                <div class="metric highlight">
+                                    <span class="metric-icon">💰</span>
+                                    <span class="metric-value">\${totalPrice}€</span>
+                                    <span class="metric-label">forfait + logement/jour</span>
+                                </div>
+                            </div>
+                            <div class="advantages">
+                                \${station.advantages ? station.advantages.map(adv => \`<span class="advantage-tag">\${adv}</span>\`).join('') : ''}
+                            </div>
+                            <a href="../station-detail.html?id=\${station.id}" class="btn-primary">Voir les détails</a>
+                        </div>
+                    </div>
+                \`;
+            }).join('');
+
+            resultsContainer.innerHTML = html;
+        }
+
+        function filterDistance(maxDistance) {
+            document.querySelectorAll('.quick-filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            let filtered = allStationsWithDistance;
+            if (maxDistance !== 'all') {
+                filtered = allStationsWithDistance.filter(s => s.distance <= parseInt(maxDistance));
+            }
+            displayStations(filtered);
+        }
+
+        function filterBudget() {
+            document.querySelectorAll('.quick-filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const filtered = allStationsWithDistance.filter(s => {
+                const total = (s.skiPass || 0) + (s.lodging || 0);
+                return total < 160;
+            }).sort((a, b) => {
+                const priceA = (a.skiPass || 0) + (a.lodging || 0);
+                const priceB = (b.skiPass || 0) + (b.lodging || 0);
+                return priceA - priceB;
+            });
+            displayStations(filtered);
+        }
+
+        function filterLarge() {
+            document.querySelectorAll('.quick-filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const filtered = allStationsWithDistance.filter(s => {
+                const slopes = parseInt(s.slopes) || 0;
+                return slopes >= 150;
+            });
+            displayStations(filtered);
+        }
+
+        function toggleFavorite(stationId) {
+            if (typeof favoritesManager !== 'undefined') {
+                favoritesManager.toggleFavorite(stationId);
+                loadStations();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadStations);
+    </script>
+</body>
+</html>`;
+}
+
+// Générer toutes les pages
+cities.forEach(city => {
+    const content = generateCityPage(city);
+    const fileName = path.join(__dirname, `${city.id}.html`);
+    fs.writeFileSync(fileName, content, 'utf8');
+    console.log(`✓ Page générée : ${city.name} (${city.id}.html)`);
+});
+
+console.log(`\n✅ ${cities.length} pages villes générées avec succès !`);
