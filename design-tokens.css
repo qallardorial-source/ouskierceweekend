@@ -1,0 +1,297 @@
+/**
+ * Design Tokens - Système de Design Unifié
+ * Variables CSS pour maintenir la cohérence visuelle
+ */
+
+:root {
+    /* ==================== COULEURS ==================== */
+
+    /* Couleurs primaires */
+    --color-primary-start: #4facfe;
+    --color-primary-end: #f093fb;
+    --color-primary-gradient: linear-gradient(135deg, var(--color-primary-start) 0%, var(--color-primary-end) 100%);
+
+    /* Couleurs de background */
+    --color-bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    --color-bg-glass: rgba(255, 255, 255, 0.15);
+    --color-bg-glass-light: rgba(255, 255, 255, 0.12);
+    --color-bg-glass-lighter: rgba(255, 255, 255, 0.1);
+    --color-bg-glass-lightest: rgba(255, 255, 255, 0.05);
+
+    /* Couleurs de texte */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: rgba(255, 255, 255, 0.95);
+    --color-text-tertiary: rgba(255, 255, 255, 0.9);
+    --color-text-muted: rgba(255, 255, 255, 0.8);
+    --color-text-faded: rgba(255, 255, 255, 0.7);
+    --color-text-dimmed: rgba(255, 255, 255, 0.6);
+
+    /* Couleurs d'accent */
+    --color-accent-blue: #4facfe;
+    --color-accent-pink: #f093fb;
+    --color-accent-success: #2ecc71;
+    --color-accent-warning: #f39c12;
+    --color-accent-danger: #e74c3c;
+
+    /* Couleurs de border */
+    --color-border-light: rgba(255, 255, 255, 0.3);
+    --color-border-lighter: rgba(255, 255, 255, 0.25);
+    --color-border-lightest: rgba(255, 255, 255, 0.2);
+    --color-border-primary: rgba(79, 172, 254, 0.3);
+    --color-border-primary-hover: #4facfe;
+
+    /* ==================== ESPACEMENT ==================== */
+
+    /* Spacing scale (basé sur 4px) */
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 20px;
+    --space-xl: 25px;
+    --space-2xl: 30px;
+    --space-3xl: 40px;
+    --space-4xl: 50px;
+    --space-5xl: 60px;
+    --space-6xl: 80px;
+
+    /* Gaps (pour flexbox/grid) */
+    --gap-xs: 10px;
+    --gap-sm: 15px;
+    --gap-md: 20px;
+    --gap-lg: 25px;
+    --gap-xl: 35px;
+    --gap-2xl: 40px;
+
+    /* ==================== BORDER RADIUS ==================== */
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 15px;
+    --radius-xl: 20px;
+    --radius-2xl: 25px;
+    --radius-3xl: 30px;
+    --radius-round: 50%;
+
+    /* ==================== OMBRES ==================== */
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 8px 25px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 15px 45px rgba(0, 0, 0, 0.2);
+    --shadow-2xl: 0 25px 60px rgba(0, 0, 0, 0.25);
+
+    /* Ombres colorées */
+    --shadow-primary: 0 10px 30px rgba(79, 172, 254, 0.4);
+    --shadow-primary-lg: 0 15px 40px rgba(79, 172, 254, 0.5);
+
+    /* ==================== TYPOGRAPHIE ==================== */
+
+    /* Font families */
+    --font-primary: 'Inter', 'Segoe UI', -apple-system, sans-serif;
+
+    /* Font sizes */
+    --font-xs: 0.75em;
+    --font-sm: 0.85em;
+    --font-md: 0.95em;
+    --font-base: 1em;
+    --font-lg: 1.1em;
+    --font-xl: 1.2em;
+    --font-2xl: 1.5em;
+    --font-3xl: 1.8em;
+    --font-4xl: 2.5em;
+    --font-5xl: 3em;
+    --font-6xl: 4.5em;
+
+    /* Font weights */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+
+    /* Line heights */
+    --leading-tight: 1.2;
+    --leading-snug: 1.4;
+    --leading-normal: 1.6;
+    --leading-relaxed: 1.8;
+    --leading-loose: 2;
+
+    /* ==================== TRANSITIONS ==================== */
+
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --transition-bounce: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /* ==================== BACKDROP FILTERS ==================== */
+
+    --blur-sm: blur(10px);
+    --blur-md: blur(20px);
+    --blur-lg: blur(30px);
+    --blur-xl: blur(40px);
+    --blur-2xl: blur(50px);
+
+    /* ==================== Z-INDEX ==================== */
+
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 1000;
+    --z-fixed: 1001;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+
+    /* ==================== BREAKPOINTS (pour référence JS) ==================== */
+
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1400px;
+}
+
+/* ==================== CLASSES UTILITAIRES ==================== */
+
+/* Glassmorphism */
+.glass {
+    background: var(--color-bg-glass);
+    backdrop-filter: var(--blur-xl);
+    border: 1px solid var(--color-border-lighter);
+}
+
+.glass-light {
+    background: var(--color-bg-glass-light);
+    backdrop-filter: var(--blur-md);
+}
+
+.glass-lighter {
+    background: var(--color-bg-glass-lighter);
+    backdrop-filter: var(--blur-sm);
+}
+
+/* Dégradés */
+.gradient-primary {
+    background: var(--color-primary-gradient);
+}
+
+.gradient-text {
+    background: var(--color-primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Boutons standard */
+.btn {
+    padding: var(--space-md) var(--space-3xl);
+    border-radius: var(--radius-lg);
+    font-weight: var(--font-bold);
+    transition: var(--transition-base);
+    cursor: pointer;
+    font-size: var(--font-base);
+    letter-spacing: 0.5px;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--color-primary-gradient);
+    color: var(--color-text-primary);
+    box-shadow: var(--shadow-primary);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-primary-lg);
+}
+
+.btn-secondary {
+    background: var(--color-bg-glass);
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-border-light);
+}
+
+.btn-secondary:hover {
+    background: var(--color-bg-glass-light);
+    border-color: var(--color-border-primary-hover);
+    transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+    background: var(--color-bg-glass-light);
+    backdrop-filter: var(--blur-xl);
+    border-radius: var(--radius-2xl);
+    border: 1px solid var(--color-border-lighter);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.card:hover {
+    border-color: var(--color-border-primary);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-lg);
+    border-radius: var(--radius-xl);
+    font-size: var(--font-sm);
+    font-weight: var(--font-semibold);
+}
+
+.badge-primary {
+    background: rgba(79, 172, 254, 0.2);
+    color: var(--color-accent-blue);
+    border: 1px solid var(--color-border-primary);
+}
+
+.badge-pink {
+    background: rgba(240, 147, 251, 0.2);
+    color: var(--color-accent-pink);
+    border: 1px solid rgba(240, 147, 251, 0.3);
+}
+
+/* Dividers */
+.divider {
+    height: 1px;
+    background: var(--color-border-lightest);
+    margin: var(--space-2xl) 0;
+}
+
+.divider-gradient {
+    height: 2px;
+    background: var(--color-primary-gradient);
+    border-radius: 2px;
+}
+
+/* Accessibilité */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Focus visible pour navigation clavier */
+*:focus-visible {
+    outline: 3px solid var(--color-accent-blue);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/* Transition globale pour les éléments interactifs */
+button,
+a,
+input,
+select,
+.card,
+.btn {
+    transition: var(--transition-base);
+}
