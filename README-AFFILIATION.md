@@ -173,17 +173,17 @@ Une fois tous vos IDs configurés dans `config.js` :
 
 **Sans affiliation** (par défaut) :
 ```
-https://www.skiset.com/fr-FR/recherche?location=VAL+THORENS
+https://www.skiset.com/fr-FR/ski-resort/val-thorens
 ```
 
 **Avec affiliation TradeTracker** :
 ```
-https://www.skiset.com/fr-FR/recherche?location=VAL+THORENS&tt=123456&r=789012
+https://www.skiset.com/fr-FR/ski-resort/val-thorens?tt=123456&r=789012
 ```
 
 **Avec affiliation Awin** :
 ```
-https://www.skiset.com/fr-FR/recherche?location=VAL+THORENS&awc=987654&clickref=ouskier_skiset
+https://www.skiset.com/fr-FR/ski-resort/val-thorens?awc=987654&clickref=ouskier_skiset
 ```
 
 ### Vérifier dans la console du navigateur :
@@ -217,9 +217,12 @@ Le système génère automatiquement des URLs personnalisées pour chaque statio
 
 | Station | URL Skiset générée |
 |---------|-------------------|
-| Val Thorens | `?location=VAL+THORENS` |
-| Chamonix | `?location=CHAMONIX` |
-| Les Arcs | `?location=LES+ARCS` |
+| Val Thorens | `/ski-resort/val-thorens` |
+| Chamonix | `/ski-resort/chamonix` |
+| Les Arcs | `/ski-resort/les-arcs` |
+| L'Alpe d'Huez | `/ski-resort/l-alpe-d-huez` |
+
+Le nom de la station est automatiquement converti en **slug** (minuscules, espaces → tirets, accents supprimés).
 
 ---
 
