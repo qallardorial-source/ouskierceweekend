@@ -51,11 +51,27 @@ const skiResorts = loadStationsData();
 // Date actuelle pour lastmod
 const today = new Date().toISOString().split('T')[0];
 
+// Liste des pages villes
+const villesDir = path.join(__dirname, 'villes');
+let villesList = [];
+try {
+    villesList = fs.readdirSync(villesDir)
+        .filter(f => f.endsWith('.html') && f !== 'index.html')
+        .map(f => f.replace('.html', ''));
+    console.log(`✅ ${villesList.length} pages villes trouvées`);
+} catch (error) {
+    console.warn('⚠️  Erreur lecture dossier villes:', error.message);
+}
+
 // En-tête XML
 let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
+
+  <!-- ========================================== -->
+  <!-- PAGES PRINCIPALES -->
+  <!-- ========================================== -->
+
   <!-- Page d'accueil -->
   <url>
     <loc>https://ouskierceweeekend.fr/</loc>
@@ -63,24 +79,47 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Page stations -->
+
+  <url>
+    <loc>https://ouskierceweeekend.fr/index.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Page stations (liste complète) -->
   <url>
     <loc>https://ouskierceweeekend.fr/stations.html</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  
+
+  <!-- Page comparateur -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/compare.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Page favoris -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/favorites.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Page à propos -->
   <url>
     <loc>https://ouskierceweeekend.fr/about.html</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  
-  <!-- Page légale -->
+
+  <!-- Page mentions légales -->
   <url>
     <loc>https://ouskierceweeekend.fr/legal.html</loc>
     <lastmod>${today}</lastmod>
@@ -96,7 +135,41 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>0.3</priority>
   </url>
 
+  <!-- ========================================== -->
+  <!-- PAGES VILLES (SEO Local) -->
+  <!-- ========================================== -->
+
+  <!-- Index des villes -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/index.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 `;
+
+// Ajouter toutes les pages villes
+if (villesList.length > 0) {
+    villesList.forEach(ville => {
+        const villeName = ville.charAt(0).toUpperCase() + ville.slice(1);
+        sitemap += `  <!-- Ville: ${villeName} -->
+  <url>
+    <loc>https://ouskierceweeekend.fr/villes/${ville}.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+`;
+    });
+    sitemap += `  <!-- ========================================== -->
+  <!-- PAGES STATIONS (${skiResorts.length} stations) -->
+  <!-- ========================================== -->
+
+`;
+}
+
 
 // Ajouter toutes les pages de stations
 if (skiResorts.length > 0) {
@@ -145,11 +218,35 @@ sitemap += `</urlset>`;
 
 // Écrire le fichier avec gestion d'erreur
 try {
-    fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemap, 'utf8');
-    console.log('✅ Sitemap généré avec succès !');
-    console.log(`📊 ${skiResorts.length} stations ajoutées au sitemap`);
-    console.log(`📁 Fichier : ${path.join(__dirname, 'sitemap.xml')}`);
-    console.log(`📏 Taille : ${(sitemap.length / 1024).toFixed(2)} KB`);
+    const sitemapPath = path.join(__dirname, 'sitemap.xml');
+    fs.writeFileSync(sitemapPath, sitemap, 'utf8');
+
+    // Statistiques
+    const totalUrls = 8 + villesList.length + 1 + skiResorts.length; // 8 pages principales + villes + index villes + stations
+    const fileSize = fs.statSync(sitemapPath).size;
+
+    console.log('\n' + '='.repeat(60));
+    console.log('✅ SITEMAP GÉNÉRÉ AVEC SUCCÈS !');
+    console.log('='.repeat(60));
+    console.log(`\n📄 Fichier: sitemap.xml`);
+    console.log(`📏 Taille: ${(fileSize / 1024).toFixed(2)} KB`);
+    console.log(`\n🔗 URLs générées:`);
+    console.log(`   ├─ Pages principales: 8`);
+    console.log(`   ├─ Index villes: 1`);
+    console.log(`   ├─ Pages villes: ${villesList.length}`);
+    console.log(`   ├─ Pages stations: ${skiResorts.length}`);
+    console.log(`   └─ TOTAL: ${totalUrls} URLs`);
+    console.log(`\n📊 Priorités:`);
+    console.log(`   ├─ 1.0: Accueil (critique)`);
+    console.log(`   ├─ 0.9: Liste stations`);
+    console.log(`   ├─ 0.8: Comparateur, Index villes`);
+    console.log(`   ├─ 0.7: Favoris, Pages villes`);
+    console.log(`   └─ 0.6-0.3: Autres pages`);
+    console.log(`\n💡 Prochaines étapes:`);
+    console.log(`   1. Valider: https://www.xml-sitemaps.com/validate-xml-sitemap.html`);
+    console.log(`   2. Tester: https://support.google.com/webmasters/answer/7451001`);
+    console.log(`   3. Soumettre: https://search.google.com/search-console`);
+    console.log(`\n` + '='.repeat(60) + '\n');
 } catch (error) {
     console.error('❌ Erreur lors de l\'écriture du sitemap:', error.message);
     process.exit(1);

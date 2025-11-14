@@ -1,17 +1,46 @@
+# robots.txt - Où Skier Ce Weekend
+# Mis à jour: 2025-11-14
+
+# === RÈGLES GÉNÉRALES ===
 User-agent: *
 Allow: /
-
-# Sitemap
-Sitemap: https://ouskierceweeekend.fr/sitemap.xml
 
 # Bloque les fichiers inutiles pour le SEO
 Disallow: /monetization.js
 Disallow: /monetization.css
 Disallow: /*.js$
 Disallow: /*.css$
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /*?utm_*
 
-# Permet l'indexation des pages HTML
+# Permet explicitement l'indexation des pages HTML
 Allow: /*.html$
+Allow: /villes/*.html$
 
-# Crawl delay (optionnel)
+# === BOTS SPÉCIFIQUES ===
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Yahoo
+User-agent: Slurp
+Allow: /
 Crawl-delay: 1
+
+# === SITEMAP ===
+Sitemap: https://ouskierceweeekend.fr/sitemap.xml
+
+# === INFORMATIONS ===
+# Site: Où Skier Ce Weekend
+# URLs: 245 pages (8 principales + 36 villes + 201 stations)
+# Contact: https://ouskierceweeekend.fr/about.html
