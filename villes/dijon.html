@@ -131,7 +131,7 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
             <div class="nav-menu">
@@ -146,7 +146,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" role="main">
         <div class="city-hero">
             <h1>🍇 Où Skier depuis Dijon ?</h1>
             <p class="subtitle" style="font-size: 1.2em; max-width: 700px; margin: 0 auto;">
@@ -209,7 +209,7 @@
         </section>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <p>&copy; 2025 Où skier ce weekend - <a href="../legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
     </footer>
 
@@ -369,5 +369,6 @@
 
         document.addEventListener('DOMContentLoaded', loadStations);
     </script>
+    <script src="navigation.js"></script>
 </body>
 </html>

@@ -19,8 +19,7 @@
     <link rel="canonical" href="https://ouskierceweeekend.fr/stations.html">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     
-    <!-- Google Analytics 4 - REMPLACER G-XXXXXXXXXX par votre ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -28,10 +27,11 @@
       gtag('config', 'G-XXXXXXXXXX');
     </script>
     
+    <link rel="stylesheet" href="design-tokens.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">⛷️ Où skier ce weekend</a>
             <div class="nav-menu">
@@ -47,7 +47,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" role="main">
         <header>
             <h1>Toutes les stations de ski en France</h1>
             <p class="subtitle">Découvrez notre sélection complète de 150+ stations françaises - Alpes, Pyrénées, Jura</p>
@@ -123,7 +123,7 @@
         </section>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <p>&copy; 2025 Où skier ce weekend - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
     </footer>
 
@@ -253,5 +253,6 @@
             document.getElementById('resetBtn').addEventListener('click', resetFilters);
         });
     </script>
+    <script src="navigation.js"></script>
 </body>
 </html>
