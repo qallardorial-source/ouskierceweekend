@@ -187,8 +187,443 @@ const cities = [
             'Pyrénées catalanes : authenticité garantie'
         ],
         budgetNote: 'Stations familiales et abordables, idéales pour débuter'
+    },
+    // VAGUE 2 - Villes moyennes tier 2
+    {
+        id: 'annecy',
+        name: 'Annecy',
+        lat: 45.8992,
+        lon: 6.1294,
+        description: 'La Venise des Alpes au pied des montagnes ! Annecy accède aux plus belles stations de Haute-Savoie en 30-60 min.',
+        emoji: '🏞️',
+        avgDistance: '60',
+        avgTime: '45min-1h30',
+        topRegion: 'Alpes du Nord',
+        nearbyStations: ['La Clusaz', 'Le Grand-Bornand', 'Megève', 'Les Contamines', 'Chamonix'],
+        tips: [
+            'La Clusaz à 30 min : station village authentique',
+            'Le Grand-Bornand à 35 min : domaine Aravis',
+            'Nombreuses navettes depuis Annecy en saison'
+        ],
+        budgetNote: 'Position idéale : toutes les grandes stations à moins d\'1h !'
+    },
+    {
+        id: 'chambery',
+        name: 'Chambéry',
+        lat: 45.5647,
+        lon: 5.9214,
+        description: 'Capitale historique de la Savoie ! Chambéry est entourée de stations olympiques et authentiques.',
+        emoji: '🏰',
+        avgDistance: '70',
+        avgTime: '1-1h30',
+        topRegion: 'Alpes du Nord',
+        nearbyStations: ['Les Arcs', 'La Plagne', 'Les Saisies', 'Valmorel', 'Val Thorens'],
+        tips: [
+            'Les Saisies à 45 min : domaine nordique + alpin',
+            'Les 3 Vallées à 1h30 : le plus grand domaine du monde',
+            'Gare TGV avec navettes vers toutes les stations'
+        ],
+        budgetNote: 'Hub parfait : accès direct aux stations olympiques !'
+    },
+    {
+        id: 'clermont-ferrand',
+        name: 'Clermont-Ferrand',
+        lat: 45.7772,
+        lon: 3.0870,
+        description: 'Capitale auvergnate entre volcans et montagnes ! Accès au Massif Central et aux Alpes.',
+        emoji: '🌋',
+        avgDistance: '150',
+        avgTime: '2-3h',
+        topRegion: 'Massif Central / Alpes',
+        nearbyStations: ['Super-Besse', 'Le Mont-Dore', 'Les 2 Alpes', 'Alpe d\'Huez', 'Chamrousse'],
+        tips: [
+            'Super-Besse à 1h : station familiale du Massif Central',
+            'Alpes accessibles en 2h30 via l\'A75 et Grenoble',
+            'Forfaits Massif Central 50% moins chers que les Alpes'
+        ],
+        budgetNote: 'Massif Central : stations authentiques et petits prix !'
+    },
+    {
+        id: 'dijon',
+        name: 'Dijon',
+        lat: 47.3220,
+        lon: 5.0415,
+        description: 'Capitale des Ducs de Bourgogne ! Dijon accède au Jura proche et aux Alpes du Nord.',
+        emoji: '🍇',
+        avgDistance: '200',
+        avgTime: '2-3h',
+        topRegion: 'Jura / Alpes',
+        nearbyStations: ['Métabief', 'Les Rousses', 'Chamonix', 'Megève', 'La Clusaz'],
+        tips: [
+            'Jura à 1h30 : stations familiales et nordiques',
+            'Alpes du Nord à 2h30 via Annecy',
+            'Bon rapport qualité-prix dans le Jura'
+        ],
+        budgetNote: 'Jura : ski nordique et petits domaines économiques'
+    },
+    {
+        id: 'reims',
+        name: 'Reims',
+        lat: 49.2583,
+        lon: 4.0317,
+        description: 'Capitale du Champagne ! Reims accède aux Vosges et aux Alpes pour des weekends prolongés.',
+        emoji: '🍾',
+        avgDistance: '450',
+        avgTime: '5-6h',
+        topRegion: 'Vosges / Alpes',
+        nearbyStations: ['La Bresse', 'Gérardmer', 'Chamonix', 'Megève', 'Les Arcs'],
+        tips: [
+            'Vosges à 3h30 : stations familiales économiques',
+            'Alpes à 5-6h : privilégier weekends de 3 jours',
+            'Alternative TGV : Reims → Lyon → Alpes'
+        ],
+        budgetNote: 'Distance importante : covoiturage ou train recommandé'
+    },
+    {
+        id: 'saint-etienne',
+        name: 'Saint-Étienne',
+        lat: 45.4397,
+        lon: 4.3872,
+        description: 'Ville stéphanoise proche des Alpes ! Accès rapide aux stations de l\'Isère et de la Savoie.',
+        emoji: '⚽',
+        avgDistance: '120',
+        avgTime: '1h30-2h',
+        topRegion: 'Alpes du Nord',
+        nearbyStations: ['Les 2 Alpes', 'Alpe d\'Huez', 'Chamrousse', 'Les 7 Laux', 'La Plagne'],
+        tips: [
+            'Chamrousse à 1h30 via Grenoble',
+            'Les 2 Alpes et Alpe d\'Huez à 1h45',
+            'Position similaire à Lyon, légèrement plus éloignée'
+        ],
+        budgetNote: 'Proximité des Alpes : excellent pour weekends courts'
+    },
+    {
+        id: 'toulon',
+        name: 'Toulon',
+        lat: 43.1242,
+        lon: 5.9280,
+        description: 'Rade méditerranéenne vers les Alpes du Sud ! Toulon accède aux stations ensoleillées du 04 et 06.',
+        emoji: '⚓',
+        avgDistance: '200',
+        avgTime: '2h30-3h30',
+        topRegion: 'Alpes du Sud',
+        nearbyStations: ['Isola 2000', 'Auron', 'Pra-Loup', 'Vars', 'Serre Chevalier'],
+        tips: [
+            'Isola 2000 à 2h30 via Nice',
+            'Alpes du Sud : 300 jours de soleil par an',
+            'Mer + montagne : ski le matin, port l\'après-midi'
+        ],
+        budgetNote: 'Stations du Sud 20-30% moins chères que le Nord'
+    },
+    {
+        id: 'rennes',
+        name: 'Rennes',
+        lat: 48.1173,
+        lon: -1.6778,
+        description: 'Capitale bretonne vers les montagnes ! Rennes nécessite un weekend prolongé pour les Alpes ou Pyrénées.',
+        emoji: '🥐',
+        avgDistance: '600',
+        avgTime: '6-7h',
+        topRegion: 'Alpes / Pyrénées',
+        nearbyStations: ['Chamonix', 'Megève', 'Font-Romeu', 'Saint-Lary', 'Les Arcs'],
+        tips: [
+            'Privilégier le TGV : Rennes → Lyon puis Alpes (5h)',
+            'Alternative : car de nuit vers les Alpes',
+            'Weekends de 3-4 jours recommandés'
+        ],
+        budgetNote: 'Distance importante : anticiper réservations train'
+    },
+    {
+        id: 'perpignan',
+        name: 'Perpignan',
+        lat: 42.6886,
+        lon: 2.8948,
+        description: 'Porte catalane des Pyrénées ! Perpignan accède rapidement aux stations des Pyrénées-Orientales.',
+        emoji: '🏖️',
+        avgDistance: '100',
+        avgTime: '1h30-2h',
+        topRegion: 'Pyrénées',
+        nearbyStations: ['Font-Romeu', 'Les Angles', 'Puyvalador', 'Formiguères', 'Ax-les-Thermes'],
+        tips: [
+            'Font-Romeu à 1h30 : station olympique ensoleillée',
+            'Les Angles à 1h45 : ski + vue Méditerranée',
+            'Pyrénées catalanes : culture et authenticité'
+        ],
+        budgetNote: 'Pyrénées catalanes : excellent rapport qualité-prix'
+    },
+    {
+        id: 'aix-en-provence',
+        name: 'Aix-en-Provence',
+        lat: 43.5297,
+        lon: 5.4474,
+        description: 'Ville de Cézanne vers les Alpes du Sud ! Aix accède aux stations ensoleillées en 2-3h.',
+        emoji: '🎨',
+        avgDistance: '230',
+        avgTime: '2h30-3h30',
+        topRegion: 'Alpes du Sud',
+        nearbyStations: ['Serre Chevalier', 'Pra-Loup', 'Vars', 'Risoul', 'Isola 2000'],
+        tips: [
+            'Isola 2000 à 2h30 via Nice et la Tinée',
+            'Serre Chevalier à 3h : grand domaine ensoleillé',
+            'Stations du Sud : ensoleillement exceptionnel'
+        ],
+        budgetNote: 'Position similaire à Marseille, légèrement plus éloignée'
+    },
+    {
+        id: 'valence',
+        name: 'Valence',
+        lat: 44.9334,
+        lon: 4.8924,
+        description: 'Porte de la Drôme vers les Alpes ! Valence est sur la route des grandes stations alpines.',
+        emoji: '🌻',
+        avgDistance: '120',
+        avgTime: '1h30-2h',
+        topRegion: 'Alpes du Nord',
+        nearbyStations: ['Les 2 Alpes', 'Alpe d\'Huez', 'Chamrousse', 'Serre Chevalier', 'Les 7 Laux'],
+        tips: [
+            'Chamrousse à 1h30 via Grenoble',
+            'Les 2 Alpes et Alpe d\'Huez à 1h45',
+            'Sur l\'A7 : accès direct vers toutes les stations'
+        ],
+        budgetNote: 'Position centrale : nombreuses stations accessibles'
+    },
+    {
+        id: 'metz',
+        name: 'Metz',
+        lat: 49.1193,
+        lon: 6.1757,
+        description: 'Capitale lorraine vers les Vosges ! Metz accède aux stations familiales du massif vosgien.',
+        emoji: '🏛️',
+        avgDistance: '120',
+        avgTime: '1h30-2h',
+        topRegion: 'Vosges',
+        nearbyStations: ['La Bresse', 'Gérardmer', 'Le Markstein', 'La Planche des Belles Filles', 'Ventron'],
+        tips: [
+            'La Bresse à 1h30 : plus grande station des Vosges',
+            'Gérardmer à 1h45 : ski + lac',
+            'Vosges : forfaits 30-35€/jour'
+        ],
+        budgetNote: 'Vosges : ski familial économique et accessible'
+    },
+    {
+        id: 'nancy',
+        name: 'Nancy',
+        lat: 48.6921,
+        lon: 6.1844,
+        description: 'Place Stanislas vers les sommets ! Nancy accède rapidement aux stations vosgiennes.',
+        emoji: '👑',
+        avgDistance: '90',
+        avgTime: '1-1h30',
+        topRegion: 'Vosges',
+        nearbyStations: ['La Bresse', 'Gérardmer', 'Le Markstein', 'Ventron', 'Le Schnepfenried'],
+        tips: [
+            'La Bresse à 1h15 : station familiale',
+            'Gérardmer à 1h30 : domaine Mauselaine',
+            'Ski de fond très développé dans les Vosges'
+        ],
+        budgetNote: 'Vosges : idéal pour découvrir le ski petit budget'
+    },
+    {
+        id: 'pau',
+        name: 'Pau',
+        lat: 43.2951,
+        lon: -0.3708,
+        description: 'Boulevard des Pyrénées ! Pau accède aux stations béarnaises et catalanes.',
+        emoji: '🏔️',
+        avgDistance: '100',
+        avgTime: '1h30-2h',
+        topRegion: 'Pyrénées',
+        nearbyStations: ['Gourette', 'La Pierre Saint-Martin', 'Artouste', 'Piau-Engaly', 'Cauterets'],
+        tips: [
+            'Gourette à 1h15 : domaine familial',
+            'La Pierre Saint-Martin à 1h30 : grand domaine béarnais',
+            'Pyrénées occidentales : stations authentiques'
+        ],
+        budgetNote: 'Pyrénées béarnaises : excellent rapport qualité-prix'
+    },
+    {
+        id: 'besancon',
+        name: 'Besançon',
+        lat: 47.2378,
+        lon: 6.0241,
+        description: 'Capitale comtoise ! Besançon accède au Jura proche et aux stations suisses.',
+        emoji: '⌚',
+        avgDistance: '80',
+        avgTime: '1-1h30',
+        topRegion: 'Jura / Suisse',
+        nearbyStations: ['Métabief', 'Les Rousses', 'La Dôle (Suisse)', 'Saint-Cergue (Suisse)', 'Chapelle-des-Bois'],
+        tips: [
+            'Métabief à 1h : plus grand domaine du Jura',
+            'Les Rousses à 1h15 : ski nordique + alpin',
+            'Stations suisses accessibles (prévoir francs suisses)'
+        ],
+        budgetNote: 'Jura : ski économique et ski de fond exceptionnel'
+    },
+    {
+        id: 'mulhouse',
+        name: 'Mulhouse',
+        lat: 47.7508,
+        lon: 7.3359,
+        description: 'Capitale alsacienne proche des Vosges et de la Suisse ! Mulhouse accède à 3 massifs.',
+        emoji: '🚂',
+        avgDistance: '80',
+        avgTime: '1-1h30',
+        topRegion: 'Vosges / Suisse',
+        nearbyStations: ['Le Markstein', 'La Bresse', 'Gérardmer', 'Verbier (Suisse)', 'Zermatt (Suisse)'],
+        tips: [
+            'Le Markstein à 45 min : domaine vosgien',
+            'Suisse accessible en 1h30 : Verbier, Zermatt',
+            'Forfaits Vosges économiques, Suisse premium'
+        ],
+        budgetNote: 'Triple choix : Vosges économiques, Suisse premium, Alpes 3h'
+    },
+    {
+        id: 'avignon',
+        name: 'Avignon',
+        lat: 43.9493,
+        lon: 4.8055,
+        description: 'Cité des Papes vers les Alpes du Sud ! Avignon accède aux stations ensoleillées en 2-3h.',
+        emoji: '🏰',
+        avgDistance: '200',
+        avgTime: '2h30-3h',
+        topRegion: 'Alpes du Sud',
+        nearbyStations: ['Serre Chevalier', 'Vars', 'Risoul', 'Pra-Loup', 'Isola 2000'],
+        tips: [
+            'Serre Chevalier à 2h45 : 250 km de pistes',
+            'Vars et Risoul à 2h30 : domaine de la Forêt Blanche',
+            'Alpes du Sud : soleil garanti'
+        ],
+        budgetNote: 'Stations ensoleillées et prix doux'
+    },
+    {
+        id: 'brest',
+        name: 'Brest',
+        lat: 48.3905,
+        lon: -4.4860,
+        description: 'Bout du monde vers les montagnes ! Brest nécessite un long trajet mais les Alpes valent le détour.',
+        emoji: '⚓',
+        avgDistance: '750',
+        avgTime: '8-9h',
+        topRegion: 'Alpes',
+        nearbyStations: ['Chamonix', 'Megève', 'Les Arcs', 'Val Thorens', 'Avoriaz'],
+        tips: [
+            'Privilégier le train : Brest → Paris → Lyon → Alpes',
+            'Alternative avion : Brest → Lyon puis navette',
+            'Vacances d\'une semaine recommandées (pas weekend)'
+        ],
+        budgetNote: 'Distance très importante : privilégier train ou avion'
+    },
+    {
+        id: 'le-havre',
+        name: 'Le Havre',
+        lat: 49.4944,
+        lon: 0.1079,
+        description: 'Port normand vers les Alpes ! Le Havre nécessite un weekend prolongé pour skier.',
+        emoji: '🌊',
+        avgDistance: '650',
+        avgTime: '7-8h',
+        topRegion: 'Alpes',
+        nearbyStations: ['Chamonix', 'Megève', 'Les Arcs', 'La Plagne', 'Avoriaz'],
+        tips: [
+            'Train recommandé : Le Havre → Paris → Alpes (5-6h)',
+            'Voiture : départ vendredi soir, arrivée samedi matin',
+            'Weekends de 3-4 jours minimum'
+        ],
+        budgetNote: 'Budget transport important : anticiper réservations'
+    },
+    // VAGUE 3 - Villes spécifiques et stratégiques
+    {
+        id: 'geneve',
+        name: 'Genève',
+        lat: 46.2044,
+        lon: 6.1432,
+        description: 'Capitale internationale aux portes des Alpes ! Genève accède aux plus beaux domaines franco-suisses.',
+        emoji: '🇨🇭',
+        avgDistance: '50',
+        avgTime: '30min-1h',
+        topRegion: 'Alpes / Suisse',
+        nearbyStations: ['Chamonix', 'Megève', 'Verbier', 'Les Portes du Soleil', 'Zermatt'],
+        tips: [
+            'Chamonix à 1h : accès direct par autoroute blanche',
+            'Verbier (Suisse) à 1h30 : domaine 4 Vallées',
+            'Forfaits suisses : prévoir 70-90 CHF/jour'
+        ],
+        budgetNote: 'Position exceptionnelle : France et Suisse accessibles'
+    },
+    {
+        id: 'albertville',
+        name: 'Albertville',
+        lat: 45.6758,
+        lon: 6.3917,
+        description: 'Ville olympique 1992 au cœur des Alpes ! Albertville accède à toutes les stations en 30-45 min.',
+        emoji: '🥇',
+        avgDistance: '30',
+        avgTime: '30-45min',
+        topRegion: 'Alpes du Nord',
+        nearbyStations: ['Les Arcs', 'La Plagne', 'Les Saisies', 'Valmorel', 'Méribel'],
+        tips: [
+            'Hub olympique : toutes les stations à moins de 45 min',
+            'Gare TGV avec navettes directes',
+            'Hébergement en ville 40% moins cher qu\'en station'
+        ],
+        budgetNote: 'Position centrale idéale : dormez en ville, skiez partout'
+    },
+    {
+        id: 'gap',
+        name: 'Gap',
+        lat: 44.5590,
+        lon: 6.0789,
+        description: 'Capitale des Hautes-Alpes ! Gap accède aux stations ensoleillées du Sud en moins d\'1h.',
+        emoji: '⛰️',
+        avgDistance: '50',
+        avgTime: '45min-1h',
+        topRegion: 'Alpes du Sud',
+        nearbyStations: ['Serre Chevalier', 'Vars', 'Risoul', 'Puy-Saint-Vincent', 'Orcières'],
+        tips: [
+            'Serre Chevalier à 45 min : 250 km de pistes',
+            'Vars-Risoul à 1h : domaine de la Forêt Blanche',
+            'Ensoleillement exceptionnel toute la saison'
+        ],
+        budgetNote: 'Alpes du Sud : soleil + prix 30% moins chers'
+    },
+    {
+        id: 'briancon',
+        name: 'Briançon',
+        lat: 44.8978,
+        lon: 6.6433,
+        description: 'Plus haute ville d\'Europe ! Briançon est au cœur du domaine Serre Chevalier Vallée.',
+        emoji: '🏔️',
+        avgDistance: '15',
+        avgTime: '15-30min',
+        topRegion: 'Alpes du Sud',
+        nearbyStations: ['Serre Chevalier', 'Montgenèvre', 'Vars', 'Risoul', 'Puy-Saint-Vincent'],
+        tips: [
+            'Serre Chevalier accessible en navette (10 min)',
+            'Montgenèvre à 20 min : accès Via Lattea (Italie)',
+            'Altitude 1326m : ville la plus haute de France'
+        ],
+        budgetNote: 'Hébergement en ville + ski journée : économie 50%'
+    },
+    {
+        id: 'grenoble-2',
+        name: 'Voiron',
+        lat: 45.3667,
+        lon: 5.5897,
+        description: 'Capitale de la Chartreuse ! Voiron accède rapidement aux stations de l\'Isère.',
+        emoji: '🌲',
+        avgDistance: '60',
+        avgTime: '1-1h15',
+        topRegion: 'Alpes du Nord',
+        nearbyStations: ['Chamrousse', 'Les 7 Laux', 'Alpe d\'Huez', 'Les 2 Alpes', 'Saint-Pierre de Chartreuse'],
+        tips: [
+            'Chamrousse à 45 min via Grenoble',
+            'Stations familiales de Chartreuse à 30 min',
+            'Position similaire à Grenoble, moins de bouchons'
+        ],
+        budgetNote: 'Proximité Grenoble sans les inconvénients urbains'
     }
 ];
+
 
 // Template de page
 function generateCityPage(city) {
