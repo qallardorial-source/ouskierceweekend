@@ -635,7 +635,7 @@
                        target="_blank" class="cta-btn cta-btn-secondary">
                         🏨 Trouver un Hébergement
                     </a>
-                    <a href="https://www.skiset.com/fr-FR/recherche?location=${encodeURIComponent(station.name.toUpperCase())}"
+                    <a href="${getSkisetUrl(station.name)}"
                        target="_blank" class="cta-btn cta-btn-secondary">
                         🎿 Louer du Matériel
                     </a>
@@ -898,6 +898,44 @@
         function extractAltitude(altStr) {
             const match = altStr.match(/(\d+)/);
             return match ? match[1] : altStr;
+        }
+
+        /**
+         * Génère l'URL Skiset avec affiliation si configurée
+         * @param {string} stationName - Nom de la station
+         * @returns {string} URL complète avec ou sans affiliation
+         */
+        function getSkisetUrl(stationName) {
+            const baseUrl = 'https://www.skiset.com/fr-FR/recherche';
+            const location = encodeURIComponent(stationName.toUpperCase());
+
+            // Vérifier si l'affiliation est configurée
+            if (typeof APP_CONFIG !== 'undefined' &&
+                APP_CONFIG.affiliation.enabled &&
+                APP_CONFIG.affiliation.equipment.skiset) {
+
+                const skiset = APP_CONFIG.affiliation.equipment.skiset;
+                const platform = skiset.platform;
+
+                // TradeTracker
+                if (platform === 'tradetracker' &&
+                    skiset.tradetracker.affiliateId !== 'XXXX') {
+                    const affiliateId = skiset.tradetracker.affiliateId;
+                    const campaignId = skiset.tradetracker.campaignId;
+                    return `${baseUrl}?location=${location}&tt=${affiliateId}&r=${campaignId}`;
+                }
+
+                // Awin
+                if (platform === 'awin' &&
+                    skiset.awin.id !== 'XXXX') {
+                    const awinId = skiset.awin.id;
+                    const clickRef = skiset.awin.clickRef;
+                    return `${baseUrl}?location=${location}&awc=${awinId}&clickref=${clickRef}`;
+                }
+            }
+
+            // URL sans affiliation (par défaut)
+            return `${baseUrl}?location=${location}`;
         }
 
         function getLevelDescription(level) {
