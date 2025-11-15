@@ -35,12 +35,15 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     
     
+    <!-- Tarteaucitron.js - Gestion du consentement cookies (RGPD) -->
+    <link rel="stylesheet" href="tarteaucitron/css/tarteaucitron.css">
+    <script src="tarteaucitron/tarteaucitron.js"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      // Configuration Google Analytics pour Tarteaucitron
+      tarteaucitron.user.gtagUa = 'G-XXXXXXXXXX';
+      tarteaucitron.user.gtagMore = function () { /* code optionnel */ };
     </script>
+    <script src="cookie-consent.js"></script>
     
     <link rel="stylesheet" href="design-tokens.css">
     <link rel="stylesheet" href="styles.css">
@@ -139,7 +142,7 @@
     </div>
 
     <footer class="footer" role="contentinfo">
-        <p>&copy; 2025 Où skier ce weekend - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a></p>
+        <p>&copy; 2025 Où skier ce weekend - <a href="legal.html" style="color: white; text-decoration: underline;">Mentions légales</a> - <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;" style="color: white; text-decoration: underline;">🍪 Gérer mes cookies</a></p>
     </footer>
 
     <script src="config.js"></script>

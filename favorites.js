@@ -26,9 +26,16 @@ class FavoritesManager {
 
     /**
      * Sauvegarde les favoris dans le LocalStorage
+     * ℹ️ RGPD: Informe l'utilisateur la première fois
      */
     saveFavorites() {
         try {
+            // Informer l'utilisateur la première fois (RGPD - transparence)
+            if (!localStorage.getItem('favorites-info-shown')) {
+                console.info('ℹ️ Vos favoris sont stockés localement sur votre appareil (pas de serveur distant)');
+                localStorage.setItem('favorites-info-shown', 'true');
+            }
+
             localStorage.setItem(this.storageKey, JSON.stringify(this.favorites));
             this.dispatchUpdateEvent();
         } catch (error) {
