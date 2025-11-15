@@ -1,13 +1,46 @@
-// analytics-tracking.js - Tracking avancé des événements
+// analytics-tracking.js - Tracking avancé des événements (Conforme RGPD)
+
+/**
+ * Vérifie si l'utilisateur a donné son consentement pour les cookies analytics
+ * @returns {boolean} true si le consentement est donné
+ */
+function hasAnalyticsConsent() {
+  // 1. Respecter Do Not Track
+  if (navigator.doNotTrack === '1' || window.doNotTrack === '1') {
+    console.info('🛡️ Do Not Track activé - tracking désactivé');
+    return false;
+  }
+
+  // 2. Vérifier le consentement Tarteaucitron
+  const cookie = document.cookie.split('; ').find(row => row.startsWith('tarteaucitron='));
+  if (!cookie) {
+    // Pas encore de consentement donné
+    return false;
+  }
+
+  const value = cookie.split('=')[1];
+  try {
+    const cookieObj = JSON.parse(decodeURIComponent(value));
+    return cookieObj.gtag === true;
+  } catch (e) {
+    return false;
+  }
+}
 
 /**
  * Envoie un événement vers Google Analytics
+ * ⚠️ RGPD: Ne track que si consentement donné
  * @param {string} category - Catégorie de l'événement
  * @param {string} action - Action effectuée
  * @param {string} label - Label descriptif
  * @param {number} value - Valeur numérique optionnelle
  */
 function trackEvent(category, action, label, value) {
+  // Vérifier le consentement AVANT de tracker (RGPD)
+  if (!hasAnalyticsConsent()) {
+    return; // Ne pas tracker si pas de consentement
+  }
+
   if (typeof gtag !== 'undefined') {
     gtag('event', action, {
       'event_category': category,
