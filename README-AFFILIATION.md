@@ -173,17 +173,17 @@ Une fois tous vos IDs configurés dans `config.js` :
 
 **Sans affiliation** (par défaut) :
 ```
-https://www.skiset.com/fr-FR/ski-resort/val-thorens
+https://skiset.com/station-ski/val-thorens/
 ```
 
 **Avec affiliation TradeTracker** :
 ```
-https://www.skiset.com/fr-FR/ski-resort/val-thorens?tt=123456&r=789012
+https://skiset.com/station-ski/val-thorens/?tt=123456&r=789012
 ```
 
 **Avec affiliation Awin** :
 ```
-https://www.skiset.com/fr-FR/ski-resort/val-thorens?awc=987654&clickref=ouskier_skiset
+https://skiset.com/station-ski/val-thorens/?awc=987654&clickref=ouskier_skiset
 ```
 
 ### Vérifier dans la console du navigateur :

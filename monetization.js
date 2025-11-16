@@ -96,7 +96,7 @@ function generateAffiliateLink(partner, stationName, region) {
         case 'booking':
             return `${partnerData.baseUrl}ss=${searchQuery}&dest_type=region`;
         case 'skiset':
-            return `${partnerData.baseUrl}https://www.skiset.com/fr/station/${slugify(stationName)}`;
+            return `${partnerData.baseUrl}https://skiset.com/station-ski/${slugify(stationName)}/`;
         case 'travelski':
         case 'snowtrex':
             return `${partnerData.baseUrl}https://www.${partner}.com/station/${slugify(stationName)}`;

@@ -923,9 +923,9 @@
          * @returns {string} URL complète avec ou sans affiliation
          */
         function getSkisetUrl(stationName) {
-            // Format correct: /ski-resort/nom-station (ex: /ski-resort/val-thorens)
+            // Format correct: /station-ski/nom-station (ex: /station-ski/val-thorens)
             const stationSlug = stationNameToSlug(stationName);
-            const baseUrl = `https://www.skiset.com/fr-FR/ski-resort/${stationSlug}`;
+            const baseUrl = `https://skiset.com/station-ski/${stationSlug}/`;
 
             // Vérifier si l'affiliation est configurée
             if (typeof APP_CONFIG !== 'undefined' &&
