@@ -767,7 +767,7 @@
                             </div>
                             <div class="info-card">
                                 <h3>
-                                    <a href="https://www.trainline.fr/search?origin=${encodeURIComponent(getNearestTrainStations(station.region).split(',')[0].trim())}"
+                                    <a href="https://www.trainline.fr/search?destination=${encodeURIComponent(getStationNearestTrainStation(station.name))}"
                                        target="_blank"
                                        rel="noopener"
                                        style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
@@ -775,13 +775,13 @@
                                         <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
                                     </a>
                                 </h3>
-                                <p>Gares proches :</p>
-                                <p><strong>${getNearestTrainStations(station.region)}</strong></p>
+                                <p>Gare la plus proche :</p>
+                                <p><strong>${getStationNearestTrainStation(station.name)}</strong></p>
                                 <p>Navettes disponibles</p>
                             </div>
                             <div class="info-card">
                                 <h3>
-                                    <a href="https://www.skyscanner.fr/transport/vols-vers/${encodeURIComponent(getNearestAirports(station.region).split(',')[0].trim().toLowerCase().replace(/\s+/g, '-'))}/"
+                                    <a href="https://www.skyscanner.fr/transport/vols-vers/${encodeURIComponent(getStationNearestAirport(station.name).toLowerCase().replace(/\s+/g, '-'))}/"
                                        target="_blank"
                                        rel="noopener"
                                        style="color: #4facfe; text-decoration: none; display: flex; align-items: center; gap: 8px;">
@@ -789,8 +789,8 @@
                                         <span style="font-size: 0.7em; opacity: 0.7;">↗</span>
                                     </a>
                                 </h3>
-                                <p>Aéroports proches :</p>
-                                <p><strong>${getNearestAirports(station.region)}</strong></p>
+                                <p>Aéroport le plus proche :</p>
+                                <p><strong>${getStationNearestAirport(station.name)}</strong></p>
                                 <p>Location de voiture possible</p>
                             </div>
                         </div>
@@ -1011,6 +1011,219 @@
                 "Massif Central": "Clermont-Ferrand, Lyon"
             };
             return airports[region] || "Consulter vols disponibles";
+        }
+
+        // Retourne la ville/commune principale la plus proche pour une station spécifique
+        function getStationNearestCity(stationName) {
+            const cityMapping = {
+                // Haute-Savoie
+                "Chamonix Mont-Blanc": "Chamonix-Mont-Blanc",
+                "Megève": "Megève",
+                "Avoriaz": "Morzine",
+                "La Clusaz": "La Clusaz",
+                "Le Grand Bornand": "Le Grand-Bornand",
+                "Flaine": "Cluses",
+                "Morzine": "Morzine",
+                "Les Gets": "Les Gets",
+                "Saint-Gervais": "Saint-Gervais-les-Bains",
+                "Les Contamines-Montjoie": "Les Contamines-Montjoie",
+                "Châtel": "Châtel",
+                "Les Houches": "Les Houches",
+                "Combloux": "Combloux",
+                "Samoëns": "Samoëns",
+                // Savoie - Tarentaise
+                "Val d'Isère": "Bourg-Saint-Maurice",
+                "Tignes": "Bourg-Saint-Maurice",
+                "Val Thorens": "Moutiers",
+                "Courchevel": "Moutiers",
+                "Méribel": "Moutiers",
+                "Les Menuires": "Moutiers",
+                "Saint-Martin-de-Belleville": "Moutiers",
+                "La Plagne": "Aime",
+                "Les Arcs": "Bourg-Saint-Maurice",
+                "Peisey-Vallandry": "Bourg-Saint-Maurice",
+                "Valmorel": "Moutiers",
+                "La Tania": "Moutiers",
+                "Pralognan-la-Vanoise": "Moutiers",
+                // Savoie - Maurienne
+                "Val Cenis": "Modane",
+                "Valmeinier": "Saint-Michel-de-Maurienne",
+                "Albiez-Montrond": "Saint-Jean-de-Maurienne",
+                "Bonneval-sur-Arc": "Modane",
+                // Isère
+                "Alpe d'Huez": "Bourg-d'Oisans",
+                "Les Deux Alpes": "Grenoble",
+                "Chamrousse": "Grenoble",
+                "Villard-de-Lans": "Grenoble",
+                "Serre Chevalier": "Briançon",
+                // Hautes-Alpes
+                "Montgenèvre": "Briançon",
+                "Vars": "Gap",
+                "Risoul": "Gap",
+                "Puy-Saint-Vincent": "Briançon",
+                "Orres": "Gap",
+                // Pyrénées
+                "Font-Romeu": "Font-Romeu-Odeillo-Via",
+                "Les Angles": "Les Angles",
+                "Piau-Engaly": "Lannemezan",
+                "Saint-Lary-Soulan": "Lannemezan",
+                "Cauterets": "Lourdes",
+                "Peyragudes": "Lannemezan",
+                "Grand Tourmalet": "Lourdes",
+                "Gourette": "Pau",
+                "La Pierre Saint-Martin": "Pau"
+            };
+            return cityMapping[stationName] || stationName;
+        }
+
+        // Retourne la gare SNCF la plus proche pour une station spécifique
+        function getStationNearestTrainStation(stationName) {
+            const stationMapping = {
+                // Haute-Savoie
+                "Chamonix Mont-Blanc": "Chamonix-Mont-Blanc",
+                "Megève": "Sallanches-Combloux-Megève",
+                "Avoriaz": "Thonon-les-Bains",
+                "La Clusaz": "Annecy",
+                "Le Grand Bornand": "Annecy",
+                "Flaine": "Cluses",
+                "Morzine": "Thonon-les-Bains",
+                "Les Gets": "Cluses",
+                "Saint-Gervais": "Saint-Gervais-les-Bains-Le Fayet",
+                "Les Contamines-Montjoie": "Saint-Gervais-les-Bains-Le Fayet",
+                "Châtel": "Thonon-les-Bains",
+                "Les Houches": "Chamonix-Mont-Blanc",
+                "Combloux": "Sallanches-Combloux-Megève",
+                "Samoëns": "Cluses",
+                // Savoie - Tarentaise
+                "Val d'Isère": "Bourg-Saint-Maurice",
+                "Tignes": "Bourg-Saint-Maurice",
+                "Val Thorens": "Moutiers-Salins-Brides-les-Bains",
+                "Courchevel": "Moutiers-Salins-Brides-les-Bains",
+                "Méribel": "Moutiers-Salins-Brides-les-Bains",
+                "Les Menuires": "Moutiers-Salins-Brides-les-Bains",
+                "Saint-Martin-de-Belleville": "Moutiers-Salins-Brides-les-Bains",
+                "La Plagne": "Aime-la-Plagne",
+                "Les Arcs": "Bourg-Saint-Maurice",
+                "Peisey-Vallandry": "Bourg-Saint-Maurice",
+                "Valmorel": "Moutiers-Salins-Brides-les-Bains",
+                "La Tania": "Moutiers-Salins-Brides-les-Bains",
+                "Pralognan-la-Vanoise": "Moutiers-Salins-Brides-les-Bains",
+                // Savoie - Maurienne
+                "Val Cenis": "Modane",
+                "Valmeinier": "Saint-Michel-de-Maurienne",
+                "Albiez-Montrond": "Saint-Jean-de-Maurienne",
+                "Bonneval-sur-Arc": "Modane",
+                // Isère
+                "Alpe d'Huez": "Grenoble",
+                "Les Deux Alpes": "Grenoble",
+                "Chamrousse": "Grenoble",
+                "Villard-de-Lans": "Grenoble",
+                "Serre Chevalier": "Briançon",
+                // Hautes-Alpes
+                "Montgenèvre": "Briançon",
+                "Vars": "Gap",
+                "Risoul": "Gap",
+                "Puy-Saint-Vincent": "Briançon",
+                "Orres": "Gap",
+                // Pyrénées
+                "Font-Romeu": "Perpignan",
+                "Les Angles": "Perpignan",
+                "Piau-Engaly": "Lannemezan",
+                "Saint-Lary-Soulan": "Lannemezan",
+                "Cauterets": "Lourdes",
+                "Peyragudes": "Lannemezan",
+                "Grand Tourmalet": "Lourdes",
+                "Gourette": "Pau",
+                "La Pierre Saint-Martin": "Pau"
+            };
+
+            // Si la station a un mapping spécifique, on l'utilise
+            if (stationMapping[stationName]) {
+                return stationMapping[stationName];
+            }
+
+            // Sinon, on utilise la première gare de la région (fallback)
+            const station = skiResorts.find(s => s.name === stationName);
+            if (station) {
+                return getNearestTrainStations(station.region).split(',')[0].trim();
+            }
+
+            return "gare la plus proche";
+        }
+
+        // Retourne l'aéroport le plus proche pour une station spécifique
+        function getStationNearestAirport(stationName) {
+            const airportMapping = {
+                // Haute-Savoie - proximité Genève
+                "Chamonix Mont-Blanc": "Genève",
+                "Megève": "Genève",
+                "Avoriaz": "Genève",
+                "La Clusaz": "Genève",
+                "Le Grand Bornand": "Genève",
+                "Flaine": "Genève",
+                "Morzine": "Genève",
+                "Les Gets": "Genève",
+                "Saint-Gervais": "Genève",
+                "Les Contamines-Montjoie": "Genève",
+                "Châtel": "Genève",
+                "Les Houches": "Genève",
+                "Combloux": "Genève",
+                "Samoëns": "Genève",
+                // Savoie - Tarentaise (Lyon ou Genève selon)
+                "Val d'Isère": "Lyon",
+                "Tignes": "Lyon",
+                "Val Thorens": "Lyon",
+                "Courchevel": "Lyon",
+                "Méribel": "Lyon",
+                "Les Menuires": "Lyon",
+                "Saint-Martin-de-Belleville": "Lyon",
+                "La Plagne": "Lyon",
+                "Les Arcs": "Lyon",
+                "Peisey-Vallandry": "Lyon",
+                "Valmorel": "Lyon",
+                "La Tania": "Lyon",
+                "Pralognan-la-Vanoise": "Chambéry",
+                // Savoie - Maurienne
+                "Val Cenis": "Lyon",
+                "Valmeinier": "Lyon",
+                "Albiez-Montrond": "Lyon",
+                "Bonneval-sur-Arc": "Lyon",
+                // Isère
+                "Alpe d'Huez": "Grenoble",
+                "Les Deux Alpes": "Grenoble",
+                "Chamrousse": "Grenoble",
+                "Villard-de-Lans": "Grenoble",
+                "Serre Chevalier": "Marseille",
+                // Hautes-Alpes
+                "Montgenèvre": "Marseille",
+                "Vars": "Marseille",
+                "Risoul": "Marseille",
+                "Puy-Saint-Vincent": "Marseille",
+                "Orres": "Marseille",
+                // Pyrénées
+                "Font-Romeu": "Perpignan",
+                "Les Angles": "Perpignan",
+                "Piau-Engaly": "Toulouse",
+                "Saint-Lary-Soulan": "Toulouse",
+                "Cauterets": "Pau",
+                "Peyragudes": "Toulouse",
+                "Grand Tourmalet": "Pau",
+                "Gourette": "Pau",
+                "La Pierre Saint-Martin": "Pau"
+            };
+
+            // Si la station a un mapping spécifique, on l'utilise
+            if (airportMapping[stationName]) {
+                return airportMapping[stationName];
+            }
+
+            // Sinon, on utilise le premier aéroport de la région (fallback)
+            const station = skiResorts.find(s => s.name === stationName);
+            if (station) {
+                return getNearestAirports(station.region).split(',')[0].trim();
+            }
+
+            return "aéroport le plus proche";
         }
 
         function getBeginnerAdvice(level) {
