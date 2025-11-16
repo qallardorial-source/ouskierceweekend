@@ -1,0 +1,282 @@
+# .htaccess - Configuration Apache pour Où Skier Ce Weekend
+# Dernière mise à jour: 16 novembre 2025
+# Version: 2.0
+
+# ============================================
+# SÉCURITÉ - REDIRECTION HTTPS FORCÉE
+# ============================================
+
+# Forcer HTTPS (SSL/TLS)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Rediriger HTTP vers HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Rediriger www vers non-www (recommandé pour SEO)
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+</IfModule>
+
+# ============================================
+# EN-TÊTES DE SÉCURITÉ HTTP
+# ============================================
+
+<IfModule mod_headers.c>
+    # X-Frame-Options: Empêche le clickjacking
+    # DENY = impossible d'intégrer le site dans une iframe
+    Header always set X-Frame-Options "DENY"
+
+    # X-Content-Type-Options: Empêche le MIME-sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # X-XSS-Protection: Protection XSS navigateurs anciens
+    # 1; mode=block = Active la protection et bloque les pages suspectes
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Referrer-Policy: Contrôle les informations de référence
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions-Policy: Contrôle des fonctionnalités navigateur
+    Header always set Permissions-Policy "geolocation=(self), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=()"
+
+    # Strict-Transport-Security (HSTS): Force HTTPS pendant 1 an
+    # IMPORTANT: Activer UNIQUEMENT après avoir vérifié que HTTPS fonctionne bien
+    # Décommentez la ligne suivante après validation HTTPS :
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Content-Security-Policy (CSP): Protection contre XSS et injections
+    # Version stricte - À adapter selon vos besoins
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://api.open-meteo.com https://nominatim.openstreetmap.org; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://api.open-meteo.com https://nominatim.openstreetmap.org; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+</IfModule>
+
+# ============================================
+# COMPRESSION GZIP/DEFLATE
+# ============================================
+
+# Compression GZIP pour améliorer les performances
+<IfModule mod_deflate.c>
+    # Compresser HTML, CSS, JavaScript, Text, XML, fonts
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE font/eot
+    AddOutputFilterByType DEFLATE font/otf
+
+    # Désactiver pour les images déjà compressées
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp)$ no-gzip dont-vary
+
+    # Assurer la compatibilité avec les proxies
+    Header append Vary: Accept-Encoding
+</IfModule>
+
+# ============================================
+# CACHE NAVIGATEUR (BROWSER CACHING)
+# ============================================
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Par défaut: 1 mois
+    ExpiresDefault "access plus 1 month"
+
+    # HTML: 1 heure (mise à jour fréquente)
+    ExpiresByType text/html "access plus 1 hour"
+
+    # CSS et JavaScript: 1 mois
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+
+    # Images: 1 an (rarement modifiées)
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Fonts: 1 an
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+
+    # PDF et autres documents: 1 mois
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType application/xml "access plus 1 hour"
+
+    # Sitemap et robots: 1 jour
+    ExpiresByType application/xml "access plus 1 day"
+    ExpiresByType text/xml "access plus 1 day"
+</IfModule>
+
+# Alternative avec mod_headers si mod_expires n'est pas disponible
+<IfModule mod_headers.c>
+    # Cache pour 1 an pour les ressources statiques
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|woff|woff2|ttf|otf|eot)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+
+    # Cache pour 1 heure pour HTML
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=3600, public, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+# ============================================
+# OPTIMISATION ET PERFORMANCE
+# ============================================
+
+# Désactiver l'ETags (car on utilise déjà le cache)
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
+
+# Keep-Alive: maintenir la connexion HTTP ouverte
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+# ============================================
+# PROTECTION DES FICHIERS SENSIBLES
+# ============================================
+
+# Bloquer l'accès aux fichiers .htaccess, .git, etc.
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Protéger les fichiers de configuration
+<FilesMatch "(^config\.js|^package\.json|^\.env|^\.git|^\.gitignore|composer\.json|composer\.lock)$">
+    Require all denied
+</FilesMatch>
+
+# Protéger les scripts Node.js (ne doivent pas être accessibles via web)
+<FilesMatch "\.(sh|sql|md|log|bak|backup|old|orig|save|swo|swp|tmp)$">
+    Require all denied
+</FilesMatch>
+
+# ============================================
+# PAGES D'ERREUR PERSONNALISÉES
+# ============================================
+
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+ErrorDocument 500 /500.html
+
+# ============================================
+# REDIRECTIONS SEO
+# ============================================
+
+# Supprimer les slashes doubles
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
+    RewriteRule . %1/%2 [R=301,L]
+</IfModule>
+
+# Ajouter un slash final aux dossiers (optionnel, selon préférence SEO)
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{REQUEST_FILENAME} !-f
+#     RewriteCond %{REQUEST_URI} !(.*)/$
+#     RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1/ [L,R=301]
+# </IfModule>
+
+# ============================================
+# SUPPORT UTF-8
+# ============================================
+
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js .xml .json .txt
+
+# ============================================
+# TYPES MIME
+# ============================================
+
+<IfModule mod_mime.c>
+    # HTML
+    AddType text/html .html .htm
+
+    # CSS
+    AddType text/css .css
+
+    # JavaScript
+    AddType application/javascript .js
+    AddType application/json .json
+
+    # Images
+    AddType image/jpeg .jpg .jpeg
+    AddType image/png .png
+    AddType image/gif .gif
+    AddType image/webp .webp
+    AddType image/svg+xml .svg
+    AddType image/x-icon .ico
+
+    # Fonts
+    AddType font/ttf .ttf
+    AddType font/otf .otf
+    AddType font/woff .woff
+    AddType font/woff2 .woff2
+    AddType application/vnd.ms-fontobject .eot
+
+    # XML
+    AddType application/xml .xml
+    AddType text/xml .xml
+
+    # Autres
+    AddType application/pdf .pdf
+    AddType text/plain .txt
+</IfModule>
+
+# ============================================
+# OPTIMISATION SERVEUR
+# ============================================
+
+# Limiter la taille des requêtes (protection DoS)
+LimitRequestBody 10240000
+
+# Désactiver l'affichage du listing des répertoires
+Options -Indexes
+
+# Suivre les liens symboliques (si nécessaire)
+# Options +FollowSymLinks
+
+# ============================================
+# NOTES IMPORTANTES
+# ============================================
+
+# 1. HSTS (Strict-Transport-Security):
+#    - DÉCOMMENTEZ la ligne HSTS UNIQUEMENT après avoir vérifié que HTTPS fonctionne parfaitement
+#    - Une fois activé, le navigateur forcera HTTPS pendant 1 an
+#    - Testez d'abord avec max-age=300 (5 minutes) avant de passer à 1 an
+#
+# 2. Content-Security-Policy:
+#    - La politique actuelle autorise Google Analytics, Open-Meteo, et Nominatim
+#    - Ajustez selon vos besoins en affiliation (Awin, TradeTracker, etc.)
+#    - Testez dans la console navigateur (F12) pour détecter les violations
+#
+# 3. Compression Brotli:
+#    - Si disponible sur votre serveur, Brotli est 20% plus efficace que Gzip
+#    - Contactez votre hébergeur pour activer mod_brotli
+#
+# 4. Vérification:
+#    - Testez la configuration avec: https://securityheaders.com/
+#    - Testez SSL avec: https://www.ssllabs.com/ssltest/
+#    - Testez la compression avec: https://www.giftofspeed.com/gzip-test/

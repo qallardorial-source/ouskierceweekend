@@ -8,17 +8,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3842m",
         "slopes": "115km",
-        "skiPass": 62,
-        "lodging": 110,
+        "skiPass": 65,
+        "lodging": 115,
         "image": "./images/chamonix.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3842m d'altitude avec 115km de pistes.",
         "advantages": [
             "115km de pistes",
             "Alt 3842m",
             "Alpes du Nord",
-            "Forfait 62€"
+            "Forfait 65€"
         ],
         "level": "Expert",
         "activities": [
@@ -43,17 +43,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2350m",
         "slopes": "445km",
-        "skiPass": 59,
-        "lodging": 135,
+        "skiPass": 60,
+        "lodging": 140,
         "image": "./images/megeve.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2350m d'altitude avec 445km de pistes.",
         "advantages": [
             "445km de pistes",
             "Alt 2350m",
             "Alpes du Nord",
-            "Forfait 59€"
+            "Forfait 60€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -78,17 +78,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2466m",
         "slopes": "650km",
-        "skiPass": 58,
-        "lodging": 98,
+        "skiPass": 60,
+        "lodging": 100,
         "image": "./images/avoriaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2466m d'altitude avec 650km de pistes.",
         "advantages": [
             "650km de pistes",
             "Alt 2466m",
             "Alpes du Nord",
-            "Forfait 58€"
+            "Forfait 60€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -113,17 +113,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2600m",
         "slopes": "132km",
-        "skiPass": 54,
-        "lodging": 92,
+        "skiPass": 55,
+        "lodging": 95,
         "image": "./images/la-clusaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2600m d'altitude avec 132km de pistes.",
         "advantages": [
             "132km de pistes",
             "Alt 2600m",
             "Alpes du Nord",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -148,17 +148,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2100m",
         "slopes": "90km",
-        "skiPass": 52,
-        "lodging": 88,
+        "skiPass": 55,
+        "lodging": 90,
         "image": "./images/le-grand-bornand.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2100m d'altitude avec 90km de pistes.",
         "advantages": [
             "90km de pistes",
             "Alt 2100m",
             "Alpes du Nord",
-            "Forfait 52€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -183,17 +183,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2500m",
         "slopes": "265km",
-        "skiPass": 56,
-        "lodging": 95,
+        "skiPass": 60,
+        "lodging": 100,
         "image": "./images/bonneval-sur-arc.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2500m d'altitude avec 265km de pistes.",
         "advantages": [
             "265km de pistes",
             "Alt 2500m",
             "Alpes du Nord",
-            "Forfait 56€"
+            "Forfait 60€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -218,17 +218,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2466m",
         "slopes": "650km",
-        "skiPass": 57,
-        "lodging": 90,
+        "skiPass": 60,
+        "lodging": 95,
         "image": "./images/morzine.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2466m d'altitude avec 650km de pistes.",
         "advantages": [
             "650km de pistes",
             "Alt 2466m",
             "Alpes du Nord",
-            "Forfait 57€"
+            "Forfait 60€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -253,17 +253,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2002m",
         "slopes": "650km",
-        "skiPass": 56,
-        "lodging": 87,
+        "skiPass": 60,
+        "lodging": 90,
         "image": "./images/les-gets.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2002m d'altitude avec 650km de pistes.",
         "advantages": [
             "650km de pistes",
             "Alt 2002m",
             "Alpes du Nord",
-            "Forfait 56€"
+            "Forfait 60€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -288,17 +288,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2350m",
         "slopes": "445km",
-        "skiPass": 58,
-        "lodging": 105,
+        "skiPass": 60,
+        "lodging": 110,
         "image": "./images/saint-gervais.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2350m d'altitude avec 445km de pistes.",
         "advantages": [
             "445km de pistes",
             "Alt 2350m",
             "Alpes du Nord",
-            "Forfait 58€"
+            "Forfait 60€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -323,17 +323,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2487m",
         "slopes": "120km",
-        "skiPass": 53,
-        "lodging": 89,
+        "skiPass": 55,
+        "lodging": 90,
         "image": "./images/les-contamines-montjoie.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2487m d'altitude avec 120km de pistes.",
         "advantages": [
             "120km de pistes",
             "Alt 2487m",
             "Alpes du Nord",
-            "Forfait 53€"
+            "Forfait 55€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -359,10 +359,10 @@ const skiResorts = [
         "altitude": "2200m",
         "slopes": "650km",
         "skiPass": 55,
-        "lodging": 86,
+        "lodging": 90,
         "image": "./images/combloux.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2200m d'altitude avec 650km de pistes.",
         "advantages": [
             "650km de pistes",
@@ -394,10 +394,10 @@ const skiResorts = [
         "altitude": "1900m",
         "slopes": "55km",
         "skiPass": 50,
-        "lodging": 95,
+        "lodging": 100,
         "image": "./images/crest-voland-cohennoz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 1900m d'altitude avec 55km de pistes.",
         "advantages": [
             "55km de pistes",
@@ -428,17 +428,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1850m",
         "slopes": "100km",
-        "skiPass": 49,
-        "lodging": 92,
+        "skiPass": 50,
+        "lodging": 95,
         "image": "./images/combloux.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 1850m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
             "Alt 1850m",
             "Alpes du Nord",
-            "Forfait 49€"
+            "Forfait 50€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -464,10 +464,10 @@ const skiResorts = [
         "altitude": "2500m",
         "slopes": "265km",
         "skiPass": 55,
-        "lodging": 88,
+        "lodging": 90,
         "image": "./images/samoens.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2500m d'altitude avec 265km de pistes.",
         "advantages": [
             "265km de pistes",
@@ -498,17 +498,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2500m",
         "slopes": "265km",
-        "skiPass": 53,
+        "skiPass": 55,
         "lodging": 75,
         "image": "./images/morillon.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2500m d'altitude avec 265km de pistes.",
         "advantages": [
             "265km de pistes",
             "Alt 2500m",
             "Alpes du Nord",
-            "Forfait 53€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -533,17 +533,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2500m",
         "slopes": "265km",
-        "skiPass": 54,
+        "skiPass": 55,
         "lodging": 80,
         "image": "./images/la-clusaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2500m d'altitude avec 265km de pistes.",
         "advantages": [
             "265km de pistes",
             "Alt 2500m",
             "Alpes du Nord",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -569,10 +569,10 @@ const skiResorts = [
         "altitude": "1850m",
         "slopes": "445km",
         "skiPass": 50,
-        "lodging": 85,
+        "lodging": 90,
         "image": "./images/praz-sur-arly.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 1850m d'altitude avec 445km de pistes.",
         "advantages": [
             "445km de pistes",
@@ -603,17 +603,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1850m",
         "slopes": "100km",
-        "skiPass": 48,
-        "lodging": 78,
+        "skiPass": 50,
+        "lodging": 80,
         "image": "./images/notre-dame-de-bellecombe.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 1850m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
             "Alt 1850m",
             "Alpes du Nord",
-            "Forfait 48€"
+            "Forfait 50€"
         ],
         "level": "Expert",
         "activities": [
@@ -638,17 +638,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1850m",
         "slopes": "50km",
-        "skiPass": 42,
+        "skiPass": 45,
         "lodging": 70,
         "image": "./images/la-plagne.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 1850m d'altitude avec 50km de pistes.",
         "advantages": [
             "50km de pistes",
             "Alt 1850m",
             "Alpes du Nord",
-            "Forfait 42€"
+            "Forfait 45€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -674,10 +674,10 @@ const skiResorts = [
         "altitude": "2000m",
         "slopes": "50km",
         "skiPass": 45,
-        "lodging": 72,
+        "lodging": 75,
         "image": "./images/bernex.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2000m d'altitude avec 50km de pistes.",
         "advantages": [
             "50km de pistes",
@@ -709,10 +709,10 @@ const skiResorts = [
         "altitude": "3456m",
         "slopes": "300km",
         "skiPass": 65,
-        "lodging": 120,
+        "lodging": 125,
         "image": "./images/les-arcs.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3456m d'altitude avec 300km de pistes.",
         "advantages": [
             "300km de pistes",
@@ -743,17 +743,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3456m",
         "slopes": "300km",
-        "skiPass": 64,
-        "lodging": 100,
+        "skiPass": 65,
+        "lodging": 105,
         "image": "./images/les-carroz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3456m d'altitude avec 300km de pistes.",
         "advantages": [
             "300km de pistes",
             "Alt 3456m",
             "Alpes du Nord",
-            "Forfait 64€"
+            "Forfait 65€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -778,17 +778,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3230m",
         "slopes": "600km",
-        "skiPass": 66,
-        "lodging": 115,
+        "skiPass": 70,
+        "lodging": 120,
         "image": "./images/les-contamines-montjoie.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3230m d'altitude avec 600km de pistes.",
         "advantages": [
             "600km de pistes",
             "Alt 3230m",
             "Alpes du Nord",
-            "Forfait 66€"
+            "Forfait 70€"
         ],
         "level": "Expert",
         "activities": [
@@ -814,10 +814,10 @@ const skiResorts = [
         "altitude": "2738m",
         "slopes": "600km",
         "skiPass": 70,
-        "lodging": 150,
+        "lodging": 155,
         "image": "./images/les-gets.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2738m d'altitude avec 600km de pistes.",
         "advantages": [
             "600km de pistes",
@@ -849,10 +849,10 @@ const skiResorts = [
         "altitude": "2952m",
         "slopes": "600km",
         "skiPass": 60,
-        "lodging": 105,
+        "lodging": 110,
         "image": "./images/les-saisies.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2952m d'altitude avec 600km de pistes.",
         "advantages": [
             "600km de pistes",
@@ -884,10 +884,10 @@ const skiResorts = [
         "altitude": "2850m",
         "slopes": "600km",
         "skiPass": 55,
-        "lodging": 85,
+        "lodging": 90,
         "image": "./images/megeve.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2850m d'altitude avec 600km de pistes.",
         "advantages": [
             "600km de pistes",
@@ -918,17 +918,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2850m",
         "slopes": "600km",
-        "skiPass": 57,
-        "lodging": 98,
+        "skiPass": 60,
+        "lodging": 100,
         "image": "./images/morzine.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2850m d'altitude avec 600km de pistes.",
         "advantages": [
             "600km de pistes",
             "Alt 2850m",
             "Alpes du Nord",
-            "Forfait 57€"
+            "Forfait 60€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -953,17 +953,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3250m",
         "slopes": "425km",
-        "skiPass": 58,
-        "lodging": 95,
+        "skiPass": 60,
+        "lodging": 100,
         "image": "./images/la-plagne.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3250m d'altitude avec 425km de pistes.",
         "advantages": [
             "425km de pistes",
             "Alt 3250m",
             "Alpes du Nord",
-            "Forfait 58€"
+            "Forfait 60€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -988,17 +988,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3226m",
         "slopes": "425km",
-        "skiPass": 57,
-        "lodging": 93,
+        "skiPass": 60,
+        "lodging": 95,
         "image": "./images/les-arcs.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3226m d'altitude avec 425km de pistes.",
         "advantages": [
             "425km de pistes",
             "Alt 3226m",
             "Alpes du Nord",
-            "Forfait 57€"
+            "Forfait 60€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -1023,17 +1023,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3226m",
         "slopes": "425km",
-        "skiPass": 54,
-        "lodging": 82,
+        "skiPass": 55,
+        "lodging": 85,
         "image": "./images/peisey-vallandry.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3226m d'altitude avec 425km de pistes.",
         "advantages": [
             "425km de pistes",
             "Alt 3226m",
             "Alpes du Nord",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -1058,17 +1058,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2800m",
         "slopes": "160km",
-        "skiPass": 54,
-        "lodging": 89,
+        "skiPass": 55,
+        "lodging": 90,
         "image": "./images/notre-dame-de-bellecombe.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2800m d'altitude avec 160km de pistes.",
         "advantages": [
             "160km de pistes",
             "Alt 2800m",
             "Alpes du Nord",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -1093,17 +1093,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2550m",
         "slopes": "165km",
-        "skiPass": 53,
-        "lodging": 88,
+        "skiPass": 55,
+        "lodging": 90,
         "image": "./images/peisey-vallandry.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2550m d'altitude avec 165km de pistes.",
         "advantages": [
             "165km de pistes",
             "Alt 2550m",
             "Alpes du Nord",
-            "Forfait 53€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -1131,8 +1131,8 @@ const skiResorts = [
         "skiPass": 50,
         "lodging": 80,
         "image": "./images/praz-sur-arly.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2550m d'altitude avec 165km de pistes.",
         "advantages": [
             "165km de pistes",
@@ -1163,17 +1163,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2800m",
         "slopes": "125km",
-        "skiPass": 52,
-        "lodging": 82,
+        "skiPass": 55,
+        "lodging": 85,
         "image": "./images/val-cenis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2800m d'altitude avec 125km de pistes.",
         "advantages": [
             "125km de pistes",
             "Alt 2800m",
             "Alpes du Nord",
-            "Forfait 52€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -1198,17 +1198,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2750m",
         "slopes": "65km",
-        "skiPass": 46,
-        "lodging": 78,
+        "skiPass": 45,
+        "lodging": 80,
         "image": "./images/saint-gervais.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2750m d'altitude avec 65km de pistes.",
         "advantages": [
             "65km de pistes",
             "Alt 2750m",
             "Alpes du Nord",
-            "Forfait 46€"
+            "Forfait 45€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -1233,17 +1233,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2750m",
         "slopes": "55km",
-        "skiPass": 44,
-        "lodging": 72,
+        "skiPass": 45,
+        "lodging": 75,
         "image": "./images/samoens.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2750m d'altitude avec 55km de pistes.",
         "advantages": [
             "55km de pistes",
             "Alt 2750m",
             "Alpes du Nord",
-            "Forfait 44€"
+            "Forfait 45€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -1268,17 +1268,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2360m",
         "slopes": "25km",
-        "skiPass": 38,
+        "skiPass": 40,
         "lodging": 75,
         "image": "./images/toussuire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2360m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
             "Alt 2360m",
             "Alpes du Nord",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -1303,17 +1303,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1950m",
         "slopes": "192km",
-        "skiPass": 54,
-        "lodging": 88,
+        "skiPass": 55,
+        "lodging": 90,
         "image": "./images/les-saisies.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 1950m d'altitude avec 192km de pistes.",
         "advantages": [
             "192km de pistes",
             "Alt 1950m",
             "Alpes du Nord",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -1339,10 +1339,10 @@ const skiResorts = [
         "altitude": "2738m",
         "slopes": "600km",
         "skiPass": 65,
-        "lodging": 95,
+        "lodging": 100,
         "image": "./images/val-cenis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2738m d'altitude avec 600km de pistes.",
         "advantages": [
             "600km de pistes",
@@ -1373,17 +1373,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2850m",
         "slopes": "600km",
-        "skiPass": 58,
-        "lodging": 90,
+        "skiPass": 60,
+        "lodging": 95,
         "image": "./images/valloire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2850m d'altitude avec 600km de pistes.",
         "advantages": [
             "600km de pistes",
             "Alt 2850m",
             "Alpes du Nord",
-            "Forfait 58€"
+            "Forfait 60€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -1411,8 +1411,8 @@ const skiResorts = [
         "skiPass": 55,
         "lodging": 75,
         "image": "./images/valmeinier.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3230m d'altitude avec 600km de pistes.",
         "advantages": [
             "600km de pistes",
@@ -1446,8 +1446,8 @@ const skiResorts = [
         "skiPass": 40,
         "lodging": 70,
         "image": "./images/bonneval-sur-arc.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3000m d'altitude avec 30km de pistes.",
         "advantages": [
             "30km de pistes",
@@ -1481,8 +1481,8 @@ const skiResorts = [
         "skiPass": 35,
         "lodging": 65,
         "image": "./images/avoriaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2500m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
@@ -1513,17 +1513,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2500m",
         "slopes": "15km",
-        "skiPass": 32,
+        "skiPass": 35,
         "lodging": 60,
         "image": "./images/bonneval-sur-arc.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2500m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 2500m",
             "Alpes du Nord",
-            "Forfait 32€"
+            "Forfait 35€"
         ],
         "level": "Expert",
         "activities": [
@@ -1548,17 +1548,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2000m",
         "slopes": "50km",
-        "skiPass": 42,
-        "lodging": 68,
+        "skiPass": 45,
+        "lodging": 70,
         "image": "./images/combloux.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2000m d'altitude avec 50km de pistes.",
         "advantages": [
             "50km de pistes",
             "Alt 2000m",
             "Alpes du Nord",
-            "Forfait 42€"
+            "Forfait 45€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -1583,17 +1583,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3250m",
         "slopes": "425km",
-        "skiPass": 56,
-        "lodging": 88,
+        "skiPass": 60,
+        "lodging": 90,
         "image": "./images/crest-voland-cohennoz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3250m d'altitude avec 425km de pistes.",
         "advantages": [
             "425km de pistes",
             "Alt 3250m",
             "Alpes du Nord",
-            "Forfait 56€"
+            "Forfait 60€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -1618,17 +1618,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3250m",
         "slopes": "425km",
-        "skiPass": 54,
-        "lodging": 82,
+        "skiPass": 55,
+        "lodging": 85,
         "image": "./images/karellis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3250m d'altitude avec 425km de pistes.",
         "advantages": [
             "425km de pistes",
             "Alt 3250m",
             "Alpes du Nord",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -1653,17 +1653,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2620m",
         "slopes": "310km",
-        "skiPass": 52,
-        "lodging": 78,
+        "skiPass": 55,
+        "lodging": 80,
         "image": "./images/corbier.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2620m d'altitude avec 310km de pistes.",
         "advantages": [
             "310km de pistes",
             "Alt 2620m",
             "Alpes du Nord",
-            "Forfait 52€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -1691,8 +1691,8 @@ const skiResorts = [
         "skiPass": 50,
         "lodging": 75,
         "image": "./images/toussuire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2620m d'altitude avec 310km de pistes.",
         "advantages": [
             "310km de pistes",
@@ -1723,17 +1723,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2620m",
         "slopes": "310km",
-        "skiPass": 48,
-        "lodging": 72,
+        "skiPass": 50,
+        "lodging": 75,
         "image": "./images/la-plagne.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2620m d'altitude avec 310km de pistes.",
         "advantages": [
             "310km de pistes",
             "Alt 2620m",
             "Alpes du Nord",
-            "Forfait 48€"
+            "Forfait 50€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -1758,17 +1758,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2620m",
         "slopes": "310km",
-        "skiPass": 49,
-        "lodging": 73,
+        "skiPass": 50,
+        "lodging": 75,
         "image": "./images/le-grand-bornand.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2620m d'altitude avec 310km de pistes.",
         "advantages": [
             "310km de pistes",
             "Alt 2620m",
             "Alpes du Nord",
-            "Forfait 49€"
+            "Forfait 50€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -1793,17 +1793,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2620m",
         "slopes": "310km",
-        "skiPass": 48,
-        "lodging": 72,
+        "skiPass": 50,
+        "lodging": 75,
         "image": "./images/les-arcs.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2620m d'altitude avec 310km de pistes.",
         "advantages": [
             "310km de pistes",
             "Alt 2620m",
             "Alpes du Nord",
-            "Forfait 48€"
+            "Forfait 50€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -1831,8 +1831,8 @@ const skiResorts = [
         "skiPass": 40,
         "lodging": 65,
         "image": "./images/les-carroz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2000m d'altitude avec 50km de pistes.",
         "advantages": [
             "50km de pistes",
@@ -1864,10 +1864,10 @@ const skiResorts = [
         "altitude": "2100m",
         "slopes": "80km",
         "skiPass": 45,
-        "lodging": 68,
+        "lodging": 70,
         "image": "./images/les-contamines-montjoie.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2100m d'altitude avec 80km de pistes.",
         "advantages": [
             "80km de pistes",
@@ -1898,17 +1898,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2600m",
         "slopes": "150km",
-        "skiPass": 54,
-        "lodging": 85,
+        "skiPass": 55,
+        "lodging": 90,
         "image": "./images/valloire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2600m d'altitude avec 150km de pistes.",
         "advantages": [
             "150km de pistes",
             "Alt 2600m",
             "Alpes du Nord",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -1933,17 +1933,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2600m",
         "slopes": "150km",
-        "skiPass": 52,
-        "lodging": 82,
+        "skiPass": 55,
+        "lodging": 85,
         "image": "./images/valmeinier.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 2600m d'altitude avec 150km de pistes.",
         "advantages": [
             "150km de pistes",
             "Alt 2600m",
             "Alpes du Nord",
-            "Forfait 52€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -1969,10 +1969,10 @@ const skiResorts = [
         "altitude": "3330m",
         "slopes": "250km",
         "skiPass": 60,
-        "lodging": 102,
+        "lodging": 105,
         "image": "./images/les-gets.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3330m d'altitude avec 250km de pistes.",
         "advantages": [
             "250km de pistes",
@@ -2003,17 +2003,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3600m",
         "slopes": "200km",
-        "skiPass": 56,
-        "lodging": 89,
+        "skiPass": 60,
+        "lodging": 90,
         "image": "./images/les-saisies.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3600m d'altitude avec 200km de pistes.",
         "advantages": [
             "200km de pistes",
             "Alt 3600m",
             "Alpes du Nord",
-            "Forfait 56€"
+            "Forfait 60€"
         ],
         "level": "Expert",
         "activities": [
@@ -2038,17 +2038,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2250m",
         "slopes": "90km",
-        "skiPass": 48,
-        "lodging": 82,
+        "skiPass": 50,
+        "lodging": 85,
         "image": "./images/megeve.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2250m d'altitude avec 90km de pistes.",
         "advantages": [
             "90km de pistes",
             "Alt 2250m",
             "Alpes du Nord",
-            "Forfait 48€"
+            "Forfait 50€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -2076,8 +2076,8 @@ const skiResorts = [
         "skiPass": 50,
         "lodging": 80,
         "image": "./images/morzine.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2400m d'altitude avec 120km de pistes.",
         "advantages": [
             "120km de pistes",
@@ -2108,17 +2108,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2170m",
         "slopes": "125km",
-        "skiPass": 47,
-        "lodging": 76,
+        "skiPass": 50,
+        "lodging": 80,
         "image": "./images/notre-dame-de-bellecombe.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2170m d'altitude avec 125km de pistes.",
         "advantages": [
             "125km de pistes",
             "Alt 2170m",
             "Alpes du Nord",
-            "Forfait 47€"
+            "Forfait 50€"
         ],
         "level": "Expert",
         "activities": [
@@ -2143,17 +2143,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3330m",
         "slopes": "250km",
-        "skiPass": 54,
-        "lodging": 85,
+        "skiPass": 55,
+        "lodging": 90,
         "image": "./images/peisey-vallandry.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3330m d'altitude avec 250km de pistes.",
         "advantages": [
             "250km de pistes",
             "Alt 3330m",
             "Alpes du Nord",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -2178,17 +2178,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3330m",
         "slopes": "250km",
-        "skiPass": 53,
-        "lodging": 82,
+        "skiPass": 55,
+        "lodging": 85,
         "image": "./images/praz-sur-arly.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3330m d'altitude avec 250km de pistes.",
         "advantages": [
             "250km de pistes",
             "Alt 3330m",
             "Alpes du Nord",
-            "Forfait 53€"
+            "Forfait 55€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -2213,17 +2213,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "3330m",
         "slopes": "250km",
-        "skiPass": 52,
+        "skiPass": 55,
         "lodging": 80,
         "image": "./images/saint-gervais.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Nord située à 3330m d'altitude avec 250km de pistes.",
         "advantages": [
             "250km de pistes",
             "Alt 3330m",
             "Alpes du Nord",
-            "Forfait 52€"
+            "Forfait 55€"
         ],
         "level": "Expert",
         "activities": [
@@ -2249,10 +2249,10 @@ const skiResorts = [
         "altitude": "2115m",
         "slopes": "50km",
         "skiPass": 40,
-        "lodging": 68,
+        "lodging": 70,
         "image": "./images/samoens.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2115m d'altitude avec 50km de pistes.",
         "advantages": [
             "50km de pistes",
@@ -2283,17 +2283,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2050m",
         "slopes": "30km",
-        "skiPass": 38,
+        "skiPass": 40,
         "lodging": 65,
         "image": "./images/toussuire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2050m d'altitude avec 30km de pistes.",
         "advantages": [
             "30km de pistes",
             "Alt 2050m",
             "Alpes du Nord",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -2321,8 +2321,8 @@ const skiResorts = [
         "skiPass": 35,
         "lodging": 60,
         "image": "./images/val-cenis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1600m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
@@ -2353,17 +2353,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1650m",
         "slopes": "20km",
-        "skiPass": 33,
-        "lodging": 58,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/valloire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1650m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
             "Alt 1650m",
             "Alpes du Nord",
-            "Forfait 33€"
+            "Forfait 35€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -2388,17 +2388,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1700m",
         "slopes": "22km",
-        "skiPass": 34,
-        "lodging": 59,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/valmeinier.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1700m d'altitude avec 22km de pistes.",
         "advantages": [
             "22km de pistes",
             "Alt 1700m",
             "Alpes du Nord",
-            "Forfait 34€"
+            "Forfait 35€"
         ],
         "level": "Expert",
         "activities": [
@@ -2423,17 +2423,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1800m",
         "slopes": "35km",
-        "skiPass": 38,
-        "lodging": 64,
+        "skiPass": 40,
+        "lodging": 65,
         "image": "./images/avoriaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 1800m d'altitude avec 35km de pistes.",
         "advantages": [
             "35km de pistes",
             "Alt 1800m",
             "Alpes du Nord",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -2459,10 +2459,10 @@ const skiResorts = [
         "altitude": "2100m",
         "slopes": "40km",
         "skiPass": 40,
-        "lodging": 66,
+        "lodging": 70,
         "image": "./images/bonneval-sur-arc.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2100m d'altitude avec 40km de pistes.",
         "advantages": [
             "40km de pistes",
@@ -2496,8 +2496,8 @@ const skiResorts = [
         "skiPass": 30,
         "lodging": 55,
         "image": "./images/combloux.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1700m d'altitude avec 18km de pistes.",
         "advantages": [
             "18km de pistes",
@@ -2531,8 +2531,8 @@ const skiResorts = [
         "skiPass": 35,
         "lodging": 60,
         "image": "./images/crest-voland-cohennoz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 1800m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
@@ -2563,17 +2563,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1650m",
         "slopes": "15km",
-        "skiPass": 28,
-        "lodging": 52,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/karellis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1650m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 1650m",
             "Alpes du Nord",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Expert",
         "activities": [
@@ -2601,8 +2601,8 @@ const skiResorts = [
         "skiPass": 25,
         "lodging": 50,
         "image": "./images/la-clusaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1650m d'altitude avec 12km de pistes.",
         "advantages": [
             "12km de pistes",
@@ -2633,17 +2633,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1500m",
         "slopes": "10km",
-        "skiPass": 22,
-        "lodging": 48,
+        "skiPass": 25,
+        "lodging": 50,
         "image": "./images/la-plagne.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1500m d'altitude avec 10km de pistes.",
         "advantages": [
             "10km de pistes",
             "Alt 1500m",
             "Alpes du Nord",
-            "Forfait 22€"
+            "Forfait 25€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -2668,17 +2668,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1700m",
         "slopes": "15km",
-        "skiPass": 28,
-        "lodging": 52,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/le-grand-bornand.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1700m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 1700m",
             "Alpes du Nord",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Expert",
         "activities": [
@@ -2703,17 +2703,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "2050m",
         "slopes": "20km",
-        "skiPass": 32,
-        "lodging": 58,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/les-arcs.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Nord située à 2050m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
             "Alt 2050m",
             "Alpes du Nord",
-            "Forfait 32€"
+            "Forfait 35€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -2739,10 +2739,10 @@ const skiResorts = [
         "altitude": "1600m",
         "slopes": "18km",
         "skiPass": 30,
-        "lodging": 56,
+        "lodging": 60,
         "image": "./images/les-carroz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1600m d'altitude avec 18km de pistes.",
         "advantages": [
             "18km de pistes",
@@ -2773,17 +2773,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1700m",
         "slopes": "16km",
-        "skiPass": 29,
-        "lodging": 54,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/les-contamines-montjoie.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1700m d'altitude avec 16km de pistes.",
         "advantages": [
             "16km de pistes",
             "Alt 1700m",
             "Alpes du Nord",
-            "Forfait 29€"
+            "Forfait 30€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -2808,17 +2808,17 @@ const skiResorts = [
         "region": "Alpes du Nord",
         "altitude": "1600m",
         "slopes": "12km",
-        "skiPass": 26,
-        "lodging": 51,
+        "skiPass": 25,
+        "lodging": 55,
         "image": "./images/les-gets.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Nord située à 1600m d'altitude avec 12km de pistes.",
         "advantages": [
             "12km de pistes",
             "Alt 1600m",
             "Alpes du Nord",
-            "Forfait 26€"
+            "Forfait 25€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -2843,17 +2843,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2830m",
         "slopes": "250km",
-        "skiPass": 56,
-        "lodging": 88,
+        "skiPass": 60,
+        "lodging": 90,
         "image": "./images/les-saisies.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2830m d'altitude avec 250km de pistes.",
         "advantages": [
             "250km de pistes",
             "Alt 2830m",
             "Alpes du Sud",
-            "Forfait 56€"
+            "Forfait 60€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -2878,17 +2878,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2750m",
         "slopes": "185km",
-        "skiPass": 54,
-        "lodging": 84,
+        "skiPass": 55,
+        "lodging": 85,
         "image": "./images/megeve.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2750m d'altitude avec 185km de pistes.",
         "advantages": [
             "185km de pistes",
             "Alt 2750m",
             "Alpes du Sud",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -2913,17 +2913,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2750m",
         "slopes": "185km",
-        "skiPass": 53,
-        "lodging": 82,
+        "skiPass": 55,
+        "lodging": 85,
         "image": "./images/morzine.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2750m d'altitude avec 185km de pistes.",
         "advantages": [
             "185km de pistes",
             "Alt 2750m",
             "Alpes du Sud",
-            "Forfait 53€"
+            "Forfait 55€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -2949,10 +2949,10 @@ const skiResorts = [
         "altitude": "2720m",
         "slopes": "100km",
         "skiPass": 50,
-        "lodging": 79,
+        "lodging": 80,
         "image": "./images/notre-dame-de-bellecombe.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2720m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
@@ -2984,10 +2984,10 @@ const skiResorts = [
         "altitude": "2700m",
         "slopes": "400km",
         "skiPass": 55,
-        "lodging": 86,
+        "lodging": 90,
         "image": "./images/peisey-vallandry.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2700m d'altitude avec 400km de pistes.",
         "advantages": [
             "400km de pistes",
@@ -3018,17 +3018,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2700m",
         "slopes": "75km",
-        "skiPass": 44,
-        "lodging": 72,
+        "skiPass": 45,
+        "lodging": 75,
         "image": "./images/praz-sur-arly.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2700m d'altitude avec 75km de pistes.",
         "advantages": [
             "75km de pistes",
             "Alt 2700m",
             "Alpes du Sud",
-            "Forfait 44€"
+            "Forfait 45€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -3053,17 +3053,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2725m",
         "slopes": "100km",
-        "skiPass": 49,
-        "lodging": 78,
+        "skiPass": 50,
+        "lodging": 80,
         "image": "./images/saint-gervais.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2725m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
             "Alt 2725m",
             "Alpes du Sud",
-            "Forfait 49€"
+            "Forfait 50€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -3088,17 +3088,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2450m",
         "slopes": "30km",
-        "skiPass": 36,
+        "skiPass": 35,
         "lodging": 65,
         "image": "./images/samoens.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2450m d'altitude avec 30km de pistes.",
         "advantages": [
             "30km de pistes",
             "Alt 2450m",
             "Alpes du Sud",
-            "Forfait 36€"
+            "Forfait 35€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -3123,17 +3123,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "1800m",
         "slopes": "20km",
-        "skiPass": 32,
-        "lodging": 58,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/toussuire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 1800m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
             "Alt 1800m",
             "Alpes du Sud",
-            "Forfait 32€"
+            "Forfait 35€"
         ],
         "level": "Expert",
         "activities": [
@@ -3158,17 +3158,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "1850m",
         "slopes": "25km",
-        "skiPass": 34,
+        "skiPass": 35,
         "lodging": 60,
         "image": "./images/val-cenis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 1850m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
             "Alt 1850m",
             "Alpes du Sud",
-            "Forfait 34€"
+            "Forfait 35€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -3194,10 +3194,10 @@ const skiResorts = [
         "altitude": "2000m",
         "slopes": "30km",
         "skiPass": 35,
-        "lodging": 62,
+        "lodging": 65,
         "image": "./images/valloire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2000m d'altitude avec 30km de pistes.",
         "advantages": [
             "30km de pistes",
@@ -3228,17 +3228,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2250m",
         "slopes": "35km",
-        "skiPass": 38,
-        "lodging": 64,
+        "skiPass": 40,
+        "lodging": 65,
         "image": "./images/valmeinier.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2250m d'altitude avec 35km de pistes.",
         "advantages": [
             "35km de pistes",
             "Alt 2250m",
             "Alpes du Sud",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -3263,17 +3263,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2500m",
         "slopes": "100km",
-        "skiPass": 48,
+        "skiPass": 50,
         "lodging": 75,
         "image": "./images/avoriaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2500m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
             "Alt 2500m",
             "Alpes du Sud",
-            "Forfait 48€"
+            "Forfait 50€"
         ],
         "level": "Expert",
         "activities": [
@@ -3298,17 +3298,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2007m",
         "slopes": "100km",
-        "skiPass": 46,
-        "lodging": 73,
+        "skiPass": 45,
+        "lodging": 75,
         "image": "./images/bonneval-sur-arc.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2007m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
             "Alt 2007m",
             "Alpes du Sud",
-            "Forfait 46€"
+            "Forfait 45€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -3333,17 +3333,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "1800m",
         "slopes": "25km",
-        "skiPass": 33,
-        "lodging": 59,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/combloux.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 1800m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
             "Alt 1800m",
             "Alpes du Sud",
-            "Forfait 33€"
+            "Forfait 35€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -3369,10 +3369,10 @@ const skiResorts = [
         "altitude": "2000m",
         "slopes": "20km",
         "skiPass": 30,
-        "lodging": 56,
+        "lodging": 60,
         "image": "./images/crest-voland-cohennoz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2000m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
@@ -3404,10 +3404,10 @@ const skiResorts = [
         "altitude": "2200m",
         "slopes": "40km",
         "skiPass": 40,
-        "lodging": 68,
+        "lodging": 70,
         "image": "./images/karellis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2200m d'altitude avec 40km de pistes.",
         "advantages": [
             "40km de pistes",
@@ -3438,17 +3438,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "1850m",
         "slopes": "22km",
-        "skiPass": 32,
-        "lodging": 58,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/la-clusaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 1850m d'altitude avec 22km de pistes.",
         "advantages": [
             "22km de pistes",
             "Alt 1850m",
             "Alpes du Sud",
-            "Forfait 32€"
+            "Forfait 35€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -3473,17 +3473,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2100m",
         "slopes": "15km",
-        "skiPass": 28,
-        "lodging": 54,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/la-plagne.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2100m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 2100m",
             "Alpes du Sud",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Expert",
         "activities": [
@@ -3509,10 +3509,10 @@ const skiResorts = [
         "altitude": "2000m",
         "slopes": "18km",
         "skiPass": 30,
-        "lodging": 56,
+        "lodging": 60,
         "image": "./images/le-grand-bornand.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2000m d'altitude avec 18km de pistes.",
         "advantages": [
             "18km de pistes",
@@ -3543,17 +3543,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2100m",
         "slopes": "20km",
-        "skiPass": 31,
-        "lodging": 57,
+        "skiPass": 30,
+        "lodging": 60,
         "image": "./images/les-arcs.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2100m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
             "Alt 2100m",
             "Alpes du Sud",
-            "Forfait 31€"
+            "Forfait 30€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -3579,10 +3579,10 @@ const skiResorts = [
         "altitude": "1900m",
         "slopes": "12km",
         "skiPass": 25,
-        "lodging": 52,
+        "lodging": 55,
         "image": "./images/les-carroz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 1900m d'altitude avec 12km de pistes.",
         "advantages": [
             "12km de pistes",
@@ -3613,17 +3613,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "3550m",
         "slopes": "60km",
-        "skiPass": 52,
-        "lodging": 85,
+        "skiPass": 55,
+        "lodging": 90,
         "image": "./images/les-contamines-montjoie.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 3550m d'altitude avec 60km de pistes.",
         "advantages": [
             "60km de pistes",
             "Alt 3550m",
             "Alpes du Sud",
-            "Forfait 52€"
+            "Forfait 55€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -3648,17 +3648,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2100m",
         "slopes": "15km",
-        "skiPass": 28,
-        "lodging": 54,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/les-gets.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2100m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 2100m",
             "Alpes du Sud",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -3683,17 +3683,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2100m",
         "slopes": "25km",
-        "skiPass": 34,
+        "skiPass": 35,
         "lodging": 60,
         "image": "./images/les-saisies.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2100m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
             "Alt 2100m",
             "Alpes du Sud",
-            "Forfait 34€"
+            "Forfait 35€"
         ],
         "level": "Expert",
         "activities": [
@@ -3718,17 +3718,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2100m",
         "slopes": "20km",
-        "skiPass": 32,
-        "lodging": 58,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/megeve.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2100m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
             "Alt 2100m",
             "Alpes du Sud",
-            "Forfait 32€"
+            "Forfait 35€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -3753,17 +3753,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "1950m",
         "slopes": "10km",
-        "skiPass": 24,
+        "skiPass": 25,
         "lodging": 50,
         "image": "./images/morzine.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 1950m d'altitude avec 10km de pistes.",
         "advantages": [
             "10km de pistes",
             "Alt 1950m",
             "Alpes du Sud",
-            "Forfait 24€"
+            "Forfait 25€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -3788,17 +3788,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2700m",
         "slopes": "250km",
-        "skiPass": 54,
-        "lodging": 82,
+        "skiPass": 55,
+        "lodging": 85,
         "image": "./images/notre-dame-de-bellecombe.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2700m d'altitude avec 250km de pistes.",
         "advantages": [
             "250km de pistes",
             "Alt 2700m",
             "Alpes du Sud",
-            "Forfait 54€"
+            "Forfait 55€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -3824,10 +3824,10 @@ const skiResorts = [
         "altitude": "2800m",
         "slopes": "250km",
         "skiPass": 55,
-        "lodging": 84,
+        "lodging": 85,
         "image": "./images/peisey-vallandry.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2800m d'altitude avec 250km de pistes.",
         "advantages": [
             "250km de pistes",
@@ -3861,8 +3861,8 @@ const skiResorts = [
         "skiPass": 30,
         "lodging": 55,
         "image": "./images/praz-sur-arly.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2500m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
@@ -3893,17 +3893,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2610m",
         "slopes": "120km",
-        "skiPass": 52,
-        "lodging": 85,
+        "skiPass": 55,
+        "lodging": 90,
         "image": "./images/saint-gervais.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Alpes du Sud située à 2610m d'altitude avec 120km de pistes.",
         "advantages": [
             "120km de pistes",
             "Alt 2610m",
             "Alpes du Sud",
-            "Forfait 52€"
+            "Forfait 55€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -3929,10 +3929,10 @@ const skiResorts = [
         "altitude": "2450m",
         "slopes": "135km",
         "skiPass": 50,
-        "lodging": 82,
+        "lodging": 85,
         "image": "./images/samoens.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2450m d'altitude avec 135km de pistes.",
         "advantages": [
             "135km de pistes",
@@ -3963,17 +3963,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2066m",
         "slopes": "90km",
-        "skiPass": 47,
-        "lodging": 76,
+        "skiPass": 50,
+        "lodging": 80,
         "image": "./images/toussuire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2066m d'altitude avec 90km de pistes.",
         "advantages": [
             "90km de pistes",
             "Alt 2066m",
             "Alpes du Sud",
-            "Forfait 47€"
+            "Forfait 50€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -3998,17 +3998,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "1800m",
         "slopes": "30km",
-        "skiPass": 38,
+        "skiPass": 40,
         "lodging": 65,
         "image": "./images/val-cenis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 1800m d'altitude avec 30km de pistes.",
         "advantages": [
             "30km de pistes",
             "Alt 1800m",
             "Alpes du Sud",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Expert",
         "activities": [
@@ -4034,10 +4034,10 @@ const skiResorts = [
         "altitude": "1800m",
         "slopes": "35km",
         "skiPass": 40,
-        "lodging": 68,
+        "lodging": 70,
         "image": "./images/valloire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 1800m d'altitude avec 35km de pistes.",
         "advantages": [
             "35km de pistes",
@@ -4068,17 +4068,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "1800m",
         "slopes": "25km",
-        "skiPass": 36,
-        "lodging": 62,
+        "skiPass": 35,
+        "lodging": 65,
         "image": "./images/valmeinier.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 1800m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
             "Alt 1800m",
             "Alpes du Sud",
-            "Forfait 36€"
+            "Forfait 35€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -4103,17 +4103,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "1700m",
         "slopes": "20km",
-        "skiPass": 34,
+        "skiPass": 35,
         "lodging": 60,
         "image": "./images/avoriaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Sud située à 1700m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
             "Alt 1700m",
             "Alpes du Sud",
-            "Forfait 34€"
+            "Forfait 35€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -4139,10 +4139,10 @@ const skiResorts = [
         "altitude": "2000m",
         "slopes": "90km",
         "skiPass": 45,
-        "lodging": 72,
+        "lodging": 75,
         "image": "./images/bonneval-sur-arc.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2000m d'altitude avec 90km de pistes.",
         "advantages": [
             "90km de pistes",
@@ -4174,10 +4174,10 @@ const skiResorts = [
         "altitude": "1700m",
         "slopes": "15km",
         "skiPass": 30,
-        "lodging": 58,
+        "lodging": 60,
         "image": "./images/combloux.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Alpes du Sud située à 1700m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
@@ -4208,17 +4208,17 @@ const skiResorts = [
         "region": "Alpes du Sud",
         "altitude": "2100m",
         "slopes": "80km",
-        "skiPass": 48,
+        "skiPass": 50,
         "lodging": 75,
         "image": "./images/crest-voland-cohennoz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Alpes du Sud située à 2100m d'altitude avec 80km de pistes.",
         "advantages": [
             "80km de pistes",
             "Alt 2100m",
             "Alpes du Sud",
-            "Forfait 48€"
+            "Forfait 50€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -4243,17 +4243,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2500m",
         "slopes": "100km",
-        "skiPass": 48,
+        "skiPass": 50,
         "lodging": 75,
         "image": "./images/karellis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Pyrénées située à 2500m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
             "Alt 2500m",
             "Pyrénées",
-            "Forfait 48€"
+            "Forfait 50€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -4278,17 +4278,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2515m",
         "slopes": "100km",
-        "skiPass": 49,
-        "lodging": 77,
+        "skiPass": 50,
+        "lodging": 80,
         "image": "./images/la-clusaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Pyrénées située à 2515m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
             "Alt 2515m",
             "Pyrénées",
-            "Forfait 49€"
+            "Forfait 50€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -4314,10 +4314,10 @@ const skiResorts = [
         "altitude": "2400m",
         "slopes": "60km",
         "skiPass": 45,
-        "lodging": 72,
+        "lodging": 75,
         "image": "./images/la-plagne.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2400m d'altitude avec 60km de pistes.",
         "advantages": [
             "60km de pistes",
@@ -4348,17 +4348,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2415m",
         "slopes": "36km",
-        "skiPass": 42,
+        "skiPass": 45,
         "lodging": 70,
         "image": "./images/le-grand-bornand.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2415m d'altitude avec 36km de pistes.",
         "advantages": [
             "36km de pistes",
             "Alt 2415m",
             "Pyrénées",
-            "Forfait 42€"
+            "Forfait 45€"
         ],
         "level": "Expert",
         "activities": [
@@ -4383,17 +4383,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2500m",
         "slopes": "60km",
-        "skiPass": 44,
-        "lodging": 71,
+        "skiPass": 45,
+        "lodging": 75,
         "image": "./images/les-arcs.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Pyrénées située à 2500m d'altitude avec 60km de pistes.",
         "advantages": [
             "60km de pistes",
             "Alt 2500m",
             "Pyrénées",
-            "Forfait 44€"
+            "Forfait 45€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -4418,17 +4418,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2213m",
         "slopes": "58km",
-        "skiPass": 43,
-        "lodging": 69,
+        "skiPass": 45,
+        "lodging": 70,
         "image": "./images/les-carroz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2213m d'altitude avec 58km de pistes.",
         "advantages": [
             "58km de pistes",
             "Alt 2213m",
             "Pyrénées",
-            "Forfait 43€"
+            "Forfait 45€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -4453,17 +4453,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2400m",
         "slopes": "55km",
-        "skiPass": 42,
-        "lodging": 68,
+        "skiPass": 45,
+        "lodging": 70,
         "image": "./images/les-contamines-montjoie.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2400m d'altitude avec 55km de pistes.",
         "advantages": [
             "55km de pistes",
             "Alt 2400m",
             "Pyrénées",
-            "Forfait 42€"
+            "Forfait 45€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -4488,17 +4488,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2528m",
         "slopes": "65km",
-        "skiPass": 46,
-        "lodging": 73,
+        "skiPass": 45,
+        "lodging": 75,
         "image": "./images/les-gets.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Pyrénées située à 2528m d'altitude avec 65km de pistes.",
         "advantages": [
             "65km de pistes",
             "Alt 2528m",
             "Pyrénées",
-            "Forfait 46€"
+            "Forfait 45€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -4523,17 +4523,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2400m",
         "slopes": "40km",
-        "skiPass": 41,
-        "lodging": 67,
+        "skiPass": 40,
+        "lodging": 70,
         "image": "./images/les-saisies.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2400m d'altitude avec 40km de pistes.",
         "advantages": [
             "40km de pistes",
             "Alt 2400m",
             "Pyrénées",
-            "Forfait 41€"
+            "Forfait 40€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -4558,17 +4558,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2153m",
         "slopes": "25km",
-        "skiPass": 38,
-        "lodging": 64,
+        "skiPass": 40,
+        "lodging": 65,
         "image": "./images/megeve.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2153m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
             "Alt 2153m",
             "Pyrénées",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -4593,17 +4593,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2400m",
         "slopes": "80km",
-        "skiPass": 47,
-        "lodging": 74,
+        "skiPass": 50,
+        "lodging": 75,
         "image": "./images/morzine.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2400m d'altitude avec 80km de pistes.",
         "advantages": [
             "80km de pistes",
             "Alt 2400m",
             "Pyrénées",
-            "Forfait 47€"
+            "Forfait 50€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -4629,10 +4629,10 @@ const skiResorts = [
         "altitude": "2002m",
         "slopes": "50km",
         "skiPass": 40,
-        "lodging": 66,
+        "lodging": 70,
         "image": "./images/notre-dame-de-bellecombe.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2002m d'altitude avec 50km de pistes.",
         "advantages": [
             "50km de pistes",
@@ -4663,17 +4663,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2100m",
         "slopes": "45km",
-        "skiPass": 38,
-        "lodging": 64,
+        "skiPass": 40,
+        "lodging": 65,
         "image": "./images/peisey-vallandry.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2100m d'altitude avec 45km de pistes.",
         "advantages": [
             "45km de pistes",
             "Alt 2100m",
             "Pyrénées",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -4698,17 +4698,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2400m",
         "slopes": "35km",
-        "skiPass": 39,
+        "skiPass": 40,
         "lodging": 65,
         "image": "./images/praz-sur-arly.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2400m d'altitude avec 35km de pistes.",
         "advantages": [
             "35km de pistes",
             "Alt 2400m",
             "Pyrénées",
-            "Forfait 39€"
+            "Forfait 40€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -4733,17 +4733,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "1850m",
         "slopes": "25km",
-        "skiPass": 36,
-        "lodging": 62,
+        "skiPass": 35,
+        "lodging": 65,
         "image": "./images/saint-gervais.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 1850m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
             "Alt 1850m",
             "Pyrénées",
-            "Forfait 36€"
+            "Forfait 35€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -4768,17 +4768,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "1800m",
         "slopes": "20km",
-        "skiPass": 34,
+        "skiPass": 35,
         "lodging": 60,
         "image": "./images/samoens.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 1800m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
             "Alt 1800m",
             "Pyrénées",
-            "Forfait 34€"
+            "Forfait 35€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -4804,10 +4804,10 @@ const skiResorts = [
         "altitude": "2400m",
         "slopes": "30km",
         "skiPass": 40,
-        "lodging": 66,
+        "lodging": 70,
         "image": "./images/toussuire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2400m d'altitude avec 30km de pistes.",
         "advantages": [
             "30km de pistes",
@@ -4838,17 +4838,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2100m",
         "slopes": "15km",
-        "skiPass": 32,
-        "lodging": 58,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/artouste.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2100m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 2100m",
             "Pyrénées",
-            "Forfait 32€"
+            "Forfait 35€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -4873,17 +4873,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "1600m",
         "slopes": "12km",
-        "skiPass": 28,
-        "lodging": 54,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/valloire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Pyrénées située à 1600m d'altitude avec 12km de pistes.",
         "advantages": [
             "12km de pistes",
             "Alt 1600m",
             "Pyrénées",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -4908,17 +4908,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2500m",
         "slopes": "100km",
-        "skiPass": 46,
-        "lodging": 73,
+        "skiPass": 45,
+        "lodging": 75,
         "image": "./images/valmeinier.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Pyrénées située à 2500m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
             "Alt 2500m",
             "Pyrénées",
-            "Forfait 46€"
+            "Forfait 45€"
         ],
         "level": "Expert",
         "activities": [
@@ -4944,10 +4944,10 @@ const skiResorts = [
         "altitude": "2350m",
         "slopes": "100km",
         "skiPass": 45,
-        "lodging": 71,
+        "lodging": 75,
         "image": "./images/bareges.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2350m d'altitude avec 100km de pistes.",
         "advantages": [
             "100km de pistes",
@@ -4979,10 +4979,10 @@ const skiResorts = [
         "altitude": "2260m",
         "slopes": "32km",
         "skiPass": 40,
-        "lodging": 68,
+        "lodging": 70,
         "image": "./images/bonneval-sur-arc.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2260m d'altitude avec 32km de pistes.",
         "advantages": [
             "32km de pistes",
@@ -5014,10 +5014,10 @@ const skiResorts = [
         "altitude": "1850m",
         "slopes": "25km",
         "skiPass": 35,
-        "lodging": 62,
+        "lodging": 65,
         "image": "./images/combloux.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 1850m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
@@ -5049,10 +5049,10 @@ const skiResorts = [
         "altitude": "1800m",
         "slopes": "15km",
         "skiPass": 30,
-        "lodging": 56,
+        "lodging": 60,
         "image": "./images/crest-voland-cohennoz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 1800m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
@@ -5083,17 +5083,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2100m",
         "slopes": "40km",
-        "skiPass": 42,
+        "skiPass": 45,
         "lodging": 70,
         "image": "./images/karellis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2100m d'altitude avec 40km de pistes.",
         "advantages": [
             "40km de pistes",
             "Alt 2100m",
             "Pyrénées",
-            "Forfait 42€"
+            "Forfait 45€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -5118,17 +5118,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2000m",
         "slopes": "30km",
-        "skiPass": 38,
+        "skiPass": 40,
         "lodging": 65,
         "image": "./images/la-clusaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2000m d'altitude avec 30km de pistes.",
         "advantages": [
             "30km de pistes",
             "Alt 2000m",
             "Pyrénées",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -5154,10 +5154,10 @@ const skiResorts = [
         "altitude": "2400m",
         "slopes": "80km",
         "skiPass": 45,
-        "lodging": 72,
+        "lodging": 75,
         "image": "./images/la-plagne.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2400m d'altitude avec 80km de pistes.",
         "advantages": [
             "80km de pistes",
@@ -5188,17 +5188,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "1800m",
         "slopes": "20km",
-        "skiPass": 32,
-        "lodging": 58,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/le-grand-bornand.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 1800m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
             "Alt 1800m",
             "Pyrénées",
-            "Forfait 32€"
+            "Forfait 35€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -5224,10 +5224,10 @@ const skiResorts = [
         "altitude": "2000m",
         "slopes": "18km",
         "skiPass": 30,
-        "lodging": 56,
+        "lodging": 60,
         "image": "./images/les-arcs.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2000m d'altitude avec 18km de pistes.",
         "advantages": [
             "18km de pistes",
@@ -5259,10 +5259,10 @@ const skiResorts = [
         "altitude": "2500m",
         "slopes": "45km",
         "skiPass": 40,
-        "lodging": 68,
+        "lodging": 70,
         "image": "./images/les-carroz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Pyrénées située à 2500m d'altitude avec 45km de pistes.",
         "advantages": [
             "45km de pistes",
@@ -5293,17 +5293,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2700m",
         "slopes": "50km",
-        "skiPass": 42,
+        "skiPass": 45,
         "lodging": 70,
         "image": "./images/les-contamines-montjoie.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Pyrénées située à 2700m d'altitude avec 50km de pistes.",
         "advantages": [
             "50km de pistes",
             "Alt 2700m",
             "Pyrénées",
-            "Forfait 42€"
+            "Forfait 45€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -5329,10 +5329,10 @@ const skiResorts = [
         "altitude": "2400m",
         "slopes": "40km",
         "skiPass": 40,
-        "lodging": 67,
+        "lodging": 70,
         "image": "./images/les-gets.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2400m d'altitude avec 40km de pistes.",
         "advantages": [
             "40km de pistes",
@@ -5363,17 +5363,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2200m",
         "slopes": "35km",
-        "skiPass": 38,
-        "lodging": 64,
+        "skiPass": 40,
+        "lodging": 65,
         "image": "./images/les-saisies.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2200m d'altitude avec 35km de pistes.",
         "advantages": [
             "35km de pistes",
             "Alt 2200m",
             "Pyrénées",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Expert",
         "activities": [
@@ -5398,17 +5398,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2200m",
         "slopes": "45km",
-        "skiPass": 41,
-        "lodging": 68,
+        "skiPass": 40,
+        "lodging": 70,
         "image": "./images/megeve.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2200m d'altitude avec 45km de pistes.",
         "advantages": [
             "45km de pistes",
             "Alt 2200m",
             "Pyrénées",
-            "Forfait 41€"
+            "Forfait 40€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -5433,17 +5433,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2213m",
         "slopes": "58km",
-        "skiPass": 42,
-        "lodging": 68,
+        "skiPass": 45,
+        "lodging": 70,
         "image": "./images/morzine.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2213m d'altitude avec 58km de pistes.",
         "advantages": [
             "58km de pistes",
             "Alt 2213m",
             "Pyrénées",
-            "Forfait 42€"
+            "Forfait 45€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -5468,17 +5468,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2400m",
         "slopes": "40km",
-        "skiPass": 39,
-        "lodging": 66,
+        "skiPass": 40,
+        "lodging": 70,
         "image": "./images/notre-dame-de-bellecombe.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 2400m d'altitude avec 40km de pistes.",
         "advantages": [
             "40km de pistes",
             "Alt 2400m",
             "Pyrénées",
-            "Forfait 39€"
+            "Forfait 40€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -5503,17 +5503,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "2500m",
         "slopes": "40km",
-        "skiPass": 38,
-        "lodging": 64,
+        "skiPass": 40,
+        "lodging": 65,
         "image": "./images/peisey-vallandry.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "28 nov 2025",
+        "closing": "4 mai 2026",
         "description": "Station Pyrénées située à 2500m d'altitude avec 40km de pistes.",
         "advantages": [
             "40km de pistes",
             "Alt 2500m",
             "Pyrénées",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -5538,17 +5538,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "1400m",
         "slopes": "8km",
-        "skiPass": 22,
-        "lodging": 48,
+        "skiPass": 25,
+        "lodging": 50,
         "image": "./images/praz-sur-arly.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Pyrénées située à 1400m d'altitude avec 8km de pistes.",
         "advantages": [
             "8km de pistes",
             "Alt 1400m",
             "Pyrénées",
-            "Forfait 22€"
+            "Forfait 25€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -5576,8 +5576,8 @@ const skiResorts = [
         "skiPass": 35,
         "lodging": 60,
         "image": "./images/saint-gervais.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 1800m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
@@ -5608,17 +5608,17 @@ const skiResorts = [
         "region": "Pyrénées",
         "altitude": "1800m",
         "slopes": "15km",
-        "skiPass": 28,
-        "lodging": 54,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/samoens.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Pyrénées située à 1800m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 1800m",
             "Pyrénées",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -5643,17 +5643,17 @@ const skiResorts = [
         "region": "Jura",
         "altitude": "1680m",
         "slopes": "50km",
-        "skiPass": 36,
-        "lodging": 62,
+        "skiPass": 35,
+        "lodging": 65,
         "image": "./images/toussuire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1680m d'altitude avec 50km de pistes.",
         "advantages": [
             "50km de pistes",
             "Alt 1680m",
             "Jura",
-            "Forfait 36€"
+            "Forfait 35€"
         ],
         "level": "Expert",
         "activities": [
@@ -5678,17 +5678,17 @@ const skiResorts = [
         "region": "Jura",
         "altitude": "1463m",
         "slopes": "40km",
-        "skiPass": 34,
-        "lodging": 58,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/val-cenis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1463m d'altitude avec 40km de pistes.",
         "advantages": [
             "40km de pistes",
             "Alt 1463m",
             "Jura",
-            "Forfait 34€"
+            "Forfait 35€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -5713,17 +5713,17 @@ const skiResorts = [
         "region": "Jura",
         "altitude": "1720m",
         "slopes": "60km",
-        "skiPass": 38,
-        "lodging": 64,
+        "skiPass": 40,
+        "lodging": 65,
         "image": "./images/valloire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1720m d'altitude avec 60km de pistes.",
         "advantages": [
             "60km de pistes",
             "Alt 1720m",
             "Jura",
-            "Forfait 38€"
+            "Forfait 40€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -5748,17 +5748,17 @@ const skiResorts = [
         "region": "Jura",
         "altitude": "1280m",
         "slopes": "15km",
-        "skiPass": 28,
-        "lodging": 52,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/valmeinier.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1280m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 1280m",
             "Jura",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Expert",
         "activities": [
@@ -5784,10 +5784,10 @@ const skiResorts = [
         "altitude": "1150m",
         "slopes": "12km",
         "skiPass": 25,
-        "lodging": 48,
+        "lodging": 50,
         "image": "./images/avoriaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1150m d'altitude avec 12km de pistes.",
         "advantages": [
             "12km de pistes",
@@ -5818,17 +5818,17 @@ const skiResorts = [
         "region": "Jura",
         "altitude": "1200m",
         "slopes": "10km",
-        "skiPass": 24,
-        "lodging": 46,
+        "skiPass": 25,
+        "lodging": 45,
         "image": "./images/bonneval-sur-arc.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1200m d'altitude avec 10km de pistes.",
         "advantages": [
             "10km de pistes",
             "Alt 1200m",
             "Jura",
-            "Forfait 24€"
+            "Forfait 25€"
         ],
         "level": "Expert",
         "activities": [
@@ -5853,17 +5853,17 @@ const skiResorts = [
         "region": "Jura",
         "altitude": "1100m",
         "slopes": "8km",
-        "skiPass": 22,
+        "skiPass": 25,
         "lodging": 45,
         "image": "./images/combloux.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1100m d'altitude avec 8km de pistes.",
         "advantages": [
             "8km de pistes",
             "Alt 1100m",
             "Jura",
-            "Forfait 22€"
+            "Forfait 25€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -5889,10 +5889,10 @@ const skiResorts = [
         "altitude": "1400m",
         "slopes": "18km",
         "skiPass": 30,
-        "lodging": 54,
+        "lodging": 55,
         "image": "./images/crest-voland-cohennoz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1400m d'altitude avec 18km de pistes.",
         "advantages": [
             "18km de pistes",
@@ -5923,17 +5923,17 @@ const skiResorts = [
         "region": "Jura",
         "altitude": "1720m",
         "slopes": "30km",
-        "skiPass": 36,
+        "skiPass": 35,
         "lodging": 60,
         "image": "./images/karellis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1720m d'altitude avec 30km de pistes.",
         "advantages": [
             "30km de pistes",
             "Alt 1720m",
             "Jura",
-            "Forfait 36€"
+            "Forfait 35€"
         ],
         "level": "Expert",
         "activities": [
@@ -5958,17 +5958,17 @@ const skiResorts = [
         "region": "Jura",
         "altitude": "1680m",
         "slopes": "50km",
-        "skiPass": 37,
-        "lodging": 62,
+        "skiPass": 40,
+        "lodging": 65,
         "image": "./images/la-clusaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Jura située à 1680m d'altitude avec 50km de pistes.",
         "advantages": [
             "50km de pistes",
             "Alt 1680m",
             "Jura",
-            "Forfait 37€"
+            "Forfait 40€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -5993,17 +5993,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1350m",
         "slopes": "35km",
-        "skiPass": 32,
+        "skiPass": 35,
         "lodging": 55,
         "image": "./images/la-plagne.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1350m d'altitude avec 35km de pistes.",
         "advantages": [
             "35km de pistes",
             "Alt 1350m",
             "Vosges",
-            "Forfait 32€"
+            "Forfait 35€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -6028,17 +6028,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1350m",
         "slopes": "40km",
-        "skiPass": 33,
-        "lodging": 56,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/le-grand-bornand.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1350m d'altitude avec 40km de pistes.",
         "advantages": [
             "40km de pistes",
             "Alt 1350m",
             "Vosges",
-            "Forfait 33€"
+            "Forfait 35€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -6063,17 +6063,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1265m",
         "slopes": "20km",
-        "skiPass": 28,
-        "lodging": 52,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/les-arcs.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1265m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
             "Alt 1265m",
             "Vosges",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Expert",
         "activities": [
@@ -6098,17 +6098,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1250m",
         "slopes": "15km",
-        "skiPass": 26,
+        "skiPass": 25,
         "lodging": 50,
         "image": "./images/les-carroz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1250m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 1250m",
             "Vosges",
-            "Forfait 26€"
+            "Forfait 25€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -6133,17 +6133,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1258m",
         "slopes": "18km",
-        "skiPass": 27,
-        "lodging": 51,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/les-contamines-montjoie.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1258m d'altitude avec 18km de pistes.",
         "advantages": [
             "18km de pistes",
             "Alt 1258m",
             "Vosges",
-            "Forfait 27€"
+            "Forfait 30€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -6168,17 +6168,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1200m",
         "slopes": "12km",
-        "skiPass": 24,
-        "lodging": 48,
+        "skiPass": 25,
+        "lodging": 50,
         "image": "./images/les-gets.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1200m d'altitude avec 12km de pistes.",
         "advantages": [
             "12km de pistes",
             "Alt 1200m",
             "Vosges",
-            "Forfait 24€"
+            "Forfait 25€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -6203,17 +6203,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1150m",
         "slopes": "10km",
-        "skiPass": 22,
-        "lodging": 46,
+        "skiPass": 25,
+        "lodging": 45,
         "image": "./images/les-saisies.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1150m d'altitude avec 10km de pistes.",
         "advantages": [
             "10km de pistes",
             "Alt 1150m",
             "Vosges",
-            "Forfait 22€"
+            "Forfait 25€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -6239,10 +6239,10 @@ const skiResorts = [
         "altitude": "1100m",
         "slopes": "14km",
         "skiPass": 25,
-        "lodging": 49,
+        "lodging": 50,
         "image": "./images/megeve.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1100m d'altitude avec 14km de pistes.",
         "advantages": [
             "14km de pistes",
@@ -6273,17 +6273,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1200m",
         "slopes": "16km",
-        "skiPass": 26,
+        "skiPass": 25,
         "lodging": 50,
         "image": "./images/morzine.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1200m d'altitude avec 16km de pistes.",
         "advantages": [
             "16km de pistes",
             "Alt 1200m",
             "Vosges",
-            "Forfait 26€"
+            "Forfait 25€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -6309,10 +6309,10 @@ const skiResorts = [
         "altitude": "1150m",
         "slopes": "15km",
         "skiPass": 25,
-        "lodging": 48,
+        "lodging": 50,
         "image": "./images/notre-dame-de-bellecombe.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1150m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
@@ -6343,17 +6343,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1200m",
         "slopes": "16km",
-        "skiPass": 26,
+        "skiPass": 25,
         "lodging": 50,
         "image": "./images/peisey-vallandry.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1200m d'altitude avec 16km de pistes.",
         "advantages": [
             "16km de pistes",
             "Alt 1200m",
             "Vosges",
-            "Forfait 26€"
+            "Forfait 25€"
         ],
         "level": "Expert",
         "activities": [
@@ -6378,17 +6378,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1292m",
         "slopes": "18km",
-        "skiPass": 27,
-        "lodging": 51,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/praz-sur-arly.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1292m d'altitude avec 18km de pistes.",
         "advantages": [
             "18km de pistes",
             "Alt 1292m",
             "Vosges",
-            "Forfait 27€"
+            "Forfait 30€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -6414,10 +6414,10 @@ const skiResorts = [
         "altitude": "1200m",
         "slopes": "15km",
         "skiPass": 25,
-        "lodging": 49,
+        "lodging": 50,
         "image": "./images/saint-gervais.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1200m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
@@ -6448,17 +6448,17 @@ const skiResorts = [
         "region": "Vosges",
         "altitude": "1100m",
         "slopes": "12km",
-        "skiPass": 24,
-        "lodging": 47,
+        "skiPass": 25,
+        "lodging": 50,
         "image": "./images/samoens.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1100m d'altitude avec 12km de pistes.",
         "advantages": [
             "12km de pistes",
             "Alt 1100m",
             "Vosges",
-            "Forfait 24€"
+            "Forfait 25€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -6484,10 +6484,10 @@ const skiResorts = [
         "altitude": "1300m",
         "slopes": "20km",
         "skiPass": 30,
-        "lodging": 54,
+        "lodging": 55,
         "image": "./images/toussuire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Vosges située à 1300m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
@@ -6521,8 +6521,8 @@ const skiResorts = [
         "skiPass": 35,
         "lodging": 60,
         "image": "./images/val-cenis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Massif Central située à 1850m d'altitude avec 45km de pistes.",
         "advantages": [
             "45km de pistes",
@@ -6553,17 +6553,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1850m",
         "slopes": "42km",
-        "skiPass": 34,
-        "lodging": 59,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/valloire.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Massif Central située à 1850m d'altitude avec 42km de pistes.",
         "advantages": [
             "42km de pistes",
             "Alt 1850m",
             "Massif Central",
-            "Forfait 34€"
+            "Forfait 35€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
@@ -6588,17 +6588,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1850m",
         "slopes": "60km",
-        "skiPass": 37,
-        "lodging": 63,
+        "skiPass": 40,
+        "lodging": 65,
         "image": "./images/valmeinier.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "14 déc 2025",
+        "closing": "20 avr 2026",
         "description": "Station Massif Central située à 1850m d'altitude avec 60km de pistes.",
         "advantages": [
             "60km de pistes",
             "Alt 1850m",
             "Massif Central",
-            "Forfait 37€"
+            "Forfait 40€"
         ],
         "level": "Expert",
         "activities": [
@@ -6623,17 +6623,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1750m",
         "slopes": "35km",
-        "skiPass": 33,
-        "lodging": 58,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/avoriaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1750m d'altitude avec 35km de pistes.",
         "advantages": [
             "35km de pistes",
             "Alt 1750m",
             "Massif Central",
-            "Forfait 33€"
+            "Forfait 35€"
         ],
         "level": "Expert",
         "activities": [
@@ -6658,17 +6658,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1500m",
         "slopes": "12km",
-        "skiPass": 24,
-        "lodging": 48,
+        "skiPass": 25,
+        "lodging": 50,
         "image": "./images/bonneval-sur-arc.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1500m d'altitude avec 12km de pistes.",
         "advantages": [
             "12km de pistes",
             "Alt 1500m",
             "Massif Central",
-            "Forfait 24€"
+            "Forfait 25€"
         ],
         "level": "Expert",
         "activities": [
@@ -6694,10 +6694,10 @@ const skiResorts = [
         "altitude": "1680m",
         "slopes": "25km",
         "skiPass": 30,
-        "lodging": 54,
+        "lodging": 55,
         "image": "./images/combloux.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1680m d'altitude avec 25km de pistes.",
         "advantages": [
             "25km de pistes",
@@ -6728,17 +6728,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1700m",
         "slopes": "18km",
-        "skiPass": 28,
-        "lodging": 52,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/crest-voland-cohennoz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1700m d'altitude avec 18km de pistes.",
         "advantages": [
             "18km de pistes",
             "Alt 1700m",
             "Massif Central",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -6763,17 +6763,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1600m",
         "slopes": "15km",
-        "skiPass": 26,
+        "skiPass": 25,
         "lodging": 50,
         "image": "./images/karellis.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1600m d'altitude avec 15km de pistes.",
         "advantages": [
             "15km de pistes",
             "Alt 1600m",
             "Massif Central",
-            "Forfait 26€"
+            "Forfait 25€"
         ],
         "level": "Débutant / Intermédiaire",
         "activities": [
@@ -6798,17 +6798,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1400m",
         "slopes": "10km",
-        "skiPass": 22,
-        "lodging": 46,
+        "skiPass": 25,
+        "lodging": 45,
         "image": "./images/la-clusaz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1400m d'altitude avec 10km de pistes.",
         "advantages": [
             "10km de pistes",
             "Alt 1400m",
             "Massif Central",
-            "Forfait 22€"
+            "Forfait 25€"
         ],
         "level": "Tous niveaux",
         "activities": [
@@ -6833,17 +6833,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1450m",
         "slopes": "12km",
-        "skiPass": 24,
-        "lodging": 48,
+        "skiPass": 25,
+        "lodging": 50,
         "image": "./images/la-plagne.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1450m d'altitude avec 12km de pistes.",
         "advantages": [
             "12km de pistes",
             "Alt 1450m",
             "Massif Central",
-            "Forfait 24€"
+            "Forfait 25€"
         ],
         "level": "Expert",
         "activities": [
@@ -6868,17 +6868,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1600m",
         "slopes": "18km",
-        "skiPass": 28,
-        "lodging": 52,
+        "skiPass": 30,
+        "lodging": 55,
         "image": "./images/le-grand-bornand.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1600m d'altitude avec 18km de pistes.",
         "advantages": [
             "18km de pistes",
             "Alt 1600m",
             "Massif Central",
-            "Forfait 28€"
+            "Forfait 30€"
         ],
         "level": "Expert",
         "activities": [
@@ -6904,10 +6904,10 @@ const skiResorts = [
         "altitude": "1600m",
         "slopes": "20km",
         "skiPass": 30,
-        "lodging": 54,
+        "lodging": 55,
         "image": "./images/les-arcs.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1600m d'altitude avec 20km de pistes.",
         "advantages": [
             "20km de pistes",
@@ -6938,17 +6938,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1680m",
         "slopes": "30km",
-        "skiPass": 32,
-        "lodging": 56,
+        "skiPass": 35,
+        "lodging": 60,
         "image": "./images/les-carroz.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1680m d'altitude avec 30km de pistes.",
         "advantages": [
             "30km de pistes",
             "Alt 1680m",
             "Massif Central",
-            "Forfait 32€"
+            "Forfait 35€"
         ],
         "level": "Expert",
         "activities": [
@@ -6974,10 +6974,10 @@ const skiResorts = [
         "altitude": "1200m",
         "slopes": "8km",
         "skiPass": 20,
-        "lodging": 44,
+        "lodging": 45,
         "image": "./images/les-contamines-montjoie.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1200m d'altitude avec 8km de pistes.",
         "advantages": [
             "8km de pistes",
@@ -7008,17 +7008,17 @@ const skiResorts = [
         "region": "Massif Central",
         "altitude": "1400m",
         "slopes": "10km",
-        "skiPass": 22,
-        "lodging": 46,
+        "skiPass": 25,
+        "lodging": 45,
         "image": "./images/les-gets.png",
-        "opening": "Déc 2025",
-        "closing": "Avr 2026",
+        "opening": "21 déc 2025",
+        "closing": "6 avr 2026",
         "description": "Station Massif Central située à 1400m d'altitude avec 10km de pistes.",
         "advantages": [
             "10km de pistes",
             "Alt 1400m",
             "Massif Central",
-            "Forfait 22€"
+            "Forfait 25€"
         ],
         "level": "Intermédiaire / Expert",
         "activities": [
